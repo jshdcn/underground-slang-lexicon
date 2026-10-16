@@ -356,7 +356,7 @@ def render(entries):
         ('代X', '把每个需要真人出面的动作都外包出去',
          ['daix', 'daidiao', 'dailshiming', 'daifu', 'daihuan', 'daiweiquan',
           'daishou', 'daibaobei', 'daifapinglun', 'xianyudailiao']),
-        ('保X', '以"保／包+风险项"逐项列出愿意承担的后果，保与包同音混用',
+        ('保X／包X', '以"保／包+风险项"逐项列出愿意承担的后果，保与包同音混用',
          ['baox', 'shangya', 'mailei', 'zoudanbao', 'garansi', 'mianche',
           'baopi', 'baodeng', 'baoshoudeng', 'baozhaohui', 'baohuan', 'baofuzhu', 'baochirou']),
         ('无视X', '逐条点名被绕过的风控措施',
