@@ -1,0 +1,303 @@
+[
+ {
+  "id": "banzhuan",
+  "term": "搬砖",
+  "aka": [
+   "搬砖项目",
+   "U搬砖"
+  ],
+  "category": "招募与话术",
+  "definition": "本指低技术含量的体力劳动或加密货币的跨市场套利；在招募话术中泛指来钱快的灰色项目。",
+  "mechanism": "刻意借用“辛苦劳动”与“正规套利”的双重联想，降低参与者的违法感知；“黑U搬砖”实为代持与过账，参与者承担洗钱法律风险。",
+  "example": "黑u 搬砖项木，一天 5 万多随便拿",
+  "ambiguity": "程序员自嘲、加密货币套利讨论中为常见正常用法，误报率高。",
+  "related": [
+   "heiu",
+   "shangan",
+   "jianjie",
+   "paofen",
+   "daiyunying",
+   "duidao",
+   "yewuyuan",
+   "yuanqu",
+   "zhaoxuetu"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shangan",
+  "term": "上岸",
+  "aka": [
+   "带你上岸",
+   "一天稳赚"
+  ],
+  "category": "招募与话术",
+  "definition": "原指脱离困境（上岸考公、还清负债）；在招募话术中指通过参与项目摆脱经济压力。",
+  "mechanism": "话术结构高度模板化：先用羞辱式提问放大焦虑（“还在为那点死工资和贷款发愁”），再给出确定性收益承诺（“一天稳稳多赚”“一个月提车”），最后把联系路径指向简介。目标人群是负债与低收入者。",
+  "example": "新手小白也能一个月提车，看我简阶，直接带你上岸",
+  "ambiguity": "“上岸”在考公、考研与还债语境中是极常见的正常表达。",
+  "related": [
+   "banzhuan",
+   "jianjie",
+   "heiu",
+   "shangche",
+   "daiyunying",
+   "ruqunyanzheng",
+   "yuanqu",
+   "yewuyuan",
+   "huashu",
+   "jiucai",
+   "zhaoxuetu",
+   "duidao",
+   "goutui",
+   "wuxuyanjing",
+   "zhuzai"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jixiao",
+  "term": "绩效干净",
+  "aka": [
+   "业绩干净"
+  ],
+  "category": "招募与话术",
+  "definition": "宣称所提供的公司主体、账户或店铺无不良记录、未被处置。",
+  "mechanism": "出现在公司主体、对公账户与店铺账号的售卖描述中，“干净”“纯白”是定价的关键参数；同时用“公司正常”“法人不联系”等承诺降低买方对后续风险的担忧。",
+  "example": "绩效干净 / 公司正常 / 法人不联系",
+  "ambiguity": "人事绩效语境中的“绩效”属正常用法，须结合“干净、纯白、主体”判定。",
+  "related": [
+   "gonghu",
+   "chengpinhao",
+   "dailshiming",
+   "zoudanbao",
+   "garansi",
+   "readymade",
+   "jixiaofen",
+   "farenbulianxi",
+   "wuqinquan",
+   "daiyunying",
+   "guokyc",
+   "shoukuanqianyi"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "wuxuyanjing",
+  "term": "无需经验",
+  "aka": [
+   "学生兼职",
+   "日结",
+   "在线接单",
+   "周岁即可",
+   "无工作要求",
+   "职位描述模板"
+  ],
+  "category": "招募与话术",
+  "definition": "强调零门槛、随时可做、当日结算的招募措辞。",
+  "mechanism": "面向学生与兼职人群的标准化招募模板，常配“无工作要求”“薪资范围”等类正规招聘字段以提升可信度；下游任务多为做单、跑分代收或涉诈物料代发。",
+  "example": "无需经验 / 学生兼职 / 当天结",
+  "ambiguity": "正规的兼职与蓝领招聘广泛使用同类措辞，是高误报词，须结合任务内容判定。",
+  "related": [
+   "zuodan",
+   "paofen",
+   "shangan",
+   "baodan",
+   "daiyunying",
+   "wurenzhibo",
+   "rentou",
+   "yuanqu",
+   "yewuyuan",
+   "zhuzai",
+   "goutui",
+   "huashu",
+   "zhaoxuetu",
+   "heihu"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "fangxinling",
+  "term": "防止失联",
+  "aka": [
+   "防失联",
+   "备用微信",
+   "置顶"
+  ],
+  "category": "招募与话术",
+  "definition": "提前告知备用联系渠道，以应对账号被封禁。",
+  "mechanism": "反映黑灰产运营者对处置的预期：在首次接触时即建立冗余联系路径（备用号、频道置顶、机器人），使封禁无法切断用户关系。对治理方而言，单点封禁的效果因此被削弱。",
+  "example": "防止失联 / 联系群主 / 进群请关注置顶",
+  "related": [
+   "jianjie",
+   "d",
+   "hutui",
+   "gongqun",
+   "pingtaidaicheng",
+   "lengmenhao",
+   "shuangxiang",
+   "ruqunyanzheng",
+   "zuodanqun"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "yuanqu",
+  "term": "园区",
+  "aka": [
+   "缅北",
+   "妙瓦底",
+   "西港"
+  ],
+  "category": "招募与话术",
+  "lang": "zh",
+  "definition": "境外从事网络诈骗与赌博的集中作业场所，以具体地名代称。",
+  "mechanism": "是境外电诈产业的组织形态：封闭管理、按业务线分组、以\"高薪海外务工\"招募人员入境。相关地名在社群中已成为行业代称，既用于招聘引流，也用于同乡互助、求救与曝光。\n\n语料中这些词的出现以资讯、曝光与物流信息为主，说明围绕园区已形成外围的信息与服务生态。",
+  "example": "〔地名〕园区通知 ｜ 东南亚求职 ｜ 园区曝光投稿",
+  "ambiguity": "\"园区\"在产业园、科技园、行政区名（如梁园区）中极常见，是高频误报词；地名本身也大量出现在新闻与旅行内容里。",
+  "related": [
+   "yewuyuan",
+   "goutui",
+   "zhuzai",
+   "shangan",
+   "wuxuyanjing",
+   "zhenrenjingliao",
+   "huashu",
+   "shoujikou",
+   "rentou",
+   "banzhuan"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "yewuyuan",
+  "term": "业务员",
+  "aka": [
+   "聊客",
+   "客服",
+   "操作员",
+   "聊手",
+   "招聊手"
+  ],
+  "category": "招募与话术",
+  "lang": "zh",
+  "definition": "在诈骗与赌博作业中负责与目标对话、推进剧本的一线岗位。",
+  "mechanism": "用正规职场称谓包装诈骗岗位，是招募话术的一贯手法：岗位名中性、描述贴近普通销售，实际工作是按剧本聊天与收割。\"聊客\"是更内部的叫法。与\"真人精聊\"指向同一工种的不同语域。",
+  "example": "招收业务员 ｜ 跟我搬砖直接猛干，了解看我简介",
+  "ambiguity": "\"业务员\"是极常见的正规岗位名称，占相关文本的绝大多数，不能单独作为风险信号。",
+  "related": [
+   "zhenrenjingliao",
+   "huashu",
+   "goutui",
+   "yuanqu",
+   "wuxuyanjing",
+   "shangan",
+   "banzhuan",
+   "jianjie",
+   "daix",
+   "shoujikou",
+   "dafen",
+   "zhuzai"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jiucai",
+  "term": "韭菜",
+  "aka": [
+   "割韭菜"
+  ],
+  "category": "招募与话术",
+  "lang": "zh",
+  "definition": "被反复收割的受害者；\"割韭菜\"指对同一批人持续榨取。",
+  "mechanism": "是从业者对目标人群的内部称谓，隐含\"可再生、可重复收割\"的认知。它同时被受害方与评论者用来控诉，因此在语料中双向出现——\"不割韭菜\"是商家自证清白的话术，\"最喜欢韭菜\"则是赤裸的内部表态。",
+  "example": "最喜欢韭菜 ｜ 不割韭菜，不欺骗 ｜ 拒绝被套路割韭菜",
+  "ambiguity": "该词在股市、消费维权与日常吐槽中被广泛使用，绝大多数提及属正常讨论。",
+  "related": [
+   "zhuzai",
+   "shangan",
+   "huashu",
+   "shazhupan",
+   "fenzhi",
+   "rentou",
+   "toug",
+   "zijinpan",
+   "neimuliao",
+   "gufen"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "zhuzai",
+  "term": "猪仔",
+  "aka": [
+   "卖猪仔"
+  ],
+  "category": "招募与话术",
+  "lang": "zh",
+  "definition": "被诱骗或贩运至境外园区从事诈骗作业的人员。",
+  "mechanism": "与\"人头\"同属把人物化的称谓，但更进一步——指被限制人身自由、可被转卖的人。相关社群同时承载招募、转卖与求救三类信息，这种并存本身说明人口贩运与诈骗作业是同一链条的两端。",
+  "example": "〔地区〕赌场｜〔地区〕猪仔群",
+  "ambiguity": "\"猪仔\"是畜牧业与食品语境的常用词，语料中此类用法占多数。",
+  "related": [
+   "yuanqu",
+   "rentou",
+   "jiucai",
+   "goutui",
+   "yewuyuan",
+   "wuxuyanjing",
+   "shangan"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "zhaoxuetu",
+  "term": "招学徒",
+  "aka": [
+   "全套技术",
+   "面授",
+   "一单回本"
+  ],
+  "category": "招募与话术",
+  "lang": "zh",
+  "definition": "把作案手法当作培训课程出售，按人收取学费。",
+  "mechanism": "是手法变现的第二条路：除了自己做，还可以把\"全套技术\"卖给想入行的人。话术强调\"线下面授\"\"当天能上手\"\"一单回本\"，与\"包教包会\"同源。\n\n这种模式使手法扩散速度远超单个团伙的作案能力——**打击一个团伙不等于消除一种手法**。",
+  "example": "科技提额招学徒，线下面授整套技术，当天能上手，一单回本 ｜ 通道搭建全套技术",
+  "ambiguity": "正规的职业技能培训、师徒制招募使用相同措辞。",
+  "related": [
+   "method",
+   "mianche",
+   "shangan",
+   "wuxuyanjing",
+   "banzhuan",
+   "daiyunying",
+   "waigua",
+   "tie",
+   "baowang",
+   "diaoyu",
+   "ludhuo",
+   "cvv"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ }
+]

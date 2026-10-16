@@ -1,0 +1,1108 @@
+[
+ {
+  "id": "gongxu",
+  "term": "供需",
+  "aka": [
+   "供",
+   "需",
+   "供需频道"
+  ],
+  "category": "交易与担保行话",
+  "definition": "黑灰产资源交易的标准发帖格式，“供”表示出售、“需”表示求购。",
+  "mechanism": "群组与频道以“供需”分栏组织交易信息，使需求与货源快速匹配；常与担保方、广告位一同运营，形成准市场化的交易场。",
+  "example": "供：【某连锁品牌】储值卡核销，需要d / 数字全类型供需资源广告位",
+  "ambiguity": "“供需”是经济学与商贸常用词，须结合“担保、频道、资源”等共现词判定。",
+  "related": [
+   "chushou",
+   "zoudanbao",
+   "shangche",
+   "yishou",
+   "hutui",
+   "wts",
+   "escrow",
+   "zhaoche",
+   "fache",
+   "fakawang",
+   "zhipan",
+   "laoche",
+   "mianche",
+   "gongqun",
+   "d",
+   "trustee",
+   "japri",
+   "zongdai",
+   "liaoshang"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "chushou",
+  "term": "出",
+  "aka": [
+   "收",
+   "大量收"
+  ],
+  "category": "交易与担保行话",
+  "definition": "极简的交易意向标记：“出”为出售，“收”为收购；英文圈对应 WTS / WTB。",
+  "mechanism": "单字表达便于规避关键词检索，也适应频道的高频刷屏；通常紧跟标的与价格，如“出XX号”“大量收XX”。",
+  "example": "大量收一类卡 / 出成品账号",
+  "ambiguity": "单字“出”“收”在中文中无法有效检索，须作为“出+标的”的模式使用。",
+  "related": [
+   "gongxu",
+   "zoudanbao",
+   "yishou",
+   "huishou",
+   "wts",
+   "d"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "zoudanbao",
+  "term": "走担保",
+  "aka": [
+   "担保交易",
+   "中介担保",
+   "可担保交易"
+  ],
+  "category": "交易与担保行话",
+  "definition": "由第三方中介暂存货款、确认交付后再放款的交易方式。",
+  "mechanism": "黑产交易无法诉诸法律救济，担保中介成为信任基础设施，按比例抽取担保费；“不走担保全是骗”是社群的通用风险提示，也反过来说明骗局在该生态内极普遍。",
+  "example": "以任何理由不走担保的都是骗子 / 未走担保交易纠纷不予受理",
+  "ambiguity": "正规的第三方担保交易（如电商平台托管）同样使用该表述。",
+  "related": [
+   "gongxu",
+   "chushou",
+   "yipeishi",
+   "mianche",
+   "escrow",
+   "trustee",
+   "trunggian",
+   "baohiem",
+   "shangya",
+   "mailei",
+   "baox",
+   "shuangxiang",
+   "zhuanzhangmoniqi",
+   "heipingtai",
+   "anto",
+   "paolu",
+   "fakawang",
+   "jiagongqun",
+   "heiu",
+   "farenbulianxi",
+   "gongqun",
+   "penipuan",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shangche",
+  "term": "上车",
+  "aka": [
+   "上车趁早",
+   "带飞"
+  ],
+  "category": "交易与担保行话",
+  "definition": "参与某个正在进行的机会或项目；“车”是该机会的隐喻载体。",
+  "mechanism": "覆盖优惠套利、拼单、投资骗局等多种场景，强调时效与稀缺以促使快速决策；“带飞”“带你上岸”是其招募变体。",
+  "example": "有需上车 / 上车趁早",
+  "ambiguity": "拼单、团购与投资讨论中属极常见口语，单独出现几乎无判别力。",
+  "related": [
+   "haoche",
+   "gongxu",
+   "jianjie",
+   "shangan",
+   "chedui",
+   "co_tl",
+   "daiche",
+   "laoche",
+   "fache",
+   "loot"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "yishou",
+  "term": "一手",
+  "aka": [
+   "源头",
+   "一手货源",
+   "自营工作室"
+  ],
+  "category": "交易与担保行话",
+  "definition": "宣称自己是资源的第一来源而非转手中介，用于标榜价格与质量优势。",
+  "mechanism": "是黑产供应链的层级标记：越靠近源头利润越高、数据越新；“一手料”“一手盘”“源头车”均由此衍生，也常被中介冒用。",
+  "example": "一手货源 / 一手源头",
+  "ambiguity": "批发与贸易领域广泛使用“一手货源”，误报率高。",
+  "related": [
+   "liao",
+   "gongxu",
+   "chushou",
+   "mianche",
+   "zhipan",
+   "fresh",
+   "zongdai",
+   "liaoshang"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "mianche",
+  "term": "免测",
+  "aka": [
+   "免测担保",
+   "包售后",
+   "包教包会",
+   "现货秒发"
+  ],
+  "category": "交易与担保行话",
+  "definition": "卖方给出的信任承诺：“免测”指买家无需验货即可信任，“包售后”承诺后续支持。",
+  "mechanism": "与担保机制互补，用于降低交易摩擦；“包教包会”常见于工具与教程类商品，暗示提供手法指导。",
+  "example": "免测担保 / 靠谱保障 包售后",
+  "ambiguity": "\"免测\"\"包售后\"在正常二手与电商交易中是常见承诺；大量属普通商品交易。风险信号在于与\"担保\"\"上押\"\"保真\"构成的承诺组合。",
+  "related": [
+   "zoudanbao",
+   "yishou",
+   "gongxu",
+   "yipeishi",
+   "garansi",
+   "rffrozen_tl",
+   "sureprocessing_tl",
+   "shangya",
+   "mailei",
+   "baox",
+   "zhaoxuetu",
+   "miaosi",
+   "yuliao",
+   "fakawang",
+   "trustee",
+   "baozhenbubaolou"
+  ],
+  "confidence": "medium",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "gongqun",
+  "term": "公群",
+  "aka": [
+   "私群",
+   "频道",
+   "大群",
+   "专群"
+  ],
+  "category": "交易与担保行话",
+  "definition": "“公群”指对外公开可加入的交易群，“私群”指需邀请或付费进入的核心群。",
+  "mechanism": "分层运营结构：公群负责引流与广告，私群完成实际交易与敏感信息交换；观测上公群可见度高但信息价值低。",
+  "example": "承兑类公群 / 本群业务",
+  "ambiguity": "本词条的别名含\"频道\"\"大群\"\"私群\"等极常用社群词，泛称部分的误报面很大。\"公群\"本身是这个生态的内部称谓，判别力较高；泛称部分须结合\"担保\"\"上押\"\"导航\"等共现词判定。",
+  "related": [
+   "gongxu",
+   "hutui",
+   "yinliu",
+   "zoudanbao",
+   "gc_tl",
+   "japri",
+   "penipuan",
+   "shangya",
+   "ruqunyanzheng",
+   "pingtaidaicheng",
+   "zuodanqun",
+   "paolu",
+   "jiagongqun",
+   "neiceng",
+   "shuangxiang",
+   "sanhei",
+   "fangxinling"
+  ],
+  "confidence": "medium",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "d",
+  "term": "d",
+  "aka": [
+   "滴",
+   "私",
+   "pm"
+  ],
+  "category": "交易与担保行话",
+  "definition": "“私聊我”的极简写法，用单个字母规避联系方式类关键词检测。",
+  "mechanism": "交易信息发布在公开渠道，成交动作转入私聊，“需要d”“有需要d”是最常见的收尾句式；与“简介”“置顶”共同构成联系路径的隐藏体系。",
+  "example": "供：〔标的〕 需要d",
+  "ambiguity": "单字母在文本中出现极频繁，仅在“需要d”“有d”等固定句式中才具判别力。",
+  "related": [
+   "jianjie",
+   "gongxu",
+   "chushou",
+   "zerowidth",
+   "japri",
+   "gc_tl",
+   "pingtaidaicheng",
+   "shuangxiang",
+   "cijian",
+   "fangxinling"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "escrow",
+  "term": "escrow",
+  "aka": [
+   "escrow+",
+   "middleman"
+  ],
+  "category": "交易与担保行话",
+  "lang": "en",
+  "definition": "第三方担保交易，英文圈等同于中文的\"走担保\"。",
+  "mechanism": "是英文与俄语圈账号交易市场的默认成交方式，几乎每条挂单都会标注是否接受 escrow；担保费通常由买方承担，\"escrow+\" 表示卖方同意走担保。",
+  "example": "Escrow+ / ESCROW GROSS",
+  "ambiguity": "escrow 是房地产与跨境贸易的正规金融安排，本身中性。",
+  "related": [
+   "zoudanbao",
+   "trustee",
+   "readymade",
+   "ibanacc",
+   "wts",
+   "gongxu",
+   "anto",
+   "sanhei",
+   "fragment",
+   "trunggian",
+   "baohiem",
+   "shangya"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "trustee",
+  "term": "trustee",
+  "aka": [
+   "guarantor",
+   "banker"
+  ],
+  "category": "交易与担保行话",
+  "lang": "en",
+  "definition": "担保人角色，由在社群中有信誉的特定账号承担资金暂存与仲裁。",
+  "mechanism": "担保服务已人格化、品牌化：广告以担保人代号加报价的形式标注（如 \"Trustee+: 110\"），不同担保人对应不同费率与额度上限。这使担保人本身成为生态里的关键节点，也是情报侧绘制团伙结构的切入点。",
+  "example": "Trustee+ (110) / Escrow+ gross or banker",
+  "ambiguity": "trustee 在法律与金融语境指受托人，是正规术语。",
+  "related": [
+   "escrow",
+   "zoudanbao",
+   "mianche",
+   "gongxu",
+   "baohiem",
+   "baox",
+   "shangya",
+   "anto",
+   "heipingtai",
+   "paolu",
+   "jiagongqun",
+   "penipuan",
+   "trunggian",
+   "mailei"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "wts",
+  "term": "WTS",
+  "aka": [
+   "WTB",
+   "FS",
+   "LF",
+   "for sale",
+   "looking for"
+  ],
+  "category": "交易与担保行话",
+  "lang": "en",
+  "definition": "交易意向缩写：WTS / FS 为出售，WTB / LF 为求购。",
+  "mechanism": "对应中文的\"出\"\"收\"，是跨语种通用的挂单前缀，便于在高频刷屏的频道里快速分辨方向；在菲律宾等地的买卖社群中 FS / LF 使用频率高于 WTS / WTB。",
+  "example": "WTS KYC / ACCS / FS 60% capped",
+  "ambiguity": "WTS／WTB／FS／LF 在游戏交易、收藏品与二手社群中是通用缩写，正常使用占绝大多数；须结合标的物判定，缩写本身没有判别力。",
+  "related": [
+   "chushou",
+   "gongxu",
+   "escrow",
+   "readymade",
+   "capped_tl",
+   "liaoshang",
+   "zongdai",
+   "bulk_tl",
+   "abbrev_en"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "fresh",
+  "term": "fresh",
+  "aka": [
+   "new",
+   "first hand"
+  ],
+  "category": "交易与担保行话",
+  "lang": "en",
+  "definition": "指数据或账号首次流出、未被他人使用过。",
+  "mechanism": "对应中文的\"一手\"：新鲜度直接决定成功率与价格，因为被多次转手的卡料与凭证大概率已失效或已被风控标记。",
+  "example": "Fresh & New SSN / FRESH SELLER",
+  "ambiguity": "英文日常词，食品、内容等语境大量使用。",
+  "related": [
+   "yishou",
+   "ssn",
+   "cvv",
+   "liao",
+   "uncheck_vi"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "method",
+  "term": "method",
+  "aka": [
+   "working method",
+   "100% working"
+  ],
+  "category": "交易与担保行话",
+  "lang": "en",
+  "definition": "指一套当前仍然有效的具体手法，作为商品或教程出售。",
+  "mechanism": "\"method\" 的价值完全取决于时效：平台一旦修补即失效，因此广告以 \"working\"\"tested\" 强调当前可用，并按平台分类命名。社群对 method 的讨论热度可作为对应平台风控缺口的预警信号。",
+  "example": "UNBAN METHOD / Tested 100 percent working",
+  "ambiguity": "英文通用词，技术文档中指方法、函数。",
+  "related": [
+   "unban",
+   "refunding",
+   "podun",
+   "loot",
+   "smmpanel",
+   "tongsha",
+   "chenglv",
+   "loudong",
+   "fangfengkong",
+   "waigua",
+   "mianfa",
+   "fangfeng",
+   "zhaoxuetu"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "japri",
+  "term": "japri",
+  "aka": [
+   "jalur pribadi",
+   "inbox"
+  ],
+  "category": "交易与担保行话",
+  "lang": "id",
+  "definition": "印尼语\"走私人渠道\"的缩写，即私聊联系，等同于中文的\"d\"。",
+  "mechanism": "交易在公开群发布、成交转私聊；同时衍生出固定的防骗提示——\"管理员绝不会主动私聊\"，用于对抗冒充管理员的骗局。",
+  "example": "MINAT JAPRI ADMIN / Admin TIDAK AKAN japri duluan",
+  "related": [
+   "d",
+   "penipuan",
+   "gongxu",
+   "gongqun",
+   "garansi",
+   "shuangxiang",
+   "gc_tl"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "garansi",
+  "term": "garansi",
+  "aka": [
+   "garansi login",
+   "garansi 1 bulan"
+  ],
+  "category": "交易与担保行话",
+  "lang": "id",
+  "definition": "印尼语\"保修\"，指卖家对所售账号或工具承诺的有效期保障。",
+  "mechanism": "账号类商品存在被平台找回或封禁的风险，卖家以\"保修一个月\"\"保登录\"降低买方顾虑；保修期长短是定价因素，也反映卖家对该账号存活期的预期。",
+  "example": "Akun kami garansi 1 bulan",
+  "related": [
+   "mianche",
+   "penipuan",
+   "japri",
+   "readymade",
+   "rffrozen_tl",
+   "baox",
+   "mailei",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "penipuan",
+  "term": "penipuan",
+  "aka": [
+   "awas penipuan",
+   "scam"
+  ],
+  "category": "交易与担保行话",
+  "lang": "id",
+  "definition": "印尼语\"诈骗\"，在交易群中作为防骗警示反复出现。",
+  "mechanism": "与中文的\"不走担保全是骗\"同构：群公告列出唯一可信的管理员账号，并声明\"除上述名单外均为诈骗\"。这类警示的普遍存在，说明生态内部的二次诈骗同样高发。",
+  "example": "Selain nama di atas = PENIPUAN",
+  "ambiguity": "印尼语日常词，新闻与维权讨论中大量使用。",
+  "related": [
+   "japri",
+   "garansi",
+   "zoudanbao",
+   "trustee",
+   "gongqun",
+   "shuangxiang",
+   "paolu",
+   "jiagongqun",
+   "baohiem"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "trunggian",
+  "term": "trung gian",
+  "aka": [
+   "đóng trung gian"
+  ],
+  "category": "交易与担保行话",
+  "lang": "vi",
+  "definition": "越南语\"中间人\"，即担保交易的第三方。",
+  "mechanism": "与 escrow、走担保同角色；越南语圈的特点是把中间人费用制度化为入群门槛——\"交了中间人费\"的成员才被允许在群内交易。",
+  "example": "Nhóm không cho bán CC ngoài những người đóng trung gian",
+  "related": [
+   "escrow",
+   "trustee",
+   "zoudanbao",
+   "baohiem",
+   "ccv_vi",
+   "checkout_vi",
+   "shangya"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "baohiem",
+  "term": "bảo hiểm",
+  "aka": [
+   "đóng bảo hiểm"
+  ],
+  "category": "交易与担保行话",
+  "lang": "vi",
+  "definition": "越南语\"保险\"，在交易群中指向管理员缴纳的保证金，用于换取交易资格与违约赔付。",
+  "mechanism": "是担保机制的另一种形态：不按单笔抽成，而是预先缴纳押金形成信用凭证；缴纳者被视为可信交易方，违约则由押金赔付。",
+  "example": "trong nhóm người có đóng bảo hiểm cho Admin tự tin giao dịch",
+  "ambiguity": "越南语日常词，正常保险业务讨论中极常见。",
+  "related": [
+   "trunggian",
+   "escrow",
+   "trustee",
+   "zoudanbao",
+   "penipuan",
+   "shangya"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "rffrozen_tl",
+  "term": "RF if frozen",
+  "aka": [
+   "RF",
+   "refund if frozen"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "卖家承诺：若所售账号在使用中被平台冻结或要求二次核验，则退款。",
+  "mechanism": "额度账号交易的风险分担条款，与\"保修\"同类；条款里列出的触发条件（frozen / verified / confirming）正好反映了平台风控的三个拦截动作。",
+  "example": "RF IF FROZEN/CONFIRMING/VERIFIED",
+  "related": [
+   "capped_tl",
+   "noelsa",
+   "garansi",
+   "sureprocessing_tl",
+   "noaccess_tl",
+   "pts_tl",
+   "mianche",
+   "abbrev_en"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "sureprocessing_tl",
+  "term": "sure processing",
+  "aka": [
+   "sure process"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "卖家对订单必定通过平台审核的承诺。",
+  "mechanism": "额度套现最大的不确定性是订单在支付或风控环节被拦下，\"sure processing\" 即针对这一点的保证；与\"no elsa\"（不会被冻结）配套使用。",
+  "example": "100% sure processing, no elsa",
+  "related": [
+   "capped_tl",
+   "noelsa",
+   "rffrozen_tl",
+   "noaccess_tl",
+   "mianche"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "noaccess_tl",
+  "term": "no access",
+  "aka": [
+   "with access"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "交易规格，表示买方只获得额度的使用结果，不获得账号本身的登录权限。",
+  "mechanism": "卖方保留账号控制权、代为下单，既避免账号被买方转卖，也便于复用同一账号多次套现；\"with access\" 则溢价出售登录权。该规格区分直接体现了账号作为可重复使用资产的属性。",
+  "example": "FS 60% 205 capped, no access",
+  "related": [
+   "capped_tl",
+   "pts_tl",
+   "rffrozen_tl",
+   "sureprocessing_tl",
+   "huangniu",
+   "bulk_tl"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "gc_tl",
+  "term": "GC",
+  "aka": [
+   "group chat"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "在菲律宾网络买卖社群中是 group chat（群聊）的缩写，指承接交易的私密群。",
+  "mechanism": "公开帖只发规格与报价，实际交易、凭证展示与拼单协调都在 GC 内完成，与中文语境的\"公群/私群\"分层一致。",
+  "example": "WITH GC ｜ DM sa magpapa add sa gc",
+  "ambiguity": "**同一缩写在英文黑卡圈指 gift card（礼品卡）**，语义完全不同。判定必须结合语种与上下文，这是跨语种检索最典型的陷阱之一。",
+  "related": [
+   "giftcard",
+   "gongqun",
+   "co_tl",
+   "japri",
+   "d",
+   "abbrev_en"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "co_tl",
+  "term": "CO",
+  "aka": [
+   "collective order",
+   "mag CO"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "collective order 的缩写，指多人拼成一笔订单以共享优惠或满足起订量。",
+  "mechanism": "对应中文的\"拼单\"与\"上车\"：组织者汇总需求后统一下单，常与额度账号、折扣券结合使用以放大单次优惠。",
+  "example": "LF mag CO! 10+ items",
+  "ambiguity": "CO 在英文语境可指 cash out（提现）或公司，缩写歧义大。",
+  "related": [
+   "shangche",
+   "capped_tl",
+   "gc_tl",
+   "bulk_tl",
+   "cashout"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "bulk_tl",
+  "term": "bulk",
+  "aka": [
+   "can do bulk",
+   "min accs"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "批量供货能力，常标注最小起订数量。",
+  "mechanism": "\"can do bulk everyday\" 说明供给是持续、规模化的，而非偶发转卖；最小起订量（如 min 10 accs）与单价折扣一起构成批发报价体系。",
+  "example": "110 BULK MIN 10 ACCS",
+  "related": [
+   "capped_tl",
+   "noaccess_tl",
+   "co_tl",
+   "wts",
+   "huangniu"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shangya",
+  "term": "上押",
+  "aka": [
+   "押金",
+   "群押金",
+   "已上押",
+   "双押",
+   "上压",
+   "上压频道",
+   "退押中",
+   "公群押金"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "卖方向群组或频道运营方缴纳保证金，以换取发布广告与交易的资格。",
+  "mechanism": "是担保机制的第三种形态（另两种是单笔抽成的担保与中间人费）：运营方持有押金池，卖方违约则从池中赔付买方，并公示累计已赔付金额。规则明确——\"除上押人员，其他人禁止发布出售类广告\"——等于把信誉做成了可量化的准入门槛。押金额度与月费一同报价。\n\n押金信息被做成公开登记表持续维护，格式固定为\"公群编号＋已押金额＋运营方名称\"，并标注状态。其中 **【退押中】是重要的预警信号**——它意味着该群的保证金正在撤回，赔付能力即将消失，买方据此判断是否还能在该群成交。退押规则也被明文约定（如几日内退押免补月费）。对情报侧而言，这类登记表是观测生态规模与群组兴衰的现成台账。",
+  "example": "上押10000U起，月费300U ｜ 公群〔编号〕 已押5000u 〔运营方〕 ｜ 公群〔编号〕【退押中】 已押5000u ｜ 除上押人员，其他人禁止出售类广告",
+  "ambiguity": "\"押金\"是租赁、押金制服务的常见词，正常商业语境极多；大量属普通押金讨论。风险信号在于\"公群＋已押＋金额\"的固定格式与\"除上押人员禁止发布\"类群规。",
+  "related": [
+   "zoudanbao",
+   "trustee",
+   "escrow",
+   "baohiem",
+   "mailei",
+   "gongqun",
+   "trunggian",
+   "baox",
+   "pingtaidaicheng",
+   "anto",
+   "sanhei",
+   "heipingtai",
+   "shangdan",
+   "paolu",
+   "jiagongqun",
+   "neimuliao",
+   "mianche"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "mailei",
+  "term": "埋雷",
+  "aka": [
+   "埋雷测试",
+   "埋雷打假"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "买方故意下一笔测试单或提出索赔，以验证卖方是否真能履约、担保是否真会赔付。",
+  "mechanism": "与押金制互为一体：卖方敢说\"随意埋雷测试\"\"支持埋雷打假\"，是在用可被验证来证明可信；买方则用小额测试换取对大额交易的信心。这是一个没有法律救济的市场自行演化出的信任校验机制。",
+  "example": "全网已上押，欢迎埋雷测试，保真 ｜ 支持埋雷打假",
+  "ambiguity": "\"埋雷\"在军事、游戏与比喻用法（埋下隐患）中常见；绝大多数提及属正常用法。须结合\"测试\"\"打假\"\"保真\"等交易验证语境判定。",
+  "related": [
+   "shangya",
+   "zoudanbao",
+   "yipeishi",
+   "mianche",
+   "garansi",
+   "trustee",
+   "baox",
+   "majiaodan",
+   "zhuanzhangmoniqi",
+   "heipingtai",
+   "paolu",
+   "jiagongqun",
+   "anto"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "baox",
+  "term": "保X承诺",
+  "aka": [
+   "保量",
+   "保司法",
+   "保风控",
+   "保卡损",
+   "保真",
+   "保登录"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "以\"保+风险项\"构成的一组承诺，逐项列出卖方愿意承担的后果。",
+  "mechanism": "**把这些承诺排列起来，就得到一份从攻击方视角写出的风险清单。**\"保量\"承诺供应规模、\"保司法\"承诺不因司法冻结让买方承担损失、\"保风控\"承诺通道不被拦、\"保卡损\"承诺赔付卡片被冻结的损失、\"保真\"承诺数据真实、\"保登录\"承诺账号可登录。违约有明确罚则（\"保风控有问题直接罚款赔8888U起\"）。\n\n承诺越细，说明该风险越常发生——\"保卡损\"的存在本身就证明参与者的卡被冻结是家常便饭。",
+  "example": "双押，保量，保司法，保风控有问题直接罚款赔付 / 保真不保漏",
+  "related": [
+   "shangya",
+   "mailei",
+   "zoudanbao",
+   "trustee",
+   "mianche",
+   "garansi",
+   "baozhenbubaolou",
+   "laoche",
+   "dongka",
+   "anto",
+   "sanhei",
+   "heipingtai",
+   "paolu",
+   "miaosi",
+   "chirou",
+   "chedui",
+   "chenglv",
+   "shouliang",
+   "jiedong",
+   "zhuanzhangmoniqi"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "sanhei",
+  "term": "三黑",
+  "aka": [
+   "三黑料",
+   "除三黑",
+   "禁三黑"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "资金通道方用来指代最高风险业务类别的统称，常被明确列为拒接或加价对象。",
+  "mechanism": "出现在通道的准入规则与报价里，而且**自带独立的汇率档**：\"汇率〔数值〕除三黑\"（该报价不适用于三黑）、\"今年三黑都没有〔数值〕\"（三黑的汇率水平偏低）。也有通道明确表示可接——\"任何都可接，三黑也可\"。\n\n它与杀猪盘、资金盘、电诈并列被列为禁入项，说明黑产内部存在按案值与追查强度划分的风险等级，通道方会据此决定接不接、按什么价接。",
+  "example": "禁三黑 禁杀猪 禁资金盘 ｜ 汇率〔数值〕除三黑 ｜ 通道规则：禁三黑料 禁诈骗料",
+  "ambiguity": "该词的具体所指在不同群组可能不同，本词典只记录可观察到的用法——作为被排除的最高风险类别标签，不对其具体涵盖范围下定论。",
+  "related": [
+   "huilv",
+   "chenglv",
+   "shazhupan",
+   "shuifang",
+   "paofen",
+   "anto",
+   "baox",
+   "gongqun",
+   "zijinpan",
+   "heizi",
+   "neiceng",
+   "chedui",
+   "escrow",
+   "shangya"
+  ],
+  "confidence": "to-verify",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "anto",
+  "term": "按头",
+  "aka": [
+   "不按头",
+   "按头费"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "在资金与通道语境中指事后被追查、报案或反咬；在培训与招募语境中则是\"强迫、硬推\"的字面义。两种用法并存。",
+  "mechanism": "这个词的所指尚未确定，本词典只记录可观察到的两组用法：\n\n**一、作为风险承诺与计价项**——\"稳定不按头业务\"是招揽卖点，\"按头费\"与\"鸽子费\"（约而未至的补偿）并列，出现在上门与通道类业务里。这组用法指向事后被追究的概率。\n\n**二、作为字面义\"按着头强迫\"**——\"更不会按头，上课自己随时监听\"出现在培训招募里，意思是不强制、不硬推。\n\n两组用法共用同一个词形，判定必须看语境。**不要把其中一种含义套到另一种语境上。**",
+  "example": "稳定不按头业务 小白也可做 ｜ 补偿鸽子费和按头费 ｜ 更不会按头，上课自己随时监听",
+  "ambiguity": "**本词条的释义不确定。**两种用法的证据量都不大，且第二种接近汉语字面义。作为检索特征判别力低，不建议单独使用。",
+  "related": [
+   "baox",
+   "dongka",
+   "sanhei",
+   "rentou",
+   "shangya",
+   "mailei",
+   "shazhupan",
+   "huilv",
+   "neiceng",
+   "diubao",
+   "paofen",
+   "chedui",
+   "atmquxian",
+   "zoudanbao",
+   "escrow",
+   "trustee"
+  ],
+  "confidence": "to-verify",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "zongdai",
+  "term": "总代",
+  "aka": [
+   "上家",
+   "下家",
+   "代理层级"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "多层分销体系中的最高层级代理，向下发展下级并按层级分润。",
+  "mechanism": "赌博与资金盘普遍采用层级代理拉人，\"总代\"掌握返佣比例与结算权；\"上家／下家\"是从业者描述自身位置的坐标。层级化让组织者与一线执行者之间保持距离，也使追查需要逐层上溯。",
+  "example": "招中介可谈返点 ｜ 〔品牌〕总代",
+  "ambiguity": "\"总代理\"是正规商业分销的标准角色，经销与品牌语境中极常见。",
+  "related": [
+   "fanshui",
+   "pankou",
+   "bocai",
+   "baowang",
+   "chedui",
+   "yishou",
+   "gongxu",
+   "shouliang",
+   "zhaoche",
+   "zhipan",
+   "wts"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "liaoshang",
+  "term": "料商",
+  "aka": [
+   "一手料商",
+   "料源",
+   "出料"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "专门经营个人信息与账号数据的供货方。",
+  "mechanism": "与卡商、号商、码商并列构成供给侧的角色谱系，各管一类资源。\"一手料商\"强调数据自有而非转手，是定价的关键背书；买方则以\"一手料商优先\"筛选对手方。",
+  "example": "一手料商优先来 ｜ 全行业数据一手料商",
+  "ambiguity": "\"原料商\"\"面料商\"等正常商贸称谓会命中相同字面。",
+  "related": [
+   "liao",
+   "kashang",
+   "mashang",
+   "yishou",
+   "shegongku",
+   "fenzhi",
+   "baozhenbubaolou",
+   "gongxu",
+   "yuliao",
+   "maoliao",
+   "fakawang",
+   "ccv_vi",
+   "gufen",
+   "wts"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "zhaoche",
+  "term": "招车",
+  "aka": [
+   "招水房",
+   "招中介",
+   "招直盘"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "公开招募提供账户、通道或业务来源的合作方。",
+  "mechanism": "是这个生态的\"招聘广告\"，而且按角色分别招：招车（要账户）、招水房（要洗钱能力）、招中介（要撮合）、招直盘（要业务来源）。一条广告里同时招几类，等于公开披露了自己缺哪个环节——对情报侧是判断团伙结构与短板的直接线索。",
+  "example": "招车！招车！招车！ ｜ 招直盘料，招水房，招中介",
+  "ambiguity": "\"招车\"在物流、货运与出行行业指招募车辆运力，是正规招聘用语；绝大多数提及属正常用法。风险信号在于与\"招水房\"\"招中介\"\"点位\"同现。",
+  "related": [
+   "chedui",
+   "shuifang",
+   "zhipan",
+   "zongdai",
+   "gongxu",
+   "shouliang",
+   "laoche",
+   "rentou",
+   "xiaoche",
+   "fache"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "fache",
+  "term": "发车",
+  "aka": [
+   "专线发车",
+   "开车"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "一批业务正式开始执行；在数据与通道语境中指开始发单。",
+  "mechanism": "延续\"车\"的隐喻：招车是组建、上车是加入、发车是开跑。常附带时间（\"凌晨发车\"）与时效承诺（\"专线发车秒速回单\"），说明作业是按批次、按时点组织的，而非连续运行。",
+  "example": "专线发车，秒速回单 ｜ 〔日期〕凌晨发车",
+  "ambiguity": "拼单、团购与出行语境中\"发车\"极常用。",
+  "related": [
+   "shangche",
+   "zhaoche",
+   "chedui",
+   "laoche",
+   "huidan",
+   "shouliang",
+   "gongxu",
+   "haoche"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "paolu",
+  "term": "跑路",
+  "aka": [
+   "失联",
+   "跑路狗"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "收款后不履约、直接失联，是这个没有法律救济的市场最核心的风险。",
+  "mechanism": "是这个没有法律救济的市场最核心的风险，整套信任基础设施——担保、押金、埋雷、保X承诺——都是为了对冲它。\"跑路狗\"是对此类人的贬称，专门的曝光渠道会公布跑路者标识，形成民间黑名单。",
+  "example": "失联跑路 ｜ 曝光：跑路狗、通道",
+  "ambiguity": "\"跑路\"在企业倒闭、债务新闻与日常口语中极常见。",
+  "related": [
+   "zoudanbao",
+   "shangya",
+   "mailei",
+   "baox",
+   "heipingtai",
+   "penipuan",
+   "trustee",
+   "zhuanzhangmoniqi",
+   "jiagongqun",
+   "gongqun"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "chirou",
+  "term": "吃肉",
+  "aka": [
+   "稳稳吃肉"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "拿到利润；在通道语境中指吃下业务量。",
+  "mechanism": "跨场景通用的获利说法：套利社群用它形容单笔利润（常与 🥩 同现），通道方用它形容承接量。\"稳稳吃肉\"\"保量稳定吃肉\"是招揽措辞，强调收益确定性——这恰恰是这类业务最不确定的部分。",
+  "example": "〔金额〕🥩，稳稳吃肉 ｜ 保量稳定吃肉，可以双压",
+  "ambiguity": "餐饮与日常口语中\"吃肉\"是字面义；股市语境也用于形容获利。",
+  "related": [
+   "rouemoji",
+   "yongbu",
+   "shouliang",
+   "baox",
+   "laoche",
+   "sihua",
+   "chenglv",
+   "kouzi"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jiagongqun",
+  "term": "假公群",
+  "aka": [
+   "官方群",
+   "导航",
+   "不担保群"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "冒用知名交易群名义建立的仿冒群，用于骗取买方货款；与之对抗的是实时维护的\"导航\"名录。",
+  "mechanism": "交易群本身成了被仿冒的品牌，于是出现了一套身份核验机制：由第三方维护\"导航\"列表，声明\"不在此导航里面的群都是假公群，此列表实时更新\"，并把未提供担保的群单列为\"不担保群\"。各群则以\"官方群\"自我标注。\n\n**这是信任基础设施的第三层**：押金解决履约、担保解决交割、导航解决身份。三者都不是平台或法律提供的，而是这个生态自己长出来的。",
+  "example": "注意：不在此导航里面的群都是假公群，此列表实时更新 ｜ 此群为〔项目〕官方群",
+  "ambiguity": "\"官方群\"\"导航\"在正常社群与产品中极常用，必须结合\"假公群\"\"担保\"等共现词判定。",
+  "related": [
+   "gongqun",
+   "shangya",
+   "zoudanbao",
+   "mailei",
+   "paolu",
+   "penipuan",
+   "trustee",
+   "hutui"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "neiceng",
+  "term": "内层",
+  "aka": [
+   "外层",
+   "挂内层"
+  ],
+  "category": "交易与担保行话",
+  "lang": "zh",
+  "definition": "通道与账户的层级标签。作为规格出现在支付通道描述里（如\"〔某支付平台〕内层原生\"）；作为位置描述时，\"外层\"指直接接触受害人的一端。",
+  "mechanism": "有两类用法：\n\n**一、通道规格**——\"〔某支付平台〕内层原生\"反复出现在通道报价里，\"内层\"是该通道的档位名，\"卡挂内层\"指账户挂在这一层。\n\n**二、链条位置**——\"禁止外层杀猪、电诈\"中的\"外层\"指直接面对受害人的业务，通道方据此拒接。\n\n两类用法共享\"离资金源头更近／离案发现场更远\"的空间隐喻，但前者是具体产品档位、后者是风险分层，不宜混用。",
+  "example": "〔某支付平台〕内层原生 ｜ 卡挂内层 ｜ 禁止外层杀猪、电诈",
+  "ambiguity": "**具体分层边界未确认。**\"内层/外层\"在包装、服装与建筑语境中是字面义；绝大多数提及属正常用法。作为检索特征判别力低。",
+  "related": [
+   "sanhei",
+   "shazhupan",
+   "chedui",
+   "shuifang",
+   "anto",
+   "huilv",
+   "paofen",
+   "rentou",
+   "diubao",
+   "gongqun"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ }
+]

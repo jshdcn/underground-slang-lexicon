@@ -1,0 +1,1320 @@
+[
+ {
+  "id": "guorenlian",
+  "term": "过人脸",
+  "aka": [
+   "过活体",
+   "人脸破解",
+   "过脸"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "绕过平台人脸识别或活体检测的服务与手法的统称。",
+  "mechanism": "处在账号黑产的关键卡口：注册、解封、改绑、提现都需要人脸核验，“过人脸”服务按次计价，使被盗或批量注册的账号得以通过实名校验；常与身份证照片、视频素材配套采购。",
+  "example": "出【某电商平台】过人脸账号 / 【某社区平台】过人脸 二三四要素",
+  "ambiguity": "用户抱怨“过不了人脸”属正常反馈，风险信号在于以服务形式按次报价。",
+  "related": [
+   "xieyisan",
+   "datouzhao",
+   "dailshiming",
+   "siyaosu",
+   "kyc",
+   "aihuanlian",
+   "kycvendor",
+   "selfieverif",
+   "vcam",
+   "chufashipin",
+   "shualian",
+   "shouchi",
+   "xuni",
+   "yanzhenghao",
+   "jiefeng"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "aihuanlian",
+  "term": "AI换脸",
+  "aka": [
+   "Deepfake",
+   "深度伪造"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "用生成式模型合成人脸图像或视频，用于冒充他人通过身份核验。",
+  "mechanism": "是“过人脸”的主要技术实现之一，配合注入式攻击把合成画面送入检测流程；也被用于诈骗中的视频冒充。",
+  "example": "AI换脸地址〔价格〕",
+  "ambiguity": "AI 换脸在影视、娱乐与技术讨论中广泛存在，绝大多数提及与攻击无关。",
+  "related": [
+   "guorenlian",
+   "xuni",
+   "xieyisan",
+   "kyc",
+   "vcam",
+   "chufashipin",
+   "shualian"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "xuni",
+  "term": "虚拟视频",
+  "aka": [
+   "虚拟摄像头",
+   "代心跳"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "用预先准备的视频流冒充实时摄像头画面，以通过视频类身份核验。",
+  "mechanism": "通过虚拟摄像头驱动或设备注入把素材送入核验链路；“代心跳”指代为完成需要实时交互的检测环节。",
+  "example": "已过协议三虚拟视频验证",
+  "ambiguity": "虚拟摄像头是直播与会议场景的常用工具，本身合法。",
+  "related": [
+   "guorenlian",
+   "aihuanlian",
+   "xieyisan",
+   "datouzhao",
+   "vcam",
+   "chufashipin",
+   "guokyc",
+   "shualian",
+   "kycvendor"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "xieyisan",
+  "term": "协议三",
+  "aka": [
+   "协议三视频"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "特指某跨境电商平台卖家入驻流程中的视频核验环节，黑产以“已过协议三”作为账号卖点。",
+  "mechanism": "跨境平台对新卖家做视频面审，通过后账号价值显著提升；“已过协议三视频”是成品店铺账号的标准化描述标签。",
+  "example": "已过协议三虚拟视频验证 / 过协议三供应链验证",
+  "ambiguity": "平台术语，卖家正常讨论入驻流程时也会使用。",
+  "related": [
+   "xuni",
+   "guorenlian",
+   "chengpinhao",
+   "kyc",
+   "chufashipin",
+   "guokyc",
+   "dianpuguige",
+   "aihuanlian"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "datouzhao",
+  "term": "大头照",
+  "aka": [
+   "大头照片"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "身份证正面人像照片，作为身份核验素材按张出售。",
+  "mechanism": "是实名核验与人脸比对的原料，常与户籍地址、手机号打包成“料”出售，单价以稳定币计；下游用于代实名、过人脸与开户。",
+  "example": "大头照 + 户籍地址 6u",
+  "ambiguity": "摄影语境中“大头照”指证件照、特写照，属常见中性用法。",
+  "related": [
+   "guorenlian",
+   "dailshiming",
+   "shegongku",
+   "liao",
+   "siyaosu",
+   "selfieverif",
+   "ssn",
+   "shouchi",
+   "xuni",
+   "kaihe"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "dailshiming",
+  "term": "代实名",
+  "aka": [
+   "实名代过",
+   "代认证",
+   "代过"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "用他人身份信息替买家完成平台实名认证的服务。",
+  "mechanism": "解决批量账号的实名门槛，身份来源多为购买或租用的真实证件；按平台、按次报价，常附带“首次、成品、解封”等分档。",
+  "example": "各种账号代实名 / 项目名称：各种首次、成品、代实名",
+  "ambiguity": "“代办”类正常中介业务（如企业注册代办）会命中相似表述。",
+  "related": [
+   "guorenlian",
+   "datouzhao",
+   "kyc",
+   "kashang",
+   "chengpinhao",
+   "selfieverif",
+   "readymade",
+   "yuanshengxiaodian",
+   "huanzhuti",
+   "rentou",
+   "xieyihao",
+   "shiminka",
+   "shouchi",
+   "heihu",
+   "daix",
+   "gonghu",
+   "jiema",
+   "yanzhenghao",
+   "jiefeng",
+   "unban",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "kyc",
+  "term": "KYC",
+  "aka": [
+   "eKYC",
+   "KYC代认证"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "本为金融与平台的客户身份识别流程；在黑产语境中指代为完成或绕过该流程的服务。",
+  "mechanism": "交易所、云服务与跨境支付普遍要求 KYC，已通过认证的账号成为商品；“KYC Service”“代认证”按平台与国别报价。",
+  "example": "KYC Service / 全球认证 国内外代实名",
+  "ambiguity": "合规从业者与产品文档大量使用该词，本身为中性专业术语。",
+  "related": [
+   "dailshiming",
+   "guorenlian",
+   "yanzhenghao",
+   "xieyisan",
+   "chengpinhao",
+   "kycvendor",
+   "readymade",
+   "guokyc",
+   "chufashipin",
+   "shualian",
+   "aihuanlian",
+   "siyaosu",
+   "selfieverif",
+   "vcam",
+   "shouchi"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "siyaosu",
+  "term": "四要素",
+  "aka": [
+   "二三四要素",
+   "银行四要素",
+   "二要素",
+   "三要素",
+   "五要素",
+   "机主二要素"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "姓名、身份证号、手机号、银行卡号四项身份要素的组合，按“几要素一致”描述核验强度。",
+  "mechanism": "是支付与信贷风控的基础校验项，对应的黑产商品是可通过核验的要素组合数据；“全国四要素”“银行四要素”是数据源的分类标签。",
+  "example": "数据来源：全国四要素 / 核对结果：四要素一致",
+  "ambiguity": "风控与支付行业的标准术语，正常技术文档频繁出现。",
+  "related": [
+   "datouzhao",
+   "shegongku",
+   "liao",
+   "guorenlian",
+   "kyc",
+   "ssn",
+   "selfieverif",
+   "ziduanmoban",
+   "shebaoshuju",
+   "daikuanshuju",
+   "zhengxin",
+   "liushui",
+   "mingxia",
+   "gongwangbuqi",
+   "zhuangku",
+   "shouchi",
+   "mohu",
+   "cvv"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jiema",
+  "term": "接码",
+  "aka": [
+   "接码平台",
+   "短信接码",
+   "码接"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "通过平台租用他人手机号接收短信验证码，用于批量注册或验证。",
+  "mechanism": "是批量账号生产的第一道环节：卡商供号、接码平台分发、下游按条获取验证码；常与“解封”“实卡”“国别”等参数一起报价。",
+  "example": "SMS 短信接码平台 / 实卡 接码注册 解封",
+  "ambiguity": "开发者测试短信通道时也会使用类似服务，判定需结合是否面向批量注册。",
+  "related": [
+   "kashang",
+   "chenmohao",
+   "dailshiming",
+   "chengpinhao",
+   "otp",
+   "fragment",
+   "bomber",
+   "xieyihao",
+   "lengmenhao",
+   "rentou",
+   "maochi",
+   "jifang",
+   "shiminka",
+   "qunkong",
+   "gangka",
+   "fakawang",
+   "jiefeng",
+   "smmpanel"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "otp",
+  "term": "OTP",
+  "aka": [
+   "2FA",
+   "验证码绕过"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "一次性动态口令；在黑产语境中指针对该口令的截取、诱骗与绕过手法。",
+  "mechanism": "账号接管的最后一道卡口，手法包括钓鱼页面实时转发、短信嗅探、社工诱骗受害者读出口令。",
+  "example": "OTP PANEL",
+  "ambiguity": "OTP、2FA 在安全技术与产品文档中是标准术语，正规的身份验证讨论占绝大多数；风险信号在于与\"拦截\"\"转发\"\"面板\"等获取手段同现，而非该词本身。",
+  "related": [
+   "jiema",
+   "diaoyu",
+   "yanzhenghao",
+   "kuozhanma",
+   "bomber",
+   "smmpanel",
+   "jiechi",
+   "hongzhaji",
+   "maochi",
+   "daidiao",
+   "pingzheng"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "yanzhenghao",
+  "term": "已验证账号",
+  "aka": [
+   "原档"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "已完成实名、绑卡或平台认证，可直接投入使用的账号商品。",
+  "mechanism": "按注册时长、认证等级、历史行为分级定价；“老号”“原档”强调注册久、风控评分高，比新注册账号更难被识别。",
+  "example": "成品账号 / 去年老货号 / 设备刚线刷干净 47 级号",
+  "ambiguity": "平台蓝V认证、实名认证等正常表述会命中关键词。",
+  "related": [
+   "kyc",
+   "dailshiming",
+   "chengpinhao",
+   "guorenlian",
+   "shuaji",
+   "readymade",
+   "capped_tl",
+   "baihao",
+   "dianpuguige",
+   "houtaizaishou",
+   "xieyihao",
+   "laohuohao",
+   "otp",
+   "jiefeng",
+   "chenmohao"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "chengpinhao",
+  "term": "成品号",
+  "aka": [
+   "成品账号",
+   "橱窗号",
+   "达人号",
+   "强私号",
+   "卖号"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "已开通特定权限（如带货橱窗、店铺、提现）的现成账号，作为商品整体转让。",
+  "mechanism": "账号黑产的终端产品：由接码注册、代实名、过人脸、养号等环节逐步“加工”而成，按权限与粉丝量定价。",
+  "example": "原生小店 / 直播橱窗号 / 千粉万粉号",
+  "ambiguity": "正常的账号转让与代运营讨论也会使用“成品”“橱窗”等词。",
+  "related": [
+   "yanzhenghao",
+   "jiema",
+   "dailshiming",
+   "xieyisan",
+   "yinliu",
+   "readymade",
+   "fragment",
+   "joki",
+   "baihao",
+   "yuanshengxiaodian",
+   "dianpuguige",
+   "mianbaka",
+   "xieyihao",
+   "lengmenhao",
+   "dafen",
+   "qunkong",
+   "jifang",
+   "shiminka",
+   "heihu",
+   "fakawang",
+   "zhibohao",
+   "gangka",
+   "qushuiyin",
+   "kyc",
+   "laohuohao",
+   "unban",
+   "zire",
+   "followers",
+   "wurenzhibo",
+   "jiefen",
+   "shebeizhiwen",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jiefeng",
+  "term": "解封",
+  "aka": [
+   "解限",
+   "申诉解封"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "以服务形式帮助被平台处置的账号恢复功能。",
+  "mechanism": "承接因违规被封的账号，手法包括话术申诉、伪造材料、更换实名主体；与“代实名”“过人脸”形成配套服务链。",
+  "example": "账号解封 ｜ 只要不永久均可解封",
+  "ambiguity": "用户自助申诉、平台客服指引属正常场景，风险信号在于按次收费的第三方服务。",
+  "related": [
+   "dailshiming",
+   "guorenlian",
+   "jiema",
+   "yanzhenghao",
+   "unban",
+   "jiedong"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "kycvendor",
+  "term": "Sumsub",
+  "aka": [
+   "Onfido",
+   "Persona",
+   "Blockpass",
+   "KYC provider"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "en",
+  "definition": "主流身份核验服务商的名称，在账号交易广告中被当作规格标签，标明账号通过了哪家服务商的核验流程。",
+  "mechanism": "交易所、博彩与支付平台外采第三方核验，因此\"过了哪家\"成为账号定价的关键参数，卖家会并列多家名称说明适配范围。对防守方的价值在于：这些名称出现在交易广告里，说明该核验流程正被针对性研究。",
+  "example": "Casino kyc Sumsub + / SUMSUB/ONFIDO/PERSONA",
+  "ambiguity": "这些都是正规合规服务商，其名称出现在黑市广告中不代表其产品存在缺陷，也不构成对该服务商的任何评价。",
+  "related": [
+   "kyc",
+   "readymade",
+   "guorenlian",
+   "xuni",
+   "ibanacc",
+   "selfieverif",
+   "guokyc",
+   "chufashipin",
+   "shualian",
+   "shouchi",
+   "vcam"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "readymade",
+  "term": "readymade",
+  "aka": [
+   "ready made account",
+   "accs",
+   "verified acc"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "en",
+  "definition": "已完成核验、买家拿到即可使用的现成账号。",
+  "mechanism": "对应中文的\"成品号\"：由注册、实名、过核验等环节加工完成，按平台与核验等级定价；与 KYC 服务商名称、escrow 担保一同出现在同一条广告中。",
+  "example": "KYC OR READYMADE / ACCOUNT READYMADE",
+  "related": [
+   "chengpinhao",
+   "yanzhenghao",
+   "kyc",
+   "kycvendor",
+   "escrow",
+   "drop",
+   "heihu",
+   "shiminka",
+   "ibanacc",
+   "dailshiming",
+   "fragment",
+   "wts",
+   "garansi",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "selfieverif",
+  "term": "selfie verification",
+  "aka": [
+   "ID + selfie",
+   "selfie holding"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "en",
+  "definition": "手持证件自拍核验；在黑市中指为通过该环节而准备的素材或代做服务。",
+  "mechanism": "对应中文的\"大头照\"\"手持照\"：以真实证件加人像照片组合提交，是开户与解封的常见卡口；素材按国别出售，也有按次代做的服务。",
+  "example": "ID Card + Selfie / SELFIE VERIFICATION",
+  "related": [
+   "datouzhao",
+   "guorenlian",
+   "kyc",
+   "kycvendor",
+   "dailshiming",
+   "shouchi",
+   "siyaosu"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "fragment",
+  "term": "Fragment",
+  "aka": [
+   "anonymous number",
+   "匿名号"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "en",
+  "definition": "指通过区块链平台购得的匿名虚拟号码，可在无需 SIM 卡与手机号的情况下注册即时通讯账号。",
+  "mechanism": "绕开了\"手机号实名—账号\"的绑定关系：号码以加密货币购买、与自然人无关联，使账号无法通过号码回溯到持有人；是接码之外的另一条匿名注册路径，在账号与担保交易广告中按价格档位挂出。",
+  "example": "FRAGMENT 10$",
+  "ambiguity": "Fragment 在英文中是极常见的普通词（碎片、片段），技术与文学语境中广泛使用；相当一部分与匿名号码无关。须结合价格标注与账号交易语境判定。",
+  "related": [
+   "jiema",
+   "chenmohao",
+   "chengpinhao",
+   "readymade",
+   "escrow"
+  ],
+  "confidence": "medium",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "joki",
+  "term": "joki",
+  "aka": [
+   "akun joki",
+   "joki akun"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "id",
+  "region": "印尼网约车与外卖生态",
+  "definition": "印尼语\"代操\"，指由他人代为操作账号接单、跑单或完成任务。",
+  "mechanism": "网约车与外卖平台按账号考核骑手，\"akun joki\" 指账号所有人与实际操作者分离——可能是账号出租，也可能是团伙用改机工具同时操作多个账号；平台的实名与人车一致校验因此失效。",
+  "example": "READY AKUN JOKI / SUPPORT: AKUN JOKI & AKUN PRIBADI",
+  "ambiguity": "\"joki\" 在印尼也广泛用于正常的代写、代做服务（joki makalah 代写论文、joki ketik 代打字），需结合是否涉及平台账号判定。",
+  "related": [
+   "chengpinhao",
+   "dingwei",
+   "setbid",
+   "modapk",
+   "alattempur",
+   "shebeizhiwen",
+   "qunkong",
+   "waigua"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "vcam",
+  "term": "vcam",
+  "aka": [
+   "vượt sinh trắc học",
+   "virtual camera"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "vi",
+  "definition": "越南语圈对虚拟摄像头工具的简称，用于绕过生物识别与人脸核验。",
+  "mechanism": "与中文的\"虚拟视频\"同义：把预先准备的人像视频作为摄像头输入送进核验流程；广告常直接写明\"过生物识别\"的适用平台范围。",
+  "example": "Bán tool vượt sinh trắc học vcam",
+  "related": [
+   "xuni",
+   "guorenlian",
+   "aihuanlian",
+   "kyc",
+   "kycvendor",
+   "shualian",
+   "chufashipin"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "dianpuguige",
+  "term": "店铺规格语法",
+  "aka": [
+   "店铺描述",
+   "账号参数",
+   "出单",
+   "回过款"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "跨境电商卖家账号出售广告使用的一套标准化规格描述，按固定顺序罗列账号的全部属性。",
+  "mechanism": "**这是整批数据里商品化程度最高的黑话体系。**一条挂单形如\"26.7北美，fbm26单，绩效200分，无付款政策，有持续回款，后台在售，邮箱给，公司正常，法人不联系\"，依次给出注册年月、站点、履约方式与历史单量、账号健康分、违规记录、回款状态、在售状态、可移交的凭证、主体状态。买方据此估值，无需沟通即可比价。\n\n对防守方的意义：这套语法本身就是高精度特征——\"绩效+分\"\"无付款政策\"\"公司正常\"三者同现，几乎只可能是账号出售广告。按语法结构而非单词命中来做规则，可大幅降低误报。",
+  "example": "26.3北美四站 fbm300 近期出单回款 绩效204 邮箱收款给 公司正常",
+  "related": [
+   "jixiaofen",
+   "wufukuanzhengce",
+   "wuqinquan",
+   "daiche",
+   "huanzhuti",
+   "farenbulianxi",
+   "shoukuanqianyi",
+   "fangguanlian",
+   "houtaizaishou",
+   "chengpinhao",
+   "yanzhenghao",
+   "xieyisan",
+   "guokyc",
+   "chufashipin"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jixiaofen",
+  "term": "绩效分",
+  "aka": [
+   "绩效纯白",
+   "绿牌",
+   "缺陷率"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "平台对卖家账号的健康评分，是账号定价的首要指标。",
+  "mechanism": "评分直接决定账号能否正常销售与参与流量分配，因此成为报价的第一参数；\"干净\"\"纯白\"指无违规历史，\"绿牌\"指状态正常，反之则标注\"有缺陷率\"\"缺陷黄\"并相应降价。广告如实披露瑕疵，说明这个市场已有成熟的定价惯例。",
+  "example": "绩效200分绿牌 业绩纯白干净 / 绩效192分 专利微瑕",
+  "ambiguity": "\"绩效\"在人事与企业管理语境中是常用词，须结合\"分\"\"干净\"\"缺陷率\"判定。",
+  "related": [
+   "dianpuguige",
+   "wufukuanzhengce",
+   "wuqinquan",
+   "jixiao",
+   "daiche",
+   "houtaizaishou",
+   "baihao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "wufukuanzhengce",
+  "term": "无付款政策",
+  "aka": [
+   "付款政策",
+   "无政策"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "账号没有被平台施加过付款相关的处置记录。",
+  "mechanism": "平台一旦对账号启用付款政策限制，资金将被延迟或冻结放款，账号的变现能力随之失效；因此\"无付款政策\"是买方最关心的硬指标之一，与绩效分并列出现在几乎每条挂单里。",
+  "example": "绩效200分，无付款政策，有持续回款",
+  "related": [
+   "dianpuguige",
+   "jixiaofen",
+   "huikuan",
+   "wuqinquan",
+   "guokyc"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "wuqinquan",
+  "term": "无侵权",
+  "aka": [
+   "无投诉"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "账号没有知识产权投诉记录，是跨境店铺估值里不可逆的减值项之一。",
+  "mechanism": "侵权投诉会导致listing下架与账号受限，且记录不可消除，因此是不可逆的减值项；\"业绩干净无侵权\"是成套的卖点表述。带注册商标（\"R标\"）的账号另有溢价，因为可申请品牌备案。",
+  "example": "业绩干净无侵权 公司正常 法人不联系",
+  "related": [
+   "dianpuguige",
+   "jixiaofen",
+   "wufukuanzhengce",
+   "houtaizaishou",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "daiche",
+  "term": "带车",
+  "aka": [
+   "有车",
+   "带购物车",
+   "上链接带车"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "账号已获得商品详情页的默认购买位（购物车/Buy Box）。",
+  "mechanism": "拿到默认购买位意味着绝大多数订单会自动落到该卖家，是账号实际变现能力的直接体现，因此显著溢价。\"上了链接\"指已创建商品、\"空号\"指尚未上架。",
+  "example": "上了链接有车 / fbm2000单带购物车",
+  "ambiguity": "**\"车\"在本词典里有三种完全不同的含义**：此处指购物车（默认购买位）；在优惠套利社群指可套利的商品链接（见\"豪车\"\"上车\"）；在资金通道语境指提供收款渠道的团伙（见\"车队\"）。必须按场景区分，否则跨场景检索会严重误判。",
+  "related": [
+   "dianpuguige",
+   "haoche",
+   "shangche",
+   "chedui",
+   "jixiaofen",
+   "houtaizaishou"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "huanzhuti",
+  "term": "换主体",
+  "aka": [
+   "主体变更",
+   "换公司"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "把账号绑定的注册企业主体更换为另一家公司。",
+  "mechanism": "是账号转让的核心技术动作：平台以企业主体识别卖家身份，换主体后账号在平台看来仍是同一个经营者，但实际控制人已经变了，从而绕过平台对账号转让的限制。常见路径是在不同注册地的主体之间切换。",
+  "example": "换主体（大陆换香港主体）",
+  "related": [
+   "dianpuguige",
+   "farenbulianxi",
+   "shoukuanqianyi",
+   "gonghu",
+   "dailshiming",
+   "fangguanlian"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "farenbulianxi",
+  "term": "法人不联系",
+  "aka": [
+   "公司正常",
+   "公司异常",
+   "不联系"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "承诺注册主体的法定代表人不会介入账号，且该公司在工商层面状态正常。",
+  "mechanism": "账号的法律归属仍在原主体名下，买方最大的风险是原法人事后主张权利或配合平台找回账号。\"法人不联系\"\"公司正常\"就是针对这一风险的口头保证——它同时暴露了这类交易缺乏任何法律效力，只能依赖承诺与担保。",
+  "example": "公司正常 法人不联系",
+  "related": [
+   "dianpuguige",
+   "huanzhuti",
+   "jixiao",
+   "gonghu",
+   "zoudanbao",
+   "shoukuanqianyi"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shoukuanqianyi",
+  "term": "收款迁移",
+  "aka": [
+   "邮箱给",
+   "原始邮箱",
+   "收款换"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "把账号绑定的跨境收款账户与注册邮箱转交给买方。",
+  "mechanism": "决定买方能否真正拿到资金与账号控制权，因此是必列项：\"邮箱给\"\"原始邮箱\"表示凭证完整移交，\"邮箱要换\"则意味着需要额外操作、估值更低。收款账户是跨境结汇服务商开立的，迁移意味着连带更换该账户的实名主体。",
+  "example": "收款邮箱给 / 收款迁移 换主体",
+  "related": [
+   "dianpuguige",
+   "huanzhuti",
+   "farenbulianxi",
+   "huikuan",
+   "ibanacc",
+   "fangguanlian",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "fangguanlian",
+  "term": "防关联浏览器",
+  "aka": [
+   "环境",
+   "浏览器迁移",
+   "指纹浏览器"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "为每个账号隔离独立网络与浏览器指纹环境的工具，交易中按是否可迁移环境标价。",
+  "mechanism": "平台通过设备与浏览器指纹识别同一人操控多个账号，这类工具为每个账号维持固定且独立的环境；账号转让时\"环境迁移\"意味着买方接手后登录特征不变，不会触发关联检测。\n\n需要说明：这类工具本身是跨境电商多店铺运营的常规合规需求，厂商面向正规卖家销售；它出现在账号交易广告里，指向的是被用于掩盖账号转让，而非工具本身违规。",
+  "example": "环境迁移 / 在手一手随时看号",
+  "ambiguity": "多账号管理与团队协作是正规卖家的真实需求，此类工具的提及绝大多数属正常业务讨论。",
+  "related": [
+   "dianpuguige",
+   "shebeizhiwen",
+   "socks5",
+   "huanzhuti",
+   "shoukuanqianyi",
+   "miaobo",
+   "qunkong",
+   "dingwei"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "houtaizaishou",
+  "term": "后台在售",
+  "aka": [
+   "后台专业在售",
+   "空号",
+   "上过数据"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "账号后台当前有正在销售的商品，与之相对的\"空号\"指从未上架。",
+  "mechanism": "在售状态证明账号功能完整、未被限制，买方可直接接手经营；\"上过数据未出单\"是中间状态。该字段与绩效分、带车共同描述账号的\"可用性\"，构成估值的第二层维度。",
+  "example": "后台专业在售 / 北美空号，上链接带车",
+  "related": [
+   "dianpuguige",
+   "daiche",
+   "jixiaofen",
+   "wuqinquan",
+   "guokyc",
+   "yanzhenghao"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "guokyc",
+  "term": "过消费法",
+  "aka": [
+   "过kyc",
+   "已过核验"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "账号已通过平台依据当地消费者保护法规要求的卖家资质核验。",
+  "mechanism": "境外平台按当地法规要求卖家提交并核验经营者身份与地址信息，未通过则无法面向该市场销售。\"已过消费法\"\"过kyc\"因此是账号能否正常经营的前置条件，常与\"过虚拟视频验证\"连写——说明核验环节本身是用虚拟摄像头等手段通过的。",
+  "example": "已过消费法，过虚拟视频验证",
+  "related": [
+   "dianpuguige",
+   "kyc",
+   "xuni",
+   "chufashipin",
+   "xieyisan",
+   "kycvendor",
+   "wufukuanzhengce",
+   "houtaizaishou",
+   "jixiao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "chufashipin",
+  "term": "触发视频",
+  "aka": [
+   "触发核验",
+   "视频验证"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "region": "跨境电商卖家账号交易",
+  "definition": "账号被平台要求补做视频身份核验，广告里会标注触发日期作为风险提示。",
+  "mechanism": "视频核验是平台对可疑账号的重点抽查，一旦触发，买方必须能通过才可继续使用，因此卖方如实披露并相应降价；也正因如此，\"虚拟视频\"\"虚拟摄像头\"类服务与账号交易形成固定的配套需求。",
+  "example": "15号触发视频：绩效干净 上过数据未出单带车",
+  "related": [
+   "guokyc",
+   "xuni",
+   "vcam",
+   "xieyisan",
+   "dianpuguige",
+   "aihuanlian",
+   "shualian",
+   "guorenlian",
+   "kyc",
+   "kycvendor"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "baihao",
+  "term": "白号",
+  "aka": [
+   "老白号",
+   "高权重号",
+   "黑号"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "无违规记录、平台评分高的干净账号，与被标记过的\"黑号\"相对。",
+  "mechanism": "平台按账号画像差异化发券、放行与分配流量，所以账号的\"白\"本身就是可交易的资源：白号能拿到更低的价格、更高的额度、更少的核验。广告按分值区间（如\"400-699分老白号\"）明码标价，等于把平台的信任分变成了商品。",
+  "example": "400-699分老白号 / 白号出现9.9购券链接",
+  "ambiguity": "\"白号\"在游戏语境指无装备的新账号，含义相反。",
+  "related": [
+   "laohuohao",
+   "chengpinhao",
+   "yanzhenghao",
+   "puhaokexia",
+   "jixiaofen",
+   "xieyihao",
+   "lengmenhao",
+   "yaosanren",
+   "heihu",
+   "zhibohao",
+   "yuanshengxiaodian",
+   "podun",
+   "yihaoliangdan",
+   "dianpuruhui"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "mianbaka",
+  "term": "免拔卡",
+  "aka": [
+   "免拔卡刷",
+   "免换卡"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "无需更换 SIM 卡即可访问按地区限制的境外应用。",
+  "mechanism": "部分应用按 SIM 卡归属地判断用户所在地区，\"免拔卡\"方案用改参数或改版客户端绕过这一判断，使国内设备可直接注册与运营境外账号；是境外账号批量运营的入门环节。",
+  "example": "免拔卡刷境外应用 / 安卓免拔卡方法已更新",
+  "related": [
+   "yuanshengxiaodian",
+   "shebeizhiwen",
+   "modapk",
+   "chengpinhao",
+   "socks5",
+   "zhibohao",
+   "xieyihao",
+   "fakawang",
+   "geye"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "yuanshengxiaodian",
+  "term": "原生小店",
+  "aka": [
+   "原生号",
+   "实名号",
+   "粉丝号"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "在目标国家或地区本地注册、带本地实名信息的店铺或账号。",
+  "mechanism": "境外平台对本地注册账号给予更高的信任与流量权重，\"原生\"因此比跨区注册的账号溢价；与橱窗号、实名号、粉丝号并列出售，构成境外内容电商的账号商品谱系。",
+  "example": "橱窗号／原生小店／实名号／粉丝号（送安装包）",
+  "related": [
+   "chengpinhao",
+   "mianbaka",
+   "baihao",
+   "dailshiming",
+   "followers",
+   "zhibohao",
+   "gangka",
+   "lengmenhao"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "xieyihao",
+  "term": "协议号",
+  "aka": [
+   "直登号",
+   "小号",
+   "电报小号"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "通过逆向出的协议客户端创建或操控的账号，与需要用官方客户端登录的\"直登号\"相对。",
+  "mechanism": "协议号不依赖官方应用，可在服务器端批量创建与操作，单价显著低于直登号（报价约为十个起批、单个数元），是批量注册与自动化作业的主力；缺点是功能受限、更易被平台识别。两类账号并列报价，构成账号市场的基础分层。",
+  "example": "协议号：3.5（10个起）/ 直登号、协议号、源头批发",
+  "ambiguity": "\"协议号\"在正规开发与通信语境中可指按协议实现的编号；绝大多数提及属正常用法。风险信号在于与\"直登号\"\"源头批发\"\"起批量\"同现。",
+  "related": [
+   "chengpinhao",
+   "jiema",
+   "baihao",
+   "lengmenhao",
+   "yanzhenghao",
+   "kashang",
+   "zire",
+   "qunkong",
+   "jifang",
+   "miaobo",
+   "xiazaifu",
+   "fakawang",
+   "zhibohao",
+   "baofen",
+   "jiefen",
+   "xiaochengxushui",
+   "dailshiming",
+   "shiminka",
+   "yaosanren",
+   "mianbaka"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "lengmenhao",
+  "term": "冷门号",
+  "aka": [
+   "冷门账号",
+   "热冷门"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "小众或低关注度平台的账号，与主流平台的\"热门号\"相对，可按需定制。",
+  "mechanism": "冷门平台的风控与内容审核投入通常较低，账号成本便宜、存活期更长，因此被用作引流落地与规避封禁的备用阵地；\"几百种热冷门应用\"的供货表述说明供给方已把覆盖面本身当作竞争力。",
+  "example": "全球热门账号一手资源、冷门账号定制、账号定制一成品号",
+  "ambiguity": "\"冷门\"是日常用词，招商与选品讨论中也指小众品类。",
+  "related": [
+   "chengpinhao",
+   "xieyihao",
+   "baihao",
+   "yuanshengxiaodian",
+   "yinliu",
+   "fangxinling",
+   "dafen",
+   "jiema",
+   "zire"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "heihu",
+  "term": "黑户",
+  "aka": [
+   "白户",
+   "网黑",
+   "案底"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "两种用法：一指征信记录不良、无法通过正常审批的人；二指无不良记录可查的\"白户\"的反面。在招募语境中则指有案底者。",
+  "mechanism": "在信贷黑产中，\"无视黑户\"是放贷方招揽高风险客群的卖点；在人力招募中，\"黑户、案底、纹身统统接受\"是对人员来源不设门槛的表态——这类表述往往出现在不愿被追溯的岗位招募里，与\"人头\"需求同源。\"白户\"因无查询记录反而更值钱。",
+  "example": "无视黑户简审 ｜ 招募：黑户、案底统统接受",
+  "ambiguity": "\"黑户\"在户籍语境中指未登记户口的人，社会新闻中常见。",
+  "related": [
+   "rentou",
+   "kouzi",
+   "zhengxin",
+   "baihao",
+   "difangyinhang",
+   "wuxuyanjing",
+   "shiminka",
+   "miaopi",
+   "kashang",
+   "dailshiming",
+   "chengpinhao",
+   "readymade"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "maochi",
+  "term": "猫池",
+  "aka": [
+   "卡池",
+   "短信猫",
+   "卡发"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "可同时插入大量 SIM 卡并批量收发短信的设备，是接码与短信群发的硬件底座。",
+  "mechanism": "把\"一卡一机\"变成\"一机百卡\"，使批量注册、批量验证与短信轰炸的单位成本骤降。广告以\"猫池接码\"\"承接所有端口／猫池短信\"形式出现，并按押金与月费计价。",
+  "example": "猫池接码—跨境接码—全球〔范围〕 ｜ 承接端口／猫池短信",
+  "related": [
+   "jiema",
+   "kashang",
+   "jifang",
+   "kuozhanma",
+   "hongzhaji",
+   "chenmohao",
+   "shiminka",
+   "shoujikou",
+   "gangka",
+   "otp",
+   "sanwang",
+   "jiechi"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jifang",
+  "term": "机房",
+  "aka": [
+   "卡发机房",
+   "一手机房"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "在黑产语境中指集中部署设备与卡资源、批量提供注册或短信服务的作业点。",
+  "mechanism": "与\"工作室\"同类但规模更大：\"一手机房\"强调自有资源非转手，常与短信通道、海外号卡一同宣传。机房化意味着账号与短信已是工业化产出，而非零散获取。",
+  "example": "一手机房 国卡 〔账号规格〕 ｜ 双向短信＋卡发机房＋海外短信",
+  "ambiguity": "\"机房\"在 IT 运维语境中是标准词汇，占相关文本的多数。",
+  "related": [
+   "maochi",
+   "jiema",
+   "kashang",
+   "qunkong",
+   "shebeizhiwen",
+   "xieyihao",
+   "kuozhanma",
+   "shoujikou",
+   "chengpinhao",
+   "miaobo"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "qunkong",
+  "term": "群控",
+  "aka": [
+   "云控",
+   "多开",
+   "分身",
+   "双开"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "用一台主控设备同时操作成百上千个账号；\"云控\"指把被控端放在云端。",
+  "mechanism": "是账号矩阵的操作层：有了批量账号还需要能批量操作，群控解决的就是这个。与改机、虚拟定位配合，可让一人完成养号、引流、刷量的全部动作。\"分身\"\"多开\"是其轻量形态。",
+  "example": "云控诚招代理 ｜ 工作室：养号｜引流｜地推｜群控专用",
+  "ambiguity": "手机分身、应用双开是厂商提供的正常功能，普通用户讨论极多。",
+  "related": [
+   "shebeizhiwen",
+   "dingwei",
+   "xieyihao",
+   "zire",
+   "jifang",
+   "modapk",
+   "root",
+   "baofen",
+   "jiefen",
+   "jiema",
+   "chengpinhao",
+   "joki",
+   "fangguanlian",
+   "xiazaifu",
+   "miaobo",
+   "waigua"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shiminka",
+  "term": "实名卡",
+  "aka": [
+   "电销卡",
+   "归属地卡"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "已完成他人实名登记的电话卡，按归属地与运营商分类出售。",
+  "mechanism": "实名是账号注册与业务办理的前置条件，因此已实名的卡本身成为商品；\"电销卡\"指用于外呼营销、对高频呼叫容忍度更高的卡种。与号商、实名号并列出售，构成身份资源的基础供给。",
+  "example": "实名号、实名卡、〔地区〕卡、电销卡 ｜ 号商｜实名号｜实名卡",
+  "ambiguity": "运营商的正规实名制办卡、企业采购电销卡都使用同一表述。",
+  "related": [
+   "kashang",
+   "jiema",
+   "maochi",
+   "dailshiming",
+   "chenmohao",
+   "heihu",
+   "xieyihao",
+   "gangka",
+   "shoujikou",
+   "chengpinhao",
+   "readymade",
+   "fangfeng"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shualian",
+  "term": "刷脸",
+  "aka": [
+   "跳过刷脸",
+   "免刷脸"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "人脸核验环节的口语说法；\"跳过刷脸\"指绕过该环节。",
+  "mechanism": "与\"过人脸\"指向同一卡口，但语域不同：\"过人脸\"是卖方的服务名，\"跳过刷脸\"更多出现在使用者的求助与经验交流中（如\"众包跳过刷脸怎么弄\"）。这类提问是需求侧的观测窗口——它显示哪些业务的人脸核验正被试图规避。",
+  "example": "求问：某平台众包跳过刷脸怎么弄",
+  "ambiguity": "\"刷脸\"在日常中泛指人脸支付与门禁，用户抱怨\"又要刷脸\"属正常场景。",
+  "related": [
+   "guorenlian",
+   "xuni",
+   "vcam",
+   "aihuanlian",
+   "kyc",
+   "chufashipin",
+   "shouchi",
+   "kycvendor"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "shouchi",
+  "term": "手持身份证",
+  "aka": [
+   "身份证正反面",
+   "手持照",
+   "真人现拍"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "手持证件的人像照片，与证件正反面影像一同作为核验素材出售。",
+  "mechanism": "是\"大头照\"的升级形态：手持姿态可通过更严格的材料审核。广告强调\"真人现拍\"\"可配合实名\"——即出镜者本人配合完成后续核验，这意味着背后有真实的人被组织起来反复出借身份。",
+  "example": "身份证_手持身份证_真人现拍_可配合实名 ｜ 法人身份证正反面",
+  "related": [
+   "datouzhao",
+   "selfieverif",
+   "dailshiming",
+   "rentou",
+   "guorenlian",
+   "kyc",
+   "shualian",
+   "siyaosu",
+   "kycvendor"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "zhibohao",
+  "term": "直播号",
+  "aka": [
+   "三天号",
+   "开播号"
+  ],
+  "category": "身份与认证绕过",
+  "lang": "zh",
+  "definition": "已开通直播权限的账号，按养号天数与粉丝量定价。",
+  "mechanism": "直播是内容平台权限最高、变现最直接的功能，因此开通资格本身成为商品；\"三天号\"指已养够平台要求天数的账号。与橱窗号、千粉万粉号、白号并列在同一张价目表上，构成账号商品从低到高的完整阶梯。",
+  "example": "三天直播号：〔价格〕 ｜ 千粉万粉号／白号／直播号／橱窗号",
+  "ambiguity": "\"直播号\"也被主播与 MCN 正常用于指自己的账号；绝大多数提及属正常用法。风险信号在于明码标价与按养号天数分档。",
+  "related": [
+   "chengpinhao",
+   "baihao",
+   "xieyihao",
+   "yuanshengxiaodian",
+   "followers",
+   "fakawang",
+   "zire",
+   "mianbaka"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ }
+]

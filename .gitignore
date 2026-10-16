@@ -1,0 +1,13 @@
+# 原始情报语料绝不入库（跨客户数据，含未脱敏原文）
+*.jsonl
+*.jsonl.gz
+corpus/
+work/
+internal/
+
+# 内部版词条（含完整原文与客户维度）
+data/entries-internal/
+
+.DS_Store
+__pycache__/
+*.pyc

@@ -1,0 +1,36 @@
+name: 校验
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: 词条校验与文档检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 词条校验并重新生成词典
+        run: python3 tools/build_dict.py
+
+      - name: 文档内部链接与锚点检查
+        run: python3 tools/check_links.py
+
+      - name: 确认生成物已同步提交
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::生成物与词条数据不一致。请在本地运行 python3 tools/build_dict.py，并把 dict/ 与 README.md 的变更一并提交。"
+            git --no-pager diff --stat
+            exit 1
+          fi
+          echo "生成物与词条数据一致。"

@@ -1,0 +1,398 @@
+[
+ {
+  "id": "zerowidth",
+  "term": "零宽字符混淆",
+  "aka": [
+   "隐形字符",
+   "不可见字符",
+   "字符插空"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "在词语内部插入零宽空格、零宽连接符等不可见字符，使关键词在视觉上完整但在文本层被切断。",
+  "mechanism": "最具规模的反检测手法：人眼读到的是“一天稳赚”，程序读到的是被隐形字符分隔的碎片，基于字符串匹配的审核与检索全部失效。常见字符包括 U+200B/200C/200D、U+2060、U+FEFF。",
+  "example": "一⁠天稳​赚大﻿几万（示例中的分隔符为不可见字符）",
+  "ambiguity": "部分正常文本会因复制粘贴、排版工具或富文本编辑器引入零宽字符，不能仅凭存在即判风险，应看是否密集且位于关键词内部。",
+  "related": [
+   "jianjie",
+   "xiepin",
+   "emoji",
+   "shifu",
+   "noelsa",
+   "yitizi",
+   "rouemoji",
+   "rukouzhiyin",
+   "fangfengkong",
+   "setui",
+   "d",
+   "cijian"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "jianjie",
+  "term": "简届",
+  "aka": [
+   "简阶",
+   "简介",
+   "看简届",
+   "看我简阶"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "“简介”的谐音变形写法，用于把联系方式藏在账号资料页而非正文。",
+  "mechanism": "正文只留“看简届安排”“看我简阶”，实际联系方式写在个人简介中，使正文不含任何可检测的联系信息；同时用“届/阶”替换“介”规避对“简介”本身的检测。属典型的两级规避：关键词变形 + 联系路径外移。",
+  "example": "一天稳赚大几万，看简届安排",
+  "ambiguity": "“简届”“简阶”在规范中文里不成词，命中即高度可疑，是判别力最强的特征词之一。",
+  "related": [
+   "zerowidth",
+   "xiepin",
+   "d",
+   "shangan",
+   "yinliu",
+   "duidao",
+   "yewuyuan",
+   "goutui",
+   "heiu",
+   "setui",
+   "hutui",
+   "shangche",
+   "banzhuan",
+   "fangxinling"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "xiepin",
+  "term": "谐音替字",
+  "aka": [
+   "同音替代",
+   "形近替代",
+   "利闰",
+   "超柿卡",
+   "构券",
+   "窽",
+   "年咔",
+   "打咔",
+   "荬",
+   "荟員",
+   "领荭",
+   "鸿苞",
+   "苞雨",
+   "陶宝"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "用同音或形近字替换关键词中的某个字，使语义对人可读、对机器不可匹配。",
+  "mechanism": "稳定复现的替换对包括：亓/员→元、实符→实付、订丹→订单、项木→项目、虹包→红包、简届/简阶→简介、卷→券、荬→买、咔→卡。替换通常只改一个字，且集中在最易被检测的核心名词上。",
+  "example": "实符 64 亓 / 订丹为准 / 黑u 搬砖项木",
+  "ambiguity": "方言用字、繁简混用、输入法错字会产生相似现象，判定应看替换是否稳定复现于同一类表达。",
+  "related": [
+   "qiyuan",
+   "dingdan",
+   "shifu",
+   "jianjie",
+   "zerowidth",
+   "emoji",
+   "noelsa",
+   "abbrev_en",
+   "yitizi",
+   "rouemoji",
+   "lingkuan",
+   "zituizimai",
+   "pingtaidaicheng",
+   "juanyu",
+   "cijian"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "qiyuan",
+  "term": "亓",
+  "aka": [
+   "员",
+   "兀"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "“元”的形近替代字，用于金额表述。",
+  "mechanism": "金额是营销与交易文案中最难省略的要素，也最易被规则命中，因此被优先替换；“亓”的出现量极大，几乎专用于价格场景。",
+  "example": "实符 64 亓 / 叠限时 3 亓随机优惠卷",
+  "ambiguity": "“亓”是罕用姓氏与古字，正常文本中极少出现，判别力高。",
+  "related": [
+   "xiepin",
+   "shifu",
+   "juanyu",
+   "dingdan",
+   "lingkuan",
+   "emoji",
+   "yitizi",
+   "rouemoji"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "dingdan",
+  "term": "订丹",
+  "aka": [
+   "丹"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "“订单”的谐音写法，“丹”替代“单”。",
+  "mechanism": "出现在推广文案的免责说明中（如“赠品以订单为准”），用于规避对电商营销话术的批量识别。",
+  "example": "有关赠品，订丹为准",
+  "ambiguity": "“丹”作为人名、药名、地名极常见，须以“订丹”整词检索。",
+  "related": [
+   "xiepin",
+   "qiyuan",
+   "shifu",
+   "juanyu"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "juanyu",
+  "term": "卷",
+  "aka": [
+   "劵",
+   "券",
+   "优惠卷",
+   "领劵",
+   "神劵"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "“券”的形近替代写法，常见“优惠卷”“领劵”。",
+  "mechanism": "优惠券是营销内容的核心名词，替换后可绕过对“券”相关话术的检测；“劵”是在“券”上加一笔的错形字，视觉几乎无差别。",
+  "example": "叠限时随机优惠卷 / 先领劵再拍",
+  "ambiguity": "“卷”本身是高频常用字（卷子、卷入），须结合“优惠卷、领劵、神劵”等组合检索。",
+  "related": [
+   "xiepin",
+   "qiyuan",
+   "daequan",
+   "lingkuan",
+   "shifu",
+   "dingdan"
+  ],
+  "confidence": "high",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "lingkuan",
+  "term": "虹包",
+  "aka": [
+   "包雨",
+   "荭包",
+   "红包雨"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "“红包”“红包雨”的谐音与形近写法。",
+  "mechanism": "红包类话术是营销内容审核的重点，变形后用于引导领取与叠加；常与“右上角领”“每整点”等位置、时点指引同现。",
+  "example": "右上角领红包雨 / 每整点虹包雨 可叠",
+  "ambiguity": "“虹包”“荭包”不成词，判别力较高；“包雨”可能出现在天气相关文本中。",
+  "related": [
+   "xiepin",
+   "juanyu",
+   "qiyuan",
+   "daequan",
+   "shifu"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "emoji",
+  "term": "emoji 代字",
+  "aka": [
+   "表情替代",
+   "符号代字",
+   "圈码数字"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "用表情符号或特殊符号替代文字与数字，承载价格、数量与行动指令。",
+  "mechanism": "常见用法包括用 🉐 替“得”、🈴 替“合”、💰 引出价格、①②③ 与 1⃣2⃣3⃣ 表示数量档位、⭕🔹⚠ 作为条目符号。既规避文本检测，也让版式在刷屏中更醒目。",
+  "example": "💰折 17.5🉐500ml / 🔹拍①共 2390ml，实符 83.9",
+  "ambiguity": "表情符号在正常营销与社交文本中极普遍，仅在替代关键字的位置上才构成混淆信号。",
+  "related": [
+   "xiepin",
+   "zerowidth",
+   "qiyuan",
+   "shifu",
+   "rouemoji",
+   "yitizi",
+   "cijian"
+  ],
+  "confidence": "high",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "cijian",
+  "term": "拆字与插符",
+  "aka": [
+   "字中插符",
+   "分词书写"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "在词语中间插入空格、标点或换行，把一个词拆成多段书写。",
+  "mechanism": "与零宽字符同属切断匹配的手法，但使用可见字符，如“手 机号”“过 人 脸”；对正则与分词都有效，代价是可读性略降。",
+  "example": "手⁠机号各种查询 / 供  ： 〔标的〕 需要d",
+  "ambiguity": "排版换行、复制错误会产生同样效果，需看是否系统性出现在敏感词内部。",
+  "related": [
+   "zerowidth",
+   "xiepin",
+   "emoji",
+   "d",
+   "yitizi",
+   "rukouzhiyin",
+   "fangfengkong"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "noelsa",
+  "term": "no elsa",
+  "aka": [
+   "elsa",
+   "walang elsa"
+  ],
+  "category": "混淆与规避手法",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "用动画角色 Elsa 代指账号\"被冻结\"（frozen），\"no elsa\" 即承诺不会被冻结。",
+  "mechanism": "流行文化联想式规避的典型例子：平台与审核方检索 frozen、冻结等关键词，社群改用一个毫无风险外观的角色名承载同一语义。与中文的谐音替字目的相同，但利用的是文化共识而非字形相近，因此更难靠字符规则发现。",
+  "example": "100% sure processing, no elsa",
+  "ambiguity": "Elsa 是常见人名与动画角色名，脱离该社群语境无任何风险含义。",
+  "related": [
+   "xiepin",
+   "rffrozen_tl",
+   "sureprocessing_tl",
+   "capped_tl",
+   "zerowidth"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "abbrev_en",
+  "term": "首字母缩写规避",
+  "aka": [
+   "CC"
+  ],
+  "category": "混淆与规避手法",
+  "lang": "en",
+  "definition": "把敏感名词压缩为两三个字母，使其在文本检测中失去特征。",
+  "mechanism": "跨语种通用的规避路径：BC 指博彩、CC 指支付卡、GC 视语境指礼品卡或群聊、RF 指退款。缩写同时带来极高的歧义，使单纯的关键词匹配既漏报也误报，必须结合同现词与语种判定。",
+  "example_note": "两三字母缩写在任何语言的正常文本中都大量出现，无法取到可代表该手法的单条示例；机制说明中已逐一列出对照。",
+  "ambiguity": "两三字母的缩写在任何语言的正常文本中都大量出现，单独命中几乎没有判别力。",
+  "related": [
+   "bocai",
+   "cvv",
+   "giftcard",
+   "gc_tl",
+   "wts",
+   "xiepin",
+   "pingtaidaicheng",
+   "rffrozen_tl"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "yitizi",
+  "term": "异体字与日文汉字替代",
+  "aka": [
+   "単",
+   "啇",
+   "寳",
+   "桃寳",
+   "美団",
+   "湊單",
+   "外賣",
+   "津貼",
+   "靈魂",
+   "寶"
+  ],
+  "category": "混淆与规避手法",
+  "lang": "zh",
+  "definition": "用日文汉字、异体字或生僻变形字替换关键字，字形几乎无差别但编码完全不同。",
+  "mechanism": "与谐音替字的目标相同、路径不同：谐音换的是读音相近的字，这里换的是**字形相近但码位不同**的字——`単`（日文汉字）替\"单\"、`啇`替\"商\"、`寳`替\"宝\"、`桃寳`替某平台名。对人眼几乎无影响，但任何基于精确匹配或常用字表的处理都会漏掉。",
+  "example": "拍4 下単1700 ｜ 湊単啇品下拉详情页",
+  "ambiguity": "日文、繁体中文的正常文本会自然使用这些字形，须结合是否出现在简体中文句子内部判定。",
+  "related": [
+   "xiepin",
+   "qiyuan",
+   "zerowidth",
+   "emoji",
+   "cijian",
+   "rouemoji"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "rouemoji",
+  "term": "🥩 作金额单位",
+  "aka": [
+   "肉",
+   "一个肉"
+  ],
+  "category": "混淆与规避手法",
+  "lang": "zh",
+  "definition": "用牛排表情符号替代\"元\"\"利润\"等金额单位，直接跟在数字后面。",
+  "mechanism": "金额是任务广告里最无法省略、也最易被规则命中的要素，因此被反复改写：先有谐音字（亓、员），再有表情符号。`300🥩`\"一号5单110🥩\"中，表情承担的就是货币单位的语法位置。它与风险内容的伴随度很高，是优质的高精度特征。",
+  "example": "一号两单18.6*2=37.2🥩 ｜ 一号5単110🥩 ｜ 200+🥩 学生号",
+  "ambiguity": "该表情在餐饮、食谱与日常聊天中正常使用；虽然与风险内容的伴随度已很高，仍须结合\"数字＋表情\"紧邻的格式判定，单独出现不作为信号。",
+  "related": [
+   "emoji",
+   "qiyuan",
+   "xiepin",
+   "yitizi",
+   "yongbu",
+   "yihaoliangdan",
+   "chirou",
+   "zerowidth"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "fangfengkong",
+  "term": "防风控操作",
+  "aka": [
+   "至少间隔",
+   "防止被风控",
+   "慢慢来"
+  ],
+  "category": "混淆与规避手法",
+  "lang": "zh",
+  "definition": "为避免触发平台风控而对操作节奏与顺序做的刻意控制。",
+  "mechanism": "与字符层面的混淆并列，这是行为层面的规避：规定两次操作\"至少间隔\"多久、要求\"循序渐进慢慢来\"、提示某步骤\"不然会显示异常\"。说明攻击方已经摸清平台的频次与序列检测阈值，并把它转化为作业规程。\n\n对防守方的意义：这类指引是风控阈值被反向测绘的直接证据，可据此判断现有阈值是否已被摸透。",
+  "example": "至少间隔一段时间，防止被风控 / 循序渐进慢慢来，不然会显示异常",
+  "ambiguity": "\"循序渐进\"\"慢慢来\"是日常用语，语料中大量出现在育儿、健身与行业评论文本里，单独命中无判别力。",
+  "related": [
+   "rukouzhiyin",
+   "podun",
+   "zerowidth",
+   "cijian",
+   "yihaoliangdan",
+   "amannotif",
+   "chenglv",
+   "method"
+  ],
+  "confidence": "high",
+  "frequency": "少见",
+  "first_seen": "v0.1"
+ }
+]
