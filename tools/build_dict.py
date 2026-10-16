@@ -12,6 +12,11 @@ ENTRY_DIR = os.path.join(ROOT, 'data', 'entries')
 SCHEMA = json.load(open(os.path.join(ROOT, 'data', 'schema.json'), encoding='utf-8'))
 CATS = SCHEMA['categories']
 CONF_LABEL = {'high': '高', 'medium': '中', 'to-verify': '待核实'}
+# 置信度口径：README「词条质量口径」与 data/schema.json 用的是同一套说法，改一处要三处一起改
+CONF_DESC = {'high': '词义有真实用例佐证，并经人工复核确认',
+             'medium': '词义基本确定，但用法较多或边界不清，使用时要结合语境',
+             'to-verify': '证据不足或尚未逐条复核'}
+REL_SHOW = 14     # 关联超过这个数只列前若干个
 LANGS = SCHEMA.get('languages', {})
 LANG_ORDER = ['zh', 'en', 'pt', 'id', 'vi', 'tl', 'ru', 'th', 'hi']
 LANG_SHORT = {'zh': '中文', 'en': '英文', 'pt': '葡萄牙语', 'id': '印尼语', 'vi': '越南语',
@@ -292,6 +297,29 @@ def render(entries):
     L.append('')
     L.append('> 本词典用于风险识别、内容审核与安全研究。词条只描述表达方式与手法机制，不提供实施步骤。示例均来自公开渠道监测语料并已脱敏。')
     L.append('')
+    # 图例：栏目名与下方逐条渲染用的是同一组标签
+    L.append('## 怎么读一个词条')
+    L.append('')
+    L.append('每个分类内按出现频次从高到低排列。每个词条依次是下面这些栏目，没有内容的栏目不显示。')
+    L.append('')
+    L.append('| 栏目 | 说明 |')
+    L.append('| --- | --- |')
+    for name, desc in [
+            ('标题下的标签', '非中文词条的语种与流通生态'),
+            ('**又作**', '同一个意思的其他写法：变体、谐音、缩写'),
+            ('**释义**', '一句话说清这个词是什么意思'),
+            ('**在链条中的作用**', '这个词在黑灰产链条里干什么、接上下游哪一环'),
+            ('**示例**（脱敏）', '真实场景里的用法；平台名、联系方式、链接等已脱敏'),
+            ('**无示例说明**', '取不到可发布的用例时，说明原因'),
+            ('**歧义与误报**', '这个词在正常语境下的意思，也就是误报从哪来'),
+            ('**关联**', f'相关词条，超过 {REL_SHOW} 个时只列前 {REL_SHOW} 个'),
+            ('研判置信度', '；'.join(f'{CONF_LABEL[k]}：{CONF_DESC[k]}' for k in ('high', 'medium', 'to-verify'))),
+            ('出现频次', '该词在监测语料中的出现频次档（常见 / 较常见 / 少见），用于排规则优先级，不代表风险高低'),
+            ('收录版本', '首次收录的版本')]:
+        L.append(f'| {name} | {desc} |')
+    L.append('')
+    L.append('各字段的完整定义见 [README · 字段说明](../README.md#字段说明)。')
+    L.append('')
     L.append('## 目录')
     L.append('')
     for c in CATS:
@@ -423,10 +451,10 @@ def render(entries):
                 L.append('')
             if e.get('related'):
                 names = [by_id[r]['term'] for r in e['related'] if r in by_id]
-                if len(names) <= 14:
+                if len(names) <= REL_SHOW:
                     L.append(f"**关联**：{'、'.join(names)}")
                 else:
-                    L.append(f"**关联**（{len(names)} 个）：{'、'.join(names[:14])} 等")
+                    L.append(f"**关联**（{len(names)} 个）：{'、'.join(names[:REL_SHOW])} 等")
                 L.append('')
             meta = [f"研判置信度：{CONF_LABEL[e['confidence']]}"]
             if e.get('frequency'):

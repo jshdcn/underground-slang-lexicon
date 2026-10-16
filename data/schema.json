@@ -64,7 +64,7 @@
     "confidence": {
       "type": "string",
       "required": true,
-      "desc": "high | medium | to-verify"
+      "desc": "high：词义有真实用例佐证，并经人工复核确认；medium：词义基本确定，但用法较多或边界不清，使用时要结合语境；to-verify：证据不足或尚未逐条复核"
     },
     "frequency": {
       "type": "string",
