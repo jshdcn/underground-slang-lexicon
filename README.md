@@ -4,7 +4,16 @@
 
 > **Underground Slang Lexicon** — a structured reference for the jargon of the Chinese-language online fraud and gray-market economy: definitions, sanitized real-world usage, **false-positive warnings**, and supply-chain relations. Chinese-dominant, with Brazilian Portuguese, English, Indonesian, Tagalog and Vietnamese cross-references.
 
-由 **[Threat Hunter](https://github.com/threathunterX)** 黑灰产研究团队维护 ｜ Maintained by the Threat Hunter research team
+<p align="center">
+  <a href="https://www.threathunter.com">
+    <img src="https://avatars.githubusercontent.com/u/324354669?s=120" width="72" alt="Threat Hunter">
+  </a>
+</p>
+
+<p align="center">
+  由 <b><a href="https://www.threathunter.com">Threat Hunter 威胁猎人</a></b> 黑灰产研究团队维护<br>
+  <i>See risk earlier. Act with context.</i>
+</p>
 
 [![词条数](https://img.shields.io/badge/词条-700-blue)](dict/黑话词典.md)
 [![分类](https://img.shields.io/badge/分类-9-green)](dict/黑话词典.md)
@@ -15,6 +24,21 @@
 **👉 [直接查看词典](dict/黑话词典.md)** ｜ [CSV 下载](dict/terms.csv) ｜ [结构化数据](data/entries/) ｜ [字段规范](data/schema.json)
 
 ---
+
+## 项目背景
+
+防守方和攻击方用的不是同一套词汇。风控规则里写的是「批量注册」「虚假交易」，
+而黑灰产自己说的是「一条龙」「AB 单」「包批」「实卡接码」。这层词汇差是对抗里的第一道门槛——
+看不懂在说什么，就谈不上识别、取证与处置。
+
+这个词典做的就是把这层词汇固定下来：每个词给出释义、它在产业链里的位置、
+脱敏后的真实用例，以及**它在正常语境下是什么意思**。最后一项往往比前三项更费工夫，
+也更决定这份词典能不能直接拿去做规则——「空包」的多数命中是真空包装，
+「养卡」的多数命中是汽车小保养卡，「放量」几乎都是「播放量」的一部分。
+不说清这些，一条规则上线就是一片误报。
+
+词条来自 Threat Hunter 持续的黑灰产监测与研判，释义与误报说明由人工逐条核实。
+按 `first_seen` 可以区分两批：`v0.1` 已复核，`v0.2` 标 `to-verify`、仍在补字段。
 
 ## 这个词典解决什么问题
 
@@ -165,13 +189,6 @@ python3 tools/check_links.py   # 检查文档内部链接与锚点
 
 提交新词条时请注意两点：**必须附脱敏后的真实用例**，以及**必须填写歧义与误报说明**。缺这两项的词条很难被采用。
 
-## 路线图
-
-- [ ] 俄语／西里尔语系分支
-- [ ] 跨版本词频变化，观察新词出现与旧词消失
-- [ ] "电商与营销套利"已 62 条，可拆为优惠套利 / 虚假交易 / 恶意索赔
-- [ ] 补齐 `to-verify` 词条
-
 ## 免责声明
 
 本词典用于安全研究、风险识别与公众教育。所有词条**仅描述语言现象与手法机制，不提供任何实施指导**。示例已脱敏处理。
@@ -182,14 +199,22 @@ python3 tools/check_links.py   # 检查文档内部链接与锚点
 
 ## 维护与引用
 
-本词典由 **Threat Hunter** 黑灰产研究团队维护并持续更新。
+本词典由 **Threat Hunter（威胁猎人）** 黑灰产研究团队维护并持续更新。
+我们长期跟踪业务欺诈与数字风险，官网 [threathunter.com](https://www.threathunter.com)。
 
-词条的释义与研判由人工完成并逐条核实。**欢迎指出任何释义错误**。
+同组织的其他开源项目：
+
+| 项目 | 说明 |
+| --- | --- |
+| [星云 Nebula](https://github.com/threathunterX/nebula2) | 开源业务风控系统，Flink 实时计算与内置策略 |
+| [IP99 SDK](https://github.com/threathunterX/ip99-sdk) | IP 风险画像开发工具包 |
+
+**欢迎指出任何释义错误。** 这份词典的价值取决于判断准不准，纠错比新增更要紧。
 
 引用建议：
 
 ```
-Threat Hunter 黑灰产研究团队．互联网黑灰产黑话词典［DB/OL］．
+Threat Hunter（威胁猎人）黑灰产研究团队．互联网黑灰产黑话词典［DB/OL］．
 https://github.com/threathunterX/underground-slang-lexicon
 ```
 
