@@ -145,7 +145,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「改机」也会作为「修改机型」的一部分出现。本义是篡改设备唯一标识，需与「设备指纹」「虚拟定位」「环境」等共现。"
  },
  {
   "id": "dingwei",
@@ -181,7 +182,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「虚拟定位」是开发测试与隐私保护的正当功能，相关软件讨论属正常内容。指向本义时与「打卡破解」「过检测」「接单」等共现。"
  },
  {
   "id": "frp",
@@ -202,7 +204,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「FRP」是安卓的出厂重置保护，本身是正当的防盗功能，正常的机型与刷机讨论里大量出现。本词条指的是绕过该保护的服务，需看是否在卖「解锁」。"
  },
  {
   "id": "nfz",

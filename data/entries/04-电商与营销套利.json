@@ -642,7 +642,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「黄牛」有「老黄牛」这类褒义用法，也常用于批评平台变相售卖资格。本义指靠渠道差价替他人下单抽成的中间人，需与「代抢」「加价」「资格」等共现。"
  },
  {
   "id": "haoyangmao",
@@ -916,7 +917,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「unban」是英文普通词，游戏与社群的正常讨论里常见（如某游戏在某国解禁）。本义指账号解封服务，需与报价、账号交易语境共现。"
  },
  {
   "id": "loot",
@@ -1081,7 +1083,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「礼金」是商家与平台的正规营销赠额，正常的购物优惠分享里大量出现。本词条收录它是因为它构成套利作业的一个步骤，判定时看是否与多账号、叠加手法共现。"
  },
  {
   "id": "weikuanbanjia",
@@ -1105,7 +1108,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「尾款半价」是预售活动的正规玩法，正常的抢购讨论会命中。本义指把名额当作可交易资源，需与「抢」「名额」「代」等共现。"
  },
  {
   "id": "chaobu",
@@ -1176,7 +1180,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「自推自买」最常出现在平台自己的反滥用规则里（「超补不能自推自买」），那是禁止性表述而非作案描述。本义成立需结合实际操作与收益计算。"
  },
  {
   "id": "yihaoliangdan",
@@ -1203,7 +1208,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「一号两单」是返利类应用说明任务上限的正常写法。本词条收录它是因为它被用于计算单账号总收益，判定时看是否出现在批量账号语境里。"
  },
  {
   "id": "yongbu",
@@ -1232,7 +1238,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「佣补」是返利类应用的正常计价写法（佣金加补贴分别标价）。本词条收录它是因为它构成任务报价结构，判定时看是否与批量作业共现。"
  },
  {
   "id": "zhongcaobutie",
@@ -1258,7 +1265,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「种草补贴」是平台的正规内容激励，正常的购物分享会提到。本义指把内容生产并入刷单任务的环节，需与任务报价、上传凭证等共现。"
  },
  {
   "id": "puhaokexia",
@@ -1324,7 +1332,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「晒图」是正常的购物分享与返现活动要求，优惠讨论里大量出现。本义指按要求上传凭证以领取额外返现的作业步骤，需与任务报价共现。"
  },
  {
   "id": "qifei",
@@ -1605,7 +1614,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「领无门槛」是正常的优惠券领取表述，购物分享里极常见。本义是作业步骤的第一步，只有与后续叠加手法连写时才指向本义。"
  },
  {
   "id": "dianpuruhui",
@@ -2012,7 +2022,8 @@
    "shualiushui",
    "zuodan"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「刷礼物」在直播语境里也指观众正常打赏，大量正常讨论会命中。本义是虚假打赏与以此为名的招募项目，需与「代刷」「日入」「押金」等共现。"
  },
  {
   "id": "jiafahuo",
@@ -2026,7 +2037,8 @@
   "related": [
    "yewuyuan"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「虚假发货」是消费者投诉里的高频词，大量命中来自买家维权内容，说的是受害一方。本义指商家主动上传假单号的作弊行为，判定时要看叙述立场。"
  },
  {
   "id": "bufenghao",
@@ -2065,7 +2077,8 @@
    "wanfen",
    "yinliu"
   ],
-  "frequency": "常见"
+  "frequency": "常见",
+  "ambiguity": "「涨粉」是内容创作者的日常用语，正常运营讨论里大量出现。指向本义时与「刷粉」「数据」「点赞」等注水服务并列出现在报价表里。"
  },
  {
   "id": "dianfu",
@@ -2132,7 +2145,8 @@
    "zishua",
    "zituizimai"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「翻新」的常见义是二手翻新商品与翻新机，消费维权内容里常见。本义指把老链接改头换面重新上架，需与「链接」「ASIN」「上架」等共现。"
  },
  {
   "id": "zhiping",
@@ -2363,7 +2377,8 @@
    "gongqun",
    "yinliu"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「互助」是平台的正规社交玩法（砍价互助、好友助力），也是日常词「互帮互助」。本义特指以助力链次数为计价单位的刷量互助，需与「换码」「次数」「群」共现。"
  },
  {
   "id": "laochou",
@@ -2381,7 +2396,8 @@
    "pinshouqi",
    "xiaochengxushui"
   ],
-  "frequency": "常见"
+  "frequency": "常见",
+  "ambiguity": "「老抽」的字面义是酱油，日常语境里几乎只有这个意思。本义是电商互助活动的简称，必须与「京豆」「农场」「挖宝」等活动名共现才成立。"
  },
  {
   "id": "pengyipeng",
@@ -2397,7 +2413,8 @@
    "laochou",
    "xiaochengxushui"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「碰一碰」是支付产品的正规功能名（含数字人民币硬钱包），正常的支付体验讨论会命中。本义是多账号刷取该活动的立减，需与互助、换码语境共现。"
  },
  {
   "id": "pinshouqi",
@@ -2412,7 +2429,8 @@
    "laochou",
    "xiaochengxushui"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「拼手气」是平台红包的正规玩法名称。本义指把这种随机玩法用于互助换豆，需与「旧团」「券团」「回」等互助用语共现。"
  },
  {
   "id": "jianguanji",
@@ -2433,7 +2451,8 @@
    "yinhangji",
    "zulinji"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「监管机」绝大多数是「监管机构」的一部分，与设备无关。本义指企业MDM锁定的iPhone，需与「锁机」「激活」「工作机」等共现。"
  },
  {
   "id": "jingxidou",
@@ -2449,7 +2468,8 @@
    "laochou",
    "xiaochengxushui"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「京喜豆」本身是平台的积分名称，正常的优惠讨论会提到。本义指它作为互助兑换标的的那层用法，需与「回」「换」「团」等共现。"
  },
  {
   "id": "xuxie",
@@ -2699,7 +2719,8 @@
    "bentudian",
    "sifang"
   ],
-  "frequency": "常见"
+  "frequency": "常见",
+  "ambiguity": "「海外仓」是跨境电商的标准物流概念，履约模式、库存前置、FBA调拨等正常讨论里大量出现，与黑产无关。本词条指的是它作为账号属性影响流量分配的那层含义，必须结合账号交易语境判定。"
  },
  {
   "id": "xianyuxihuo",
@@ -2766,7 +2787,8 @@
   "related": [
    "haiwaicang"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「本土店」是跨境电商的正规店铺类型（在目标国注册的实体店），正常的选品与履约讨论里常见。指向本义时与账号估值、过户等交易属性共现。"
  },
  {
   "id": "bantuoguan",
@@ -2782,7 +2804,8 @@
    "sifang",
    "ssn"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「半托管」是跨境平台的官方履约模式名称，正常的卖家经营讨论里大量出现，与黑产无关。本词条收录它是因为它构成账号属性的一部分，判定时看是否出现在账号交易语境里。"
  },
  {
   "id": "quantuoguan",
@@ -2800,7 +2823,8 @@
    "quanma",
    "sifang"
   ],
-  "frequency": "较常见"
+  "frequency": "较常见",
+  "ambiguity": "「全托管」同样是跨境平台的官方模式名称，是正常经营选项。需结合账号买卖或代运营语境才指向本义。"
  },
  {
   "id": "yuli",
@@ -2912,7 +2936,8 @@
   "related": [
    "heipingtai"
   ],
-  "frequency": "常见"
+  "frequency": "常见",
+  "ambiguity": "「火种」是常用意象词，也有同名歌曲与影视作品；在跨境圈还被用作某交友应用的中文绰号。作为群组或项目代号时通常与「号商」「刷粉」等共现。"
  },
  {
   "id": "dangmian",
@@ -2933,7 +2958,8 @@
    "xingqing",
    "zulinji"
   ],
-  "frequency": "常见"
+  "frequency": "常见",
+  "ambiguity": "「当面」在快递与客服纠纷里极常见（当面验收、当面签收），是普通副词。指向本义时与「交易」「现金」「打卡」共现，强调的是规避线上留痕。"
  },
  {
   "id": "dafu",

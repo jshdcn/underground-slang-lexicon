@@ -83,7 +83,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「截流」在正常的营销讨论里也用于描述流量竞争。本义特指在用户即将进入某平台时用技术手段拦截，需与「引流」「软件」「软件」等工具化表述共现。"
  },
  {
   "id": "gufen",
@@ -300,7 +301,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「互推」是频道与公众号之间正常的互相推荐，内容运营讨论里常见。本义指以交换成员为目的、常由机器人自动完成的互推，需结合拉人语境判定。"
  },
  {
   "id": "smmpanel",
@@ -368,7 +370,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「followers」是英文普通词，任何英文内容都可能命中。本义指作为商品出售的粉丝量，需与价格、平台名或「panel」等共现。"
  },
  {
   "id": "bomber",
@@ -499,7 +502,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「条评论」在正常的电商运营讨论里极常见（「一个有2万条评论的链接」）。本义是按条计价出售的评论发布服务，必须与单价、平台名共现才成立。"
  },
  {
   "id": "pingtaidaicheng",
@@ -644,7 +648,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「双向机器人」是即时通讯平台上常见的中介型机器人形态，也有正当用途。本义指用它隔开买卖双方账号，需结合交易撮合语境判定。"
  },
  {
   "id": "dafen",

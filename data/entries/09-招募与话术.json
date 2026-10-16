@@ -161,7 +161,8 @@
   ],
   "confidence": "high",
   "frequency": "较常见",
-  "first_seen": "v0.1"
+  "first_seen": "v0.1",
+  "ambiguity": "「防止失联」是完全正常的中文表述，任何提醒留备用联系方式的场景都会出现。本义成立需与「封号」「频道」「订阅」等共现。"
  },
  {
   "id": "yuanqu",
