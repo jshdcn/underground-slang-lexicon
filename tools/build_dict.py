@@ -454,17 +454,20 @@ def sync_readme(entries):
     n_cat = len({e['category'] for e in entries})
     n_lang = len({e.get('lang', 'zh') for e in entries})
     n_edge = len(edges)
-    n_amb = sum(1 for e in entries if e.get('ambiguity'))
+    def has(e, k):
+        return bool((e.get(k) or '').strip())
+
+    def pct(part, whole):
+        return round(100 * part / whole) if whole else 0
+
+    n_amb = sum(1 for e in entries if has(e, 'ambiguity'))
+    v1 = [e for e in entries if e.get('first_seen') == 'v0.1']
+    v2 = [e for e in entries if e.get('first_seen') == 'v0.2']
     lang_count = Counter(e.get('lang', 'zh') for e in entries)
 
     # 徽章
     for label, val in (('词条', n_entry), ('分类', n_cat), ('语种', n_lang), ('关联边', n_edge)):
         s = re.sub(r'(badge/' + label + r'-)\d+(-)', lambda m: m.group(1) + str(val) + m.group(2), s)
-
-    # 歧义覆盖
-    s = re.sub(r'\*\*最关键的差异是"误报说明"。\*\* \d+ 条词条中 \d+ 条标注了歧义（\d+%）',
-               '**最关键的差异是"误报说明"。** %d 条词条中 %d 条标注了歧义（%d%%）'
-               % (n_entry, n_amb, round(100 * n_amb / n_entry)), s)
 
     # 按语种一行
     names = LANG_SHORT
@@ -472,14 +475,28 @@ def sync_readme(entries):
     s = re.sub(r'(（\[非中文词条索引\]\(dict/黑话词典\.md#非中文词条索引\)）：)[^。]+。',
                lambda m: m.group(1) + ' ｜ '.join('%s %d' % (names[lg], lang_count[lg]) for lg in seq) + '。', s)
 
-    # 用 <!--key-->数字<!--/key--> 标记的位置一律按实际数据回填，正文里的数字就不会再过期
+    # 用 <!--key-->数字<!--/key--> 标记的位置一律按实际数据回填，正文里的数字就不会再过期。
+    # 百分号写在标记外面（<!--p_amb-->53<!--/p_amb-->%），标记里只放数字。
+    # 早先「歧义覆盖」那句是按原文措辞写死的正则同步，措辞一改就静默失效，所以一律改用标记。
     marks = {
+        'n_all': n_entry,
+        'n_amb': n_amb,
+        'p_amb': pct(n_amb, n_entry),
         'n_tv': sum(1 for e in entries if e.get('confidence') == 'to-verify'),
         'n_ex': sum(1 for e in entries if e.get('example')),
         'n_note': sum(1 for e in entries if e.get('example_note') and not e.get('example')),
-        'n_v2': sum(1 for e in entries if e.get('first_seen') == 'v0.2'),
+        'n_v1': len(v1),
+        'n_v2': len(v2),
+        'n_tv_v2': sum(1 for e in v2 if e.get('confidence') == 'to-verify'),
+        'p_amb_v1': pct(sum(has(e, 'ambiguity') for e in v1), len(v1)),
+        'p_amb_v2': pct(sum(has(e, 'ambiguity') for e in v2), len(v2)),
+        'p_mech_v1': pct(sum(has(e, 'mechanism') for e in v1), len(v1)),
+        'n_mech_v2': sum(has(e, 'mechanism') for e in v2),
+        'p_mech_v2': pct(sum(has(e, 'mechanism') for e in v2), len(v2)),
     }
     for k, v in marks.items():
+        if '<!--%s-->' % k not in s:
+            print('⚠ README 里找不到同步标记 <!--%s-->，这个数字不会自动更新' % k)
         s = re.sub(r'(<!--%s-->)\d+(<!--/%s-->)' % (k, k),
                    lambda m, v=v: m.group(1) + str(v) + m.group(2), s)
 
