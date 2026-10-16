@@ -467,7 +467,9 @@
    "zhibohao",
    "zhideng",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "先筛出号码或账号是新号还是老号，再决定走哪条作业路径——新号与老号在平台的风控水位、可用功能上都不同。属于批量作业前的预处理工序。"
  },
  {
   "id": "shaihao",
@@ -481,7 +483,8 @@
   "related": [
    "diaohao",
    "shailao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "diaohao",
@@ -494,6 +497,7 @@
   "example": "已过白名单防止掉号",
   "related": [
    "shaihao"
-  ]
+  ],
+  "frequency": "少见"
  }
 ]

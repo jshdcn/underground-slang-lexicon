@@ -2868,7 +2868,8 @@
    "qudaowen",
    "wenchu",
    "xiaohua"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "wenchu",
@@ -2893,7 +2894,8 @@
    "qudaowen",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "lajihu",
@@ -2917,7 +2919,8 @@
    "sihu",
    "wangbai",
    "zhengxin"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "qudaowen",
@@ -2942,7 +2945,9 @@
    "wenchu",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "口子长期可用、不会做一单就断，对中介意味着可以持续供客而不必反复找新渠道。常与「时效快」「长期运作」连用，属渠道方的可靠性话术。"
  },
  {
   "id": "baochirou",
@@ -2969,7 +2974,9 @@
    "heidan",
    "luodifei",
    "zongdai"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "承诺带客户赚到钱、吃到利润，与「包捞」「包赚钱」连用。属「包X」承诺句式里最虚的一档，多见于招揽而非实际交付条款。"
  },
  {
   "id": "shibu",
@@ -3002,7 +3009,9 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "真实发生过的社保或个税补缴，用来补齐缴纳连续性这一条准入要求。与凭空写入系统的「植入」相对——真实补缴查得到凭证，成本也更高。"
  },
  {
   "id": "zhenshibujiao",
@@ -3030,7 +3039,8 @@
    "wuhenzhizhao",
    "yangpingfen",
    "zhanghutaojian"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "chiduda",
@@ -3056,7 +3066,9 @@
    "wenchu",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "审批口径宽松、可放宽的条件多，意味着同一份资料在这条口子上更容易过。是中介选渠道的首要指标，也常与返点高低一起成为同行间比价的维度。"
  },
  {
   "id": "bukane",
@@ -3084,7 +3096,9 @@
    "wenchu",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "按申请人报的额度原样审批、不做削减，是口径宽松的直接体现。常与「尺度大」「返点高」连写，构成渠道招揽同行的标准话术三件套。"
  },
  {
   "id": "luodifei",
@@ -3106,7 +3120,9 @@
    "minganshoufei",
    "yukoufei",
    "zongdai"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "放款成功后才付的费用，按学历或件型分档。与前置收费相对——是否前置收费，是中介判断一条渠道是真做业务还是只收材料费的首要依据。"
  },
  {
   "id": "lufangzi",
@@ -3127,7 +3143,9 @@
    "taoxian",
    "tie",
    "xiaoshuangwai"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "客户无力还款时转而套取其房产，与「撸车」构成由轻到重的两档标的。标的越重单笔产出越高，但处置周期与暴露风险也更大。"
  },
  {
   "id": "laijiudinge",
@@ -3155,7 +3173,8 @@
    "wenchu",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "shujuchue",
@@ -3172,7 +3191,8 @@
    "laijiudinge",
    "poe",
    "tie"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "paodan",
@@ -3195,7 +3215,8 @@
    "tangpingzai",
    "yewuyuan",
    "zhanqi"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "heidan",
@@ -3214,7 +3235,8 @@
    "feilv",
    "luodifei",
    "zongdai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "danbai",
@@ -3239,7 +3261,8 @@
    "shuangbai",
    "wangbai",
    "zhengxin"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "tangpingzai",
@@ -3257,7 +3280,8 @@
    "jiedong",
    "paodan",
    "zhanqi"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "wuhenzhizhao",
@@ -3285,7 +3309,9 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "新注册、查不到历史经营痕迹的营业执照，用来给空壳经营套上合规外观。按持有月数计价并收押金，因为「执照越老越可信」正是机构审查时看的东西。"
  },
  {
   "id": "gongjijin",
@@ -3318,7 +3344,9 @@
    "yitizi",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "用表情符号替掉「积」字，使「公积金」在文本层被切断而人眼仍可读。这类替换的目标是关键词检测，与谐音替字、拆字插符属同一类手法。"
  },
  {
   "id": "geshuizhiru",
@@ -3346,7 +3374,8 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "bukoufengkong",
@@ -3371,7 +3400,8 @@
    "wenchu",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "ankou",
@@ -3390,7 +3420,9 @@
    "heidan",
    "luodifei",
    "zongdai"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "上游从代理应得佣金里私下截留。广告以「无暗扣」「零暗扣」招募代理，意在表明返点按明面比例结算、不再二次抽成——这是代理最在意的结算条款。"
  },
  {
   "id": "zhanqi",
@@ -3407,7 +3439,8 @@
    "jiedong",
    "paodan",
    "tangpingzai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "buhuabing",
@@ -3426,7 +3459,8 @@
    "heidan",
    "luodifei",
    "zongdai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "baopi",
@@ -3463,7 +3497,9 @@
    "wenchu",
    "xiaohua",
    "xingkouying"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "承诺贷款必定获批，把审批不通过的风险从买方转到渠道方。属「包X」承诺句式，同族有「包下」「包放」「包过审」「包入驻」，是中介用来区别于「只递材料」的收费理由。"
  },
  {
   "id": "danshuju",
@@ -3484,7 +3520,8 @@
    "gaopaoshuju",
    "lianhejianmoshuju",
    "shebaoshuju"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "shuangbai",
@@ -3508,7 +3545,9 @@
    "shuangxiang",
    "wangbai",
    "zhengxin"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "资料分档决定这单能走哪条口子、能批多少额，所以分档本身就是定价依据。与「纯白」「小白」「小花」并列出现在收客广告里，中介按档位匹配不同的放款渠道。"
  },
  {
   "id": "keyanzi",
@@ -3536,7 +3575,9 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "包装件最怕的是经不起核，「可验资」就是针对这一点的信用背书：承诺实缴资本或资质材料随时供查验，以此抬高报价。"
  },
  {
   "id": "kegongsi",
@@ -3567,7 +3608,8 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "dashuju",
@@ -3590,7 +3632,8 @@
    "gaopaoshuju",
    "lianhejianmoshuju",
    "shebaoshuju"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "wangbai",
@@ -3615,7 +3658,9 @@
    "setui",
    "shuangbai",
    "zhengxin"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "名下无网贷记录意味着多头借贷风险低，是机构准入的硬条件之一。与芝麻分、打卡工资等条件并列构成一张准入清单，差一项就要换渠道。"
  },
  {
   "id": "tongtaicaozuo",
@@ -3643,7 +3688,8 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xiaohua",
@@ -3669,7 +3715,8 @@
    "qudaowen",
    "wenchu",
    "xingkouying"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "shuiwusanjiantao",
@@ -3698,7 +3745,9 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "把三样税务材料打包成一个商品，买方不必自己凑齐。与「四件套」同属「X件套」的售卖方式——打包的目的是让缺哪样都能一次买齐。"
  },
  {
   "id": "lingshoufufang",
@@ -3718,7 +3767,8 @@
    "taoxian",
    "tie",
    "xiaoshuangwai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "shouxusuiche",
@@ -3751,7 +3801,9 @@
    "xiaoche",
    "xiaoshuangwai",
    "zhaoche"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "车辆的登记证、发票随车交付，受让方不必再找原车主就能过户或再质押。手续是否随车直接决定车能否二次变现，因此是车类标的的核心议价点。"
  },
  {
   "id": "gaoping",
@@ -3775,7 +3827,8 @@
    "tie",
    "xiaoshuangwai",
    "zhiping"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "yangpingfen",
@@ -3805,7 +3858,8 @@
    "yangyu",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "lajingzi",
@@ -3834,7 +3888,8 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "kaibai",
@@ -3852,7 +3907,8 @@
    "jiabai",
    "shuangbai",
    "wangbai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "dashuangwai",
@@ -3877,7 +3933,8 @@
    "taoxian",
    "tie",
    "xiaoshuangwai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xiaoshuangwai",
@@ -3898,7 +3955,8 @@
    "taoxian",
    "tie",
    "xiaochengxushui"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "baozhuangke",
@@ -3932,7 +3990,9 @@
    "yangpingfen",
    "zhanghutaojian",
    "zhenshibujiao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "资料被中介加工过的申请人，是渠道放量时风险链路被拉长的主要来源。对机构而言这类客户的违约特征与自然客群不同，所以贷后风控会单独识别；对中介而言「包装」才是收费的理由。"
  },
  {
   "id": "yikasanma",
@@ -3967,7 +4027,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "一张卡能接三次码，是按张计价时的产能标注，让买方算得出单号成本。"
  },
  {
   "id": "shika",
@@ -4003,7 +4065,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "实体运营商卡是号源的高价档——许多平台直接拦截虚拟号段注册，所以「实卡接码」是号商的核心卖点，常与代实名、厅卡打包供货。"
  },
  {
   "id": "xuka",
@@ -4037,7 +4101,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "虚拟号段成本低但更易被识别，按天卡月卡短租计价，用于核验强度要求不高的批量注册。与实卡构成两档。"
  },
  {
   "id": "haoduan",
@@ -4051,7 +4117,8 @@
   "ambiguity": "「号段」也用于快递单号段、靓号段等无关场景。",
   "related": [
    "shika"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "shoudongting",
@@ -4064,7 +4131,9 @@
   "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "jifang"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "人在营业厅手工办卡、手工接码的渠道，与机房批量自动化相对。手工路径产能低但更难被批量识别，常与代实名、执照法人配合打包出售。"
  },
  {
   "id": "ercika",
@@ -4098,7 +4167,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "已被使用过、可再次接码或再次出售的卡资源。二次流通让单张卡产生多轮收益，但历史痕迹也会累积，价格低于首次卡。"
  },
  {
   "id": "mache",
@@ -4129,7 +4200,8 @@
    "xiaoche",
    "yuliao",
    "zhaoche"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "daishou",
@@ -4159,7 +4231,8 @@
    "shouu",
    "shualiwu",
    "songxian"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "nengliangma",
@@ -4191,7 +4264,9 @@
    "yima",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "可承接大额收款、过风控的特殊码资源，用来突破普通收款码的限额与风控。常与「无视码车」「拖算」并列招募，是通道侧的高价资源。"
  },
  {
   "id": "rouliao",
@@ -4212,7 +4287,8 @@
    "seliao2",
    "wangzhaxinliao",
    "yuliao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "buu",
@@ -4246,7 +4322,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "做单或循环单过程中追加USDT头寸以继续接单或垫资，是承兑与回U链路上维持周转的动作。头寸不足就接不了新单。"
  },
  {
   "id": "abwushi",
@@ -4280,7 +4358,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "A/B卡组合可「无视」部分限额或风控规则，用来放大单日可跑额度。靠的是两类卡在风控规则上的差异互补，而不是单卡本身的额度。"
  },
  {
   "id": "abdenge",
@@ -4297,14 +4377,15 @@
    "poe",
    "shujuchue",
    "tie"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "cunzhenka",
   "term": "村镇卡",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "〔某银行〕卡资源，因风控差异被黑产用于收款、刷额、套现或过卡。",
+  "definition": "村镇银行发行的银行卡资源，因风控差异被用于收款、刷额、套现或过卡。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "各类信用卡和村镇卡，公群报备",
@@ -4330,7 +4411,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "村镇银行发行的卡，因风控策略与大行存在差异而被单列一档，用于收款、刷额、套现或过卡。"
  },
  {
   "id": "jingwaikakou",
@@ -4364,7 +4447,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "通过境外商户或第三方通道扣款，把境内资金转到境外。跨境这一跳使境内侧的追溯在管辖上断开，是出境环节的常用手法。"
  },
  {
   "id": "yinhangji",
@@ -4384,14 +4469,15 @@
    "shebeizhiwen",
    "shuaji",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "guitaika",
   "term": "柜台卡",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "指适合柜台存取现、柜〔某银行〕卡资源，多用于线下资金出入。",
+  "definition": "适合柜台存取现、柜面转入转出的银行卡资源，多用于线下资金出入。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "取现卡，柜台卡，结算卡，无卡人头办卡（武汉，长沙，合肥",
@@ -4417,14 +4503,16 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "适合柜面存取现与转入转出的卡资源，用于线下资金出入。柜面操作不受线上限额约束，但需要人到场，所以常配合车队使用。"
  },
  {
   "id": "makache",
   "term": "码卡车",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "指同时〔某银行〕卡通道的车队/操作手，负责把料转成入金或回U。",
+  "definition": "同时承接收款码与银行卡通道的车队或操作手，负责把料转成入金或回 U。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example_note": "可见用例夹带不宜公开的内容，故不附示例。",
@@ -4448,7 +4536,8 @@
    "zhaoche",
    "zhenrenjingliao",
    "zhipan"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xianjinche",
@@ -4476,7 +4565,8 @@
    "xiaoche",
    "zhaoche",
    "zhaomache"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "fangliang",
@@ -4494,7 +4584,8 @@
    "shouliang",
    "yinhangjuliang",
    "zouliang"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "shangfu",
@@ -4515,7 +4606,8 @@
    "shangka",
    "shangma",
    "shangya"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "kuaidihuangjin",
@@ -4549,7 +4641,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "用邮寄黄金实物替代转账完成资金转移与变现。实物路径不经过银行与支付系统，代价是物流环节本身可被查扣。"
  },
  {
   "id": "guzhuan",
@@ -4583,7 +4677,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "借股票、证券的转账场景包装入金或过账。证券类通道的资金往来本身频繁且金额大，混入其中不易被单独识别，因此常作为特殊报备料型出现。"
  },
  {
   "id": "seliao2",
@@ -4604,7 +4700,8 @@
    "seliao",
    "wangzhaxinliao",
    "yuliao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "shouu",
@@ -4623,7 +4720,8 @@
    "heizi",
    "huiu",
    "songxian"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "baizishouu",
@@ -4643,7 +4741,8 @@
    "paofen",
    "shouu",
    "xiankuanhouu"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "banu",
@@ -4657,7 +4756,8 @@
   "related": [
    "feilv",
    "huilv"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "huilvcha",
@@ -4691,14 +4791,16 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "U与人民币、现金、跨境账户之间的价差，既是承兑方的利润来源，也是定价谈判的核心变量——报价里的「汇率美丽」指的就是这个差。"
  },
  {
   "id": "songxian",
   "term": "送现",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "指安排人员线下把现金送达交易对手，〔某银行〕转账以规避审查。",
+  "definition": "安排人员线下把现金送达交易对手，替代银行转账以规避审查。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
@@ -4710,7 +4812,9 @@
    "huiu",
    "paofen",
    "shouu"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "安排人员线下把现金送达交易对手，替代银行转账以规避审查。是资金落地的最末一环，也是人身暴露最直接的一环。"
  },
  {
   "id": "naxianche",
@@ -4736,7 +4840,8 @@
    "xianjinche",
    "xiaoche",
    "zhaoche"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "didinaxian",
@@ -4770,7 +4875,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "以网约车、跑腿等外壳组织线下拿现，让交割看起来像正常的平台订单，同时把单笔金额打散到多个接单人身上，分散线下交割风险。"
  },
  {
   "id": "kesu",
@@ -4804,7 +4911,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "客户投诉或报案的风险，被用来评估这批料后续被冻结、止付、进入司法程序的概率。客诉率直接影响料的定价与是否「保司法」。"
  },
  {
   "id": "daxiaoche",
@@ -4836,7 +4945,9 @@
    "xiaoche",
    "yishou",
    "zhaoche"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "按吃量能力区分承接方体量。大车能吞大额但要求更高，小车门槛低但单量有限，盘方按单的大小分派给不同体量的车队。"
  },
  {
   "id": "guou",
@@ -4851,7 +4962,8 @@
    "guokongting",
    "guokyc",
    "guorenlian"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gongya",
@@ -4869,7 +4981,8 @@
    "sifang",
    "xianyudailiao",
    "yitiaolong"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "chuu",
@@ -4889,7 +5002,8 @@
    "huiu",
    "jiema",
    "shouu"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "shangfushouu",
@@ -4912,7 +5026,8 @@
    "shangma",
    "shangya",
    "xiankuanhouu"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "xiankuanhouu",
@@ -4930,7 +5045,8 @@
    "shangfushouu",
    "shangya",
    "wuxuyanjing"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "bufazhan",
@@ -4947,7 +5063,8 @@
    "huilv",
    "laoche",
    "pankou"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "xianbaobei",
@@ -4966,7 +5083,8 @@
    "pankou",
    "shangya",
    "yewuyuan"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "gongqunbaobei",
@@ -5000,7 +5118,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "在公群内按模板完成正式报备，是回U或赔付的前置条件。报备把口头约定变成群内可追溯的记录，是这类无合同交易的信用基础设施。"
  },
  {
   "id": "daibaobei",
@@ -5020,7 +5140,8 @@
    "daiweiquan",
    "daix",
    "daiyunying"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "uche",
@@ -5045,7 +5166,8 @@
    "xianjinche",
    "xiaoche",
    "zhaoche"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "zhaomache",
@@ -5081,17 +5203,19 @@
    "ushangnaxian",
    "xianjinche",
    "zhaoche"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "招募提供收款码的车队成员，按额度档位分配单量。与现金车、实物车、卡车同属资金落地的末端承接环节——这一环把线上资金转为可支配形态，也是司法风险最集中的一环。"
  },
  {
   "id": "kakou",
   "term": "卡扣",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "银行卡/〔某银行〕无卡扣款类通道，用于线上扣款或卸货",
+  "definition": "银行卡与〔某卡组织〕的无卡扣款类通道，用于线上扣款或卸货。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example": "全球所有国家 支持“〔某银行〕的 POS机，〔某银行〕卡扣 ，〔某银行〕码 ，〔某银行〕3ds付款， 〔某支付平台〕卡扣",
+  "example": "全球所有国家 支持银行 POS机、银行卡扣、银行码、banking 3ds 付款、〔某支付平台〕卡扣",
   "related": [
    "abwushi",
    "buu",
@@ -5115,14 +5239,16 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "银行卡与卡组织的无卡扣款通道，用于线上扣款或卸货。无卡扣款不需要持卡人在场，因此是盗刷类资金落地的常用路径。"
  },
  {
   "id": "kahuiu",
   "term": "卡回U",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "〔某银行〕卡通道完成入款后再回 U 的业务模式",
+  "definition": "通过银行卡通道完成入款后再回 U 的业务模式。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "公群K组业务226-供押68888U常规se料〔某支付平台〕/直扫/群收/卡卡回U公群（月结) 交易前请先关注，担保流程 1.交易前认准群老板和业务员头衔",
@@ -5149,7 +5275,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "银行卡通道收款后再换成USDT，是「法币入、币出」的标准两段式。分两段是为了在法币侧与币侧之间切断可追溯链路。"
  },
  {
   "id": "ushangnaxian",
@@ -5183,14 +5311,16 @@
    "shangya",
    "ushang",
    "zhaomache"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "U商线下取现再交付USDT，把线上余额转成现金这一步放到线下完成，以此避开银行侧的转账留痕。"
  },
  {
   "id": "yunzhuanka",
   "term": "云转卡",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "通过〔某支付平台〕/线上转卡类渠〔某银行〕卡的通道",
+  "definition": "通过〔某支付平台〕或线上转卡类渠道把资金导入银行卡的通道。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "〔某银行〕正扫码 〔某银行〕反扫 数字商家码 多点车 〔某电商平台〕车 〔某连锁品牌〕车 云转卡有合作店铺来",
@@ -5216,7 +5346,9 @@
    "yileika",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "通过线上转卡类渠道把资金导入银行卡的通道，省掉线下环节但依赖该渠道本身的风控宽松度。"
  },
  {
   "id": "qiyema",
@@ -5248,7 +5380,9 @@
    "yima",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "以企业主体或企业收款资质承接资金流入，额度上限与风控表现都优于个人码。以「企业码车」形式招募，主体资质本身就是定价要素。"
  },
  {
   "id": "shishijiesuan",
@@ -5265,7 +5399,8 @@
    "shika",
    "shikaxuka",
    "shiminka"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "viradadesaldo",
@@ -5293,7 +5428,8 @@
    "pvcs",
    "refunding"
   ],
-  "region": "巴西支付与信用卡盗刷"
+  "region": "巴西支付与信用卡盗刷",
+  "frequency": "少见"
  },
  {
   "id": "gg",
@@ -5322,7 +5458,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "常见"
  },
  {
   "id": "pvcs",
@@ -5350,7 +5487,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西支付与信用卡盗刷"
+  "region": "巴西支付与信用卡盗刷",
+  "frequency": "少见"
  },
  {
   "id": "chk",
@@ -5380,7 +5518,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "drop2",
@@ -5414,7 +5553,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "较常见"
  },
  {
   "id": "goldcomsaldo",
@@ -5442,7 +5582,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "consultaveis",
@@ -5470,7 +5611,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "esquemadeaprovacao",
@@ -5498,7 +5640,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "1x1",
@@ -5526,6 +5669,7 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  }
 ]

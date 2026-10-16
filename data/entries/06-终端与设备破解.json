@@ -601,7 +601,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "facialqueimada",
@@ -634,6 +635,7 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  }
 ]

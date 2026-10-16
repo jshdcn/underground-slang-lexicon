@@ -1678,7 +1678,8 @@
    "dingwei",
    "rouemoji",
    "yewuyuan"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "sanrenhao",
@@ -1706,7 +1707,8 @@
    "xinghao",
    "yanzhenghao",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "quanma",
@@ -1743,7 +1745,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "一条线路能吃下短信、语音与各平台专用码，买方不必为不同项目分别找渠道。对接码平台是整合能力的卖点，常与「冷门项目都可以」连写。"
  },
  {
   "id": "kawang",
@@ -1756,7 +1760,8 @@
   "example": "卡网所有app尽量不要充会员 冲了不来吗尽量配合 如果恢复不了只赔卡钱或者补号",
   "related": [
    "gongqun"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "lanjie",
@@ -1775,7 +1780,8 @@
    "jiechi",
    "paoa",
    "yewuyuan"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "lengmen",
@@ -1789,7 +1795,8 @@
   "related": [
    "gongqun",
    "yishou"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "fama",
@@ -1825,7 +1832,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "与接码方向相反的那半边业务：用同一批厅卡资源向外下发短信。接码卖「收」，发码卖「发」，两者共用号源与设备，所以常由同一渠道同时提供。"
  },
  {
   "id": "tongdao",
@@ -1849,7 +1858,8 @@
    "xianlu",
    "zhaoxuetu",
    "zhuanka"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "yima",
@@ -1882,7 +1892,9 @@
    "yikasanma",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "是接码业务的计量单位——报价、结算、投诉都按「条」算，所以挂单里会直接写「接一码X米」。往上接猫池与厅卡的号源，往下接注册、登录、换绑各类项目。"
  },
  {
   "id": "paoliang",
@@ -1911,7 +1923,8 @@
    "tongdao",
    "yinhangjuliang",
    "zouliang"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "kaihu",
@@ -1935,7 +1948,9 @@
    "plcgehu",
    "shegongku",
    "sihu"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "为账号开通业务权限或开立收款账户。在查档类服务清单里与查档、人肉并列，在资金语境里是通道的起点。两种用法的共同点是打开一个可供后续作业的入口。"
  },
  {
   "id": "huima",
@@ -1971,7 +1986,9 @@
    "yima",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "一次接码是否算成交就看能否回码，因此它既是结算的依据，也被聚合成「回码率」「回码成数」来给渠道质量定价。"
  },
  {
   "id": "liuka",
@@ -2005,7 +2022,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "卡不下架、长期留在设备上供反复接码，是复接能力的物理前提。挂单会标明可留多少天，天数直接进入报价。"
  },
  {
   "id": "laimalv",
@@ -2021,7 +2040,8 @@
    "feilv",
    "huilv",
    "huimalv"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "duijiema",
@@ -2057,7 +2077,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "走专属对接通道的接码凭证，与公开接码平台相对：买方直接对接号源方，少一道中间商，但要先建立信任关系。"
  },
  {
   "id": "fujie",
@@ -2070,7 +2092,9 @@
   "example": "〔某社交平台〕，海外实卡接码，复接稳定，ws 〔某社交平台〕协议号、直登号",
   "related": [
    "shouma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "把一次性的号码变成可重复使用的资产，单号成本随接码次数摊薄。与首码构成两档定价，是号商衡量库存价值的核心指标。"
  },
  {
   "id": "yimazhideng",
@@ -2106,7 +2130,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "一条码就进账号，不再触发二次核验或人脸，省掉买方最容易卡住的环节。是账号挂单的顺畅度卖点，与「无视IP」「丝滑登录」连写。"
  },
  {
   "id": "duxiangfujie",
@@ -2135,7 +2161,9 @@
    "yikayilianjie",
    "yukoufei",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "在复接之上再加排他性：买方独占号码、按期续费保号，避免同一号码被其他买家同时用于相同平台而触发风控。是复接档里的高价形态。"
  },
  {
   "id": "xianlu",
@@ -2149,7 +2177,8 @@
   "ambiguity": "「线路」是输电、物流、eSIM等场景的常用词，需结合接码语境判定。",
   "related": [
    "tongdao"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "shangka",
@@ -2185,7 +2214,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "卡商把SIM卡插入猫池设备、开始供码的动作，是号源进入流通的起点。与「下卡」构成一组，决定某批号码在某段时间内是否在产。"
  },
  {
   "id": "fangka",
@@ -2218,7 +2249,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "与「上卡」同指，强调把卡投放进设备开始接单。"
  },
  {
   "id": "xiaka",
@@ -2254,7 +2287,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "把卡从设备里移出、停止供码，多因该批号码已被平台标记或需要冷却。上卡与下卡的节奏决定号源的在产规模，也是买方判断渠道稳定性的依据。"
  },
  {
   "id": "yukoufei",
@@ -2286,7 +2321,9 @@
    "yikasanma",
    "yikayilianjie",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "下单先冻结费用、失败按时限自动退回，用来约束买方恶意下单占用号码。不同业务的退款时限不同，是接码平台的结算规则而非服务内容。"
  },
  {
   "id": "yuyinma",
@@ -2322,7 +2359,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "短信通道被拦截或被运营商限流时的替代路径——验证码改由语音电话播报。是针对短信侧风控收紧的直接应对，与拦截卡形成互补。"
  },
  {
   "id": "laimalv2",
@@ -2355,7 +2394,9 @@
    "yitizi",
    "yukoufei",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "「来码率」的谐音写法，功能与回码率相同，出现的原因是关键词检测收紧——同一个指标在不同群里会用不同写法，是判断群组规避程度的旁证。"
  },
  {
   "id": "huimalv",
@@ -2391,7 +2432,9 @@
    "yikayilianjie",
    "yukoufei",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "渠道质量的核心量化指标，按成数或百分比报价，直接决定买方选哪条线路。率值异常走低会被追查是设备问题还是买方恶意取码不付费。"
  },
  {
   "id": "erma",
@@ -2404,7 +2447,8 @@
   "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "yishou"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gaohuima",
@@ -2440,7 +2484,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "回码率高的号源或线路，跑量时被优先占用。因为产能有限，高回码资源往往先供给大客户，小单只能排在后面。"
  },
  {
   "id": "shouma",
@@ -2473,7 +2519,9 @@
    "yima",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "平台普遍只对号码的首次注册放行，首码因此是整条链上最稀缺的一档，价格高于可复接的码。号商会主动声明「接的不是首码」来区分档位，避免成交后扯皮。"
  },
  {
   "id": "sanwangshouma",
@@ -2505,7 +2553,9 @@
    "yima",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "来自三大运营商渠道的首次接码资源，是首码里被单独标价的一档——实体运营商号段比虚拟号段更难被平台识别拦截。"
  },
  {
   "id": "jiaka",
@@ -2538,7 +2588,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "给某个项目或平台补充卡资源。平台侧提高核验强度或封号加剧时，渠道需要加卡才能维持出单量，所以「加卡」频次反映该平台的对抗烈度。"
  },
  {
   "id": "kache",
@@ -2575,7 +2627,9 @@
    "ushang",
    "ushangnaxian",
    "zhaomache"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "提供银行卡承接资金的车队，与招码车、现金车并列招募。强调「卡可循环使用」「司法风险低」，是资金落地环节的末端承接方。"
  },
  {
   "id": "jialiang",
@@ -2598,7 +2652,8 @@
    "tongdao",
    "yinhangjuliang",
    "zouliang"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "zhucema",
@@ -2630,7 +2685,9 @@
    "yikasanma",
    "yima",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "专供注册场景的码资源，与登录码、换绑码分开供货。分场景定价是因为各平台对注册环节的核验最严，成本也最高。"
  },
  {
   "id": "danpao",
@@ -2645,7 +2702,8 @@
    "danbai",
    "danshuju",
    "dantai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "yuyinhao",
@@ -2674,7 +2732,8 @@
    "xieyihao",
    "xinghao",
    "zhibohao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "daishoufa",
@@ -2703,7 +2762,9 @@
    "yikayilianjie",
    "yukoufei",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "同一号码既能收码也能发短信，买方不必为两种用途各备一批号。是号源的复用能力标注，直接提高单号的变现效率。"
  },
  {
   "id": "sm",
@@ -2726,7 +2787,8 @@
    "niunai",
    "xiepin",
    "yitizi"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "wushiip",
@@ -2762,7 +2824,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "账号登录不受IP归属地校验限制，买方不必为每个号配对应地区的网络环境。省掉代理与秒拨这一层成本，因此是账号与银行卡类挂单的顺畅度卖点。"
  },
  {
   "id": "manyue",
@@ -2798,7 +2862,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "平台对新注册账号的功能限制通常按时长解除，所以注册时长被直接做成价格档。「满月」是第一档，往上是「满年」，号商靠提前囤号跨过这段养号期。"
  },
  {
   "id": "huanbang",
@@ -2811,7 +2877,9 @@
   "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "huanzhuti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "把绑定手机号换掉，用于转移账号归属或甩掉已被标记的旧号。是接码业务的固定项目，与注册、复接并列构成三类常规单。"
  },
  {
   "id": "naiyonghao",
@@ -2847,7 +2915,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "把「能活多久」直接做成卖点，建立在注册年限与无违规之上，按「年号」计价。对买方而言它决定一次投入能摊到多少产出，是租号与代操作类项目的核心成本项。"
  },
  {
   "id": "baozhaohui",
@@ -2867,7 +2937,9 @@
    "baoshoudeng",
    "baowang",
    "baozhuangke"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "承诺账号丢失后协助找回，按天数限定。是售后承诺里期限最短的一档，常与月卡、等级号一起出售。"
  },
  {
   "id": "laobai",
@@ -2904,7 +2976,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "注册久且无违规记录，两项成色叠加后是账号分档里的高价档，常与「满月」「满年」「0违规」一起标注，用来向买方证明这批号经得起风控审查。"
  },
  {
   "id": "shanghao",
@@ -2939,7 +3013,9 @@
    "subindoconta",
    "xinghao",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "买方登录他人提供的账号开始作业，是租号与代操作模式的起点。卖家常允许「先上号测试」再成交，以此降低买方的信任成本。"
  },
  {
   "id": "dinghao",
@@ -2968,7 +3044,8 @@
    "xinghao",
    "yuyinhao",
    "zhibohao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "sihao",
@@ -3004,7 +3081,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "账号被封即归零，所以渠道反向以「不死号」「不易死号」承诺存活率。存活率是租号与代操作项目的核心风险，押金与结算方式都围绕它设计。"
  },
  {
   "id": "jingyanghao",
@@ -3034,7 +3113,8 @@
    "xinghao",
    "yitiaolong",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "jingyang",
@@ -3071,7 +3151,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "账号到手后先搁置一段时间不动，等平台的风控观察期过去再启用，是降低「刚买就封」概率的操作纪律。渠道会给出具体天数，并提示改密码、删设备要更晚再动。"
  },
  {
   "id": "tuobang",
@@ -3084,7 +3166,9 @@
   "example": "脱绑 带绑保1 保2",
   "related": [
    "daibang"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "解除账号与手机号的绑定，账号才能转手给下一个买家再绑。是账号二次流通的前提，挂单会标明是否承担脱绑失败的责任。"
  },
  {
   "id": "shailao",
@@ -3097,7 +3181,8 @@
   "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "shaihao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "huiliulaohao",
@@ -3127,7 +3212,9 @@
    "smhao",
    "xinghao",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "解绑回收后重新投入流转的旧号，让同一批账号产生多轮收益。是账号资产的循环复用环节，也意味着买方可能买到有历史痕迹的号。"
  },
  {
   "id": "zhideng",
@@ -3163,7 +3250,9 @@
    "zhibohao",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "账号可直接登录、不需额外验证过渡，省掉买方的核验环节。与「协议号」「API号」构成不同的接入形态，直登最省事也最贵。"
  },
  {
   "id": "0weigui",
@@ -3199,7 +3288,9 @@
    "zhibohao",
    "zhideng",
    "zhidengxieyiapi"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "没有处罚记录意味着账号的风控水位低，买方拿去做高风险操作时存活更久。与实名状态、注册时长并列构成「全实名0违规」这类标准挂单格式。"
  },
  {
   "id": "yihaoyilianjie",
@@ -3228,7 +3319,9 @@
    "yikayilianjie",
    "yukoufei",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "每个号码配独立的接码链接，避免多买方共用同一入口相互干扰，也便于按链接核对出单与结算。"
  },
  {
   "id": "ganglao",
@@ -3264,7 +3357,9 @@
    "zhibohao",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "香港老号的简称，因注册地与实名体系不同而被单列一档，常用于需要绕开境内实名核验的场景。"
  },
  {
   "id": "quancan",
@@ -3280,7 +3375,8 @@
    "quanguodw",
    "quanma",
    "quantuoguan"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "zhidengxieyiapi",
@@ -3316,7 +3412,9 @@
    "youxiangzhideng",
    "zhibohao",
    "zhideng"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "既能直登又支持协议或API调用，适合批量自动化作业而非单号手工操作。是面向团队客户的高阶形态，定价高于普通直登号。"
  },
  {
   "id": "youxiangzhideng",
@@ -3352,7 +3450,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "走邮箱体系直接登录的账号，绕开手机号绑定这一环，在手机号实名收紧的平台上成为替代路径。"
  },
  {
   "id": "yikayilianjie",
@@ -3381,7 +3481,9 @@
    "yikasanma",
    "yukoufei",
    "yuyinma"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "与「一号一链接」同指，强调一卡对应一个独立入口，是排他性供货的形态标注。"
  },
  {
   "id": "daibang",
@@ -3394,7 +3496,8 @@
   "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "tuobang"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "baodeng",
@@ -3421,7 +3524,9 @@
    "pingtaidaicheng",
    "yishou",
    "yuanshengxiaodian"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "账号能否登录是交易最容易扯皮的点，「包登」把这个风险从买方转到卖方。属「包X」承诺句式，同族有包首登、包找回、包换，常与「永不顶号」连写。"
  },
  {
   "id": "saolao",
@@ -3434,7 +3539,8 @@
   "example": "有没有做〔某短视频平台〕扫老的价高需求量大",
   "related": [
    "saomashenqing"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "baofuzhu",
@@ -3454,7 +3560,8 @@
    "baowang",
    "baozhaohui",
    "baozhuangke"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "zouliang",
@@ -3474,7 +3581,9 @@
    "shouliang",
    "yinhangjuliang",
    "zoudanbao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "以大批量成交换更低单价，是渠道招募代理时的核心话术，常与「保量」连用。量越大单价越低，也意味着渠道需要更稳定的号源支撑。"
  },
  {
   "id": "yitiaolong",
@@ -3494,7 +3603,8 @@
    "makache",
    "shouxin",
    "xianyudailiao"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "shoucuo",
@@ -3531,7 +3641,9 @@
    "zhibohao",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "人工逐个注册，产能低但更像真人操作、更难被风控识别，因此被当作号源质量的卖点与自动化批量注册的对照档。"
  },
  {
   "id": "baoshoudeng",
@@ -3551,7 +3663,9 @@
    "baowang",
    "baozhaohui",
    "baozhuangke"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "只担保首次登录成功，掉线与人脸核验失败不在售后范围。是比「包登」更窄的承诺，用来压低卖方的售后成本。"
  },
  {
   "id": "feijishangfen",
@@ -3572,7 +3686,8 @@
    "shangfen",
    "wanfen",
    "zhangfen"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "qunzukelong",
@@ -3591,7 +3706,8 @@
    "shangfen",
    "shuijun",
    "wanfen"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "qihao",
@@ -3620,7 +3736,8 @@
    "xinghao",
    "yanzhenghao",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "shikaxuka",
@@ -3654,7 +3771,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "把两类号源并列标价，是号商供货表的标准写法——买方按项目的核验强度选档，核验严的上实卡，只求数量的上虚卡。"
  },
  {
   "id": "lengremenzhanghao",
@@ -3683,7 +3802,8 @@
    "yanzhenghao",
    "yuyinhao",
    "zhibohao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "dingjihaoshang",
@@ -3701,7 +3821,8 @@
    "liaoshang",
    "mashang",
    "ushang"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "smhao",
@@ -3730,7 +3851,8 @@
    "yanzhenghao",
    "yuyinhao",
    "zhibohao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "haiwaihao",
@@ -3758,7 +3880,9 @@
    "xinghao",
    "yanzhenghao",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "按国别分区供货的境外号源，用来绕开境内平台的实名与地域校验。专业号铺按国家维护库存，国别本身就是定价维度。"
  },
  {
   "id": "shoucihao",
@@ -3787,14 +3911,15 @@
    "yanzhenghao",
    "yuyinhao",
    "zhibohao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "bangka",
   "term": "绑卡",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "〔某银行〕卡的账号（\"带绑卡\"=可直接收付款）",
+  "definition": "已绑定银行卡的账号，「带绑卡」即可直接收付款。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example_note": "尚未取到含该词的可发布用例。",
@@ -3820,7 +3945,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "账号绑定银行卡后即可直接收付款，「带绑卡」因此是挂单里的高价属性——买方省掉自己绑卡这一步，也省掉绑卡环节的核验风险。"
  },
  {
   "id": "guangdian",
@@ -3856,7 +3983,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "第四家运营商的号段，因入网与风控策略与三大运营商不同而被单独标价，常被当作三网号段受限后的替代号源。"
  },
  {
   "id": "jingyang2",
@@ -3872,7 +4001,8 @@
    "laohuohao",
    "pingtaidaicheng",
    "qiangla"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "qianfen",
@@ -3899,7 +4029,9 @@
    "wanfen",
    "yuanshengxiaodian",
    "zhangfen"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "粉丝量是成品号的价格阶梯，千粉是入门档。按篇接单发稿时，档位直接决定单价，所以粉丝量既是账号属性也是报价依据。"
  },
  {
   "id": "wanfen",
@@ -3926,7 +4058,9 @@
    "shangfen",
    "shuijun",
    "zhangfen"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "粉丝量阶梯的高档位，单篇报价明显高于千粉。上游靠「上粉」把数字刷上去，下游接种草、带货等按篇结算的任务。"
  },
  {
   "id": "mannian",
@@ -3962,7 +4096,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "养号周期里的高档位，能解锁更多平台功能、也更不容易被判定为新号异常。囤号成本随时长累积，价格因此明显高于满月。"
  },
  {
   "id": "yaliaoka",
@@ -3995,7 +4131,9 @@
    "yunzhuanka",
    "yuyinka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "语音聊天卡被用作色情引流的入口，卡本身是通信资源，引流话术与变现在下游。属于通信资源被挪作引流用途的一类。"
  },
  {
   "id": "dantai",
@@ -4010,7 +4148,8 @@
    "danbai",
    "danpao",
    "danshuju"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "ruwang",
@@ -4046,7 +4185,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "手机卡激活入网，是号商批量养卡的第一步。入网时间决定后续能卖到哪个「满月」「满年」档位，因此号商会提前大批入网囤号。"
  },
  {
   "id": "huixiang",
@@ -4066,7 +4207,8 @@
    "huimalv",
    "huishou",
    "huiu"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "lanbiao",
@@ -4102,7 +4244,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "带企业认证标识的账号，权重与可用功能高于普通号，被用于需要可信外观的场景。认证门槛构成供给稀缺，价格随之上去。"
  },
  {
   "id": "qishou",
@@ -4138,7 +4282,9 @@
    "zhideng",
    "zhidengxieyiapi",
    "ziti"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "最低起售量，把零散买家挡在门外。起售量既是渠道的产能门槛，也是判断对方是面向散户还是面向团队供货的信号。"
  },
  {
   "id": "shuangtai",
@@ -4152,7 +4298,8 @@
   "related": [
    "shuangbai",
    "shuangxiang"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "yuyinka",
@@ -4185,7 +4332,9 @@
    "yileika",
    "yunzhuanka",
    "zhuanka"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "能接打电话的卡，用途跨接码、电销与引流三类业务，因此比纯接码卡的流通面更广、价格也更硬。"
  },
  {
   "id": "ziti",
@@ -4222,7 +4371,9 @@
    "youxiangzhideng",
    "zhibohao",
    "zhideng"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "在主体账号之下派生子账号，一是分摊被封风险，二是扩大同时作业的面。主体一旦出事子体连带受影响，所以渠道会按主体健康度分档报价。"
  },
  {
   "id": "beianhao",
@@ -4251,7 +4402,8 @@
    "yanzhenghao",
    "yuyinhao",
    "zhibohao"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "daiqianfen",
@@ -4272,7 +4424,8 @@
    "shangfen",
    "wanfen",
    "zhangfen"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "xinghao",
@@ -4302,7 +4455,8 @@
    "xieyihao",
    "yanzhenghao",
    "yuyinhao"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "baohuan",
@@ -4323,7 +4477,8 @@
    "baowang",
    "baozhaohui",
    "baozhuangke"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "shangfen",
@@ -4357,7 +4512,9 @@
    "shuijun",
    "wanfen",
    "zhangfen"
-  ]
+  ],
+  "frequency": "较常见",
+  "mechanism": "给账号、频道或群组注水粉丝与成员，是把账号做成可售商品的上游工序。与「打粉」「拉手」同属流量注水环节，按量计价。"
  },
  {
   "id": "shouxin",
@@ -4377,7 +4534,9 @@
    "sifang",
    "xianyudailiao",
    "yitiaolong"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "出售新注册账号或新到货源，与「售老」相对。新号便宜但功能受限，老号贵但痕迹多，两档并列是号商供货表的常见结构。"
  },
  {
   "id": "esquema",
@@ -4407,7 +4566,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "trampo",
@@ -4437,7 +4597,8 @@
    "trampar",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "pv",
@@ -4468,7 +4629,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西泛黑产社群"
+  "region": "巴西泛黑产社群",
+  "frequency": "常见"
  },
  {
   "id": "kitbico",
@@ -4503,7 +4665,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "editveis",
@@ -4536,7 +4699,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "burladordeselfie",
@@ -4569,7 +4733,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "burla",
@@ -4605,7 +4770,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "trampar",
@@ -4635,7 +4801,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西泛黑产社群"
+  "region": "巴西泛黑产社群",
+  "frequency": "少见"
  },
  {
   "id": "subindoconta",
@@ -4669,7 +4836,9 @@
    "semrastro",
    "shanghao"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见",
+  "mechanism": "把号源做成可用账号的整套流程——注册、入驻、激活到KYC，是巴西代入驻服务的核心工序，上游接身份素材，下游交付可直接作业的账号。"
  },
  {
   "id": "laras",
@@ -4702,7 +4871,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西支付与出行生态"
+  "region": "巴西支付与出行生态",
+  "frequency": "少见"
  },
  {
   "id": "bo",
@@ -4735,7 +4905,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "facial",
@@ -4768,7 +4939,9 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见",
+  "mechanism": "人脸信息是骑手入驻的最后一道卡口，代入驻服务的卖点正是用他人真实人脸帮违规者过认证。上游接身份素材供应，下游接账号交付。"
  },
  {
   "id": "aprovador",
@@ -4802,7 +4975,9 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见",
+  "mechanism": "被收买的平台内部审批人员，直接让虚假入驻申请通过——这是绕过技术性核验之外的另一条路径：从人的环节突破。"
  },
  {
   "id": "mesclo",
@@ -4837,7 +5012,8 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "semrastro",
@@ -4870,7 +5046,8 @@
    "selfieverif",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "loginnovo",
@@ -4905,6 +5082,7 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  }
 ]

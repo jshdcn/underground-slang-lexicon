@@ -756,7 +756,7 @@
   "lang": "vi",
   "definition": "越南语圈对支付卡盗刷数据的写法，CCV 指含验证码的完整卡料，CCN 指不含验证码的卡号数据。",
   "mechanism": "与中文\"卡料\"、英文 CVV 同义，构成越南语圈 carding 社群的基础商品；配套有查验工具与代下单服务。",
-  "example": "CCV - VISA - Mastercard / Check CCV & CCN",
+  "example": "CCV - 〔某卡组织〕 - 〔某卡组织〕 / Check CCV & CCN",
   "related": [
    "checkout_vi",
    "cvv",
@@ -2041,7 +2041,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "经过多次倒卖的拼接简历，卖方自己也明说是假数据。它的存在说明这个市场连「明知是假」的货都有买家——下游只要联系方式能打通就行。"
  },
  {
   "id": "gaotongxiangqin",
@@ -2071,7 +2073,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "cunnei",
@@ -2105,7 +2108,9 @@
    "xiepin",
    "yitizi",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "把数据按境内外分类，是列货表的第一层分类维度——境内外在定价、可用场景与追责难度上都不同，所以「村内外各类数据」是常见的货单开头。"
  },
  {
   "id": "xialaanzhuang",
@@ -2120,7 +2125,8 @@
    "xiaka",
    "xiake",
    "xiazaifu"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "jinxian",
@@ -2133,19 +2139,21 @@
   "example": "每天都在出！！！！ 全天24小时接单，长期招收（DPI，SDK，消金进线代理，欢迎咨询！！！） ，留言即可，看到会回复！！投顾｜期货｜博彩",
   "related": [
    "baixian"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "tingjiliushui",
   "term": "厅级流水",
   "aka": [],
   "category": "数据与隐私侵害",
-  "definition": "公安〔某银行〕卡流水",
+  "definition": "公安内鬼查询到的银行卡流水。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "related": [
    "shualiushui"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "duankouliao",
@@ -2166,7 +2174,8 @@
    "seliao2",
    "wangzhaxinliao",
    "yuliao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "lianhejianmoshuju",
@@ -2183,7 +2192,8 @@
    "dashuju",
    "gaopaoshuju",
    "shebaoshuju"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "dakou",
@@ -2203,7 +2213,9 @@
    "paoa",
    "sanwang",
    "shouka"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "用卡拨打外呼电话，与「发短信」并列构成手机卡的两种用途。收卡方会特意声明「不打口、不发短信」来表明用途正当——这句声明本身是判断卡的流向的旁证。"
  },
  {
   "id": "duishouxinxi",
@@ -2233,7 +2245,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "fencheng",
@@ -2252,7 +2265,8 @@
    "toug",
    "yewuyuan",
    "zhuaqu"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "hunqianjietiao",
@@ -2284,7 +2298,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "通过第三方平台一次签约多款借条产品，让同一个人在短时间内形成多头借贷。对放款方是风险，对黑产是把单个客户的可榨取额度最大化的手法。"
  },
  {
   "id": "zhudaixinxiliu",
@@ -2316,7 +2332,9 @@
    "quanguodw",
    "xiaojinshenqing",
    "yinhangjuliang"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "用户在消费金融平台上的行为轨迹被采集后形成的数据，类似助贷类CRM的作业数据。行为数据比静态资料更能判断用户的借款意愿与时点。"
  },
  {
   "id": "xiaojinshenqing",
@@ -2348,7 +2366,9 @@
    "quanguodw",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "消费金融平台的借款申请数据，含手机号、产品名、申请状态等字段。申请状态决定下游怎么用——待批的拿去截流，被拒的拿去转贷。"
  },
  {
   "id": "106tuozhanma",
@@ -2383,7 +2403,9 @@
    "yima",
    "yukoufei",
    "zhucema"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "以106开头的企业短信通道号段，拓展位标识具体的通道商与应用。这个号段本身是经审批的正规资源，被挪用后既能群发也能用于接码，所以是判断短信来源合规性的关键字段。"
  },
  {
   "id": "chunxia",
@@ -2415,7 +2437,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "已成功放款的用户数据。放款行为本身证明了这个人能借到钱，因此转化率高于只有申请记录的数据。"
  },
  {
   "id": "duanhui",
@@ -2447,7 +2471,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "含姓名、手机号与短信内容的数据组合。短信内容泄露了用户正在用哪些金融产品，是判断借款意愿与额度的直接依据。"
  },
  {
   "id": "wangzhaxinliao",
@@ -2468,7 +2494,8 @@
    "seliao",
    "seliao2",
    "yuliao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "baixian",
@@ -2481,7 +2508,8 @@
   "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "jinxian"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "mianfeimailei",
@@ -2497,7 +2525,8 @@
    "mianche",
    "mianfa",
    "mianping"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "juliangjieliu",
@@ -2529,7 +2558,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "在营销投放平台投放虚假贷款广告，用户点击或留资时立即介入，把原本流向正规机构的意向客户截走。上游是广告投放能力，下游是助贷与诈骗。"
  },
  {
   "id": "chunerchunsan",
@@ -2561,7 +2592,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "按流转层级给数据分档：二手、三手的价格明显低于一手。层级既反映数据新鲜度，也反映已被多少下游用过——用过的料转化率低。"
  },
  {
   "id": "pingguoimzhuanyongliao",
@@ -2582,7 +2615,9 @@
    "seliao2",
    "wangzhaxinliao",
    "yuliao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "筛出使用iOS系统的用户，下游用苹果自带即时通信发送欺诈与营销短信。走这条路径的好处是绕开运营商短信通道的审核与拦截。"
  },
  {
   "id": "minganshoufei",
@@ -2603,7 +2638,8 @@
    "luodifei",
    "shegongku",
    "yukoufei"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "huntai",
@@ -2635,7 +2671,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "多个平台的数据混合出售，买方拿不到单一平台的完整切片。这是卖方对上游来源的保护机制：混台之后，谁也倒推不出数据是从哪一家泄的。"
  },
  {
   "id": "renzaijiumiao",
@@ -2666,7 +2704,8 @@
    "xincaichulu",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xincaichulu",
@@ -2695,7 +2734,8 @@
    "xiankuhouting",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gongwangwangtao",
@@ -2725,7 +2765,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "kongbushoufei",
@@ -2757,7 +2798,9 @@
    "yuantouchudan",
    "yukoufei",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "查不到就不收费，用来降低买方的首次尝试成本。但有结果就按条计费，且敏感目标另算——这套定价把卖方的风险转成了单价差异。"
  },
  {
   "id": "gongan",
@@ -2777,7 +2820,8 @@
    "feilv",
    "neigui",
    "siyaosu"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "wendangyibao",
@@ -2807,7 +2851,8 @@
    "shebaoshuju",
    "sifajilu",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "quanguodw",
@@ -2841,7 +2886,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "覆盖全国范围的数据库资源，是按地域维度列货时的最大一档。"
  },
  {
   "id": "xiankuhouting",
@@ -2870,7 +2917,8 @@
    "xincaichulu",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "doufan",
@@ -2904,14 +2952,15 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "fcduanxinjiechi",
   "term": "FC短信劫持",
   "aka": [],
   "category": "数据与隐私侵害",
-  "definition": "FC是\"发财”的意思，黑产技术员对这种类型数据做的一个标识，该数据格式包含姓名、手机号、短信内容、地区、运营商等。威胁猎人调研到这类数据实际上黑产拿到只有裸号，姓名等其他内容是后期匹配的，短信内容是伪造的",
+  "definition": "按「姓名＋手机号＋短信内容＋地区＋运营商」打包的一类数据，「FC」是卖方给这种格式打的标识，取「发财」之意。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
@@ -2936,14 +2985,16 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "按「姓名＋手机号＋短信内容＋地区＋运营商」打包的数据标识。调研发现这类料实际到手时往往只有裸号，姓名等字段是后期匹配的、短信内容是伪造的——即商品本身也存在对买方的欺诈。"
  },
  {
   "id": "quangeshixiakuan",
   "term": "全格式下款",
   "aka": [],
   "category": "数据与隐私侵害",
-  "definition": "数据字段非常完整的下款用户数据，下款是指的普通用户在借款平台上申请借钱，借款平台将钱下放〔某银行〕卡中。这类数据格式包含借款人的姓名、手机号、借款平台、借款时间、借款金额、分期期数、〔某银行〕号卡号、紧急联系人等",
+  "definition": "数据字段非常完整的下款用户数据。「下款」指普通用户在借款平台申请借钱、平台把钱放到用户指定的银行卡中。这类数据的格式包含借款人姓名、手机号、借款平台、借款时间、借款金额、分期期数、下款银行与卡号、紧急联系人等。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
@@ -2952,7 +3003,8 @@
    "quanguodw",
    "quanma",
    "quantuoguan"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gaizhangshebao",
@@ -2982,7 +3034,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "yuantouchudan",
@@ -3011,7 +3064,8 @@
    "xiankuhouting",
    "xincaichulu",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gongjianzhuanshu",
@@ -3031,7 +3085,9 @@
    "shazhupan",
    "yuanqu",
    "zhuzai"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "冒充公安局与检察院实施诈骗的下游手法。这类话术之所以有效，依赖的正是上游查档数据提供的真实个人信息。"
  },
  {
   "id": "pojiezhibai",
@@ -3044,7 +3100,8 @@
   "example": "全网最吊破解支百什么张伟王伟外面出不来的直接丢破解机主新菜小剩菜极品剩菜也接全天在线丢来就秒",
   "related": [
    "gongwangbuqi"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "dianxin",
@@ -3067,7 +3124,8 @@
    "shujuyuan",
    "siyaosu",
    "xiehaozhuanwang"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "chegui51",
@@ -3097,7 +3155,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "qtiweiti",
@@ -3127,20 +3186,22 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "saomashenqing",
   "term": "扫码申请",
   "aka": [],
   "category": "数据与隐私侵害",
-  "definition": "〔某银行〕给到客户经理的二维码，提取扫过码的申请贷款用户的手机号",
+  "definition": "通过银行给到客户经理的二维码，提取扫过码的申请贷款用户的手机号。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "隔夜3.起拿量：1000起基本市面上所有的平台都包含了，跑的量是扫码申请+部分贷后或者线上申请+部分贷后有的平台可能也没有贷后的量具体以实际情况为准",
   "related": [
    "saolao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "jingjiapaidan",
@@ -3169,7 +3230,8 @@
    "xincaichulu",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "datuixi",
@@ -3189,7 +3251,8 @@
    "shazhupan",
    "yuanqu",
    "zhuzai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "sanwangjizhu",
@@ -3219,7 +3282,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "guokongting",
@@ -3234,7 +3298,8 @@
    "guokyc",
    "guorenlian",
    "guou"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gaopaoshuju",
@@ -3269,7 +3334,9 @@
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "超短期高息贷款的用户数据。这类用户已处在高息债务循环中，是转贷、代还、反催收等下游服务的直接客群。"
  },
  {
   "id": "paoa",
@@ -3290,7 +3357,8 @@
    "paofen",
    "paoliang",
    "paolu"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gaojingzhiliao",
@@ -3311,7 +3379,9 @@
    "seliao2",
    "wangzhaxinliao",
    "yuliao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "可投资资产净值高的人群数据，下游用于色敲、投资理财、博彩等诈骗场景。人群的支付能力直接决定单个受害人的榨取上限，所以这类料单价最高。"
  },
  {
   "id": "liaoziduiwei",
@@ -3340,14 +3410,15 @@
    "xincaichulu",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "liangkarenyuan",
   "term": "两卡人员",
   "aka": [],
   "category": "数据与隐私侵害",
-  "definition": "被公安机关认定的非法出租、出借、出售、〔某银行〕卡（含支付账户）的人员",
+  "definition": "被公安机关认定的非法出租、出借、出售、购买手机卡和银行卡（含支付账户）的人员。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "限制原因/两卡人员",
@@ -3370,7 +3441,8 @@
    "sifajilu",
    "wendangyibao",
    "xueji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "plcgehu",
@@ -3388,7 +3460,8 @@
    "kaihu",
    "lajihu",
    "sihu"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "niunai",
@@ -3421,7 +3494,9 @@
    "yitizi",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "与「料子」同义的数据代称，属用日常物品名替代敏感词的混淆手法——这类替换让文本在关键词层面看起来无害，而听得懂的人照样下单。"
  },
  {
   "id": "shimingdian",
@@ -3449,7 +3524,8 @@
    "xincaichulu",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "yinhangjuliang",
@@ -3484,7 +3560,9 @@
    "xiaojinshenqing",
    "zhudaixinxiliu",
    "zouliang"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "在银行申贷被拒的客户数据。需求真实但已被正规渠道筛掉，对助贷黑产反而是高转化线索——客户急、又没有正规出路。常与内鬼渠道并列出现。"
  },
  {
   "id": "caishang",
@@ -3516,7 +3594,9 @@
    "xincaichulu",
    "yuantouchudan",
    "ziduanmoban"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "数据的卖方一端。「菜」与「料」是同类比喻，用日常物品名替掉敏感词，既规避检测也构成圈内身份识别。"
  },
  {
   "id": "dituilanjie",
@@ -3533,7 +3613,8 @@
    "jiechi",
    "lanjie",
    "paoa"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "seliao",
@@ -3560,7 +3641,8 @@
    "wangzhaxinliao",
    "yuliao",
    "zhenrenjingliao"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "puxada",
@@ -3593,6 +3675,7 @@
    "semrastro",
    "subindoconta"
   ],
-  "region": "巴西数据黑产"
+  "region": "巴西数据黑产",
+  "frequency": "少见"
  }
 ]

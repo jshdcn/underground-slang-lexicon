@@ -1268,7 +1268,8 @@
    "paofen",
    "pingtaidaicheng",
    "zuodan"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "qiangla",
@@ -1286,7 +1287,8 @@
    "jingyang2",
    "laohuohao",
    "pingtaidaicheng"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "daifapinglun",
@@ -1322,6 +1324,8 @@
    "zishua",
    "zituizimai",
    "zuodan"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "组织团队代发评论，按条或按天结算并要求押金。押金制度的存在说明这类作业的主要风险是参与者跑单，而非平台识别。"
  }
 ]

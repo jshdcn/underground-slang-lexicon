@@ -1990,7 +1990,8 @@
    "shuaji",
    "yinhangji",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "shualiwu",
@@ -2010,7 +2011,8 @@
    "shualian",
    "shualiushui",
    "zuodan"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "jiafahuo",
@@ -2023,7 +2025,8 @@
   "example": "三十日物流信息显示已揽收,已经五天了,物流信息都没有任何更新,我认为是属于虚假发货,平台袒护商家说是物流问题,无视〔某电商平台〕平台规则,和证据",
   "related": [
    "yewuyuan"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "bufenghao",
@@ -2037,7 +2040,8 @@
   "related": [
    "chuanhao",
    "laohuohao"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "zhangfen",
@@ -2060,7 +2064,8 @@
    "shangfen",
    "wanfen",
    "yinliu"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "dianfu",
@@ -2074,7 +2079,8 @@
   "ambiguity": "「垫付」是电商退款、代购场景的常见正当用法；本词在租机、融担语境下才指向本义，需按上下文判定。",
   "related": [
    "yewuyuan"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "mianping",
@@ -2093,7 +2099,8 @@
    "mianfa",
    "mianfeimailei",
    "zhiping"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "fanxin",
@@ -2124,7 +2131,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "zhiping",
@@ -2157,7 +2165,9 @@
    "yuli",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "不经购买与浏览直接留评，绕开平台「已购买」这一条评价资格校验。在跨境电商作弊服务清单里与买家秀、AB单、空包单并列按单计价，分好评与差评两种用途。"
  },
  {
   "id": "baobai",
@@ -2174,7 +2184,8 @@
    "kaibai",
    "shuangbai",
    "wangbai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gangenmai",
@@ -2205,7 +2216,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "tiyanfen",
@@ -2236,7 +2248,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "abdan",
@@ -2267,7 +2280,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "suocang",
@@ -2298,7 +2312,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "jiama",
@@ -2331,7 +2346,9 @@
    "yima",
    "yuyinma",
    "zhucema"
-  ]
+  ],
+  "frequency": "常见",
+  "mechanism": "增加抽奖码数量以提高中奖次数，是把概率型营销活动当作确定性套利的做法。上游依赖批量账号或批量订单，下游是奖品变现。"
  },
  {
   "id": "huzhu",
@@ -2345,7 +2362,8 @@
   "related": [
    "gongqun",
    "yinliu"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "laochou",
@@ -2362,7 +2380,8 @@
    "pengyipeng",
    "pinshouqi",
    "xiaochengxushui"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "pengyipeng",
@@ -2377,7 +2396,8 @@
    "guobu",
    "laochou",
    "xiaochengxushui"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "pinshouqi",
@@ -2391,7 +2411,8 @@
   "related": [
    "laochou",
    "xiaochengxushui"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "jianguanji",
@@ -2411,7 +2432,8 @@
    "shuaji",
    "yinhangji",
    "zulinji"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "jingxidou",
@@ -2426,7 +2448,8 @@
    "guobu",
    "laochou",
    "xiaochengxushui"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "xuxie",
@@ -2444,7 +2467,8 @@
    "jiucai",
    "nvpin",
    "shangan"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "guabi",
@@ -2462,7 +2486,8 @@
    "nvpin",
    "shangan",
    "xuxie"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "nanpin",
@@ -2478,7 +2503,8 @@
    "gongqun",
    "hutui",
    "setui"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xiankuanhuishou",
@@ -2498,7 +2524,8 @@
    "miaomai",
    "xingqing",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "nvpin",
@@ -2516,7 +2543,8 @@
    "jiucai",
    "shangan",
    "xuxie"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "zulinji",
@@ -2544,7 +2572,8 @@
    "xiankuanhuishou",
    "xingqing",
    "yinhangji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "pingtaifenqiji",
@@ -2564,7 +2593,8 @@
    "shuaji",
    "yinhangji",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "chuanhao",
@@ -2578,7 +2608,8 @@
   "related": [
    "bufenghao",
    "laohuohao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "aisi",
@@ -2598,7 +2629,8 @@
    "xiankuanhuishou",
    "xingqing",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "gongzuoji",
@@ -2618,7 +2650,8 @@
    "shuaji",
    "yinhangji",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "zishua",
@@ -2649,7 +2682,8 @@
    "yuli",
    "zhiping",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "haiwaicang",
@@ -2664,7 +2698,8 @@
    "bantuoguan",
    "bentudian",
    "sifang"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "xianyuxihuo",
@@ -2695,7 +2730,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xiake",
@@ -2715,7 +2751,8 @@
    "xiaka",
    "xialaanzhuang",
    "xiazaifu"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "bentudian",
@@ -2728,7 +2765,8 @@
   "example": "〔某电商平台〕马来本土店接预定",
   "related": [
    "haiwaicang"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "bantuoguan",
@@ -2743,7 +2781,8 @@
    "haiwaicang",
    "sifang",
    "ssn"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "quantuoguan",
@@ -2760,7 +2799,8 @@
    "quanguodw",
    "quanma",
    "sifang"
-  ]
+  ],
+  "frequency": "较常见"
  },
  {
   "id": "yuli",
@@ -2791,7 +2831,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "cdian",
@@ -2822,7 +2863,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "yangyu",
@@ -2835,7 +2877,8 @@
   "example": "丝足-足交-足控 资源 经典电影|影视|美女帅哥 水族|养鱼",
   "related": [
    "yangpingfen"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "xianyudailiao",
@@ -2854,7 +2897,8 @@
    "shouxin",
    "sifang",
    "yitiaolong"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "huozhong",
@@ -2867,7 +2911,8 @@
   "example": "〔某社交平台〕 fb 〔某社交平台〕 火种领英巴豆大黄蜂",
   "related": [
    "heipingtai"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "dangmian",
@@ -2887,7 +2932,8 @@
    "xiankuanhuishou",
    "xingqing",
    "zulinji"
-  ]
+  ],
+  "frequency": "常见"
  },
  {
   "id": "dafu",
@@ -2904,7 +2950,8 @@
    "dashuju",
    "datouzhao",
    "daxiaoche"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "buhu",
@@ -2935,7 +2982,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "hongdian",
@@ -2955,7 +3003,8 @@
    "xiankuanhuishou",
    "xingqing",
    "zulinji"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "hejia",
@@ -2986,7 +3035,8 @@
    "zhiping",
    "zishua",
    "zituizimai"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "50on",
@@ -3018,7 +3068,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "tropa",
@@ -3048,7 +3099,8 @@
    "trampar",
    "trampo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "mandacarrinhoedrop",
@@ -3078,7 +3130,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "esquemalindo",
@@ -3110,7 +3163,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "cupim",
@@ -3140,7 +3194,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "comerdegraca",
@@ -3170,7 +3225,8 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "estorno",
@@ -3198,7 +3254,8 @@
    "refunding",
    "viradadesaldo"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  },
  {
   "id": "golpe",
@@ -3228,6 +3285,7 @@
    "trampo",
    "tropa"
   ],
-  "region": "巴西外卖与网约车生态"
+  "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
  }
 ]

@@ -1279,7 +1279,9 @@
    "yuantouchudan",
    "ziduanmoban",
    "zoudanbao"
-  ]
+  ],
+  "frequency": "少见",
+  "mechanism": "买家不交押金就能先测一部分数据验真，把首次交易的信任成本降到最低。是这类无合同交易里卖方让利换成交的常见安排。"
  },
  {
   "id": "jiaya",
@@ -1298,7 +1300,8 @@
    "shangya",
    "wuyakece",
    "zoudanbao"
-  ]
+  ],
+  "frequency": "少见"
  },
  {
   "id": "maizi",
@@ -1330,6 +1333,7 @@
    "shazhupan",
    "yuanqu",
    "zhuzai"
-  ]
+  ],
+  "frequency": "较常见"
  }
 ]
