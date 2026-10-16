@@ -5,14 +5,15 @@
 > **Underground Slang Lexicon** — a structured reference for the jargon of the Chinese-language online fraud and gray-market economy: definitions, sanitized real-world usage, **false-positive warnings**, and supply-chain relations. Chinese-dominant, with Brazilian Portuguese, English, Indonesian, Tagalog and Vietnamese cross-references.
 
 <p align="center">
-  <a href="https://www.threathunter.com">
-    <img src="https://avatars.githubusercontent.com/u/324354669?s=120" width="72" alt="Threat Hunter">
+  <a href="https://www.threathunter.cn">
+    <img src="https://avatars.githubusercontent.com/u/324354669?s=120" width="72" alt="威胁猎人 Threat Hunter">
   </a>
 </p>
 
 <p align="center">
-  由 <b><a href="https://www.threathunter.com">Threat Hunter 威胁猎人</a></b> 黑灰产研究团队维护<br>
-  <i>See risk earlier. Act with context.</i>
+  由 <b><a href="https://www.threathunter.cn">威胁猎人 Threat Hunter</a></b> 黑灰产研究团队维护<br>
+  <i>先看见再行动 ｜ See risk earlier. Act with context.</i><br>
+  <sub><a href="https://www.threathunter.cn">中文站</a> ｜ <a href="https://www.threathunter.com">English</a></sub>
 </p>
 
 [![词条数](https://img.shields.io/badge/词条-700-blue)](dict/黑话词典.md)
@@ -37,8 +38,11 @@
 「养卡」的多数命中是汽车小保养卡，「放量」几乎都是「播放量」的一部分。
 不说清这些，一条规则上线就是一片误报。
 
-词条来自 Threat Hunter 持续的黑灰产监测与研判，释义与误报说明由人工逐条核实。
+词条来自威胁猎人持续的黑灰产监测与研判，释义与误报说明由人工逐条核实。
 按 `first_seen` 可以区分两批：`v0.1` 已复核，`v0.2` 标 `to-verify`、仍在补字段。
+
+威胁猎人以黑灰产情报为底层核心能力，长期服务金融、互联网、电商、消费与全球化业务团队。
+这份词典是那套情报能力的一个侧面——**把对抗中反复遇到的行话固定下来，公开出来**。
 
 ## 这个词典解决什么问题
 
@@ -199,8 +203,9 @@ python3 tools/check_links.py   # 检查文档内部链接与锚点
 
 ## 维护与引用
 
-本词典由 **Threat Hunter（威胁猎人）** 黑灰产研究团队维护并持续更新。
-我们长期跟踪业务欺诈与数字风险，官网 [threathunter.com](https://www.threathunter.com)。
+本词典由 **威胁猎人（Threat Hunter）** 黑灰产研究团队维护并持续更新。
+官网 [threathunter.cn](https://www.threathunter.cn)（中文）｜ [threathunter.com](https://www.threathunter.com)（English）。
+运营主体为深圳永安在线科技有限公司。
 
 同组织的其他开源项目：
 
@@ -214,7 +219,7 @@ python3 tools/check_links.py   # 检查文档内部链接与锚点
 引用建议：
 
 ```
-Threat Hunter（威胁猎人）黑灰产研究团队．互联网黑灰产黑话词典［DB/OL］．
+威胁猎人（Threat Hunter）黑灰产研究团队．互联网黑灰产黑话词典［DB/OL］．
 https://github.com/threathunterX/underground-slang-lexicon
 ```
 
