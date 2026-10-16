@@ -441,7 +441,7 @@
   "definition": "检测号码/账号是新号还是老号的筛查流程",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -477,7 +477,7 @@
   "definition": "批量预检号码状态，剔除空号、已注册号，提高后续接码或群发的有效率。有专门的筛号软件与平台承接。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "diaohao",
    "shailao"

@@ -1673,7 +1673,7 @@
   "definition": "号码可用于接码的时段或占用位，决定一张卡能在什么时间窗口内接单。广告以「不卡位置」表示不受此限制。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "ambiguity": "可查到的用例多是「不卡位置」与电商排名「卡位」，前者与本义相关但未直接印证时段含义，后者无关，所以本条仍需核实。",
+  "ambiguity": "「卡位」在电商排名语境里是常用词，与本义无关；本词条的时段含义尚未得到用例直接印证，需核实。",
   "related": [
    "dingwei",
    "rouemoji",
@@ -1716,7 +1716,7 @@
   "definition": "一条线路支持全部类型的验证码接收，包括短信、语音与各平台专用码。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「全码」在鞋服等商品交易里指尺码齐全，与接码无关，需看上下文。",
   "related": [
    "bianma",
@@ -1785,7 +1785,7 @@
   "definition": "小众平台或小众商品的接码与码类需求。因为供给少，冷门项目的报价高于热门，广告常写「各种冷门项目都可以」。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "gongqun",
    "yishou"
@@ -1892,7 +1892,7 @@
   "definition": "大批量走单。号商与接码平台以此招募代理，按量给价，与「量大管饱」「寻跑量代理」同类表述。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "chadan",
    "chenglv",
@@ -1921,7 +1921,7 @@
   "definition": "为账号开通某项业务权限或商业账户。在查档类服务清单里与查档、人肉并列，在资金语境里指开立收款账户。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「开户」是银行与券商的正当业务用语，必须结合服务清单或卡商语境判定。",
   "related": [
    "daikuanshuju",
@@ -1981,7 +1981,7 @@
   "definition": "卡商将SIM卡保留在猫池设备上供客户反复接码",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -2031,7 +2031,7 @@
   "definition": "专属对接通道的接码凭证/编号",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bianma",
    "daishoufa",
@@ -2145,7 +2145,7 @@
   "definition": "接码平台中承接特定平台或地区的服务线路，稳定性与回码率按线路区分。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「线路」是输电、物流、eSIM等场景的常用词，需结合接码语境判定。",
   "related": [
    "tongdao"
@@ -2195,7 +2195,7 @@
   "definition": "同上卡",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -2228,7 +2228,7 @@
   "definition": "卡商将SIM卡移出猫池设备，停止接码服务",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -2332,7 +2332,7 @@
   "definition": "「来码率」的谐音写法，用同音字替代以规避关键词检测，指验证码到达比例。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "106tuozhanma",
    "abbrev_en",
@@ -2401,7 +2401,7 @@
   "definition": "同一手机号的第二次验证码接收",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "yishou"
   ]
@@ -2483,7 +2483,7 @@
   "definition": "来自〔三大运营商〕渠道、用于首次接码的一类码资源",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "106tuozhanma",
    "bianma",
@@ -2545,11 +2545,11 @@
   "term": "卡车",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "提供银行卡承接资金的车队。可查到的用例里与招码车、现金车并列招募，强调卡可循环使用、司法风险低。",
+  "definition": "提供银行卡承接资金的车队，与招码车、现金车并列招募，强调卡可循环使用、司法风险低。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
-  "ambiguity": "原表把「卡车」释为接码资源车，但可查到的用例指向收款卡车队，两者需核实区分。",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
+  "ambiguity": "「卡车」另有「接码资源车」的用法，与此处的收款车队不同，使用前需按上下文区分。",
   "related": [
    "abwushi",
    "buu",
@@ -2713,7 +2713,7 @@
   "definition": "实名认证的拼音首字母缩写，用于规避对「实名」二字的关键词检测。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "可查到的用例几乎全是与本义无关的成人内容标签，本词必须结合账号、认证语境判定，不能单独触发。",
   "related": [
    "abbrev_en",
@@ -2736,7 +2736,7 @@
   "definition": "账号登录不受IP归属地校验限制，可在任意网络环境下使用。是账号与银行卡类挂单的顺畅度卖点。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -2772,7 +2772,7 @@
   "definition": "注册满一个月的账号。平台对新号的功能限制通常按注册时长解除，所以「满月」「满年」是账号成色的计价分档。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -2808,7 +2808,7 @@
   "definition": "把账号绑定的手机号换成另一个，用于转移账号归属或甩掉有风险的旧号。是接码业务的固定项目之一，与注册、复接并列。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "huanzhuti"
   ]
@@ -2857,7 +2857,7 @@
   "definition": "承诺账号丢失后能协助找回，按天数限定（如「包找回7天」）。属「包X」承诺句式，常与月卡、等级号一起出售。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baochirou",
    "baodeng",
@@ -2914,7 +2914,7 @@
   "definition": "登录他人提供的账号开始作业，多见于租号与代操作，卖家常允许「先上号测试」再成交。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "beianhao",
    "dinghao",
@@ -2936,6 +2936,7 @@
    "shangya",
    "shoucihao",
    "smhao",
+   "subindoconta",
    "xinghao",
    "yuyinhao"
   ]
@@ -3013,7 +3014,7 @@
   "definition": "经过专门养护模拟真实使用的账号",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "beianhao",
    "daix",
@@ -3043,7 +3044,7 @@
   "definition": "账号到手后搁置一段时间不做任何操作，等平台风控观察期过去再启用。广告会给出具体天数，并提示改密码、删设备要更晚再动。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「静养」也是医嘱休养的日常用法。",
   "related": [
    "0weigui",
@@ -3093,7 +3094,7 @@
   "definition": "从一批号码里筛出已在目标平台注册过的老号，用于定向接管或改价出售。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "shaihao"
   ]
@@ -3208,7 +3209,7 @@
   "definition": "每个手机号配一个独立接码链接",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "106tuozhanma",
    "daishoufa",
@@ -3325,7 +3326,7 @@
   "definition": "通过邮箱体系可直接登录的账号资源",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -3390,7 +3391,7 @@
   "definition": "仍带原有绑定关系的一类资源状态",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "tuobang"
   ]
@@ -3443,7 +3444,7 @@
   "definition": "包含辅助验证的全包服务",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "baochirou",
    "baodeng",
@@ -3463,7 +3464,7 @@
   "definition": "同跑量，指以大批量成交换取更低单价，常与「保量」连用。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "ambiguity": "「走量」是电商与物流的常用词（低价走量、走量商品），需结合车队、卡商语境判定。",
   "related": [
    "fangliang",
@@ -3540,7 +3541,7 @@
   "definition": "只担保首次登录成功，后续掉线、人脸核验失败不在售后范围内。是比「包登」更窄的承诺，常写明「不包掉线人脸」。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baochirou",
    "baodeng",
@@ -3581,7 +3582,7 @@
   "definition": "复制 〔某社交平台〕 群组成员到新群（批量拉粉）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "baofen",
    "dafen",
@@ -3600,7 +3601,7 @@
   "definition": "把新账号养到能正常带货/接广告的状态",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baihao",
    "beianhao",
@@ -3629,7 +3630,7 @@
   "definition": "实体手机卡 vs 虚拟手机卡（接码用）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -3739,7 +3740,7 @@
   "definition": "海外注册的账号或手机号，按国别标价。专业号铺按国家分区供货，用于绕开境内平台的实名与地域限制。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "beianhao",
    "dinghao",
@@ -3796,7 +3797,7 @@
   "definition": "〔某银行〕卡的账号（\"带绑卡\"=可直接收付款）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "cunzhenka",
    "dongka",
@@ -3865,7 +3866,7 @@
   "definition": "精心养护账号（养号手法，提升存活率）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "gongqun",
    "laohuohao",
@@ -3935,7 +3936,7 @@
   "definition": "注册满 1 年的账号（养号周期里更高等级）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -3971,7 +3972,7 @@
   "definition": "一种引流用语音聊天卡（\"鸭聊\"=色情语音引流）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -4004,7 +4005,7 @@
   "definition": "单太阳等级的 〔某社交平台〕 号",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "danbai",
    "danpao",
@@ -4019,7 +4020,7 @@
   "definition": "手机卡激活入网（号商批量入网养卡）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -4055,7 +4056,7 @@
   "definition": "用港澳居民来往内地通行证（回乡证）完成实名的账号。这类证件走的核验路径与内地身份证不同，被用来过实名与人脸环节。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「回乡」的字面义（返回家乡）在民生内容里极常见，必须与「证」「实名」「过人脸」等共现词同判。",
   "related": [
    "huidan",
@@ -4075,7 +4076,7 @@
   "definition": "带蓝色认证标的企业号（〔某社交平台〕/企业认证）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "0weigui",
    "baihao",
@@ -4147,7 +4148,7 @@
   "definition": "双太阳等级的 〔某社交平台〕 号（\"太\"=太阳等级标识）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "shuangbai",
    "shuangxiang"
@@ -4161,7 +4162,7 @@
   "definition": "可接打电话的手机卡（电销/接码/引流专用）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -4194,7 +4195,7 @@
   "definition": "在主体账号之下派生出的子账号，用于分摊风险或扩大作业面。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「子体」在跨境电商里指商品的子变体（与父体相对），是正当用法，需看上下文。",
   "related": [
    "baihao",
@@ -4260,7 +4261,7 @@
   "definition": "出售时附带千粉的账号（抬高单价）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baofen",
    "dafen",
@@ -4281,7 +4282,7 @@
   "definition": "星等级的 〔某社交平台〕 号（低于太阳号）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baihao",
    "beianhao",
@@ -4311,7 +4312,7 @@
   "definition": "售后期内账号自身出问题可更换一个。期限通常以天计，且只覆盖账号本身的问题，不含使用者操作导致的封禁。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「包换」也是三包法里的法定售后义务，属常见正当用法，需结合账号交易语境判定。",
   "related": [
    "baochirou",
@@ -4367,7 +4368,7 @@
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "群组 频道拉人 售新老〔某社交平台〕群组频道",
-  "ambiguity": "可查到的用例多为「销售新模式」「出售新版」的截断，不构成本词的证据，释义据原表语境保留。",
+  "ambiguity": "「售新」二字也会作为「销售新模式」「出售新版」的一部分出现，需按整词并结合账号交易语境同判。",
   "related": [
    "abbrev_en",
    "daix",
@@ -4383,7 +4384,7 @@
   "term": "esquema",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "巴西黑灰产语境中的高频词，指可出售、可复制的作弊方案、套利方法或绕过流程。；中文对应：套路，方案",
+  "definition": "巴西黑灰产语境中的高频词，指可出售、可复制的作弊方案、套利方法或绕过流程。中文圈对应说法：套路、方案。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4405,14 +4406,15 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "trampo",
   "term": "trampo",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "口语化黑话，指可赚钱的“活”、作弊项目、接单任务或灰产服务。；原意'工作'，黑产泛指某种欺诈操作流程或代下服务，可指折扣代下、薅羊毛、退款套利等多种变体。；中文对应：活，项目；活，操作方法，欺诈手段",
+  "definition": "口语化黑话，指可赚钱的「活」、作弊项目或接单任务，原意是「工作」，黑产泛指某套欺诈操作流程或代下服务，可指折扣代下、薅羊毛、退款套利等多种变体。中文圈对应说法：活、项目。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4434,14 +4436,15 @@
    "pv",
    "trampar",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "pv",
   "term": "PV",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "PV来自 privado，PVs可理解为复数私聊/私信；黑产广告中常用于把公开讨论引流到私下交易。；中文对应：私聊，私信",
+  "definition": "PV来自 privado，PVs可理解为复数私聊/私信；黑产广告中常用于把公开讨论引流到私下交易。中文圈对应说法：私聊、私信。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4464,7 +4467,8 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西泛黑产社群"
  },
  {
   "id": "kitbico",
@@ -4473,7 +4477,7 @@
    "kitbico"
   ],
   "category": "身份与认证绕过",
-  "definition": "bico在该语境下指用于注册、KYC或代入驻的身份对象/素材，kitbico即成套身份与人脸材料。；中文对应：身份，人脸素材包",
+  "definition": "bico在该语境下指用于注册、KYC或代入驻的身份对象/素材，kitbico即成套身份与人脸材料。中文圈对应说法：身份、人脸素材包。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4498,14 +4502,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "editveis",
   "term": "Editáveis",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "黑产广告中对可编辑证件、证明模板的简称，用于伪造或修改准入材料。；中文对应：可编辑证件，资料",
+  "definition": "黑产广告中对可编辑证件、证明模板的简称，用于伪造或修改准入材料。中文圈对应说法：可编辑证件、资料。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4530,14 +4535,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "burladordeselfie",
   "term": "burlador de selfie",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "burlador指绕过器，专指用于绕过自拍、人脸或活体验证的工具/服务。；中文对应：自拍，人脸绕过工具",
+  "definition": "burlador指绕过器，专指用于绕过自拍、人脸或活体验证的工具/服务。中文圈对应说法：自拍、人脸绕过工具。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4562,7 +4568,8 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "burla",
@@ -4572,7 +4579,7 @@
    "burladazinha"
   ],
   "category": "身份与认证绕过",
-  "definition": "巴西灰产语境中常用的绕过类词根，表示规避平台规则、验证或风控流程。；中文对应：绕过，小绕过",
+  "definition": "巴西灰产语境中常用的绕过类词根，表示规避平台规则、验证或风控流程。中文圈对应说法：绕过、小绕过。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4597,14 +4604,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "trampar",
   "term": "trampar",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "trampo的动词化口语，指开始做项目、跑流程、代操作或执行灰产任务。；中文对应：干活，开工，操作",
+  "definition": "trampo的动词化口语，指开始做项目、跑流程、代操作或执行灰产任务。中文圈对应说法：干活、开工、操作。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4626,14 +4634,15 @@
    "pv",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西泛黑产社群"
  },
  {
   "id": "subindoconta",
   "term": "subindo conta",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "指完成账号注册、入驻、激活或KYC流程，常见于代入驻和批量账号生产场景。；中文对应：上号，把账号做起来",
+  "definition": "指完成账号注册、入驻、激活或KYC流程，常见于代入驻和批量账号生产场景。中文圈对应说法：上号、把账号做起来。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4657,15 +4666,17 @@
    "puxada",
    "rentou",
    "selfieverif",
-   "semrastro"
-  ]
+   "semrastro",
+   "shanghao"
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "laras",
   "term": "laras",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "巴西欺诈语境中的高频词，指借用、购买或冒用的他人身份/人头账户。；中文对应：人头，傀儡",
+  "definition": "巴西欺诈语境中的高频词，指借用、购买或冒用的他人身份/人头账户。中文圈对应说法：人头、傀儡。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4690,14 +4701,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "bo",
   "term": "B.O",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "Boletim de Ocorrência的口语缩写，在账号解封广告中常泛指违规、封禁、案件或各种问题状态。；中文对应：案底，麻烦，问题账号",
+  "definition": "Boletim de Ocorrência的口语缩写，在账号解封广告中常泛指违规、封禁、案件或各种问题状态。中文圈对应说法：案底、麻烦、问题账号。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4722,14 +4734,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "facial",
   "term": "Facial",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "骑手注册时所需的人脸识别信息。代入驻服务核心卖点之一：使用真实他人人脸帮助违规者通过认证。；中文对应：人脸认证照片",
+  "definition": "骑手注册时所需的人脸识别信息。代入驻服务核心卖点之一：使用真实他人人脸帮助违规者通过认证。中文圈对应说法：人脸认证照片。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4754,14 +4767,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "aprovador",
   "term": "Aprovador",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "平台内部拥有骑手账号审批权限的人员，被黑产收买以通过虚假入驻申请。；中文对应：内部审批人，内鬼",
+  "definition": "平台内部拥有骑手账号审批权限的人员，被黑产收买以通过虚假入驻申请。中文圈对应说法：内部审批人、内鬼。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4781,12 +4795,14 @@
    "laras",
    "loginnovo",
    "mesclo",
+   "neigui",
    "puxada",
    "rentou",
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "mesclo",
@@ -4795,7 +4811,7 @@
    "Mesclado"
   ],
   "category": "身份与认证绕过",
-  "definition": "混合人脸手法，将客户真实照片与账号信息合成处理，绕过平台人脸比对认证的图像欺诈手段；中文对应：照片合成，人脸混淆",
+  "definition": "混合人脸手法，将客户真实照片与账号信息合成处理，绕过平台人脸比对认证的图像欺诈手段。中文圈对应说法：照片合成、人脸混淆。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4820,14 +4836,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "semrastro",
   "term": "Sem Rastro",
   "aka": [],
   "category": "身份与认证绕过",
-  "definition": "没有风控记录、历史违规或异常行为的干净账号，价值更高，可溢价出售或用于高风险操作。；中文对应：无痕账号，干净账号",
+  "definition": "没有风控记录、历史违规或异常行为的干净账号，价值更高，可溢价出售或用于高风险操作。中文圈对应说法：无痕账号、干净账号。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4852,7 +4869,8 @@
    "rentou",
    "selfieverif",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "loginnovo",
@@ -4861,7 +4879,7 @@
    "Antigo"
   ],
   "category": "身份与认证绕过",
-  "definition": "区分账号使用历史；新账号风控宽松，旧账号具备一定平台信誉，不同盗刷场景有不同需求。；中文对应：新账号，旧账号",
+  "definition": "区分账号使用历史；新账号风控宽松，旧账号具备一定平台信誉，不同盗刷场景有不同需求。中文圈对应说法：新账号、旧账号。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -4886,6 +4904,7 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  }
 ]

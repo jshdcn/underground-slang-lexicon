@@ -2927,7 +2927,7 @@
   "definition": "强调放款口子长期稳定可用、不会做一单就断。属渠道方的可靠性话术，常与「时效快」「长期运作」连用。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "baopi",
    "baox",
@@ -3040,7 +3040,7 @@
   "definition": "指机构或渠道的审批口径宽松、可放宽的条件多。常与「不砍额」「返点高」连用。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "ambiguity": "「尺度大」绝大多数是形容影视或直播内容露骨程度的日常用法，与本义无关。",
   "related": [
    "baopi",
@@ -3625,7 +3625,7 @@
   "definition": "中介与客户在同一场所一起完成申请流程，全程盯着每一步，避免客户自行操作出错或中途反悔。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baozhuangke",
    "geshuizhiru",
@@ -3844,7 +3844,7 @@
   "definition": "把申请人做成符合准入的「白户」资料，或开通某条渠道的白名单准入。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "ambiguity": "「开白」在内容行业指开通转载授权，是常见正当用法；需与「财务」「主开白」「一上二」等助贷语境共现才指向本义。",
   "related": [
    "baobai",
@@ -3908,7 +3908,7 @@
   "definition": "资料被中介加工包装过的贷款申请人。在机构风控视角里，这类客户是渠道放量时被拉长风险链路的主要来源。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "baochirou",
    "baodeng",
@@ -4047,7 +4047,7 @@
   "definition": "某运营商或某地区的号码前缀段。号段决定能注册哪些平台，稳定可用的号段被当作独家渠道宣传。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "ambiguity": "「号段」也用于快递单号段、靓号段等无关场景。",
   "related": [
    "shika"
@@ -4061,7 +4061,7 @@
   "definition": "由人在营业厅手工办卡、手工接码的渠道资源，与机房批量自动化相对，常与代实名、执照法人配合一起打包。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "jifang"
   ]
@@ -4074,7 +4074,7 @@
   "definition": "已被使用过、可再次接码或再次出售的卡资源",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "bangka",
    "cunzhenka",
@@ -4169,7 +4169,7 @@
   "definition": "指可用于〔某支付平台〕等通道收款、过风控的大额/特殊收款码资源，常与“无视码车”“拖算”并列，属于规避限额与风控的码资源。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example": "常规色寻〔某支付平台〕无视码车 拖算能量码车 5k内 万内 2万内 群转牛户 农业破额 银行聚合 一切丝滑大额通道",
+  "example": "常规色寻〔某支付平台〕无视码车 拖算能量码车 5k内 万内 2万内 群转牛户 〔某银行〕破额 银行聚合 一切丝滑大额通道",
   "related": [
    "106tuozhanma",
    "bianma",
@@ -4256,7 +4256,7 @@
   "definition": "指 A/B 卡组合下可“无视”部分限额或风控规则的卡种搭配，用于放大可跑额度。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "buu",
    "chengdui",
@@ -4290,7 +4290,7 @@
   "definition": "指 A/B 卡额度匹配的配卡模式，便于同台刷额、提额或稳定跑量。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bukane",
    "laijiudinge",
@@ -4340,7 +4340,7 @@
   "definition": "指通过境外商户或者第三方通道进行扣款，将国内资金转移至境外。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example": "境外卡扣 工商一码 1万（额度充足） 需要转接，进算 来对接，来对接",
+  "example": "境外卡扣 〔某银行〕一码 1万（额度充足） 需要转接，进算 来对接，来对接",
   "related": [
    "abwushi",
    "buu",
@@ -4374,7 +4374,7 @@
   "definition": "指银行 POS 机器/银行收单机具资源，可用于刷卡、跑额度、快速变现。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "caifengji",
    "gongzuoji",
@@ -4427,7 +4427,7 @@
   "definition": "指同时〔某银行〕卡通道的车队/操作手，负责把料转成入金或回U。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：含色情内容",
+  "example_note": "可见用例夹带不宜公开的内容，故不附示例。",
   "related": [
    "daiche",
    "daix",
@@ -4504,7 +4504,7 @@
   "definition": "指在实时汇率/面值基础上加价收 U 或换汇，反映黑钱兑换成本与风险溢价。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "shangan",
    "shangche",
@@ -4525,7 +4525,7 @@
   "definition": "指通过邮寄黄金实物完成资金转移与变现的方式，用实物替代直接转账。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "abwushi",
    "buu",
@@ -4559,7 +4559,7 @@
   "definition": "指借股票/证券转账场景包装入金或过账，常作为特殊报备料型和回U场景。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "abwushi",
    "buu",
@@ -4633,7 +4633,7 @@
   "definition": "指用“白资”（自称干净资金）收购 USDT，强调出款资金表面合规、降低对手顾虑。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baizi",
    "chengdui",
@@ -4667,7 +4667,7 @@
   "definition": "指通过 U 与人民币、现金、跨境账户之间的价差获利，也是黑钱承兑的重要利润来源。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "abwushi",
    "buu",
@@ -4701,7 +4701,7 @@
   "definition": "指安排人员线下把现金送达交易对手，〔某银行〕转账以规避审查。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "baizi",
    "chengdui",
@@ -4720,7 +4720,7 @@
   "definition": "指专门负责上门拿现金的车队/操作手，承接线下兑付和取现任务。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "daiche",
    "daxiaoche",
@@ -4846,7 +4846,7 @@
   "definition": "指在承兑流程中把 USDT 回给上家/对手方，完成“先款后U”的交割动作。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "guokongting",
    "guokyc",
@@ -4879,7 +4879,7 @@
   "definition": "卖出/放出 USDT，换取法币或线下现金",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "chujin",
    "chuxingjilu",
@@ -4899,7 +4899,7 @@
   "definition": "在基准汇率上加价收 U，属于收币侧报价黑话",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "baojiang",
    "shangan",
@@ -4976,7 +4976,7 @@
   "definition": "在公群内按模板完成正式报备，是回U/赔付前置条件",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似卡段/账号 dump",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "abwushi",
    "buu",
@@ -5193,7 +5193,7 @@
   "definition": "通过〔某支付平台〕/线上转卡类渠〔某银行〕卡的通道",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example": "建设正扫码 建设反扫 数字商家码 多点车 〔某电商平台〕车 华润车 云转卡有合作店铺来",
+  "example": "〔某银行〕正扫码 〔某银行〕反扫 数字商家码 多点车 〔某电商平台〕车 〔某连锁品牌〕车 云转卡有合作店铺来",
   "related": [
    "bangka",
    "cunzhenka",
@@ -5272,7 +5272,7 @@
   "term": "virada de saldo",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "指将信用卡额度、异常支付能力或账户余额转换为可转出资金的套现手法。；中文对应：倒余额，余额翻转",
+  "definition": "指将信用卡额度、异常支付能力或账户余额转换为可转出资金的套现手法。中文圈对应说法：倒余额、余额翻转。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5292,14 +5292,15 @@
    "nonvbv",
    "pvcs",
    "refunding"
-  ]
+  ],
+  "region": "巴西支付与信用卡盗刷"
  },
  {
   "id": "gg",
   "term": "GG",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "未见稳定官方全称；在卡料/支付欺诈语境中通常按“大额、高额度、高价值物料”理解，不建议强行扩展。；指经验证可成功扣款的信用卡，黑产判断卡可用性的核心词汇。；中文对应：高额度卡，大额卡料；好卡，有效卡",
+  "definition": "指经验证可成功扣款的信用卡，是黑产判断卡是否可用的核心词汇；在卡料与支付欺诈语境里按「大额、高额度、高价值物料」理解。未见稳定的官方全称，不宜强行扩展。中文圈对应说法：高额度卡、有效卡。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5320,14 +5321,15 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "pvcs",
   "term": "PVCs",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "在黑产广告中常作为虚拟卡/卡料类资源简称使用；中文对应：虚拟信用卡，虚拟卡料",
+  "definition": "在黑产广告中常作为虚拟卡/卡料类资源简称使用。中文圈对应说法：虚拟信用卡、虚拟卡料。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5347,7 +5349,8 @@
    "nonvbv",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西支付与信用卡盗刷"
  },
  {
   "id": "chk",
@@ -5356,7 +5359,7 @@
    "CHK Debitando"
   ],
   "category": "资金通道与洗钱",
-  "definition": "对信用卡有效性进行验证并确认可扣款的操作。；中文对应：验卡，扣款成功",
+  "definition": "对信用卡有效性进行验证并确认可扣款的操作。中文圈对应说法：验卡、扣款成功。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5376,7 +5379,8 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "drop2",
@@ -5385,7 +5389,7 @@
    "Dropar"
   ],
   "category": "资金通道与洗钱",
-  "definition": "用盗刷卡或欺诈手段在平台成功完成下单并扣款的行为。；中文对应：下单落地，刷卡成功",
+  "definition": "用盗刷卡或欺诈手段在平台成功完成下单并扣款的行为。中文圈对应说法：下单落地、刷卡成功。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5409,14 +5413,15 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "goldcomsaldo",
   "term": "Gold com saldo",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "持有余额的Gold级信用卡，更易通过平台支付风控审核。；中文对应：带余额的金卡",
+  "definition": "持有余额的Gold级信用卡，更易通过平台支付风控审核。中文圈对应说法：带余额的金卡。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5436,14 +5441,15 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "consultaveis",
   "term": "Consultaveis",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "可事先查询余额/有效性的信用卡信息，是提升盗刷成功率的前置筛选手段。；中文对应：可查余额的卡",
+  "definition": "可事先查询余额/有效性的信用卡信息，是提升盗刷成功率的前置筛选手段。中文圈对应说法：可查余额的卡。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5463,14 +5469,15 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "esquemadeaprovacao",
   "term": "Esquema de Aprovacao",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "专门针对平台支付审核设计的欺诈套餐，出售信用卡+绕过审核的组合包。；中文对应：付款绕过方案",
+  "definition": "专门针对平台支付审核设计的欺诈套餐，出售信用卡+绕过审核的组合包。中文圈对应说法：付款绕过方案。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5490,14 +5497,15 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "1x1",
   "term": "1x1",
   "aka": [],
   "category": "资金通道与洗钱",
-  "definition": "指私下一对一进行信用卡或账号等交易，规避公开群组风控溯源，常见于巴西。；中文对应：一对一私聊交易",
+  "definition": "指私下一对一进行信用卡或账号等交易，规避公开群组风控溯源，常见于巴西。中文圈对应说法：一对一私聊交易。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -5517,6 +5525,7 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  }
 ]

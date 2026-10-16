@@ -1713,6 +1713,7 @@
   "example": "银行内鬼 ｜ 数据来源：内部数据源",
   "ambiguity": "\"内部渠道\"常被正常营销与中介夸大使用，反诈内容也会提醒\"内部渠道全是噱头\"。",
   "related": [
+   "aprovador",
    "caishang",
    "gongan",
    "jiabai",
@@ -2154,7 +2155,7 @@
   "definition": "前台写入到后台服务器录入终端得端口数据，这种数据通常客户意向高，但资质情况不稳定，运气好能出大鱼性价比高",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "gaojingzhiliao",
    "maoliao",
@@ -2175,7 +2176,7 @@
   "definition": "黑产表示这种就是更加精准的一种dpi渠道抓取方法，针对单地区，可以同时跑很多个网贷app，抓取的数据是当日活跃的用户这种通道提取出来的数据优点是特征维度很高，文件比较大，提高数据处理和特征筛选的效率出数据的时间以及价格跟单抓dpi一样，基本是t1 t2出数据，价格在1毛-2毛钱",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "daikuanshuju",
    "danshuju",
@@ -2392,7 +2393,7 @@
   "definition": "多指纯下款类用户或纯下款数据的简称，这类数据均为金融贷款中的下款行为数据",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：长数字串，疑似账号/单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "chunerchunsan",
    "cunnei",
@@ -2477,7 +2478,7 @@
   "definition": "指高成功率或“百分百线路”的包装说法",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "jinxian"
   ]
@@ -2490,7 +2491,7 @@
   "definition": "指黑产提供免费的预埋测试、转化验证或引流辅助能力",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "mianbaka",
    "mianche",
@@ -2506,7 +2507,7 @@
   "definition": "属于贷款投流截流的细分场景，黑灰产团伙通过在巨量平台（营销广告投放平台）投放虚假贷款广告吸引有贷款需求的用户，当用户点击链接、留下联系方式或下载 APP 时，迅速介入拦截原本可能流向正规金融机构的流量，冒充正规平台工作人员对用户实施诈骗",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "chunerchunsan",
    "chunxia",
@@ -2612,7 +2613,7 @@
   "definition": "混合平台，黑产不出售单一平台的数据，只能多个平台的数据混合出售，这是一种对黑产数据源头的保护机制",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "chunerchunsan",
    "chunxia",
@@ -2734,7 +2735,7 @@
   "definition": "查不到结果就不收费，是查档类服务的揽客承诺。但有结果就按条计费，且会声明敏感目标另算。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "baozhenbubaolou",
    "caishang",
@@ -2816,7 +2817,7 @@
   "definition": "全国数据库",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：夹带数据文件名",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "chunerchunsan",
    "chunxia",
@@ -2850,7 +2851,7 @@
   "definition": "在查档场景中，黑产先在已有的社工数据库中查询，为了保障数据真实性，还会再让公安内鬼侧再去查询，最后将两方查询结果给到买家",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：夹带数据文件名",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "baozhenbubaolou",
    "caishang",
@@ -2913,7 +2914,7 @@
   "definition": "FC是\"发财”的意思，黑产技术员对这种类型数据做的一个标识，该数据格式包含姓名、手机号、短信内容、地区、运营商等。威胁猎人调研到这类数据实际上黑产拿到只有裸号，姓名等其他内容是后期匹配的，短信内容是伪造的",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "chunerchunsan",
    "chunxia",
@@ -2945,7 +2946,7 @@
   "definition": "数据字段非常完整的下款用户数据，下款是指的普通用户在借款平台上申请借钱，借款平台将钱下放〔某银行〕卡中。这类数据格式包含借款人的姓名、手机号、借款平台、借款时间、借款金额、分期期数、〔某银行〕号卡号、紧急联系人等",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "quancan",
    "quanguodw",
@@ -2961,7 +2962,7 @@
   "definition": "在查档行业中，黑产能够查询并且返回带有“xx省社会保险电子专用章”红章的保单图片，调研发现是社保局内鬼查询出数",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "chegui51",
    "chuxingjilu",
@@ -3106,7 +3107,7 @@
   "definition": "提供〔某社交平台〕和〔某社交平台〕号，黑产可提取号中好友信息、群聊信息等",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "chegui51",
    "chuxingjilu",
@@ -3178,7 +3179,7 @@
   "definition": "冒充贷款APP官方客服，打电话或者添加贷款人〔某社交平台〕，用政策变动原因表示可以给贷款人退一部分贷款的利息，将贷款人引入钓鱼仿冒网站或者引导安装病毒软件来盗取其财务",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "gongjianzhuanshu",
    "goutui",
@@ -3198,7 +3199,7 @@
   "definition": "三大运营商号码的实名机主信息查询，属查档类服务项目，常与定位、绑定查询一起在服务清单里并列。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似数据批次哈希/订单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "chegui51",
    "chuxingjilu",
@@ -3243,7 +3244,7 @@
   "definition": "高利贷数据",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "chunerchunsan",
    "chunxia",
@@ -3278,7 +3279,7 @@
   "definition": "群发短信",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：窗口内无长度与洁净度合格的片段",
+  "example_note": "可见用例均为长篇招揽广告，截出的片段不足以独立成句，故不附示例。",
   "related": [
    "dakou",
    "dituilanjie",
@@ -3397,7 +3398,7 @@
   "definition": "数据的代称，与「料子」同义，属用日常物品名替代敏感词的混淆手法。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "ambiguity": "可查到的用例全部是乳制品的正常用法，没有一条印证本义，释义据原表保留，需另找用例核实。",
+  "ambiguity": "「牛奶」的日常用法（乳制品）占绝对多数，本义尚未得到用例印证，需核实。",
   "related": [
    "abbrev_en",
    "baozhenbubaolou",
@@ -3525,7 +3526,7 @@
   "definition": "线下地推拦截短信（劫持验证码）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "dakou",
    "hongzhaji",
@@ -3566,7 +3567,7 @@
   "term": "puxada",
   "aka": [],
   "category": "数据与隐私侵害",
-  "definition": "巴西黑产中常用词，指通过数据源查询或拉取CPF、CNH、亲属、车辆等个人信息。；中文对应：信息拉取，查档",
+  "definition": "巴西黑产中常用词，指通过数据源查询或拉取CPF、CNH、亲属、车辆等个人信息。中文圈对应说法：信息拉取、查档。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3591,6 +3592,7 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西数据黑产"
  }
 ]

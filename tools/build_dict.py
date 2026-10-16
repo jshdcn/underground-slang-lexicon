@@ -52,10 +52,17 @@ QUOTE = [
     # 具名平台与机构：留在 term/aka 可以，散文里要占位
     (r'京东|淘宝|天猫|拼多多|美团|饿了么|抖音|快手|小红书|支付宝|微信|闲鱼|得物|唯品会|携程|滴滴|'
      r'亚马逊|虾皮|沃尔玛|微博|推特|脸书|抖店|千牛', '散文里出现具名平台，应按类型占位'),
-    (r'(?:兴业|浦发|邮储|农信|光大|广发|华夏|中信|民生|招商|工商|建设|农业|交通|平安)'
-     r'(?=[行银]|套卡|白户|对私|对公|额度|放款|流水|征信|信用卡|储蓄卡)|'
-     r'(?:(?!各大银行|多家银行|商业银行|国有银行|全国银行|中小银行|民营银行|股份银行)'
-     r'[\u4e00-\u9fff]{2,6}银行)(?!卡)|四大行|六大行', '散文里出现具名银行，应占位为〔某银行〕', False),
+    # 行名全称（排除各大银行/商业银行这类泛称）。开放式中文量词，不参与去空格探测。
+    (r'(?:(?!各大银行|多家银行|商业银行|国有银行|全国银行|中小银行|民营银行|股份银行|农商银行|城商银行|村镇银行|农村银行|外资银行|地方银行|区域银行|政策性银行)'
+     r'[\u4e00-\u9fff]{2,6}银行)(?!卡)|四大行|六大行',
+     '散文里出现具名银行，应占位为〔某银行〕', False),
+    # 行名简称：只在紧跟银行类或支付通道类语素时才算行名。
+    # 「工商一码」「农业破额」「建设正扫码」在通道语境里就是行名；
+    # 「工商层面」「农业语境」「招商与选品」是常用词，不能动。
+    (r'(?:工商|建设|农业|交通|平安|兴业|浦发|邮储|农信|光大|广发|华夏|中信|民生|招商)'
+     r'(?=[行银]|套卡|白户|对私|对公|额度|放款|流水|征信|信用卡|储蓄卡'
+     r'|破额|一码|正扫|反扫|扫码|聚合|进算|商家码)',
+     '散文里出现具名银行简称，应占位为〔某银行〕'),
 ]
 # 三元组 (正则, 说明, 是否参与去空格探测)。
 # 去空格探测是为了识别「公 众 号」这类拆字绕过，但对开放式的中文量词规则
@@ -69,7 +76,6 @@ DESPACE = re.compile(r'(?<=[\u4e00-\u9fff])[ \t]+(?=[\u4e00-\u9fff])')
 
 
 NUM = re.compile(r'\d+')
-SPACE = re.compile(r'[ \t　]+')
 
 
 def _headwords(e):
@@ -83,26 +89,41 @@ def _headwords(e):
 
 
 def _vocab(entries):
-    """词典收录的全部词形。literal 直接做字符串删除；
-    带数字或 N 占位的（aka 里的「命中N条」「车轨5+1」）转成正则，按模板删除。"""
+    """词典收录的全部词形。带数字或 N 占位的（aka 里的「命中N条」「车轨5+1」）
+    额外转成正则，用来匹配文本里的具体数字。"""
     lit, tpl = set(), []
     for e in entries:
         for h in _headwords(e):
             lit.add(h)
             if re.search(r'[\dN]', h):
                 pat = ''.join(r'\s*\d+\s*' if c in '0123456789N' else re.escape(c) for c in h)
-                pat = re.sub(r'(?:\\s\*\\d\+\\s\*)+', r'\\s*\\d+\\s*', pat)
                 tpl.append(re.compile(pat))
     return sorted(lit, key=len, reverse=True), tpl
+
+
+def _vocab_spans(text, lit, tpl):
+    """词形在文本里占据的区间。命中落在区间内即为「词表留」，不算泄露。"""
+    spans = []
+    for o in lit:
+        i = text.find(o)
+        while i >= 0:
+            spans.append((i, i + len(o)))
+            i = text.find(o, i + 1)
+    for rx in tpl:
+        spans += [m.span() for m in rx.finditer(text)]
+    return spans
 
 
 def check_masking(entries):
     """返回 [(id, 字段, 规则说明, 命中片段)]
 
     豁免口径就是「词表留」：**词典里任何词条的 term / aka** 都是术语，不是泄露——
-    「地方银行」「飞机」「命中N条」本身就是收录的词头，散文里引用它们是词典该做的事。
-    扫描前依次摘掉：占位符 → 收录词形 → 带数字的模板词形；再折叠可见字符间隔，
-    防「公 众 号」这类拆字绕过。剩下的才算真残留。
+    「平台代称」的「飞机」、「查询结果字段模板」的「命中N条」、「地方银行」
+    本身就是收录的词头，散文里引用它们是词典该做的事。
+
+    按**区间**豁免而不是删字符串：命中完全落在某个词形区间内才豁免。
+    删字符串会把判断所需的上下文一并删掉——「工商一码」里的「一码」是词头，
+    删掉后只剩「工商」，就看不出这是行名了。
     """
     lit, tpl = _vocab(entries)
     hits = []
@@ -111,21 +132,26 @@ def check_masking(entries):
             v = e.get(f) or ''
             if not v:
                 continue
-            probe = PLACEHOLDER.sub('', v)
-            for o in lit:
-                if o in probe:
-                    probe = probe.replace(o, '')
-            for rx in tpl:
-                probe = rx.sub('', probe)
+            probe = PLACEHOLDER.sub('　', v)        # 占位符换成全角空格，保留分隔但不参与匹配
+            spans = _vocab_spans(probe, lit, tpl)
             rules = LEAK + (QUOTE if f == 'example' else [])
             found = None
             for cand, despaced in ((probe, False), (DESPACE.sub('', probe), True)):
+                sp = spans if not despaced else _vocab_spans(cand, lit, tpl)
                 for pat, w, ds_ok in rules:
                     if despaced and not ds_ok:
                         continue
-                    m = pat.search(cand)
-                    if m:
+                    for m in pat.finditer(cand):
+                        # ① 命中整个落在词形区间内 → 词表留
+                        if any(a <= m.start() and m.end() <= b for a, b in sp):
+                            continue
+                        # ② 词形正好是命中的尾部 → 贪婪正则多吃了前缀，仍属词表留
+                        #    （「所有地方银行」里「地方银行」是收录词头，「所有」是多吃的）
+                        if any(b == m.end() and a > m.start() for a, b in sp):
+                            continue
                         found = (w, m.group(0)[:30])
+                        break
+                    if found:
                         break
                 if found:
                     break

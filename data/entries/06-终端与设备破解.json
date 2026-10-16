@@ -575,7 +575,7 @@
   "term": "fantasma",
   "aka": [],
   "category": "终端与设备破解",
-  "definition": "原意为“幽灵”，黑灰产语境中指不存在、虚构或非真实身份/非真实交易的对象，可表示虚假订单、空壳账号、冒名身份或无真实用户参与的交易行为。；中文对应：幽灵，虚假，空壳",
+  "definition": "原意为“幽灵”，黑灰产语境中指不存在、虚构或非真实身份/非真实交易的对象，可表示虚假订单、空壳账号、冒名身份或无真实用户参与的交易行为。中文圈对应说法：幽灵、虚假、空壳。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -600,14 +600,15 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西支付与出行生态"
  },
  {
   "id": "facialqueimada",
   "term": "Facial Queimada",
   "aka": [],
   "category": "终端与设备破解",
-  "definition": "'queimada'=烧掉。人脸已被平台识别/拒绝，但仍用于绕过活体检测的高风险操作。；中文对应：已废人脸",
+  "definition": "'queimada'=烧掉。人脸已被平台识别/拒绝，但仍用于绕过活体检测的高风险操作。中文圈对应说法：已废人脸。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -632,6 +633,7 @@
    "selfieverif",
    "semrastro",
    "subindoconta"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  }
 ]

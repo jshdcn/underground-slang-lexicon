@@ -2,14 +2,14 @@
 
 > 黑灰产行话的结构化词典：释义、脱敏真实用例、**误报陷阱**与产业链关联。面向风险识别、内容审核与安全研究。
 
-> **Underground Slang Lexicon** — a structured reference for the jargon of the Chinese-language online fraud and gray-market economy: definitions, sanitized real-world usage, **false-positive warnings**, and supply-chain relations. Chinese-dominant, with English, Indonesian, Tagalog and Vietnamese cross-references.
+> **Underground Slang Lexicon** — a structured reference for the jargon of the Chinese-language online fraud and gray-market economy: definitions, sanitized real-world usage, **false-positive warnings**, and supply-chain relations. Chinese-dominant, with Brazilian Portuguese, English, Indonesian, Tagalog and Vietnamese cross-references.
 
 由 **[Threat Hunter](https://github.com/threathunterX)** 黑灰产研究团队维护 ｜ Maintained by the Threat Hunter research team
 
 [![词条数](https://img.shields.io/badge/词条-693-blue)](dict/黑话词典.md)
 [![分类](https://img.shields.io/badge/分类-9-green)](dict/黑话词典.md)
 [![语种](https://img.shields.io/badge/语种-6-yellow)](dict/黑话词典.md#非中文词条索引)
-[![关联边](https://img.shields.io/badge/关联边-5224-orange)](dict/黑话词典.md)
+[![关联边](https://img.shields.io/badge/关联边-5226-orange)](dict/黑话词典.md)
 [![许可](https://img.shields.io/badge/数据-CC%20BY%204.0-lightgrey)](LICENSE)
 
 **👉 [直接查看词典](dict/黑话词典.md)** ｜ [CSV 下载](dict/terms.csv) ｜ [结构化数据](data/entries/) ｜ [字段规范](data/schema.json)

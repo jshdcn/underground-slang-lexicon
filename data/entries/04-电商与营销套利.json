@@ -2067,11 +2067,11 @@
   "term": "垫付",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "代客户先行付款以促成交易。可查到的用例集中在租机、融担场景，以「无责垫付」「见单就垫」招揽单量。",
+  "definition": "代客户先行付款以促成交易，集中出现在租机、融担场景，以「无责垫付」「见单就垫」招揽单量。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "example": "大量企微抗揍主体整租分租,可做jt 租机 融担等价格从优可谈。 专业租机无责垫付,见单就垫",
-  "ambiguity": "「垫付」是电商退款、代购场景的常见正当用法，原表归入抢购作弊，与可查到的租机语境不同，需核实。",
+  "ambiguity": "「垫付」是电商退款、代购场景的常见正当用法；本词在租机、融担语境下才指向本义，需按上下文判定。",
   "related": [
    "yewuyuan"
   ]
@@ -2084,7 +2084,7 @@
   "definition": "刷单只下单不留评（保留评率指标）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似联系 ID",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "gaoping",
    "liuping",
@@ -2103,7 +2103,7 @@
   "definition": "把老 ASIN 链接翻新成新品上架",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "abdan",
    "budan",
@@ -2184,7 +2184,7 @@
   "definition": "把跟卖卖家挤下去（通过举报/加价/锁仓等）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "abdan",
    "budan",
@@ -2246,7 +2246,7 @@
   "definition": "刷单标准两步：A 单加购+B 单成交（搭配空包发货）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似联系 ID",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "budan",
    "buhu",
@@ -2308,7 +2308,7 @@
   "definition": "增加抽奖码的数量以提高中奖次数，属营销活动套利手法。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：长数字串，疑似账号/单号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "ambiguity": "「加码」绝大多数是活动加码、投资加码的日常用法，与本义无关。",
   "related": [
    "106tuozhanma",
@@ -2436,7 +2436,7 @@
   "definition": "给已有小说写续集（多为 AI+人工拼接）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：夹带商号/工作室名",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "banzhuan",
    "daix",
@@ -2454,7 +2454,7 @@
   "definition": "卡农老哥自嘲：穷人/失业者/吃低保的",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：含色情内容",
+  "example_note": "可见用例夹带不宜公开的内容，故不附示例。",
   "related": [
    "banzhuan",
    "daix",
@@ -2472,7 +2472,7 @@
   "definition": "男性向小说（玄幻/都市/重生等）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "chedui",
    "gongqun",
@@ -2508,7 +2508,7 @@
   "definition": "女性向小说（言情/纯爱/穿越等）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：夹带商号/工作室名",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "banzhuan",
    "daix",
@@ -2608,7 +2608,7 @@
   "definition": "黑产用的多账号工作手机（监管机为主）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似卖家账号/联系 ID",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "caifengji",
    "hongzhaji",
@@ -2659,7 +2659,7 @@
   "definition": "卖家在目标国设的海外仓（影响流量分配）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "bantuoguan",
    "bentudian",
@@ -2738,7 +2738,7 @@
   "definition": "跨境平台半托管模式（卖家供货+物流，平台运营）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "haiwaicang",
    "sifang",
@@ -2753,7 +2753,7 @@
   "definition": "跨境平台全托管模式（仅供货，其他平台代办）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：疑似真实手机号",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
   "related": [
    "quancan",
    "quangeshixiakuan",
@@ -2801,7 +2801,7 @@
   "definition": "〔某电商平台〕个人 C 店（区别于 B 店）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "abdan",
    "budan",
@@ -2877,7 +2877,7 @@
   "definition": "当面交易（一手交钱一手交货，规避线上风控）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "aisi",
    "haoche",
@@ -2897,7 +2897,7 @@
   "definition": "黑产维权/退款后续业务中的高级操作者",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "daequan",
    "dashuangwai",
@@ -2914,7 +2914,7 @@
   "definition": "不参与互助（互助群里标识不帮别人点助力的人）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "abdan",
    "budan",
@@ -2945,7 +2945,7 @@
   "definition": "iPhone 电池\"红色警告\"状态（电池健康度过低）",
   "confidence": "to-verify",
   "first_seen": "v0.2",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "aisi",
    "dangmian",
@@ -2995,7 +2995,7 @@
    "50% ONLINE"
   ],
   "category": "电商与营销套利",
-  "definition": "折扣代下服务核心广告语，表示当前可提供50%折扣下单（通常借助盗刷卡或平台漏洞实现）。；中文对应：五折在线",
+  "definition": "折扣代下服务核心广告语，表示当前可提供50%折扣下单（通常借助盗刷卡或平台漏洞实现）。中文圈对应说法：五折在线。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3017,14 +3017,15 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "tropa",
   "term": "Tropa",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "原意'部队'，黑产中指共同从事欺诈活动的群体成员，常出现在代下服务招募广告中。；中文对应：团伙，团队成员",
+  "definition": "原意'部队'，黑产中指共同从事欺诈活动的群体成员，常出现在代下服务招募广告中。中文圈对应说法：团伙、团队成员。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3046,14 +3047,15 @@
    "pv",
    "trampar",
    "trampo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "mandacarrinhoedrop",
   "term": "Manda carrinho e DROP",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "折扣代下标准操作流程：用户选好商品将购物车发给代下方，代下方用欺诈手段完成付款。；中文对应：发购物车 + 下单落地",
+  "definition": "折扣代下标准操作流程：用户选好商品将购物车发给代下方，代下方用欺诈手段完成付款。中文圈对应说法：发购物车 + 下单落地。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3075,7 +3077,8 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "esquemalindo",
@@ -3084,7 +3087,7 @@
    "Esquema"
   ],
   "category": "电商与营销套利",
-  "definition": "黑产推销薅羊毛或折扣代下教程时的惯用词，强调方案无需自掏腰包、轻松获利。；中文对应：完美方案，欺诈套路",
+  "definition": "黑产推销薅羊毛或折扣代下教程时的惯用词，强调方案无需自掏腰包、轻松获利。中文圈对应说法：完美方案、欺诈套路。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3106,14 +3109,15 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "cupim",
   "term": "Cupim",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "专指专门薅取平台营销补贴的羊毛群体，如专属优惠券套利群。；中文对应：白蚁，专业薅羊毛者",
+  "definition": "专指专门薅取平台营销补贴的羊毛群体，如专属优惠券套利群。中文圈对应说法：白蚁、专业薅羊毛者。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3135,18 +3139,19 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "comerdegraca",
   "term": "Comer de graca",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "通过退款欺诈、营销漏洞或代下方式实现零成本获取外卖餐品的欺诈目标。；中文对应：免费吃",
+  "definition": "通过退款欺诈、营销漏洞或代下方式实现零成本获取外卖餐品的欺诈目标。中文圈对应说法：免费吃。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
-  "example_note": "原表用例未采用：原表用例未包含该词本身",
+  "example_note": "尚未取到含该词的可发布用例。",
   "related": [
    "50on",
    "cupim",
@@ -3164,14 +3169,15 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "estorno",
   "term": "Estorno",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "银行/平台层面的退款冲销操作，黑产设计分成模式引导退款欺诈。；中文对应：冲销，退款撤销",
+  "definition": "银行/平台层面的退款冲销操作，黑产设计分成模式引导退款欺诈。中文圈对应说法：冲销、退款撤销。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3191,14 +3197,15 @@
    "pvcs",
    "refunding",
    "viradadesaldo"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  },
  {
   "id": "golpe",
   "term": "Golpe",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "黑产泛指各类欺诈手段，常见于恶意退款讨论和操作教程分享，也常用于黑产群组内揭发诈骗分子。；中文对应：欺诈、骗局",
+  "definition": "黑产泛指各类欺诈手段，常见于恶意退款讨论和操作教程分享，也常用于黑产群组内揭发诈骗分子。中文圈对应说法：欺诈、骗局。",
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "lang": "pt",
@@ -3220,6 +3227,7 @@
    "trampar",
    "trampo",
    "tropa"
-  ]
+  ],
+  "region": "巴西外卖与网约车生态"
  }
 ]
