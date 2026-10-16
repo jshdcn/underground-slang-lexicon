@@ -453,6 +453,23 @@ def sync_readme(entries):
     s = re.sub(r'(（\[非中文词条索引\]\(dict/黑话词典\.md#非中文词条索引\)）：)[^。]+。',
                lambda m: m.group(1) + ' ｜ '.join('%s %d' % (names[lg], lang_count[lg]) for lg in seq) + '。', s)
 
+    # 用 <!--key-->数字<!--/key--> 标记的位置一律按实际数据回填，正文里的数字就不会再过期
+    marks = {
+        'n_tv': sum(1 for e in entries if e.get('confidence') == 'to-verify'),
+        'n_ex': sum(1 for e in entries if e.get('example')),
+        'n_note': sum(1 for e in entries if e.get('example_note') and not e.get('example')),
+        'n_v2': sum(1 for e in entries if e.get('first_seen') == 'v0.2'),
+    }
+    for k, v in marks.items():
+        s = re.sub(r'(<!--%s-->)\d+(<!--/%s-->)' % (k, k),
+                   lambda m, v=v: m.group(1) + str(v) + m.group(2), s)
+
+    # 九分类表的词条数（此前漏同步，v0.2 并入后表里还是 v0.1 的旧值）
+    cat_count = Counter(e['category'] for e in entries)
+    for c in CATS:
+        s = re.sub(r'(\| \[' + re.escape(c) + r'\]\(dict/黑话词典\.md#[^)]*\) \| )\d+( \|)',
+                   lambda m, n=cat_count.get(c, 0): m.group(1) + str(n) + m.group(2), s)
+
     if s != orig:
         with open(path, 'w', encoding='utf-8') as f:
             f.write(s)
