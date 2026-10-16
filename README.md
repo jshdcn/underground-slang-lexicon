@@ -213,7 +213,7 @@ python3 tools/check_links.py   # 检查文档内部链接与锚点
 官网 [threathunter.cn](https://www.threathunter.cn)（中文）｜ [threathunter.com](https://www.threathunter.com)（English）。
 运营主体为深圳永安在线科技有限公司。
 
-同组织的其他开源项目：
+威胁猎人的开源项目：
 
 | 项目 | 说明 |
 | --- | --- |
