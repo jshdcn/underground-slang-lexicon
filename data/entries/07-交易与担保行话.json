@@ -95,6 +95,7 @@
    "penipuan",
    "shangya",
    "shuangxiang",
+   "shuangya",
    "trunggian",
    "trustee",
    "wuyakece",
@@ -267,6 +268,7 @@
    "sanhei",
    "shangya",
    "shuangxiang",
+   "shuangya",
    "ushangnaxian",
    "xiake",
    "xianbaobei",
@@ -757,7 +759,6 @@
    "押金",
    "群押金",
    "已上押",
-   "双押",
    "上压",
    "上压频道",
    "退押中",
@@ -802,6 +803,7 @@
    "shangfushouu",
    "shanghao",
    "shouxin",
+   "shuangya",
    "trunggian",
    "trustee",
    "ushangnaxian",
@@ -840,6 +842,7 @@
    "mianche",
    "paolu",
    "shangya",
+   "shuangya",
    "trustee",
    "wuyakece",
    "yipeishi",
@@ -1143,6 +1146,7 @@
    "paoliang",
    "penipuan",
    "shangya",
+   "shuangya",
    "trustee",
    "wuyakece",
    "zhuanzhangmoniqi",
@@ -1335,5 +1339,25 @@
    "zhuzai"
   ],
   "frequency": "较常见"
+ },
+ {
+  "id": "shuangya",
+  "term": "双押",
+  "aka": [],
+  "category": "交易与担保行话",
+  "definition": "交易双方各自向担保方缴纳保证金的担保安排。",
+  "mechanism": "单边上押只约束卖方，双押把买方也绑进来——买方跑单同样损失押金。在没有合同的交易里，双押是把违约成本对称化的做法，出现「支持双押担保」通常意味着单笔金额较大。",
+  "example": "个人 车队 丝滑入金 量大 保司法客诉，支持双押担保，点位美丽",
+  "related": [
+   "gongqun",
+   "gongqunbaobei",
+   "mailei",
+   "paolu",
+   "shangya",
+   "zoudanbao"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
+  "frequency": "少见"
  }
 ]

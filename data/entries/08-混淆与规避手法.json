@@ -299,9 +299,7 @@
  {
   "id": "abbrev_en",
   "term": "首字母缩写规避",
-  "aka": [
-   "CC"
-  ],
+  "aka": [],
   "category": "混淆与规避手法",
   "lang": "en",
   "definition": "把敏感名词压缩为两三个字母，使其在文本检测中失去特征。",
@@ -311,6 +309,7 @@
   "related": [
    "1x1",
    "bocai",
+   "cc",
    "chk",
    "consultaveis",
    "cvv",

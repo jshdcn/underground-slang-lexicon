@@ -238,13 +238,14 @@
   ],
   "category": "数据与隐私侵害",
   "definition": "泄露的个人信息或账号凭证数据的统称，按新鲜度、完整度与来源分级。",
-  "mechanism": "“一手料”指首次流出、未被使用过，价格最高；“常规料”为已多次转手。下游用于盗刷、诈骗选靶与批量登录。",
+  "mechanism": "“一手料”指首次流出、未被使用过，价格最高；“常规料”为已多次转手。下游用于盗刷、诈骗选靶与批量登录。\n\n除新鲜度外还按来源分类：数据库泄露料、个人受害者料、电商平台客户料、被劫持流量料。来源决定了字段构成与可用场景，也决定了防守方该从哪一侧堵——这是比新鲜度更有处置价值的一个维度。",
   "example": "搜索「最新料子单价高」 ｜ 网贷催收料 直盘出料",
   "ambiguity": "“料”在制造业、餐饮、建材语境中是极常见的普通字，单字检索几乎不可用，需用“一手料/常规料/库料”等组合。",
   "related": [
    "banklogs",
    "baozhenbubaolou",
    "ccv_vi",
+   "chudan",
    "chunerchunsan",
    "chunxia",
    "chuxingjilu",
@@ -306,7 +307,6 @@
   "term": "CVV",
   "aka": [
    "CK",
-   "BIN",
    "fullz",
    "carding"
   ],
@@ -320,6 +320,8 @@
    "abbrev_en",
    "atmquxian",
    "banklogs",
+   "bin",
+   "cc",
    "ccv_vi",
    "chk",
    "consultaveis",
@@ -578,7 +580,9 @@
   "related": [
    "1x1",
    "banklogs",
+   "bin",
    "cashout",
+   "cc",
    "chk",
    "consultaveis",
    "cvv",
@@ -612,6 +616,8 @@
   "ambiguity": "VBV 是支付行业标准术语，技术与合规文档中常见。",
   "related": [
    "1x1",
+   "bin",
+   "cc",
    "ccv_vi",
    "checkout_vi",
    "chk",
@@ -836,6 +842,7 @@
   "ambiguity": "\"全国\"\"省\"\"政务\"都是极常见的行政与业务用词，单独出现无判别力；命中量大源于查询机器人重复输出状态行。须以\"省模糊\"\"政务全国\"等完整档位名判定。",
   "related": [
    "caishang",
+   "chudan",
    "daikuanshuju",
    "dianxin",
    "geye",
@@ -881,6 +888,7 @@
   "ambiguity": "单个字段名在人事、医保、银行的正常系统界面中都会出现，必须以\"多字段同现\"为条件，不能单词触发。",
   "related": [
    "caishang",
+   "chudan",
    "chuxingjilu",
    "daikuanshuju",
    "fancha",
@@ -921,7 +929,6 @@
   "term": "贷款数据",
   "aka": [
    "放款信息",
-   "融担",
    "催收料",
    "网贷催收料",
    "混合台"
@@ -958,6 +965,7 @@
    "miaopi",
    "mingxia",
    "quanguodw",
+   "rongdan",
    "shegongku",
    "shujuyuan",
    "siyaosu",
@@ -2296,6 +2304,7 @@
    "maoliao",
    "neimuliao",
    "quanguodw",
+   "rongdan",
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
@@ -2365,6 +2374,7 @@
    "maoliao",
    "neimuliao",
    "quanguodw",
+   "rongdan",
    "yinhangjuliang",
    "zhudaixinxiliu"
   ],
@@ -2435,6 +2445,7 @@
    "maoliao",
    "neimuliao",
    "quanguodw",
+   "rongdan",
    "xiaojinshenqing",
    "yinhangjuliang",
    "zhudaixinxiliu"
@@ -3051,6 +3062,7 @@
   "related": [
    "baozhenbubaolou",
    "caishang",
+   "chudan",
    "fancha",
    "jingjiapaidan",
    "kongbushoufei",
@@ -3333,6 +3345,7 @@
    "maoliao",
    "neimuliao",
    "quanguodw",
+   "rongdan",
    "shebaoshuju",
    "xiaojinshenqing",
    "yinhangjuliang",
@@ -3680,5 +3693,69 @@
   ],
   "region": "巴西数据黑产",
   "frequency": "少见"
+ },
+ {
+  "id": "chudan",
+  "term": "出单",
+  "aka": [
+   "医保出单"
+  ],
+  "category": "数据与隐私侵害",
+  "definition": "按买方给定的条件把数据交付出来，也指某类数据的字段格式固定、不接受定制。",
+  "mechanism": "「出单」把数据交易变成有交付标准的生意：买方先报条件，卖方按条件与时效交货。格式固定意味着买方只能整批买走该格式，不能挑字段——这既是卖方的保护，也是判断对方是源头还是中间商的依据。",
+  "example": "医保出单：医疗保险参保记录 提供：身份证号 出单时间：当天/隔天",
+  "ambiguity": "「出单」在跨境电商的账号挂单里指账号正在产生销量，是另一个意思；保险与票务行业也用它指开出保单、票单。本义需与「料」「字段」「格式」「条」等共现。",
+  "related": [
+   "baodan",
+   "dianpuguige",
+   "liao",
+   "shujuyuan",
+   "yuantouchudan",
+   "ziduanmoban"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
+  "frequency": "常见"
+ },
+ {
+  "id": "bin",
+  "term": "BIN",
+  "aka": [],
+  "category": "数据与隐私侵害",
+  "lang": "en",
+  "definition": "支付卡号前六位的发卡行识别码。",
+  "mechanism": "同一 BIN 的卡共享发卡行与卡种，因此风控表现相近——攻击方用它筛出在某个平台上扣款成功率高的卡段，再集中采购该卡段的卡料。这使盗刷从逐张试卡变成按卡段批量作业。",
+  "example": "BIN 可用 / 测可过的 BIN 段",
+  "ambiguity": "「BIN」是支付行业的标准术语，正常的收单与风控文档里大量出现；在英文文本里还会命中 binary、binding 等词的片段。本义需与卡料、盗刷语境共现。",
+  "related": [
+   "cc",
+   "cvv",
+   "dumps",
+   "nonvbv"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
+  "frequency": "常见"
+ },
+ {
+  "id": "cc",
+  "term": "CC",
+  "aka": [],
+  "category": "数据与隐私侵害",
+  "lang": "en",
+  "definition": "Credit Card 的缩写，特指可用于盗刷的信用卡信息。",
+  "mechanism": "与 BIN、GG 组合成一套商品话术：BIN 指卡段、CC 指卡本身、GG 指已验证可扣款。三者分别对应筛选、采购与验货三个环节。",
+  "example": "CC + 〔某卡组织〕 可测",
+  "ambiguity": "「CC」在正常文本里是抄送（carbon copy）、摄氏度缩写、游戏术语等多种含义，两字母缩写本身判别力极低，不能单独触发。",
+  "related": [
+   "abbrev_en",
+   "bin",
+   "cvv",
+   "dumps",
+   "nonvbv"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
+  "frequency": "常见"
  }
 ]

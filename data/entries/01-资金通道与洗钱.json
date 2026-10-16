@@ -340,7 +340,6 @@
   "term": "聚合码",
   "aka": [
    "经营码",
-   "个人码",
    "扫街码",
    "时效码"
   ],
@@ -359,6 +358,8 @@
    "fama",
    "feilv",
    "gaohuima",
+   "gerenma",
+   "gue",
    "hexiao",
    "huima",
    "huoma",
@@ -464,6 +465,7 @@
    "daifu",
    "fanshui",
    "gongan",
+   "gue",
    "gufan",
    "heidan",
    "huilv",
@@ -535,6 +537,7 @@
    "didinaxian",
    "feilv",
    "gongqunbaobei",
+   "gue",
    "guzhuan",
    "huangniu",
    "huikuan",
@@ -1154,6 +1157,7 @@
    "fangfengkong",
    "feigui",
    "feilv",
+   "gue",
    "huikuan",
    "huilv",
    "huimalv",
@@ -1814,6 +1818,7 @@
    "chedui",
    "chengdui",
    "dingjihaoshang",
+   "gerenma",
    "juhema",
    "kashang",
    "liaoshang",
@@ -2234,7 +2239,6 @@
   "term": "提额",
   "aka": [
    "临额",
-   "固额",
    "发票提额"
   ],
   "category": "资金通道与洗钱",
@@ -2249,6 +2253,7 @@
    "capped_tl",
    "dashuangwai",
    "gaoping",
+   "gue",
    "jiesuanka",
    "kouzi",
    "laijiudinge",
@@ -2289,6 +2294,7 @@
    "fama",
    "fangfeng",
    "gaohuima",
+   "gerenma",
    "huima",
    "jiama",
    "juhema",
@@ -2328,6 +2334,7 @@
    "duijiema",
    "fama",
    "gaohuima",
+   "gerenma",
    "huima",
    "huoma",
    "jiama",
@@ -5120,6 +5127,7 @@
    "kuaidihuangjin",
    "paofen",
    "shangya",
+   "shuangya",
    "ushang",
    "ushangnaxian",
    "zhaomache"
@@ -5190,6 +5198,7 @@
    "daifu",
    "didinaxian",
    "dongka",
+   "gerenma",
    "gongqun",
    "gongqunbaobei",
    "guzhuan",
@@ -5370,6 +5379,8 @@
    "duijiema",
    "fama",
    "gaohuima",
+   "gerenma",
+   "gue",
    "huima",
    "huoma",
    "jiama",
@@ -5677,6 +5688,73 @@
    "viradadesaldo"
   ],
   "region": "巴西外卖与网约车生态",
+  "frequency": "少见"
+ },
+ {
+  "id": "gue",
+  "term": "固额",
+  "aka": [],
+  "category": "资金通道与洗钱",
+  "definition": "按固定金额档位承接资金的支付或代付通道，如固定 50、100、200 档。",
+  "mechanism": "固定档位让每一笔都长得像普通消费，便于批量跑量而不触发金额异常规则。挂单会同时给出费率与成功率，档位本身就是定价维度。",
+  "ambiguity": "「固额」也会作为「固定额度」的简写出现在正常的信贷与预算语境里。本义需与「代付」「通道」「费率」「成功率」等共现。",
+  "example": "通道费率调整 固额纯代付原生（24H） 费率 6.8 固定金额：200 成功率：60+",
+  "related": [
+   "chenglv",
+   "daifu",
+   "feilv",
+   "gerenma",
+   "juhema",
+   "qiyema",
+   "tie"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
+  "frequency": "较常见"
+ },
+ {
+  "id": "gerenma",
+  "term": "个人码",
+  "aka": [],
+  "category": "资金通道与洗钱",
+  "definition": "用个人收款二维码承接入款的码类通道。",
+  "mechanism": "门槛最低的一档码资源——个人码不需要经营资质，招募快、替换快，但单码限额低、存活短，所以要靠数量铺开。与企业码构成资质上的两档，额度与风控表现都弱于后者。",
+  "example_note": "可见用例夹带真实标识（账号、单号、商号等），脱敏后不成句，故不附示例。",
+  "related": [
+   "gue",
+   "huoma",
+   "juhema",
+   "mashang",
+   "qiyema",
+   "shangma",
+   "zhaomache"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
+  "frequency": "较常见"
+ },
+ {
+  "id": "rongdan",
+  "term": "融担",
+  "aka": [
+   "融单",
+   "融蛋",
+   "融担料"
+  ],
+  "category": "资金通道与洗钱",
+  "definition": "一类小微网贷产品系列的统称，申请流程简单、通过率高。",
+  "mechanism": "因为门槛低、过审快，这类产品的申请人往往已多头借贷、急需资金，所以「融担料」在助贷与诈骗下游的转化率高于一般贷款线索。黑话里还用「融单」「融蛋」等同音写法规避检测。",
+  "example": "独家大风控（过库筛撸）、融担系列、单签混签（借条）、大混（主流产品）",
+  "ambiguity": "「融担」的正规义是融资担保（融资担保公司、融担机构），是持牌金融业务，正常的信贷讨论里大量出现。本义需与「料」「系列」「混签」等共现。",
+  "related": [
+   "chunxia",
+   "daikuanshuju",
+   "gaopaoshuju",
+   "hunqianjietiao",
+   "xiaojinshenqing"
+  ],
+  "confidence": "to-verify",
+  "first_seen": "v0.2",
   "frequency": "少见"
  }
 ]
