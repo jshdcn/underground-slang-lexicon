@@ -17,6 +17,116 @@ LANG_ORDER = ['zh', 'en', 'id', 'vi', 'tl', 'ru', 'th', 'hi']
 LANG_SHORT = {'zh': '中文', 'en': '英文', 'id': '印尼语', 'vi': '越南语',
               'tl': '他加禄语', 'ru': '俄语', 'th': '泰语', 'hi': '印地语'}
 
+
+# ============================ 脱敏门禁 ============================
+# 口径：词表留，引文脱。平台名、绰号、字段名保留在 term / aka（那是要被匹配的字符串），
+# 散文字段里按类型占位。实现上：扫描前先把该词条自己的 term 与 aka 从文本里摘掉，
+# 于是「平台代称」的「飞机」、「闲鱼洗货」的平台名、「查询结果字段模板」的「命中N条」
+# 都自然豁免，而别处冒出来的同类字符串仍会被拦住。
+#
+# 两级规则：
+#   LEAK  —— 数据本体，任何对外字段都不许有
+#   QUOTE —— 只管 example（从语料截来的引文），释义里正常提及这些概念是释义的职责
+PROSE_FIELDS = ('definition', 'mechanism', 'ambiguity', 'example', 'example_note')
+
+LEAK = [
+    (r'(?<!\d)1[3-9]\d{9}(?!\d)', '疑似真实手机号'),
+    (r'(?<!\d)\d{15,18}[\dXx]?(?!\d)', '疑似真实身份证号'),
+    (r'(?<![\d-])\d{3}[-\s]\d{4}[-\s]\d{4}(?![\d-])', '疑似分段写法的电话号'),
+    (r'\bT[A-Za-z0-9]{25,}|0x[0-9a-fA-F]{20,}', '疑似加密货币钱包地址'),
+    (r'\b[0-9a-f]{12,}\b', '疑似数据批次哈希/订单号'),
+    (r'命中约?\s*[\d,]+\s*条|\d+\s*天[^，。]{0,10}命中', '夹带语料命中量——语料规模不对外'),
+    (r'习近平|李克强', '涉及真实公众人物姓名'),
+    (r'https?://|www\.', '未脱敏的链接'),
+    (r'@[A-Za-z0-9_]{4,}', '疑似账号 handle'),
+]
+
+QUOTE = [
+    (r'\.(?:xlsx?|csv|txt|zip|rar|7z|db|sql)\b', '夹带数据文件名'),
+    (r'\b[A-Za-z]{1,6}\d{5,}\b', '疑似卖家账号/联系 ID'),
+    (r'公\s*众\s*号|订阅号', '夹带公众号名'),
+    (r'有限公司|[\u4e00-\u9fff]{2,4}工作室', '夹带商号/工作室名'),
+    (r'(?:热线|客服|专线|座机)\s*[:：]?\s*\d{4,}', '夹带客服/热线号码'),
+    (r'(?:快递|收货|收件|家庭)地址\s*[:：]\s*\S', '疑似真实收寄地址'),
+    (r'加\s*[vV微]|[+＋➕]\s*[vV]|私聊\S|私我\S', '联系方式未脱敏'),
+    # 具名平台与机构：留在 term/aka 可以，散文里要占位
+    (r'京东|淘宝|天猫|拼多多|美团|饿了么|抖音|快手|小红书|支付宝|微信|闲鱼|得物|唯品会|携程|滴滴|'
+     r'亚马逊|虾皮|沃尔玛|微博|推特|脸书|抖店|千牛', '散文里出现具名平台，应按类型占位'),
+    (r'(?:兴业|浦发|邮储|农信|光大|广发|华夏|中信|民生|招商|工商|建设|农业|交通|平安)'
+     r'(?=[行银]|套卡|白户|对私|对公|额度|放款|流水|征信|信用卡|储蓄卡)|'
+     r'(?:(?!各大银行|多家银行|商业银行|国有银行|全国银行|中小银行|民营银行|股份银行)'
+     r'[\u4e00-\u9fff]{2,6}银行)(?!卡)|四大行|六大行', '散文里出现具名银行，应占位为〔某银行〕'),
+]
+LEAK = [(re.compile(p), w) for p, w in LEAK]
+QUOTE = [(re.compile(p), w) for p, w in QUOTE]
+PLACEHOLDER = re.compile(r'〔[^〕]{1,14}〕|【[^】]{1,14}】')
+DESPACE = re.compile(r'(?<=[\u4e00-\u9fff])[ \t]+(?=[\u4e00-\u9fff])')
+
+
+NUM = re.compile(r'\d+')
+SPACE = re.compile(r'[ \t　]+')
+
+
+def _headwords(e):
+    out = []
+    for sv in [e.get('term', '')] + (e.get('aka') or []):
+        for pt in re.split(r'[=/、]', re.sub(r'[（(].*?[)）]', '', sv)):
+            pt = pt.strip()
+            if len(pt) >= 2:
+                out.append(pt)
+    return out
+
+
+def _vocab(entries):
+    """词典收录的全部词形。literal 直接做字符串删除；
+    带数字或 N 占位的（aka 里的「命中N条」「车轨5+1」）转成正则，按模板删除。"""
+    lit, tpl = set(), []
+    for e in entries:
+        for h in _headwords(e):
+            lit.add(h)
+            if re.search(r'[\dN]', h):
+                pat = ''.join(r'\s*\d+\s*' if c in '0123456789N' else re.escape(c) for c in h)
+                pat = re.sub(r'(?:\\s\*\\d\+\\s\*)+', r'\\s*\\d+\\s*', pat)
+                tpl.append(re.compile(pat))
+    return sorted(lit, key=len, reverse=True), tpl
+
+
+def check_masking(entries):
+    """返回 [(id, 字段, 规则说明, 命中片段)]
+
+    豁免口径就是「词表留」：**词典里任何词条的 term / aka** 都是术语，不是泄露——
+    「地方银行」「飞机」「命中N条」本身就是收录的词头，散文里引用它们是词典该做的事。
+    扫描前依次摘掉：占位符 → 收录词形 → 带数字的模板词形；再折叠可见字符间隔，
+    防「公 众 号」这类拆字绕过。剩下的才算真残留。
+    """
+    lit, tpl = _vocab(entries)
+    hits = []
+    for e in entries:
+        for f in PROSE_FIELDS:
+            v = e.get(f) or ''
+            if not v:
+                continue
+            probe = PLACEHOLDER.sub('', v)
+            for o in lit:
+                if o in probe:
+                    probe = probe.replace(o, '')
+            for rx in tpl:
+                probe = rx.sub('', probe)
+            rules = LEAK + (QUOTE if f == 'example' else [])
+            found = None
+            for cand in (probe, SPACE.sub('', probe)):
+                for pat, w in rules:
+                    m = pat.search(cand)
+                    if m:
+                        found = (w, m.group(0)[:30])
+                        break
+                if found:
+                    break
+            if found:
+                hits.append((e.get('id'), f, found[0], found[1]))
+    return hits
+
+
 def load():
     entries = []
     for fn in sorted(os.listdir(ENTRY_DIR)):
@@ -30,8 +140,12 @@ def load():
             entries.append(e)
     return entries
 
-def validate(entries):
+DEF_MIN = 15          # 释义字数下限
+
+
+def validate(entries, warns=None):
     errs = []
+    warns = warns if warns is not None else []
     by_id_all = {e['id']: e for e in entries}
     ids = Counter(e.get('id') for e in entries)
     for i, n in ids.items():
@@ -90,9 +204,30 @@ def validate(entries):
 
     # ③ 关联对称性
     for e in entries:
-        for r in e.get('related') or []:
+        rel = e.get('related') or []
+        for r in rel:
             if r in known and e['id'] not in (by_id_all[r].get('related') or []):
                 errs.append(f"关联不对称：{e['id']} → {r} 缺反向")
+        if e['id'] in rel:
+            errs.append(f"{e['id']}: related 含自身")
+        if len(rel) != len(set(rel)):
+            errs.append(f"{e['id']}: related 有重复项")
+
+    # ④ 脱敏门禁 —— 这是本项目的红线，放行一次就等于把清理过的泄露又带回来
+    for eid, f, why, frag in check_masking(entries):
+        errs.append(f"{eid}: 字段 {f} 未脱敏（{why}）——命中「{frag}」")
+
+    # ⑤ 质量下限
+    for e in entries:
+        d = (e.get('definition') or '').strip()
+        if 0 < len(d) < DEF_MIN:
+            errs.append(f"{e['id']}: 释义仅 {len(d)} 字，不足 {DEF_MIN} 字")
+        if not (e.get('related') or []):
+            warns.append(f"{e['id']} {e.get('term')}: 没有任何关联（孤点）")
+        if not (e.get('mechanism') or '').strip():
+            warns.append(f"{e['id']} {e.get('term')}: 缺 mechanism（链条位置与上下游）")
+        if not (e.get('ambiguity') or '').strip():
+            warns.append(f"{e['id']} {e.get('term')}: 缺 ambiguity（正常语境下的含义）")
     return errs
 
 def render(entries):
@@ -286,7 +421,8 @@ def sync_readme(entries):
 
 def main():
     entries = load()
-    errs = validate(entries)
+    warns = []
+    errs = validate(entries, warns)
     if errs:
         print('校验未通过：')
         for e in errs:
@@ -308,6 +444,16 @@ def main():
     sync_readme(entries)
     print(f'校验通过：{len(entries)} 条词条')
     print('已生成', os.path.relpath(md, ROOT), '与', os.path.relpath(csvp, ROOT))
+    if warns:
+        # 提示项不拦提交：mechanism / ambiguity 在 schema 里都是选填，
+        # 但覆盖率下滑会让词典成色不齐，所以逐类报出来。
+        buckets = {}
+        for w in warns:
+            buckets.setdefault(w.split('（')[0].split(': ')[-1], []).append(w)
+        print()
+        print('提示（不拦提交）：')
+        for k, v in sorted(buckets.items(), key=lambda x: -len(x[1])):
+            print('  - %s：%d 条' % (k, len(v)))
 
 if __name__ == '__main__':
     main()
