@@ -13,8 +13,8 @@ SCHEMA = json.load(open(os.path.join(ROOT, 'data', 'schema.json'), encoding='utf
 CATS = SCHEMA['categories']
 CONF_LABEL = {'high': '高', 'medium': '中', 'to-verify': '待核实'}
 LANGS = SCHEMA.get('languages', {})
-LANG_ORDER = ['zh', 'en', 'id', 'vi', 'tl', 'ru', 'th', 'hi']
-LANG_SHORT = {'zh': '中文', 'en': '英文', 'id': '印尼语', 'vi': '越南语',
+LANG_ORDER = ['zh', 'en', 'pt', 'id', 'vi', 'tl', 'ru', 'th', 'hi']
+LANG_SHORT = {'zh': '中文', 'en': '英文', 'pt': '葡萄牙语', 'id': '印尼语', 'vi': '越南语',
               'tl': '他加禄语', 'ru': '俄语', 'th': '泰语', 'hi': '印地语'}
 
 
@@ -45,7 +45,7 @@ QUOTE = [
     (r'\.(?:xlsx?|csv|txt|zip|rar|7z|db|sql)\b', '夹带数据文件名'),
     (r'\b[A-Za-z]{1,6}\d{5,}\b', '疑似卖家账号/联系 ID'),
     (r'公\s*众\s*号|订阅号', '夹带公众号名'),
-    (r'有限公司|[\u4e00-\u9fff]{2,4}工作室', '夹带商号/工作室名'),
+    (r'有限公司|[\u4e00-\u9fff]{2,4}工作室', '夹带商号/工作室名', False),
     (r'(?:热线|客服|专线|座机)\s*[:：]?\s*\d{4,}', '夹带客服/热线号码'),
     (r'(?:快递|收货|收件|家庭)地址\s*[:：]\s*\S', '疑似真实收寄地址'),
     (r'加\s*[vV微]|[+＋➕]\s*[vV]|私聊\S|私我\S', '联系方式未脱敏'),
@@ -55,10 +55,15 @@ QUOTE = [
     (r'(?:兴业|浦发|邮储|农信|光大|广发|华夏|中信|民生|招商|工商|建设|农业|交通|平安)'
      r'(?=[行银]|套卡|白户|对私|对公|额度|放款|流水|征信|信用卡|储蓄卡)|'
      r'(?:(?!各大银行|多家银行|商业银行|国有银行|全国银行|中小银行|民营银行|股份银行)'
-     r'[\u4e00-\u9fff]{2,6}银行)(?!卡)|四大行|六大行', '散文里出现具名银行，应占位为〔某银行〕'),
+     r'[\u4e00-\u9fff]{2,6}银行)(?!卡)|四大行|六大行', '散文里出现具名银行，应占位为〔某银行〕', False),
 ]
-LEAK = [(re.compile(p), w) for p, w in LEAK]
-QUOTE = [(re.compile(p), w) for p, w in QUOTE]
+# 三元组 (正则, 说明, 是否参与去空格探测)。
+# 去空格探测是为了识别「公 众 号」这类拆字绕过，但对开放式的中文量词规则
+# （[\u4e00-\u9fff]{2,6}银行）会把相邻的两个词拼成一个，造出假阳性
+# ——「农业破额 银行聚合」拼成「农业破额银行」、「助贷 消金申请 银行申请」拼成
+# 「消金申请银行」，都不是行名。这类规则只扫原文。
+LEAK = [(re.compile(r[0]), r[1], r[2] if len(r) > 2 else True) for r in LEAK]
+QUOTE = [(re.compile(r[0]), r[1], r[2] if len(r) > 2 else True) for r in QUOTE]
 PLACEHOLDER = re.compile(r'〔[^〕]{1,14}〕|【[^】]{1,14}】')
 DESPACE = re.compile(r'(?<=[\u4e00-\u9fff])[ \t]+(?=[\u4e00-\u9fff])')
 
@@ -114,8 +119,10 @@ def check_masking(entries):
                 probe = rx.sub('', probe)
             rules = LEAK + (QUOTE if f == 'example' else [])
             found = None
-            for cand in (probe, SPACE.sub('', probe)):
-                for pat, w in rules:
+            for cand, despaced in ((probe, False), (DESPACE.sub('', probe), True)):
+                for pat, w, ds_ok in rules:
+                    if despaced and not ds_ok:
+                        continue
                     m = pat.search(cand)
                     if m:
                         found = (w, m.group(0)[:30])
@@ -221,13 +228,15 @@ def validate(entries, warns=None):
     for e in entries:
         d = (e.get('definition') or '').strip()
         if 0 < len(d) < DEF_MIN:
-            errs.append(f"{e['id']}: 释义仅 {len(d)} 字，不足 {DEF_MIN} 字")
+            # 提示而非拦截：15 是现有词条的实测下限，不是设计约束。
+            # 「每个手机号配一个独立接码链接」14 字已经说清了，不该为了凑字数改写。
+            warns.append(f"释义偏短（{len(d)} 字）|{e['id']} {e.get('term')}")
         if not (e.get('related') or []):
-            warns.append(f"{e['id']} {e.get('term')}: 没有任何关联（孤点）")
+            warns.append(f"没有任何关联（孤点）|{e['id']} {e.get('term')}")
         if not (e.get('mechanism') or '').strip():
-            warns.append(f"{e['id']} {e.get('term')}: 缺 mechanism（链条位置与上下游）")
+            warns.append(f"缺 mechanism|{e['id']} {e.get('term')}")
         if not (e.get('ambiguity') or '').strip():
-            warns.append(f"{e['id']} {e.get('term')}: 缺 ambiguity（正常语境下的含义）")
+            warns.append(f"缺 ambiguity|{e['id']} {e.get('term')}")
     return errs
 
 def render(entries):
@@ -407,9 +416,8 @@ def sync_readme(entries):
                % (n_entry, n_amb, round(100 * n_amb / n_entry)), s)
 
     # 按语种一行
-    names = {'zh': '中文', 'en': '英文', 'id': '印尼语', 'tl': '他加禄语', 'vi': '越南语',
-             'ru': '俄语', 'th': '泰语', 'hi': '印地语'}
-    seq = [lg for lg in ['zh', 'en', 'id', 'tl', 'vi', 'ru', 'th', 'hi'] if lang_count.get(lg)]
+    names = LANG_SHORT
+    seq = [lg for lg in LANG_ORDER if lang_count.get(lg)]
     s = re.sub(r'(（\[非中文词条索引\]\(dict/黑话词典\.md#非中文词条索引\)）：)[^。]+。',
                lambda m: m.group(1) + ' ｜ '.join('%s %d' % (names[lg], lang_count[lg]) for lg in seq) + '。', s)
 
@@ -449,7 +457,8 @@ def main():
         # 但覆盖率下滑会让词典成色不齐，所以逐类报出来。
         buckets = {}
         for w in warns:
-            buckets.setdefault(w.split('（')[0].split(': ')[-1], []).append(w)
+            k = w.split('|')[0]
+            buckets.setdefault(re.sub(r'（\d+ 字）', '', k), []).append(w)
         print()
         print('提示（不拦提交）：')
         for k, v in sorted(buckets.items(), key=lambda x: -len(x[1])):
