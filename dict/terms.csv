@@ -220,7 +220,7 @@ fragment,Fragment,anonymous number|匿名号,en,,身份与认证绕过,指通过
 fujie,复接,,zh,,身份与认证绕过,同一个号码可以反复接收验证码，用于多平台注册或账号换绑。与只能用一次的首码相对，广告以「复接稳定」标注。,,shouma,to-verify,少见
 ganglao,港老,,zh,,身份与认证绕过,香港老号资源的简称,,0weigui|baihao|chengpinhao|guangdian|jiancexinlao|lanbiao|laobai|lengmenhao|mannian|manyue|naiyonghao|qishou|ruwang|shiminka|shoucuo|sihao|wushiip|xieyihao|yanzhenghao|yimazhideng|youxiangzhideng|zhibohao|zhidengxieyiapi|ziti,to-verify,少见
 gaohuima,高回码,,zh,,身份与认证绕过,回码率高的号码资源或线路，是跑量时优先选用的渠道。,,bianma|daishoufa|duxiangfujie|huima|huimalv|huoma|jiama|jiema|jifang|juhema|kuozhanma|laimalv2|maochi|nengliangma|otp|qiyema|sanwangshouma|shangma|shouma|yihaoyilianjie|yikayilianjie|yima|yukoufei|zhucema,to-verify,少见
-guale,挂了,店铺挂了,zh,,身份与认证绕过,账号或店铺被封禁、进入异常状态。,泛用口语（设备坏了、服务宕机均可用），需与账号、店铺语境共现。,frozen|lianzuo|xianhao,medium,少见
+guale,挂了,店铺挂了,zh,,身份与认证绕过,账号或店铺被封禁、进入异常状态。,泛用口语（设备坏了、服务宕机均可用），需与账号、店铺语境共现。,diaohao|frozen|lianzuo|xianhao,medium,少见
 guangdian,广电,,zh,,身份与认证绕过,广电运营商的手机卡（第四大运营商，风控较松）,「广电」既是第四家运营商的简称，也是广播电视主管部门的简称；更要注意「推广电动…」这类跨词截断。本义指广电号段的手机卡，需按整词并结合卡商语境判定。,0weigui|baihao|chengpinhao|ganglao|jiancexinlao|lanbiao|laobai|lengmenhao|mannian|naiyonghao|qishou|ruwang|shiminka|shoucuo|sihao|wushiip|xieyihao|yanzhenghao|yimazhideng|youxiangzhideng|zhibohao|zhideng|zhidengxieyiapi|ziti,to-verify,常见
 guok,过K,质保过K,zh,,身份与认证绕过,通过平台 KYC 实名审核，「质保过K」即承诺通过、否则售后。,字面为「经过K」，正常语境几乎无此用法，判别力较高。,quantiziliao|saolian|yishen,to-verify,少见
 guokyc,过消费法,过kyc|已过核验,zh,跨境电商卖家账号交易,身份与认证绕过,账号已通过平台依据当地消费者保护法规要求的卖家资质核验。,,chufashipin|dianpuguige|guokongting|guou|houtaizaishou|jixiao|kyc|kycvendor|wufukuanzhengce|xieyisan|xuni,high,较常见
@@ -532,7 +532,7 @@ jingxidou,京喜豆,,zh,,电商与营销套利,京喜独立的豆（不同于〔
 jintuikuan,仅退款,全额仅退款,zh,,电商与营销套利,平台允许的只退款不退货机制；被恶意利用时成为白拿商品的手段。,平台规则与消费者正当维权大量提及该词。,50on|budan|comerdegraca|coudantui|cupim|daiweiquan|drop2|esquema|esquemalindo|esuopei|golpe|mandacarrinhoedrop|pv|refunding|trampar|trampo|tropa|yipeishi,high,较常见
 kaikaili,开卡礼,,zh,,电商与营销套利,开通支付卡或会员即得的赠品，被批量开卡套取。,银行与商户开卡礼遇的正常营销用语。,eka|huishou|xingqing,medium,少见
 kongbao,空包,空包代发|虚假物流,zh,,电商与营销套利,寄送空包裹或仅有填充物的包裹，用于生成真实物流单号以配合虚假交易。,“真空包装”会命中相同字面，是最主要的误报来源，检索须使用“空包代发、空包网”等组合。,abdan|baodan|budan|buhu|cdian|daifapinglun|danhao|fanxin|gangenmai|hejia|kuaihuangniu|shuadan|suocang|tiyanfen|xianyuxihuo|xunicang|yuli|yushangwang|zhiping|zhuanji|zibian|zishua|zuodan,high,较常见
-kuaihuangniu,快递黄牛,,zh,,电商与营销套利,倒卖快递运力、账号与系统权限的中间商。,「黄牛」加行业名的构词广泛存在（票务黄牛等），需与单号、系统权限语境共现。,danhao|huangniu|kongbao|yijiwangdian,medium,少见
+kuaihuangniu,快递黄牛,,zh,,电商与营销套利,倒卖快递运力、账号与系统权限的中间商。,「黄牛」加行业名的构词广泛存在（票务黄牛等），需与单号、系统权限语境共现。,danhao|huangniu|kongbao|yijiwangdian,to-verify,少见
 lamang,拉满,必拉满|拉爆,zh,,电商与营销套利,把某个标的的下单量或可叠加优惠用到上限。,游戏、健身与日常口语中“拉满”泛指到极限，使用极广。,daequan|fangshui|gouwujin|haoche|haoyangmao|lajingzi|lijin|lingwumenkan|loudong|podun|qifei|songdingjin|suoha|weikuanbanjia,high,常见
 laoche,老车,新车|专车|包养|大车|小车,zh,,电商与营销套利,"把长期稳定的供需合作关系称作""车""，按合作时长与专属程度分为老车、新车、专车。","二手车、专车出行等正常语境大量使用，须结合""保量""""吃量""等共现词。",baox|bufazhan|chedui|chirou|daxiaoche|fache|gongxu|haoche|mache|makache|naxianche|shangche|shouliang|shouxusuiche|sihua|uche|xianjinche|xiaoche|zhaoche,medium,少见
 laochou,老抽,,zh,,电商与营销套利,"〔某电商平台〕""老抽奖""（互助换码）",「老抽」的字面义是酱油，日常语境里几乎只有这个意思。本义是电商互助活动的简称，必须与「京豆」「农场」「挖宝」等活动名共现才成立。,guobu|jingxidou|pengyipeng|pinshouqi|xiaochengxushui,to-verify,常见
@@ -807,7 +807,7 @@ zoudanbao,走担保,担保交易|中介担保|可担保交易,zh,,交易与担�
 zouyu,走y,,zh,,交易与担保行话,经二手交易平台（闲鱼，「鱼」缩写为 y）完成交易的说法。,字面无义，需与回收、交易语境共现，判别力较高。,escrow|huishou|huishouqun|xianyuxihuo,medium,较常见
 abbrev_en,首字母缩写规避,,en,,混淆与规避手法,把敏感名词压缩为两三个字母，使其在文本检测中失去特征。,两三字母的缩写在任何语言的正常文本中都大量出现，单独命中几乎没有判别力。,1x1|bocai|cc|chk|consultaveis|cvv|esquemadeaprovacao|estorno|gc_tl|gg|giftcard|goldcomsaldo|gongjijin|gongya|laimalv2|niunai|pingtaidaicheng|pvcs|rffrozen_tl|shouxin|sm|viradadesaldo|wts|xianyudailiao|xiepin|yitiaolong,high,常见
 cijian,拆字与插符,字中插符|分词书写|超.市,zh,,混淆与规避手法,在词语中间插入空格、标点或换行，把一个词拆成多段书写。,排版换行、复制错误会产生同样效果，需看是否系统性出现在敏感词内部。,cunnei|d|emoji|fangfengkong|gongjijin|laimalv2|niunai|rukouzhiyin|sm|xiepin|yitizi|zerowidth,high,较常见
-diaohao,掉号,,zh,,混淆与规避手法,账号在使用中掉出登录状态。与顶号不同，掉号多因平台风控或设备异常触发，广告以「不封号不掉号」作为稳定性承诺。,,shaihao,to-verify,少见
+diaohao,掉号,,zh,,混淆与规避手法,账号在使用中掉出登录状态。与顶号不同，掉号多因平台风控或设备异常触发，广告以「不封号不掉号」作为稳定性承诺。,,guale|shaihao,to-verify,少见
 dingdan,订丹,丹,zh,,混淆与规避手法,“订单”的谐音写法，“丹”替代“单”。,“丹”作为人名、药名、地名极常见，须以“订丹”整词检索。,juanyu|qiyuan|shifu|xiepin,high,较常见
 emoji,emoji 代字,表情替代|符号代字|圈码数字,zh,,混淆与规避手法,用表情符号或特殊符号替代文字与数字，承载价格、数量与行动指令。,表情符号在正常营销与社交文本中极普遍，仅在替代关键字的位置上才构成混淆信号。,cijian|cunnei|gongjijin|laimalv2|niunai|qiyuan|rouemoji|shifu|sm|xiepin|yitizi|zerowidth,high,
 fangfengkong,防风控操作,至少间隔|防止被风控|慢慢来,zh,,混淆与规避手法,为避免触发平台风控而对操作节奏与顺序做的刻意控制。,"""循序渐进""""慢慢来""是日常用语，语料中大量出现在育儿、健身与行业评论文本里，单独命中无判别力。",amannotif|chenglv|cijian|method|podun|rukouzhiyin|yihaoliangdan|zerowidth,high,少见

@@ -19,7 +19,7 @@
 [![词条数](https://img.shields.io/badge/词条-750-blue)](dict/黑话词典.md)
 [![分类](https://img.shields.io/badge/分类-9-green)](dict/黑话词典.md)
 [![语种](https://img.shields.io/badge/语种-6-yellow)](dict/黑话词典.md#非中文词条索引)
-[![关联边](https://img.shields.io/badge/关联边-5382-orange)](dict/黑话词典.md)
+[![关联边](https://img.shields.io/badge/关联边-5383-orange)](dict/黑话词典.md)
 [![许可](https://img.shields.io/badge/数据-CC%20BY%204.0-lightgrey)](LICENSE)
 
 **👉 [直接查看词典](dict/黑话词典.md)** ｜ [CSV 下载](dict/terms.csv) ｜ [结构化数据](data/entries/) ｜ [字段规范](data/schema.json) ｜ **[词条关系图谱](https://threathunterx.github.io/underground-slang-lexicon/)**
@@ -221,7 +221,7 @@ python3 tools/check_links.py   # 检查文档内部链接与锚点
   - `medium`（中）：词义基本确定，但用法较多或边界不清，使用时要结合语境
   - `to-verify`（待核实）：证据不足或尚未逐条复核；v0.2 并入的词条统一在这一档，仍在逐条复核
 
-  目前 <!--n_tv-->373<!--/n_tv--> 条标为待核实。
+  目前 <!--n_tv-->374<!--/n_tv--> 条标为待核实。
 - **拿不准就标出来，不给一个看起来确定的错误释义。** 证据不足以判断词义的词，宁可不收也不硬写。
 - **用例一律脱敏**：<!--n_ex-->620<!--/n_ex--> 条带真实用例；取不到可发布用例的
   <!--n_note-->118<!--/n_note--> 条用 `example_note` 写明原因（如「空包」的命中几乎全是「真空包装」，即其误报来源本身）。

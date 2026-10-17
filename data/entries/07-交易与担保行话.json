@@ -1453,7 +1453,7 @@
   "category": "交易与担保行话",
   "definition": "自称必成的外卖与电商平台代退款服务，按平台列名招揽。",
   "mechanism": "退款欺诈的服务化：以「保证成功」为卖点到平台发起虚假退款，与接单担保生态共用一套交易话术。",
-  "example": "doing sureshot refunds on 外卖、电商多平台",
+  "example": "sureshot refund：外卖、电商多平台代退，保证成功",
   "ambiguity": "「sureshot」字面为稳赢，体育与博彩语境也用。",
   "related": [
    "escrow",
