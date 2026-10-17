@@ -26,6 +26,9 @@ jobs:
       - name: 文档内部链接与锚点检查
         run: python3 tools/check_links.py
 
+      - name: 构建词条图谱
+        run: python3 tools/build_viz.py
+
       - name: 确认生成物已同步提交
         run: |
           if ! git diff --quiet; then

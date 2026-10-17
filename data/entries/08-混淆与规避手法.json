@@ -13,18 +13,18 @@
   "example": "一⁠天稳​赚大﻿几万（示例中的分隔符为不可见字符）",
   "ambiguity": "部分正常文本会因复制粘贴、排版工具或富文本编辑器引入零宽字符，不能仅凭存在即判风险，应看是否密集且位于关键词内部。",
   "related": [
-   "jianjie",
-   "xiepin",
+   "cijian",
+   "d",
    "emoji",
-   "shifu",
+   "fangfengkong",
+   "jianjie",
    "noelsa",
-   "yitizi",
    "rouemoji",
    "rukouzhiyin",
-   "fangfengkong",
    "setui",
-   "d",
-   "cijian"
+   "shifu",
+   "xiepin",
+   "yitizi"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -45,20 +45,20 @@
   "example": "一天稳赚大几万，看简届安排",
   "ambiguity": "“简届”“简阶”在规范中文里不成词，命中即高度可疑，是判别力最强的特征词之一。",
   "related": [
-   "zerowidth",
-   "xiepin",
+   "banzhuan",
    "d",
-   "shangan",
-   "yinliu",
    "duidao",
-   "yewuyuan",
+   "fangxinling",
    "goutui",
    "heiu",
-   "setui",
    "hutui",
+   "setui",
+   "shangan",
    "shangche",
-   "banzhuan",
-   "fangxinling"
+   "xiepin",
+   "yewuyuan",
+   "yinliu",
+   "zerowidth"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -81,7 +81,10 @@
    "领荭",
    "鸿苞",
    "苞雨",
-   "陶宝"
+   "陶宝",
+   "裙",
+   "纪念bi",
+   "shen忦"
   ],
   "category": "混淆与规避手法",
   "definition": "用同音或形近字替换关键词中的某个字，使语义对人可读、对机器不可匹配。",
@@ -127,14 +130,15 @@
   "example": "实符 64 亓 / 叠限时 3 亓随机优惠卷",
   "ambiguity": "“亓”是罕用姓氏与古字，正常文本中极少出现，判别力高。",
   "related": [
-   "xiepin",
-   "shifu",
-   "juanyu",
    "dingdan",
-   "lingkuan",
    "emoji",
+   "juanyu",
+   "lingkuan",
+   "rouemoji",
+   "shifu",
+   "xiepin",
    "yitizi",
-   "rouemoji"
+   "zhang"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -152,10 +156,10 @@
   "example": "有关赠品，订丹为准",
   "ambiguity": "“丹”作为人名、药名、地名极常见，须以“订丹”整词检索。",
   "related": [
-   "xiepin",
+   "juanyu",
    "qiyuan",
    "shifu",
-   "juanyu"
+   "xiepin"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -177,12 +181,12 @@
   "example": "叠限时随机优惠卷 / 先领劵再拍",
   "ambiguity": "“卷”本身是高频常用字（卷子、卷入），须结合“优惠卷、领劵、神劵”等组合检索。",
   "related": [
-   "xiepin",
-   "qiyuan",
    "daequan",
+   "dingdan",
    "lingkuan",
+   "qiyuan",
    "shifu",
-   "dingdan"
+   "xiepin"
   ],
   "confidence": "high",
   "first_seen": "v0.1"
@@ -201,11 +205,11 @@
   "example": "右上角领红包雨 / 每整点虹包雨 可叠",
   "ambiguity": "“虹包”“荭包”不成词，判别力较高；“包雨”可能出现在天气相关文本中。",
   "related": [
-   "xiepin",
+   "daequan",
    "juanyu",
    "qiyuan",
-   "daequan",
-   "shifu"
+   "shifu",
+   "xiepin"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -246,7 +250,8 @@
   "term": "拆字与插符",
   "aka": [
    "字中插符",
-   "分词书写"
+   "分词书写",
+   "超.市"
   ],
   "category": "混淆与规避手法",
   "definition": "在词语中间插入空格、标点或换行，把一个词拆成多段书写。",
@@ -286,10 +291,10 @@
   "example": "100% sure processing, no elsa",
   "ambiguity": "Elsa 是常见人名与动画角色名，脱离该社群语境无任何风险含义。",
   "related": [
-   "xiepin",
+   "capped_tl",
    "rffrozen_tl",
    "sureprocessing_tl",
-   "capped_tl",
+   "xiepin",
    "zerowidth"
   ],
   "confidence": "medium",
@@ -398,7 +403,8 @@
    "yihaoliangdan",
    "yitizi",
    "yongbu",
-   "zerowidth"
+   "zerowidth",
+   "zhang"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -419,14 +425,14 @@
   "example": "至少间隔一段时间，防止被风控 / 循序渐进慢慢来，不然会显示异常",
   "ambiguity": "\"循序渐进\"\"慢慢来\"是日常用语，语料中大量出现在育儿、健身与行业评论文本里，单独命中无判别力。",
   "related": [
-   "rukouzhiyin",
-   "podun",
-   "zerowidth",
-   "cijian",
-   "yihaoliangdan",
    "amannotif",
    "chenglv",
-   "method"
+   "cijian",
+   "method",
+   "podun",
+   "rukouzhiyin",
+   "yihaoliangdan",
+   "zerowidth"
   ],
   "confidence": "high",
   "frequency": "少见",

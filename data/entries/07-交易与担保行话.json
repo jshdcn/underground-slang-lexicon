@@ -14,24 +14,26 @@
   "ambiguity": "“供需”是经济学与商贸常用词，须结合“担保、频道、资源”等共现词判定。",
   "related": [
    "chushou",
-   "zoudanbao",
-   "shangche",
-   "yishou",
-   "hutui",
-   "wts",
+   "d",
    "escrow",
-   "zhaoche",
    "fache",
    "fakawang",
-   "zhipan",
-   "laoche",
-   "mianche",
    "gongqun",
-   "d",
-   "trustee",
+   "hutui",
    "japri",
+   "laoche",
+   "liaoshang",
+   "mianche",
+   "renrouchaxun",
+   "shangche",
+   "sureshot",
+   "trustee",
+   "wts",
+   "yishou",
+   "zhaoche",
+   "zhipan",
    "zongdai",
-   "liaoshang"
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -50,12 +52,12 @@
   "example": "大量收一类卡 / 出成品账号",
   "ambiguity": "单字“出”“收”在中文中无法有效检索，须作为“出+标的”的模式使用。",
   "related": [
+   "d",
    "gongxu",
-   "zoudanbao",
-   "yishou",
    "huishou",
    "wts",
-   "d"
+   "yishou",
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -141,7 +143,8 @@
    "shangka",
    "shouxusuiche",
    "uche",
-   "xianjinche"
+   "xianjinche",
+   "yushouche"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -166,11 +169,14 @@
    "daxiaoche",
    "erma",
    "fresh",
+   "frozen",
    "gongxu",
    "lengmen",
    "liao",
    "liaoshang",
    "mianche",
+   "neigou",
+   "xianhao",
    "zhipan",
    "zongdai"
   ],
@@ -238,6 +244,7 @@
    "abwushi",
    "bufazhan",
    "buu",
+   "didi",
    "didinaxian",
    "fangxinling",
    "gc_tl",
@@ -269,6 +276,7 @@
    "shangya",
    "shuangxiang",
    "shuangya",
+   "sijia",
    "ushangnaxian",
    "xiake",
    "xianbaobei",
@@ -326,18 +334,20 @@
   "example": "Escrow+ / ESCROW GROSS",
   "ambiguity": "escrow 是房地产与跨境贸易的正规金融安排，本身中性。",
   "related": [
-   "zoudanbao",
-   "trustee",
-   "readymade",
-   "ibanacc",
-   "wts",
-   "gongxu",
    "anto",
-   "sanhei",
-   "fragment",
-   "trunggian",
    "baohiem",
-   "shangya"
+   "fragment",
+   "gongxu",
+   "ibanacc",
+   "readymade",
+   "sanhei",
+   "shangya",
+   "sureshot",
+   "trunggian",
+   "trustee",
+   "wts",
+   "zoudanbao",
+   "zouyu"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -357,20 +367,20 @@
   "example": "Trustee+ (110) / Escrow+ gross or banker",
   "ambiguity": "trustee 在法律与金融语境指受托人，是正规术语。",
   "related": [
-   "escrow",
-   "zoudanbao",
-   "mianche",
-   "gongxu",
+   "anto",
    "baohiem",
    "baox",
-   "shangya",
-   "anto",
+   "escrow",
+   "gongxu",
    "heipingtai",
-   "paolu",
    "jiagongqun",
+   "mailei",
+   "mianche",
+   "paolu",
    "penipuan",
+   "shangya",
    "trunggian",
-   "mailei"
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -393,15 +403,15 @@
   "example": "WTS KYC / ACCS / FS 60% capped",
   "ambiguity": "WTS／WTB／FS／LF 在游戏交易、收藏品与二手社群中是通用缩写，正常使用占绝大多数；须结合标的物判定，缩写本身没有判别力。",
   "related": [
-   "chushou",
-   "gongxu",
-   "escrow",
-   "readymade",
-   "capped_tl",
-   "liaoshang",
-   "zongdai",
+   "abbrev_en",
    "bulk_tl",
-   "abbrev_en"
+   "capped_tl",
+   "chushou",
+   "escrow",
+   "gongxu",
+   "liaoshang",
+   "readymade",
+   "zongdai"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -421,11 +431,11 @@
   "example": "Fresh & New SSN / FRESH SELLER",
   "ambiguity": "英文日常词，食品、内容等语境大量使用。",
   "related": [
-   "yishou",
-   "ssn",
    "cvv",
    "liao",
-   "uncheck_vi"
+   "ssn",
+   "uncheck_vi",
+   "yishou"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -489,12 +499,12 @@
   "example": "MINAT JAPRI ADMIN / Admin TIDAK AKAN japri duluan",
   "related": [
    "d",
-   "penipuan",
-   "gongxu",
-   "gongqun",
    "garansi",
-   "shuangxiang",
-   "gc_tl"
+   "gc_tl",
+   "gongqun",
+   "gongxu",
+   "penipuan",
+   "shuangxiang"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -513,14 +523,14 @@
   "mechanism": "账号类商品存在被平台找回或封禁的风险，卖家以\"保修一个月\"\"保登录\"降低买方顾虑；保修期长短是定价因素，也反映卖家对该账号存活期的预期。",
   "example": "Akun kami garansi 1 bulan",
   "related": [
+   "baox",
+   "japri",
+   "jixiao",
+   "mailei",
    "mianche",
    "penipuan",
-   "japri",
    "readymade",
-   "rffrozen_tl",
-   "baox",
-   "mailei",
-   "jixiao"
+   "rffrozen_tl"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -540,15 +550,15 @@
   "example": "Selain nama di atas = PENIPUAN",
   "ambiguity": "印尼语日常词，新闻与维权讨论中大量使用。",
   "related": [
-   "japri",
+   "baohiem",
    "garansi",
-   "zoudanbao",
-   "trustee",
    "gongqun",
-   "shuangxiang",
-   "paolu",
+   "japri",
    "jiagongqun",
-   "baohiem"
+   "paolu",
+   "shuangxiang",
+   "trustee",
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -566,13 +576,13 @@
   "mechanism": "与 escrow、走担保同角色；越南语圈的特点是把中间人费用制度化为入群门槛——\"交了中间人费\"的成员才被允许在群内交易。",
   "example": "Nhóm không cho bán CC ngoài những người đóng trung gian",
   "related": [
-   "escrow",
-   "trustee",
-   "zoudanbao",
    "baohiem",
    "ccv_vi",
    "checkout_vi",
-   "shangya"
+   "escrow",
+   "shangya",
+   "trustee",
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -591,12 +601,12 @@
   "example": "trong nhóm người có đóng bảo hiểm cho Admin tự tin giao dịch",
   "ambiguity": "越南语日常词，正常保险业务讨论中极常见。",
   "related": [
-   "trunggian",
    "escrow",
-   "trustee",
-   "zoudanbao",
    "penipuan",
-   "shangya"
+   "shangya",
+   "trunggian",
+   "trustee",
+   "zoudanbao"
   ],
   "confidence": "medium",
   "frequency": "少见",
@@ -616,14 +626,14 @@
   "mechanism": "额度账号交易的风险分担条款，与\"保修\"同类；条款里列出的触发条件（frozen / verified / confirming）正好反映了平台风控的三个拦截动作。",
   "example": "RF IF FROZEN/CONFIRMING/VERIFIED",
   "related": [
+   "abbrev_en",
    "capped_tl",
-   "noelsa",
    "garansi",
-   "sureprocessing_tl",
-   "noaccess_tl",
-   "pts_tl",
    "mianche",
-   "abbrev_en"
+   "noaccess_tl",
+   "noelsa",
+   "pts_tl",
+   "sureprocessing_tl"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -643,10 +653,10 @@
   "example": "100% sure processing, no elsa",
   "related": [
    "capped_tl",
-   "noelsa",
-   "rffrozen_tl",
+   "mianche",
    "noaccess_tl",
-   "mianche"
+   "noelsa",
+   "rffrozen_tl"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -665,12 +675,12 @@
   "mechanism": "卖方保留账号控制权、代为下单，既避免账号被买方转卖，也便于复用同一账号多次套现；\"with access\" 则溢价出售登录权。该规格区分直接体现了账号作为可重复使用资产的属性。",
   "example": "FS 60% 205 capped, no access",
   "related": [
+   "bulk_tl",
    "capped_tl",
+   "huangniu",
    "pts_tl",
    "rffrozen_tl",
-   "sureprocessing_tl",
-   "huangniu",
-   "bulk_tl"
+   "sureprocessing_tl"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -717,6 +727,7 @@
   "example": "LF mag CO! 10+ items",
   "ambiguity": "CO 在英文语境可指 cash out（提现）或公司，缩写歧义大。",
   "related": [
+   "booker",
    "bulk_tl",
    "capped_tl",
    "cashout",
@@ -742,11 +753,13 @@
   "mechanism": "\"can do bulk everyday\" 说明供给是持续、规模化的，而非偶发转卖；最小起订量（如 min 10 accs）与单价折扣一起构成批发报价体系。",
   "example": "110 BULK MIN 10 ACCS",
   "related": [
+   "booker",
    "capped_tl",
-   "noaccess_tl",
    "co_tl",
-   "wts",
-   "huangniu"
+   "cod",
+   "huangniu",
+   "noaccess_tl",
+   "wts"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -955,22 +968,22 @@
   "example": "稳定不按头业务 小白也可做 ｜ 补偿鸽子费和按头费 ｜ 更不会按头，上课自己随时监听",
   "ambiguity": "**本词条的释义不确定。**两种用法的证据量都不大，且第二种接近汉语字面义。作为检索特征判别力低，不建议单独使用。",
   "related": [
-   "baox",
-   "dongka",
-   "sanhei",
-   "rentou",
-   "shangya",
-   "mailei",
-   "shazhupan",
-   "huilv",
-   "neiceng",
-   "diubao",
-   "paofen",
-   "chedui",
    "atmquxian",
-   "zoudanbao",
+   "baox",
+   "chedui",
+   "diubao",
+   "dongka",
    "escrow",
-   "trustee"
+   "huilv",
+   "mailei",
+   "neiceng",
+   "paofen",
+   "rentou",
+   "sanhei",
+   "shangya",
+   "shazhupan",
+   "trustee",
+   "zoudanbao"
   ],
   "confidence": "to-verify",
   "frequency": "较常见",
@@ -1028,6 +1041,7 @@
   "ambiguity": "\"原料商\"\"面料商\"等正常商贸称谓会命中相同字面。",
   "related": [
    "baozhenbubaolou",
+   "caiji",
    "caishang",
    "ccv_vi",
    "dingjihaoshang",
@@ -1115,6 +1129,7 @@
    "shouxusuiche",
    "uche",
    "xianjinche",
+   "yushouche",
    "zhaoche"
   ],
   "confidence": "high",
@@ -1233,16 +1248,16 @@
   "example": "〔某支付平台〕内层原生 ｜ 卡挂内层 ｜ 禁止外层杀猪、电诈",
   "ambiguity": "**具体分层边界未确认。**\"内层/外层\"在包装、服装与建筑语境中是字面义；绝大多数提及属正常用法。作为检索特征判别力低。",
   "related": [
-   "sanhei",
-   "shazhupan",
-   "chedui",
-   "shuifang",
    "anto",
+   "chedui",
+   "diubao",
+   "gongqun",
    "huilv",
    "paofen",
    "rentou",
-   "diubao",
-   "gongqun"
+   "sanhei",
+   "shazhupan",
+   "shuifang"
   ],
   "confidence": "to-verify",
   "frequency": "少见",
@@ -1359,5 +1374,132 @@
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "frequency": "少见"
+ },
+ {
+  "id": "booker",
+  "term": "booker",
+  "lang": "en",
+  "region": "菲律宾转卖圈",
+  "aka": [
+   "BOOKER"
+  ],
+  "category": "交易与担保行话",
+  "definition": "持有大额折扣账号、代人下单结账的人，也指可结账的折扣账号本身。",
+  "mechanism": "折扣账号套利的执行角色：账号按折扣率、额度上限与积分分层定价出租或出售，booker 用其代客结账赚取差价。",
+  "example": "可结账账号，折扣六成，额度封顶四百二十八",
+  "ambiguity": "英文常用词（预订者、装订者），单独出现不构成信号。",
+  "related": [
+   "bulk_tl",
+   "capped_tl",
+   "co_tl",
+   "cod",
+   "frozen"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "cod",
+  "term": "COD",
+  "lang": "en",
+  "region": "东南亚电商",
+  "aka": [
+   "cod"
+  ],
+  "category": "交易与担保行话",
+  "definition": "cash on delivery 货到付款；账号交易语境中指支持货到付款的账号属性。",
+  "mechanism": "降低买家垫资风险的卖点：「COD 且包邮」的账号更易出手，常与折扣账号、冻结包换条款打包出现。",
+  "example": "cod & free sf",
+  "ambiguity": "零售与物流行业的标准术语，正常语境占多数。",
+  "related": [
+   "booker",
+   "bulk_tl"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "frozen",
+  "term": "frozen",
+  "lang": "en",
+  "region": "菲律宾转卖圈",
+  "aka": [
+   "replace if frozen"
+  ],
+  "category": "交易与担保行话",
+  "definition": "账号被平台冻结的状态；「replace if frozen」即冻结包换的售后承诺。",
+  "mechanism": "账号交易的质保条款核心：冻结风险由卖家承担以促成批量交易，与「一手」卖家的质保话术同源。",
+  "example": "replace if frozen",
+  "ambiguity": "英文常用词（冰冻、冻结），需与账号交易语境共现。",
+  "related": [
+   "booker",
+   "guale",
+   "yishou"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "sureshot",
+  "term": "sureshot refund",
+  "lang": "en",
+  "region": "印度退款生态",
+  "aka": [
+   "Sureshot Refunds"
+  ],
+  "category": "交易与担保行话",
+  "definition": "自称必成的外卖与电商平台代退款服务，按平台列名招揽。",
+  "mechanism": "退款欺诈的服务化：以「保证成功」为卖点到平台发起虚假退款，与接单担保生态共用一套交易话术。",
+  "example": "doing sureshot refunds on 外卖、电商多平台",
+  "ambiguity": "「sureshot」字面为稳赢，体育与博彩语境也用。",
+  "related": [
+   "escrow",
+   "gongxu"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "sijia",
+  "term": "私家",
+  "aka": [
+   "私家线报"
+  ],
+  "category": "交易与担保行话",
+  "definition": "「私人运营」之意，用于强调情报群非官方、组织者独立运营。",
+  "mechanism": "社群信任话术：以「私家」暗示信息独占与稳定性，与编号分层运营的群组体系配合。",
+  "example": "私家线报群，编号进群",
+  "ambiguity": "私家车、私家侦探等正常搭配，字面无黑产指向。",
+  "related": [
+   "didi",
+   "gongqun",
+   "haoyangmao",
+   "huishouqun"
+  ],
+  "confidence": "to-verify",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "zouyu",
+  "term": "走y",
+  "category": "交易与担保行话",
+  "definition": "经二手交易平台（闲鱼，「鱼」缩写为 y）完成交易的说法。",
+  "mechanism": "回收渠道的担保选项：「支持走y」即承诺买家可经二手平台担保交易收货，降低先款风险。",
+  "example": "回收群收货，支持走y",
+  "ambiguity": "字面无义，需与回收、交易语境共现，判别力较高。",
+  "related": [
+   "escrow",
+   "huishou",
+   "huishouqun",
+   "xianyuxihuo"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
  }
 ]

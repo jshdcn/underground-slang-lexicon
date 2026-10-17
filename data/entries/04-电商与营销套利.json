@@ -88,14 +88,14 @@
   "example": "无脑反复单拍就行，优先梭哈",
   "ambiguity": "\"梭哈\"源自牌类游戏，在赌博、投资与日常口语中被广泛用作\"全力投入\"的比喻；须结合\"无脑拍\"\"优先\"等批量下单指令判定。",
   "related": [
+   "fangshui",
    "haoche",
    "lamang",
-   "podun",
    "laohuohao",
+   "loudong",
+   "podun",
    "qifei",
    "weikuanbanjia",
-   "loudong",
-   "fangshui",
    "xiaofeiquan"
   ],
   "confidence": "high",
@@ -115,21 +115,21 @@
   "example": "破盾了，速度试试 / 0 点试试破盾",
   "ambiguity": "游戏语境中“破盾”指击破护盾，属常见正常用法。",
   "related": [
-   "suoha",
+   "amannotif",
+   "baihao",
+   "fangfeng",
+   "fangfengkong",
+   "fangshui",
+   "haoche",
    "lamang",
    "laohuohao",
-   "haoche",
-   "amannotif",
-   "method",
-   "puhaokexia",
-   "baihao",
    "loudong",
-   "fangfengkong",
-   "rukouzhiyin",
-   "waigua",
-   "fangfeng",
+   "method",
    "miaobo",
-   "fangshui"
+   "puhaokexia",
+   "rukouzhiyin",
+   "suoha",
+   "waigua"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -225,18 +225,19 @@
   "example": "大额券+消费券到手 287，回收端 399 秒卖",
   "ambiguity": "普通消费者比价时广泛使用“到手价”。",
   "related": [
+   "chaoshika",
+   "coudantui",
    "daequan",
-   "xingqing",
+   "gouwujin",
+   "guobu",
+   "lijin",
+   "lingwumenkan",
+   "loot",
    "miaomai",
    "songdingjin",
-   "gouwujin",
-   "lijin",
-   "coudantui",
-   "lingwumenkan",
-   "guobu",
-   "loot",
+   "suoha",
    "weikuanbanjia",
-   "suoha"
+   "xingqing"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -257,16 +258,22 @@
   "ambiguity": "金融与商品市场语境中“行情”为标准用词，误报率高。",
   "related": [
    "aisi",
+   "chaoshika",
    "daequan",
    "dangkou",
    "dangmian",
+   "eka",
    "gouwujin",
    "haoche",
    "hongdian",
    "huishou",
+   "huishouqun",
+   "jianlou",
+   "kaikaili",
    "miaomai",
    "xiankuanhuishou",
    "xiaofeiquan",
+   "zhang",
    "zulinji"
   ],
   "confidence": "high",
@@ -326,8 +333,10 @@
    "huiliulaohao",
    "huima",
    "huimalv",
+   "huishouqun",
    "huiu",
    "huixiang",
+   "kaikaili",
    "lijianjin",
    "ludhuo",
    "miaomai",
@@ -336,6 +345,7 @@
    "xiankuanhuishou",
    "xingqing",
    "zhuanji",
+   "zouyu",
    "zulinji"
   ],
   "confidence": "high",
@@ -355,11 +365,11 @@
   "ambiguity": "电商预售的正常营销机制，商家与消费者均频繁提及。",
   "related": [
    "daequan",
-   "xiaofeiquan",
    "haoche",
    "lamang",
    "lijin",
-   "weikuanbanjia"
+   "weikuanbanjia",
+   "xiaofeiquan"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -407,14 +417,17 @@
   "mechanism": "虚假交易的典型结算形态：参与者垫付下单、商家或组织方按固定额返款并支付佣金，制造真实支付流水与销量；参与者承担垫付不还的风险。",
   "example": "固返 1059 / 怕跌可以固返",
   "related": [
-   "zuodan",
-   "budan",
-   "huikuan",
    "baodan",
-   "yongbu",
+   "budan",
    "chaobu",
    "feilv",
-   "shuadan"
+   "huikuan",
+   "lingyuan",
+   "shuadan",
+   "shunshoumai",
+   "yongbu",
+   "zhixia",
+   "zuodan"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -557,16 +570,21 @@
    "buhu",
    "cdian",
    "daifapinglun",
+   "danhao",
    "fanxin",
    "gangenmai",
    "hejia",
+   "kuaihuangniu",
    "shuadan",
    "suocang",
    "tiyanfen",
    "xianyuxihuo",
+   "xunicang",
    "yuli",
+   "yushangwang",
    "zhiping",
    "zhuanji",
+   "zibian",
    "zishua",
    "zuodan"
   ],
@@ -588,6 +606,7 @@
   "example": "报单：手机号 / 二维码截图报单",
   "ambiguity": "保险、直销与物流行业“报单”为正常业务术语。",
   "related": [
+   "anyu",
    "bianma",
    "chadan",
    "chaobu",
@@ -603,6 +622,8 @@
    "xiaoche",
    "yihaoliangdan",
    "yongbu",
+   "yuansu",
+   "zhixia",
    "zituizimai",
    "zuodan",
    "zuodanqun"
@@ -623,24 +644,25 @@
   "mechanism": "以“低价代下”承接消费者订单，用套利得来的券、额度或员工权益完成履约；对平台表现为补贴流向非目标人群。",
   "example": "不用高价收、不用蹲黄牛",
   "related": [
+   "baodan",
+   "bianma",
+   "bulk_tl",
+   "capped_tl",
+   "chaobu",
    "daequan",
    "daifu",
-   "baodan",
-   "huishou",
-   "capped_tl",
-   "noaccess_tl",
-   "bulk_tl",
-   "chaobu",
-   "puhaokexia",
-   "gouwujin",
-   "zhuanji",
-   "dianpuruhui",
-   "guobu",
-   "maoliao",
-   "xiaoche",
+   "daix",
    "dangkou",
-   "bianma",
-   "daix"
+   "dianpuruhui",
+   "gouwujin",
+   "guobu",
+   "huishou",
+   "kuaihuangniu",
+   "maoliao",
+   "noaccess_tl",
+   "puhaokexia",
+   "xiaoche",
+   "zhuanji"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -669,30 +691,37 @@
    "cupim",
    "daequan",
    "dangkou",
+   "dibu",
    "drop2",
    "esquema",
    "esquemalindo",
    "fangshui",
+   "fuhuo",
    "gaibang",
    "golpe",
    "gouwujin",
    "guobu",
    "haoche",
    "huishou",
+   "huishouqun",
    "lamang",
    "lijianjin",
    "lijin",
    "lingwumenkan",
+   "lingyuan",
    "loot",
    "loudong",
    "ludhuo",
    "mandacarrinhoedrop",
    "maoliao",
+   "neigou",
    "pv",
+   "sijia",
    "trampar",
    "trampo",
    "tropa",
-   "xiaochengxushui"
+   "xiaochengxushui",
+   "xueshenghao"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -718,6 +747,8 @@
    "haoyangmao",
    "huishou",
    "huiu",
+   "jianlou",
+   "lingyuan",
    "maoliao",
    "tongdao",
    "yuliao",
@@ -775,15 +806,15 @@
   "example": "[投诉要求] 假一赔十 / 保数据信息真实，承诺假一赔十",
   "ambiguity": "商家正常的品质承诺同样使用该表述，监管宣传与消费者维权也频繁提及；判定须看它是作为索赔依据（配合批量投诉）还是作为数据卖家的质量背书。",
   "related": [
-   "jintuikuan",
-   "esuopei",
-   "liao",
-   "zoudanbao",
-   "daiweiquan",
-   "mailei",
    "baozhenbubaolou",
+   "daiweiquan",
+   "esuopei",
+   "jintuikuan",
+   "liao",
+   "mailei",
+   "mianche",
    "refunding",
-   "mianche"
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -802,12 +833,12 @@
   "example": "[投诉问题] 恶意索赔 ｜ 感觉就是职业打假",
   "ambiguity": "正当的消费者维权与监管投诉不属此列，判定需看是否批量、是否以赔付为唯一目的。",
   "related": [
+   "daiweiquan",
+   "fancuishou",
    "jintuikuan",
-   "yipeishi",
    "liuping",
    "refunding",
-   "daiweiquan",
-   "fancuishou"
+   "yipeishi"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -911,10 +942,10 @@
   "mechanism": "作为\"method\"类商品出售，时效性强；与封禁治理形成直接对抗——平台每轮策略更新后，社群会重新验证并标注哪种解封方法仍然可用。",
   "example": "UNBAN METHOD",
   "related": [
-   "jiefeng",
-   "method",
    "chengpinhao",
    "dailshiming",
+   "jiefeng",
+   "method",
    "smmpanel"
   ],
   "confidence": "high",
@@ -937,12 +968,12 @@
   "example": "LOOT 382/- | 90% OFF",
   "ambiguity": "\"loot\" 在语料中几乎没有风险用例，绝大多数是普通消费者的优惠分享；同时 loot 在游戏语境中指战利品。不宜作为风险信号单独使用。",
   "related": [
-   "haoyangmao",
    "daequan",
-   "xiaofeiquan",
+   "gaibang",
+   "haoyangmao",
    "method",
    "shangche",
-   "gaibang"
+   "xiaofeiquan"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -962,16 +993,16 @@
   "example": "TÌM CHECKOUT AMZ/WM uy tín không ngâm đơn",
   "ambiguity": "checkout 是电商结算的标准词，正常购物与开发讨论中极常见。",
   "related": [
-   "ludhuo",
    "ccv_vi",
+   "daidiao",
+   "ludhuo",
+   "miaobo",
    "nonvbv",
-   "uncheck_vi",
    "socks5",
    "trunggian",
-   "miaobo",
-   "zhuanzhangmoniqi",
+   "uncheck_vi",
    "yuliao",
-   "daidiao"
+   "zhuanzhangmoniqi"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -991,11 +1022,11 @@
   "example": "Orderan Fiktif",
   "related": [
    "budan",
-   "shuadan",
-   "zuodan",
    "dingwei",
    "modapk",
-   "setbid"
+   "setbid",
+   "shuadan",
+   "zuodan"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1017,10 +1048,10 @@
   "example": "FOR SALE ACCOUNT 428cap with pts / 120 no pts",
   "related": [
    "capped_tl",
+   "huishou",
    "noaccess_tl",
    "rffrozen_tl",
-   "taoxian",
-   "huishou"
+   "taoxian"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1040,20 +1071,22 @@
   "example": "购物金后5折到手218 / 券后594 购物金576 回收端749",
   "ambiguity": "店铺储值与会员预充是正常营销工具，消费者正当使用占多数。",
   "related": [
+   "chaoshika",
    "daequan",
-   "xiaofeiquan",
-   "xingqing",
-   "miaomai",
-   "huishou",
-   "lijin",
    "dangkou",
-   "taoxian",
-   "hexiao",
+   "eka",
+   "gaibang",
    "haoche",
-   "lamang",
-   "huangniu",
    "haoyangmao",
-   "gaibang"
+   "hexiao",
+   "huangniu",
+   "huishou",
+   "lamang",
+   "lijin",
+   "miaomai",
+   "taoxian",
+   "xiaofeiquan",
+   "xingqing"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -1073,15 +1106,15 @@
   "mechanism": "与优惠券不同，礼金通常按消费比例赠送且可与券叠加，因此是叠加路径里的关键一层；社群会精确播报发放比例、上限、领取时段与刷新技巧（\"5%最高30元，仅限今晚20点到明晚24点\"），把平台的营销节奏变成可执行的作业指令。",
   "example": "5%天降礼金最高30元，仅限今晚20点到明晚24点共28小时领取",
   "related": [
-   "gouwujin",
    "daequan",
-   "songdingjin",
-   "xiaofeiquan",
-   "lamang",
+   "gouwujin",
+   "guobu",
    "haoyangmao",
-   "weikuanbanjia",
+   "lamang",
    "lingwumenkan",
-   "guobu"
+   "songdingjin",
+   "weikuanbanjia",
+   "xiaofeiquan"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1101,11 +1134,12 @@
   "mechanism": "名额稀缺且时点明确，因此成为集中下单的焦点；社群以\"主要抢尾款半价\"组织成员在同一秒并发请求，本质是用人数优势挤占面向普通消费者的限量权益。",
   "example": "主要抢尾款半价 / 一万名尾款半价",
   "related": [
-   "songdingjin",
-   "lijin",
    "daequan",
    "lamang",
+   "lijin",
+   "songdingjin",
    "suoha",
+   "weikuan",
    "xiaofeiquan"
   ],
   "confidence": "high",
@@ -1127,19 +1161,19 @@
   "example": "佣72+超补72（超补不能自推自买）",
   "ambiguity": "\"超补\"是平台公开的补贴活动名，普通消费者参与与讨论占绝大多数；绝大多数提及属正常用法。风险信号在于与\"禁自推自买\"\"佣补\"等任务规则同现。",
   "related": [
-   "zituizimai",
-   "yongbu",
    "baodan",
    "daequan",
-   "puhaokexia",
    "fangshui",
-   "shangdan",
    "gufan",
-   "huangniu",
    "haoyangmao",
+   "huangniu",
+   "puhaokexia",
+   "shangdan",
+   "yaosanren",
    "yihaoliangdan",
+   "yongbu",
    "zhongcaobutie",
-   "yaosanren"
+   "zituizimai"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -1199,14 +1233,14 @@
   "example": "一号两单18.6*2=37.2 / 一号5单利润300",
   "related": [
    "baihao",
-   "chaobu",
-   "yongbu",
    "baodan",
-   "zuodan",
+   "chaobu",
+   "fangfengkong",
    "puhaokexia",
-   "yaosanren",
    "rouemoji",
-   "fangfengkong"
+   "yaosanren",
+   "yongbu",
+   "zuodan"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1226,17 +1260,17 @@
   "mechanism": "报酬结构的透明化是这个生态成熟的标志——\"返利8.88佣补8.58\"把收益拆成可核对的两笔，参与者据此判断是否值得做单。补贴部分通常由平台活动承担，佣金部分由商家承担。",
   "example": "返利8.88佣补8.58 / 返佣6.51佣补2.1",
   "related": [
-   "chaobu",
-   "gufan",
-   "zituizimai",
-   "yihaoliangdan",
    "baodan",
-   "zhongcaobutie",
+   "chaobu",
    "chirou",
-   "zuodan",
+   "gufan",
+   "rouemoji",
    "shaitu",
-   "zuodanqun",
-   "rouemoji"
+   "yihaoliangdan",
+   "zhongcaobutie",
+   "zituizimai",
+   "zuodan",
+   "zuodanqun"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1256,14 +1290,14 @@
   "mechanism": "把\"下单\"与\"发内容\"打包成一个任务：下单后按要求发布图文并通过审核，才能领到补贴，因此实际到手价要把补贴算进去（\"赠种草补贴30元，实际到手39.9元\"）。对平台而言，推荐内容的真实性与销量数据同时被污染。",
   "example": "赠种草补贴30元，实际到手39.9元",
   "related": [
-   "liuping",
-   "yongbu",
-   "shaitu",
-   "chaobu",
-   "zuodan",
-   "followers",
    "budan",
-   "zituizimai"
+   "chaobu",
+   "followers",
+   "liuping",
+   "shaitu",
+   "yongbu",
+   "zituizimai",
+   "zuodan"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1286,11 +1320,11 @@
   "example": "新方案：普号可下 / 价格对／普号可下",
   "related": [
    "baihao",
+   "chaobu",
+   "huangniu",
    "laohuohao",
    "podun",
-   "yihaoliangdan",
-   "chaobu",
-   "huangniu"
+   "yihaoliangdan"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1351,12 +1385,12 @@
   "example": "销量也起飞了，无脑拉满 / 成率起飞，费率冰点，收量",
   "ambiguity": "航空、游戏与日常口语中极常见，单独出现无判别力。",
   "related": [
-   "lamang",
-   "suoha",
    "chenglv",
-   "sihua",
    "haoche",
-   "shouliang"
+   "lamang",
+   "shouliang",
+   "sihua",
+   "suoha"
   ],
   "confidence": "medium",
   "frequency": "较常见",
@@ -1460,22 +1494,22 @@
   "example": "高权重协议号，自热截流、互关千百粉号",
   "ambiguity": "\"自热\"在食品（自热火锅）与材料语境中是常用词；绝大多数提及属正常用法。须结合\"互关\"\"协议号\"\"千百粉号\"等共现词判定。",
   "related": [
-   "liuping",
-   "followers",
-   "chengpinhao",
-   "jieliu",
+   "baofen",
    "chadan",
-   "tiaopinglun",
-   "xieyihao",
+   "chengpinhao",
+   "followers",
+   "jieliu",
    "lengmenhao",
-   "pingtaidaicheng",
-   "shuijun",
-   "qunkong",
+   "liuping",
    "miaobo",
-   "xiazaifu",
+   "pingtaidaicheng",
+   "qunkong",
    "qushuiyin",
-   "zhibohao",
-   "baofen"
+   "shuijun",
+   "tiaopinglun",
+   "xiazaifu",
+   "xieyihao",
+   "zhibohao"
   ],
   "confidence": "medium",
   "frequency": "少见",
@@ -1526,17 +1560,21 @@
   "example": "漏洞可直接下单 / 速度！漏洞价！快秒！",
   "ambiguity": "\"漏洞\"在安全与软件语境中是标准术语，技术讨论占比极高。",
   "related": [
-   "podun",
-   "suoha",
-   "lamang",
-   "haoche",
-   "rukouzhiyin",
-   "guobu",
-   "method",
-   "fangshui",
+   "chaoshimian",
    "daequan",
+   "fangshui",
+   "fuhuo",
+   "gaibang",
+   "guobu",
+   "haoche",
    "haoyangmao",
-   "gaibang"
+   "jianlou",
+   "lamang",
+   "method",
+   "podun",
+   "rukouzhiyin",
+   "shunshoumai",
+   "suoha"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -1556,12 +1594,12 @@
   "example": "可以转寄 返款快 / 可以转寄，不要国补",
   "ambiguity": "转寄是正常的物流服务，集运与代购场景大量使用。",
   "related": [
+   "dingwei",
    "guobu",
    "huangniu",
+   "huishou",
    "kongbao",
-   "dingwei",
-   "rukouzhiyin",
-   "huishou"
+   "rukouzhiyin"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1580,11 +1618,12 @@
   "mechanism": "满减规则假定消费者会保留全部商品，这个手法只保留目标商品、退掉凑单品，使优惠实际适用于未达门槛的订单。社群把它写进标准作业步骤（\"凑1 凑完退\"），商家承担退货运费与履约成本。",
   "example": "凑1 凑完退",
   "related": [
-   "lingwumenkan",
-   "dianpuruhui",
    "daequan",
+   "dianpuruhui",
    "jintuikuan",
+   "lingwumenkan",
    "rukouzhiyin",
+   "shunshoumai",
    "xiaofeiquan"
   ],
   "confidence": "high",
@@ -1605,14 +1644,14 @@
   "example": "❶先领无门槛红包 / 速！先领无门槛",
   "related": [
    "coudantui",
-   "dianpuruhui",
    "daequan",
+   "dianpuruhui",
+   "gaibang",
+   "haoyangmao",
+   "lamang",
    "lijin",
    "rukouzhiyin",
-   "lamang",
-   "xiaofeiquan",
-   "haoyangmao",
-   "gaibang"
+   "xiaofeiquan"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1632,12 +1671,12 @@
   "mechanism": "商家用入会门槛换取用户留存与数据，套利方则用批量账号批量入会、领完券即弃，使会员体系沉淀的是无价值的僵尸会员。该步骤同样被写进作业顺序（\"需店铺入会才对\"，指不入会则到手价不符）。",
   "example": "先店铺入会 / 面膜 需店铺入会才对",
   "related": [
-   "lingwumenkan",
+   "baihao",
    "coudantui",
    "daequan",
-   "baihao",
-   "rukouzhiyin",
-   "huangniu"
+   "huangniu",
+   "lingwumenkan",
+   "rukouzhiyin"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1660,22 +1699,22 @@
   "example": "首页搜标题 得限时券 / 横幅可抢大额券 / 改到某城市搜：某榜单 / 删除空格后使用",
   "related": [
    "cijian",
-   "zerowidth",
-   "lingwumenkan",
-   "dianpuruhui",
-   "loudong",
-   "dingwei",
-   "guobu",
-   "gaibang",
-   "fangfeng",
-   "luodiye",
-   "haoche",
-   "podun",
-   "daequan",
-   "zhuanji",
    "coudantui",
+   "daequan",
+   "dianpuruhui",
+   "dingwei",
+   "fangfeng",
+   "fangfengkong",
    "fangshui",
-   "fangfengkong"
+   "gaibang",
+   "guobu",
+   "haoche",
+   "lingwumenkan",
+   "loudong",
+   "luodiye",
+   "podun",
+   "zerowidth",
+   "zhuanji"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1696,20 +1735,20 @@
   "example": "抽立减金 / 刷卡金是先付后返现，如无返现可退 / 新户礼",
   "ambiguity": "银行权益活动面向公众，普通用户领取与分享属正常行为，占相关文本的绝大多数。",
   "related": [
-   "haoyangmao",
    "daequan",
-   "huishou",
-   "yileika",
-   "majiaodan",
    "difangyinhang",
-   "gaibang",
-   "tie",
-   "manchong",
    "fangshui",
-   "xiaochengxushui",
-   "taoxian",
+   "gaibang",
+   "haoyangmao",
    "hexiao",
-   "yaosanren"
+   "huishou",
+   "majiaodan",
+   "manchong",
+   "taoxian",
+   "tie",
+   "xiaochengxushui",
+   "yaosanren",
+   "yileika"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1728,13 +1767,13 @@
   "example": "复制券码交单，不要截图",
   "related": [
    "baodan",
-   "chadan",
-   "lijianjin",
-   "hexiao",
-   "shaitu",
-   "mailei",
    "bianma",
+   "chadan",
+   "hexiao",
+   "lijianjin",
    "liuping",
+   "mailei",
+   "shaitu",
    "shangdan",
    "zhuanzhangmoniqi"
   ],
@@ -1758,6 +1797,7 @@
   "ambiguity": "国家补贴是公开惠民政策，消费者正常使用与讨论占绝大多数。",
   "related": [
    "daequan",
+   "dibu",
    "dingwei",
    "haoche",
    "haoyangmao",
@@ -1767,6 +1807,7 @@
    "lijin",
    "loudong",
    "pengyipeng",
+   "qiyehao",
    "rukouzhiyin",
    "xiaochengxushui",
    "xiaofeiquan",
@@ -1791,13 +1832,13 @@
   "mechanism": "拉新奖励假定被邀请者是真实新用户，套利方用自有账号矩阵互相邀请即可领取；平台支出了获客成本却没有获得真实用户。该形式与账号供给直接挂钩——需要多少奖励就准备多少小号。",
   "example": "邀三人得20.01-20水杯券",
   "related": [
-   "xieyihao",
    "baihao",
-   "yihaoliangdan",
-   "zituizimai",
-   "lijianjin",
    "chaobu",
-   "xiaochengxushui"
+   "lijianjin",
+   "xiaochengxushui",
+   "xieyihao",
+   "yihaoliangdan",
+   "zituizimai"
   ],
   "confidence": "medium",
   "frequency": "少见",
@@ -1817,14 +1858,14 @@
   "example": "丐帮生活 / 丐帮 优惠线报 薅羊毛",
   "ambiguity": "**该词主要出现在普通优惠线报语境，绝大多数是普通消费者的省钱分享，不构成风险信号。**同时\"丐帮\"是知名武侠小说中的门派名，文学与游戏讨论中大量出现。",
   "related": [
+   "gouwujin",
    "haoyangmao",
    "lijianjin",
    "lingwumenkan",
-   "rukouzhiyin",
+   "loot",
    "loudong",
-   "gouwujin",
-   "xiaochengxushui",
-   "loot"
+   "rukouzhiyin",
+   "xiaochengxushui"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1844,17 +1885,17 @@
   "example": "〔大促〕放水不停 ｜ 同实名可以开会员，放水了",
   "ambiguity": "\"放水\"在体育赛事（故意输球）、水利与日常口语中都是常用词。",
   "related": [
-   "podun",
-   "loudong",
-   "lamang",
-   "suoha",
-   "rukouzhiyin",
-   "daequan",
-   "lijianjin",
    "chaobu",
-   "xiaochengxushui",
+   "daequan",
+   "haoyangmao",
+   "lamang",
+   "lijianjin",
+   "loudong",
+   "podun",
+   "rukouzhiyin",
+   "suoha",
    "taoxian",
-   "haoyangmao"
+   "xiaochengxushui"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1939,14 +1980,14 @@
   "example": "〔到手价〕下，档口〔价格〕行情 ｜ 回收档口",
   "ambiguity": "\"档口\"是批发市场与餐饮业的通用词，正常商业讨论极多。",
   "related": [
-   "huishou",
-   "xingqing",
-   "miaomai",
-   "huangniu",
-   "xiaoche",
-   "gouwujin",
    "daequan",
-   "haoyangmao"
+   "gouwujin",
+   "haoyangmao",
+   "huangniu",
+   "huishou",
+   "miaomai",
+   "xiaoche",
+   "xingqing"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -2133,13 +2174,19 @@
    "cdian",
    "chadan",
    "daifapinglun",
+   "gaipinpai",
    "gangenmai",
+   "genmai",
    "hejia",
+   "insider",
+   "jiangshi",
    "kongbao",
+   "lianzuo",
    "liuping",
    "shaitu",
    "shuadan",
    "suocang",
+   "tijian",
    "tiyanfen",
    "xianyuxihuo",
    "yuli",
@@ -2752,7 +2799,8 @@
    "yuli",
    "zhiping",
    "zishua",
-   "zituizimai"
+   "zituizimai",
+   "zouyu"
   ],
   "frequency": "少见"
  },
@@ -3315,5 +3363,615 @@
   ],
   "region": "巴西外卖与网约车生态",
   "frequency": "少见"
+ },
+ {
+  "id": "zhixia",
+  "term": "直下",
+  "aka": [
+   "地址直下"
+  ],
+  "category": "电商与营销套利",
+  "definition": "按指定链接和指定收货地址直接下单，不自行比价的执行指令。",
+  "mechanism": "线报群的标准动作：组织者给出商品链接与收货口径，成员照单执行，便于统一控制下单数量与归集订单；常与「0元」「备注」连用，备注内容也被统一规定以规避风控。",
+  "example": "地址直下，备注按群里发的填",
+  "ambiguity": "「直下」在正常语境可指价格直降或直接下载，需与下单、地址类语境共现。",
+  "related": [
+   "anyu",
+   "baodan",
+   "gufan",
+   "lingyuan"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "lingyuan",
+  "term": "0元",
+  "aka": [
+   "0元购",
+   "0元直下"
+  ],
+  "category": "电商与营销套利",
+  "definition": "用全额优惠覆盖订单成本、以零支出获取商品或赠品的下单方式。",
+  "mechanism": "试用品与赠品套利的极端形态：配合指定地址批量撸取赠品，主商品退货或转卖、赠品按行情变现；也是拉新与补贴活动被批量套取的主要形式。",
+  "example": "0元试用品直下，地址随便选",
+  "ambiguity": "平台官方零元试用、免单福利活动中「0元」为正常表述，单看字面无法区分。",
+  "related": [
+   "chaoshimian",
+   "gufan",
+   "haoyangmao",
+   "ludhuo",
+   "zhixia"
+  ],
+  "confidence": "high",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "zibian",
+  "term": "自编地址",
+  "aka": [
+   "自编"
+  ],
+  "category": "电商与营销套利",
+  "definition": "编造不存在的收货地址用于下单，规避同一地址批量识别。",
+  "mechanism": "批量撸赠品时的地址来源之一：组织者明示「越离谱越好」，依赖地址只做格式校验、不核验真实性的弱点。",
+  "example": "地址自编，越离谱越好",
+  "ambiguity": "「自编」在正常语境多指自编内容、自编程序，需与地址、下单共现。",
+  "related": [
+   "anyu",
+   "kongbao",
+   "yuansu"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "yuansu",
+  "term": "元素周期表",
+  "category": "电商与营销套利",
+  "definition": "在收货地址末尾追加化学元素用字，批量生成「唯一」地址的手法。",
+  "mechanism": "利用地址去重通常只看主干、不校验尾缀的弱点：同一收货点配不同尾字即可绕过一址多单限制；群内作为操作要点统一告知。",
+  "example": "地址结尾加元素周期表任意一个字",
+  "ambiguity": "化学教育的标准名词，需与地址、下单语境共现，单独出现不构成信号。",
+  "related": [
+   "anyu",
+   "baodan",
+   "zibian"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "anyu",
+  "term": "地址暗语",
+  "aka": [
+   "暗语",
+   "gcgc"
+  ],
+  "category": "电商与营销套利",
+  "definition": "嵌在收货地址里的固定标记串，用于把订单归到对应组织者名下。",
+  "mechanism": "多个组织者共用收货仓库时靠暗语区分归单，也可事后核对各成员参与量；组织者会强调「暗语不要删」，说明它是结算链条的一环。",
+  "example": "暗语一定不要删，加在地址最后面",
+  "ambiguity": "「暗语」泛指隐语、黑话，日常语义宽泛，需与地址语境共现。",
+  "related": [
+   "baodan",
+   "yuansu",
+   "zhixia",
+   "zibian"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "chaoshimian",
+  "term": "超时免单",
+  "aka": [
+   "免单卡"
+  ],
+  "category": "电商与营销套利",
+  "definition": "利用即时零售与外卖的超时赔付规则获取免单的玩法。",
+  "mechanism": "先领取免单权益，再专挑爆单门店在高峰期下单，以配送超时触发赔付；赔付本是消费者权益，被有组织地当成套利入口。",
+  "example": "搜超时免单，先领免单卡，专挑排几百单的门店",
+  "ambiguity": "平台官方超时赔付的正常说法，消费者正常维权使用占多数。",
+  "related": [
+   "lingyuan",
+   "loudong"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "weikuan",
+  "term": "尾款",
+  "category": "电商与营销套利",
+  "definition": "预售订单的第二笔付款，是预售套利锁定低价后的收口环节。",
+  "mechanism": "以定金锁价、尾款收货的节奏组织「预售车」；付尾款前后转卖资格或收货后按行情出手，「尾款+到手价+行情」三个数字连用是预售套利情报的典型结构。",
+  "example": "尾款324，到手343，回收行情360",
+  "ambiguity": "电商预售的标准流程词，「尾款人」为大众网络用语，误报率高。",
+  "related": [
+   "weikuanbanjia",
+   "yushouche"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "yushouche",
+  "term": "预售车",
+  "category": "电商与营销套利",
+  "definition": "以预售形式成团组织的套利活动，「车」喻指可上车的成团玩法。",
+  "mechanism": "组织者按预售低价开团，成员上车付定金、到期付尾款后由回收渠道接货变现；行情上涨预期会直接写进开团文案。",
+  "example": "行情上涨，预售车，锁定低价",
+  "ambiguity": "「车」类黑话字面义极泛；预售本身是正常商业模式。",
+  "related": [
+   "fache",
+   "shangche",
+   "weikuan"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "jianlou",
+  "term": "捡漏",
+  "category": "电商与营销套利",
+  "definition": "抢购错误定价、清仓或异常低价商品以赚取差价。",
+  "mechanism": "线报群的主要情报类型之一：标注到手价与行情价的差额；错误定价商品的「漏」通常限时，故强调手速。",
+  "example": "捡漏群入口，到手价低于行情",
+  "ambiguity": "古玩、二手收藏的正常行话，平台也常设官方「捡漏」频道，字面无法区分。",
+  "related": [
+   "fuhuo",
+   "loudong",
+   "ludhuo",
+   "xingqing"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "shunshoumai",
+  "term": "顺手买",
+  "aka": [
+   "顺手买一件"
+  ],
+  "category": "电商与营销套利",
+  "definition": "利用下单页低价加购推荐位：付款后退还主商品，只留下低价加购品。",
+  "mechanism": "推荐位补贴与退款规则的组合套利：主商品退款通道正常、加购品不受影响，形成「低价薅取」固定话术。",
+  "example": "在下单页面刷到后顺手买，付款后主商品可退",
+  "ambiguity": "平台正常推荐功能名，正常使用普遍，需与「退款」「薅」类语境共现。",
+  "related": [
+   "coudantui",
+   "gufan",
+   "loudong"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "xueshenghao",
+  "term": "学生号",
+  "category": "电商与营销套利",
+  "definition": "完成学生认证、享学生专享价的账号，被当作套利资产买卖。",
+  "mechanism": "教育优惠与学生价活动的套利入口：认证成本高催生现成账号交易，收货后由回收渠道变现。",
+  "example": "学生号下单，价格再降一档",
+  "ambiguity": "「学生号」可指学号、学生账号等正常含义。",
+  "related": [
+   "haoyangmao",
+   "qiyehao",
+   "xianhao"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "qiyehao",
+  "term": "企业号",
+  "category": "电商与营销套利",
+  "definition": "企业采购账号，享企业价、开票与部分商品优先购权益，被批量用于套利。",
+  "mechanism": "企业采购通道的价格与库存权益被当成套利原料：批量注册企业主体或收购企业号，配合到货通知抢购稀缺商品；招聘平台语境下指企业认证账号，被用于发布虚假职位。",
+  "example": "企业号加购到货通知，下单支持开票",
+  "ambiguity": "企业微信、官方账号等正常语境的常用简称，误报率高。",
+  "related": [
+   "guobu",
+   "xianhao",
+   "xueshenghao"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "chaoshika",
+  "term": "超市卡",
+  "category": "电商与营销套利",
+  "definition": "以赠品形式发放的商超购物卡，可抵扣消费或折价变现。",
+  "mechanism": "到手价计算的常项：「赠卡后等于××得」；卡面权益被折价转卖，形成稳定回收行情。",
+  "example": "赠超市卡，到手价等于再减",
+  "ambiguity": "零售促销的正常赠品形式，消费者正常领取使用占多数。",
+  "related": [
+   "dibu",
+   "eka",
+   "gouwujin",
+   "xiaofeiquan",
+   "xingqing"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "eka",
+  "term": "E卡",
+  "aka": [
+   "套E卡"
+  ],
+  "category": "电商与营销套利",
+  "definition": "平台电子礼品卡形成的储值支付资产，「套」指叠加多张支付。",
+  "mechanism": "折扣渠道购入礼品卡再消费，把折扣固化到储值层；与补贴、赠品叠加后进一步压低到手成本。",
+  "example": "下单用卡叠加支付，不用激活",
+  "ambiguity": "各平台官方礼品卡的正常名称，正常消费语境占多数。",
+  "related": [
+   "chaoshika",
+   "gouwujin",
+   "kaikaili",
+   "xingqing"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "kaikaili",
+  "term": "开卡礼",
+  "category": "电商与营销套利",
+  "definition": "开通支付卡或会员即得的赠品，被批量开卡套取。",
+  "mechanism": "开卡成本与赠品行情的差额即利润：批量开卡后由回收渠道按件收购赠品，回收报价公开挂群。",
+  "example": "开卡赠品按件回收，行情稳定",
+  "ambiguity": "银行与商户开卡礼遇的正常营销用语。",
+  "related": [
+   "eka",
+   "huishou",
+   "xingqing"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "dibu",
+  "term": "地补",
+  "aka": [
+   "换新补贴"
+  ],
+  "category": "电商与营销套利",
+  "definition": "地方政府发放的消费补贴，与国家补贴并列作为可叠加的优惠层级。",
+  "mechanism": "套利方逐项标注补贴能否叠加、订单「不拆」以保住补贴资格；以旧换新类地补同样被纳入到手价计算。",
+  "example": "地补不拆，到手价再算一遍",
+  "ambiguity": "政府惠民补贴的正常简称，消费者正常使用占绝大多数。",
+  "related": [
+   "chaoshika",
+   "guobu",
+   "haoyangmao"
+  ],
+  "confidence": "high",
+  "frequency": "常见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "neigou",
+  "term": "内购",
+  "aka": [
+   "内购群"
+  ],
+  "category": "电商与营销套利",
+  "definition": "以内部员工价或渠道价售卖商品的渠道说辞。",
+  "mechanism": "「内购群」分享低价链接，真假混杂：既有真实内部渠道流出，也常被用作低价诈骗的话术外壳。",
+  "example": "自营内购群，低价链接群里发",
+  "ambiguity": "企业内部福利采购的正常说法。",
+  "related": [
+   "haoyangmao",
+   "yishou"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "fuhuo",
+  "term": "复活",
+  "category": "电商与营销套利",
+  "definition": "已下架或无货的活动、链接重新变为可用。",
+  "mechanism": "线报时效用语：低价活动「复活」意味着套利窗口重开，群内即时播报并提示限购口径。",
+  "example": "复活了，一个号可以两单",
+  "ambiguity": "游戏复活、账号恢复等泛用语义占多数，需与活动、链接语境共现。",
+  "related": [
+   "haoyangmao",
+   "jianlou",
+   "loudong"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "gaipinpai",
+  "term": "改品牌",
+  "category": "电商与营销套利",
+  "definition": "通过内部渠道修改商品链接的品牌备案字段。",
+  "mechanism": "跨境店铺运营黑产的服务项之一：改品牌用于抢夺链接控制权或规避品牌关联审查，与「翻新」「内部渠道」服务打包出现。",
+  "example": "内部改品牌，当天反馈",
+  "ambiguity": "品牌升级、品牌重塑等正常商业表述，需与链接、备案类语境共现。",
+  "related": [
+   "bgbiao",
+   "fanxin",
+   "genmai",
+   "insider",
+   "jiangshi"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "genmai",
+  "term": "跟卖",
+  "aka": [
+   "防跟卖"
+  ],
+  "category": "电商与营销套利",
+  "definition": "在他人商品链接下上架同款商品、争夺购物车位；「防跟卖」是反向的拦截服务。",
+  "mechanism": "链接控制权争夺的基本形态：跟卖蹭走正规链接的流量与信任，防跟卖服务（品牌门槛备案等）应运而生，两者构成一组攻防生意。",
+  "example": "防跟卖服务，品牌门槛终身有效",
+  "ambiguity": "跨境电商卖家圈的标准行业术语，正常卖家运营讨论广泛使用。",
+  "related": [
+   "bgbiao",
+   "fanxin",
+   "gaipinpai"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "bgbiao",
+  "term": "BG标",
+  "aka": [
+   "Brand Gating"
+  ],
+  "category": "电商与营销套利",
+  "definition": "亚马逊品牌门槛（Brand Gating）标识，号称可终身买断、用于拦截跟卖。",
+  "mechanism": "以「买断品牌门槛」为卖点的服务：声称开通后限制他人跟卖自有品牌链接，实际效果与合规性存疑。",
+  "example": "品牌门槛终身买断，全类目防护",
+  "ambiguity": "品牌保护体系的正常商业概念。",
+  "related": [
+   "gaipinpai",
+   "genmai"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "jiangshi",
+  "term": "清理僵尸",
+  "aka": [
+   "僵尸链接"
+  ],
+  "category": "电商与营销套利",
+  "definition": "清除长期无主或失效的商品链接，「僵尸」指这类残留链接。",
+  "mechanism": "店铺运维服务的项目之一：与内部翻新、改品牌并列出现在服务清单里，用于净化自有链接的关联风险。",
+  "example": "清理僵尸链接，当天反馈",
+  "ambiguity": "僵尸粉、僵尸号、僵尸游戏等泛用词，单字面无平台指向。",
+  "related": [
+   "fanxin",
+   "gaipinpai",
+   "tijian"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "tijian",
+  "term": "店铺体检",
+  "aka": [
+   "体检"
+  ],
+  "category": "电商与营销套利",
+  "definition": "对店铺或账号做合规健康检查的服务。",
+  "mechanism": "店铺运维黑产的入口服务：以体检报告带出后续的翻新、清理、改品牌等付费项目。",
+  "example": "店铺全面体检，二十四小时内反馈",
+  "ambiguity": "「体检」本义为医疗检查，正常语境占绝对多数。",
+  "related": [
+   "fanxin",
+   "insider",
+   "jiangshi"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "insider",
+  "term": "insider",
+  "lang": "en",
+  "region": "跨境电商卖家圈",
+  "category": "电商与营销套利",
+  "definition": "自称能操作平台内部工单的内部人员，按单提供改品牌、撤违规、查内部备注等服务。",
+  "mechanism": "把平台治理权限商品化：招募在职或离职员工按工单操作，卖家按结果付费；是「内鬼」在跨境卖家圈的英文对应说法，多数自称 insider 的服务真实性无法验证。",
+  "example": "looking for an Amazon Manager / Insider",
+  "ambiguity": "商业语境「内部人士」的普通英文词；单独出现不构成信号。",
+  "related": [
+   "fanxin",
+   "gaipinpai",
+   "neigui",
+   "tijian"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "lianzuo",
+  "term": "连座",
+  "aka": [
+   "连坐"
+  ],
+  "category": "电商与营销套利",
+  "definition": "关联账号被平台连坐封禁的风险，「连座」为「连坐」的异写。",
+  "mechanism": "平台按主体、网络与设备指纹关联封店，故账号交易中「降低连座风险」成为卖点：品牌转移、资料隔离等服务对应而生。",
+  "example": "品牌转移，降低连座风险",
+  "ambiguity": "「连坐」为古代刑罚及其现代引申义的正常用词。",
+  "related": [
+   "fanxin",
+   "guale",
+   "quantiziliao"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "zhang",
+  "term": "张",
+  "category": "电商与营销套利",
+  "definition": "报价速记单位，一张通常指一百元。",
+  "mechanism": "「两张加肉」即约两百元再加利润，与「元」的替字体系并行，用于压缩报单信息密度。",
+  "example": "行情三千三，下单三千一，两张加肉",
+  "ambiguity": "量词本义（一张纸、一张卡）极泛，仅「数字+张」的报价句式有判别力。",
+  "related": [
+   "qiyuan",
+   "rouemoji",
+   "xingqing"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "xunicang",
+  "term": "虚拟仓",
+  "category": "电商与营销套利",
+  "definition": "伪装成本地发货的境外转运仓，用于规避平台本地发货考核。",
+  "mechanism": "物流作弊的基础设施：货仍从境外发出，但轨迹伪装成国内仓发货；与「预上网」配合掩盖真实时效，敏感货也经此通道。",
+  "example": "美国小包虚拟仓，直接上真实轨迹",
+  "ambiguity": "仓储与物流行业的正常技术概念。",
+  "related": [
+   "danhao",
+   "kongbao",
+   "yushangwang"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "yushangwang",
+  "term": "预上网",
+  "aka": [
+   "假上网"
+  ],
+  "category": "电商与营销套利",
+  "definition": "让物流轨迹先于实际揽收注册上网，制造已发货假象。",
+  "mechanism": "两种形态：预上网是提前挂真实单号，假上网是伪造轨迹；目的都是通过平台的发货时效考核，虚拟仓发货的配套动作。",
+  "example": "轨迹早出，避免迟发纠纷",
+  "ambiguity": "物流系统预录入的正常技术表述，需与虚拟仓、时效考核语境共现。",
+  "related": [
+   "danhao",
+   "kongbao",
+   "xunicang"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "kuaihuangniu",
+  "term": "快递黄牛",
+  "category": "电商与营销套利",
+  "definition": "倒卖快递运力、账号与系统权限的中间商。",
+  "mechanism": "空包单号的供给侧：为刷单方提供「不发货」的单号来源，并寻找一级网点合作开出真实单号，是虚假物流链条的上游。",
+  "example": "为网点、云仓、快递黄牛提供系统充值",
+  "ambiguity": "「黄牛」加行业名的构词广泛存在（票务黄牛等），需与单号、系统权限语境共现。",
+  "related": [
+   "danhao",
+   "huangniu",
+   "kongbao",
+   "yijiwangdian"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "danhao",
+  "term": "单号",
+  "aka": [
+   "购买单号"
+  ],
+  "category": "电商与营销套利",
+  "definition": "快递运单号，可脱离真实货物单独买卖。",
+  "mechanism": "虚假物流的原子构件：空包刷单只需买入单号即可生成完整轨迹；一级网点系统权限是真实单号的来源。",
+  "example": "购买单号业务，不发货",
+  "ambiguity": "快递查询、售后退换的正常日常用语，误报率极高。",
+  "related": [
+   "kongbao",
+   "kuaihuangniu",
+   "xunicang",
+   "yijiwangdian",
+   "yushangwang"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "yijiwangdian",
+  "term": "一级网点",
+  "category": "电商与营销套利",
+  "definition": "快递一级代理网点，其系统权限可开出真实运单号。",
+  "mechanism": "虚假物流的最上游：与一级网点合作意味着单号可过真实校验，是空包产业链里被明码招揽的合作资源。",
+  "example": "真城寻找一级网点长期合作",
+  "ambiguity": "物流行业的正常组织层级术语。",
+  "related": [
+   "danhao",
+   "kuaihuangniu"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "huishouqun",
+  "term": "回收群",
+  "aka": [
+   "回收♻️群"
+  ],
+  "category": "电商与营销套利",
+  "definition": "回收商发布收购行情的社群，与线报群构成上下游。",
+  "mechanism": "套利的出货端基础设施：线报群撸货、回收群接货，群名多带回收符号与编号分层运营；行情价在群内滚动播报。",
+  "example": "美妆数码回收群，行情每日更新",
+  "ambiguity": "二手回收、环保回收等正常语境同样使用该词。",
+  "related": [
+   "haoyangmao",
+   "huishou",
+   "sijia",
+   "xingqing",
+   "zouyu"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.3"
  }
 ]

@@ -109,6 +109,7 @@
    "guokyc",
    "guorenlian",
    "kycvendor",
+   "saolian",
    "shualian",
    "vcam",
    "xieyisan",
@@ -130,14 +131,14 @@
   "example": "已过协议三虚拟视频验证 / 过协议三供应链验证",
   "ambiguity": "平台术语，卖家正常讨论入驻流程时也会使用。",
   "related": [
-   "xuni",
-   "guorenlian",
+   "aihuanlian",
    "chengpinhao",
-   "kyc",
    "chufashipin",
-   "guokyc",
    "dianpuguige",
-   "aihuanlian"
+   "guokyc",
+   "guorenlian",
+   "kyc",
+   "xuni"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -561,10 +562,10 @@
   "related": [
    "dailshiming",
    "guorenlian",
+   "jiedong",
    "jiema",
-   "yanzhenghao",
    "unban",
-   "jiedong"
+   "yanzhenghao"
   ],
   "confidence": "high",
   "frequency": "常见",
@@ -586,17 +587,17 @@
   "example": "Casino kyc Sumsub + / SUMSUB/ONFIDO/PERSONA",
   "ambiguity": "这些都是正规合规服务商，其名称出现在黑市广告中不代表其产品存在缺陷，也不构成对该服务商的任何评价。",
   "related": [
+   "chufashipin",
+   "guokyc",
+   "guorenlian",
+   "ibanacc",
    "kyc",
    "readymade",
-   "guorenlian",
-   "xuni",
-   "ibanacc",
    "selfieverif",
-   "guokyc",
-   "chufashipin",
-   "shualian",
    "shouchi",
-   "vcam"
+   "shualian",
+   "vcam",
+   "xuni"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -617,19 +618,19 @@
   "example": "KYC OR READYMADE / ACCOUNT READYMADE",
   "related": [
    "chengpinhao",
-   "yanzhenghao",
+   "dailshiming",
+   "drop",
+   "escrow",
+   "fragment",
+   "garansi",
+   "heihu",
+   "ibanacc",
+   "jixiao",
    "kyc",
    "kycvendor",
-   "escrow",
-   "drop",
-   "heihu",
    "shiminka",
-   "ibanacc",
-   "dailshiming",
-   "fragment",
    "wts",
-   "garansi",
-   "jixiao"
+   "yanzhenghao"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -689,11 +690,11 @@
   "example": "FRAGMENT 10$",
   "ambiguity": "Fragment 在英文中是极常见的普通词（碎片、片段），技术与文学语境中广泛使用；相当一部分与匿名号码无关。须结合价格标注与账号交易语境判定。",
   "related": [
-   "jiema",
-   "chenmohao",
    "chengpinhao",
-   "readymade",
-   "escrow"
+   "chenmohao",
+   "escrow",
+   "jiema",
+   "readymade"
   ],
   "confidence": "medium",
   "frequency": "常见",
@@ -714,13 +715,13 @@
   "example": "READY AKUN JOKI / SUPPORT: AKUN JOKI & AKUN PRIBADI",
   "ambiguity": "\"joki\" 在印尼也广泛用于正常的代写、代做服务（joki makalah 代写论文、joki ketik 代打字），需结合是否涉及平台账号判定。",
   "related": [
+   "alattempur",
    "chengpinhao",
    "dingwei",
-   "setbid",
    "modapk",
-   "alattempur",
-   "shebeizhiwen",
    "qunkong",
+   "setbid",
+   "shebeizhiwen",
    "waigua"
   ],
   "confidence": "high",
@@ -740,13 +741,13 @@
   "mechanism": "与中文的\"虚拟视频\"同义：把预先准备的人像视频作为摄像头输入送进核验流程；广告常直接写明\"过生物识别\"的适用平台范围。",
   "example": "Bán tool vượt sinh trắc học vcam",
   "related": [
-   "xuni",
-   "guorenlian",
    "aihuanlian",
+   "chufashipin",
+   "guorenlian",
    "kyc",
    "kycvendor",
    "shualian",
-   "chufashipin"
+   "xuni"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -803,13 +804,13 @@
   "example": "绩效200分绿牌 业绩纯白干净 / 绩效192分 专利微瑕",
   "ambiguity": "\"绩效\"在人事与企业管理语境中是常用词，须结合\"分\"\"干净\"\"缺陷率\"判定。",
   "related": [
-   "dianpuguige",
-   "wufukuanzhengce",
-   "wuqinquan",
-   "jixiao",
+   "baihao",
    "daiche",
+   "dianpuguige",
    "houtaizaishou",
-   "baihao"
+   "jixiao",
+   "wufukuanzhengce",
+   "wuqinquan"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -830,10 +831,10 @@
   "example": "绩效200分，无付款政策，有持续回款",
   "related": [
    "dianpuguige",
-   "jixiaofen",
+   "guokyc",
    "huikuan",
-   "wuqinquan",
-   "guokyc"
+   "jixiaofen",
+   "wuqinquan"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -853,10 +854,10 @@
   "example": "业绩干净无侵权 公司正常 法人不联系",
   "related": [
    "dianpuguige",
-   "jixiaofen",
-   "wufukuanzhengce",
    "houtaizaishou",
-   "jixiao"
+   "jixiao",
+   "jixiaofen",
+   "wufukuanzhengce"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -941,11 +942,11 @@
   "example": "公司正常 法人不联系",
   "related": [
    "dianpuguige",
+   "gonghu",
    "huanzhuti",
    "jixiao",
-   "gonghu",
-   "zoudanbao",
-   "shoukuanqianyi"
+   "shoukuanqianyi",
+   "zoudanbao"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -967,11 +968,11 @@
   "example": "收款邮箱给 / 收款迁移 换主体",
   "related": [
    "dianpuguige",
-   "huanzhuti",
+   "fangguanlian",
    "farenbulianxi",
+   "huanzhuti",
    "huikuan",
    "ibanacc",
-   "fangguanlian",
    "jixiao"
   ],
   "confidence": "high",
@@ -995,13 +996,13 @@
   "ambiguity": "多账号管理与团队协作是正规卖家的真实需求，此类工具的提及绝大多数属正常业务讨论。",
   "related": [
    "dianpuguige",
-   "shebeizhiwen",
-   "socks5",
+   "dingwei",
    "huanzhuti",
-   "shoukuanqianyi",
    "miaobo",
    "qunkong",
-   "dingwei"
+   "shebeizhiwen",
+   "shoukuanqianyi",
+   "socks5"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1022,11 +1023,11 @@
   "mechanism": "在售状态证明账号功能完整、未被限制，买方可直接接手经营；\"上过数据未出单\"是中间状态。该字段与绩效分、带车共同描述账号的\"可用性\"，构成估值的第二层维度。",
   "example": "后台专业在售 / 北美空号，上链接带车",
   "related": [
-   "dianpuguige",
    "daiche",
+   "dianpuguige",
+   "guokyc",
    "jixiaofen",
    "wuqinquan",
-   "guokyc",
    "yanzhenghao"
   ],
   "confidence": "high",
@@ -1077,16 +1078,16 @@
   "mechanism": "视频核验是平台对可疑账号的重点抽查，一旦触发，买方必须能通过才可继续使用，因此卖方如实披露并相应降价；也正因如此，\"虚拟视频\"\"虚拟摄像头\"类服务与账号交易形成固定的配套需求。",
   "example": "15号触发视频：绩效干净 上过数据未出单带车",
   "related": [
-   "guokyc",
-   "xuni",
-   "vcam",
-   "xieyisan",
-   "dianpuguige",
    "aihuanlian",
-   "shualian",
+   "dianpuguige",
+   "guokyc",
    "guorenlian",
    "kyc",
-   "kycvendor"
+   "kycvendor",
+   "shualian",
+   "vcam",
+   "xieyisan",
+   "xuni"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1484,22 +1485,22 @@
   "example": "云控诚招代理 ｜ 工作室：养号｜引流｜地推｜群控专用",
   "ambiguity": "手机分身、应用双开是厂商提供的正常功能，普通用户讨论极多。",
   "related": [
-   "shebeizhiwen",
-   "dingwei",
-   "xieyihao",
-   "zire",
-   "jifang",
-   "modapk",
-   "root",
    "baofen",
+   "chengpinhao",
+   "dingwei",
+   "fangguanlian",
    "jiefen",
    "jiema",
-   "chengpinhao",
+   "jifang",
    "joki",
-   "fangguanlian",
-   "xiazaifu",
    "miaobo",
-   "waigua"
+   "modapk",
+   "root",
+   "shebeizhiwen",
+   "waigua",
+   "xiazaifu",
+   "xieyihao",
+   "zire"
   ],
   "confidence": "high",
   "frequency": "较常见",
@@ -1602,15 +1603,15 @@
   "mechanism": "是\"大头照\"的升级形态：手持姿态可通过更严格的材料审核。广告强调\"真人现拍\"\"可配合实名\"——即出镜者本人配合完成后续核验，这意味着背后有真实的人被组织起来反复出借身份。",
   "example": "身份证_手持身份证_真人现拍_可配合实名 ｜ 法人身份证正反面",
   "related": [
-   "datouzhao",
-   "selfieverif",
    "dailshiming",
-   "rentou",
+   "datouzhao",
    "guorenlian",
    "kyc",
+   "kycvendor",
+   "rentou",
+   "selfieverif",
    "shualian",
-   "siyaosu",
-   "kycvendor"
+   "siyaosu"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -5109,5 +5110,175 @@
   ],
   "region": "巴西外卖与网约车生态",
   "frequency": "少见"
+ },
+ {
+  "id": "xianhao",
+  "term": "现号",
+  "category": "身份与认证绕过",
+  "definition": "已注册、过审、可即时交割的存量账号。",
+  "mechanism": "账号交易市场按「现号/预订」分类交割：现号附带过审状态与质保承诺（如十五天），配合全套资料与法人配合度分级定价。",
+  "example": "本土店铺现号，质保十五天",
+  "ambiguity": "「现房」「现货」等正常商业用语的同构词，需与账号、店铺交易语境共现。",
+  "related": [
+   "batiefr",
+   "guale",
+   "qiyehao",
+   "quantiziliao",
+   "xueshenghao",
+   "yishen",
+   "yishou"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "yishen",
+  "term": "一审",
+  "category": "身份与认证绕过",
+  "definition": "平台对账号或店铺的首轮审核，通过与否直接影响账号售价。",
+  "mechanism": "账号交易的分级维度：与扫脸、视频认证并列作为「过审状态」标注，二审、终审递进构成账号成色体系。",
+  "example": "过扫脸认证，一审，质保过审",
+  "ambiguity": "司法语境「一审」为诉讼程序标准用语，误报率高。",
+  "related": [
+   "guok",
+   "saolian",
+   "xianhao"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "saolian",
+  "term": "扫脸",
+  "aka": [
+   "过扫脸"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "人脸识别认证；账号交易中标注「过扫脸」表示已通过实名人脸核验。",
+  "mechanism": "降低买家的过审成本：已过人脸的账号可直接过大部分实名场景；对应的攻防是虚拟摄像头与替身过检。",
+  "example": "过扫脸认证，法人配合",
+  "ambiguity": "人脸识别技术的俗称，正常语境广泛使用。",
+  "related": [
+   "guok",
+   "xuni",
+   "yishen"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "guok",
+  "term": "过K",
+  "aka": [
+   "质保过K"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "通过平台 KYC 实名审核，「质保过K」即承诺通过、否则售后。",
+  "mechanism": "把审核结果做成质保条款：卖家承担过审风险以提高账号溢价，常见于跨境店铺账号交易。",
+  "example": "一审通过，质保过K",
+  "ambiguity": "字面为「经过K」，正常语境几乎无此用法，判别力较高。",
+  "related": [
+   "quantiziliao",
+   "saolian",
+   "yishen"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "batiefr",
+  "term": "巴铁法人",
+  "category": "身份与认证绕过",
+  "definition": "由巴基斯坦籍人士挂名法定代表人的空壳主体，「巴铁」指国籍来源。",
+  "mechanism": "跨境店铺注册的规避手法：借助境外自然人身份注册本土公司主体，规避本地实名与关联审查；与全套资料、真实地址收信配套出售。",
+  "example": "外籍法人，全套资料，真实地址收信件",
+  "ambiguity": "「巴铁」本身是中性网络用语，此处仅指示国籍，不含评价。",
+  "related": [
+   "mishudizhi",
+   "quantiziliao",
+   "utr",
+   "xianhao"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "quantiziliao",
+  "term": "全套资料",
+  "category": "身份与认证绕过",
+  "definition": "账号注册或过审所需的身份、执照、收款、地址证明等成套材料。",
+  "mechanism": "账号交易的交割物之一：资料齐备度决定账号能否过审与转手价格，与「法人配合」「收信件」等服务项打包。",
+  "example": "全套资料，真实地址收信件",
+  "ambiguity": "办事「带齐全套资料」的正常说法，需与账号交易语境共现。",
+  "related": [
+   "batiefr",
+   "guok",
+   "lianzuo",
+   "mishudizhi",
+   "utr",
+   "xianhao"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "utr",
+  "term": "UTR",
+  "lang": "en",
+  "region": "英国站点",
+  "category": "身份与认证绕过",
+  "definition": "英国税务申报参考号，英国本土卖家账号「全套资料」的组成项。",
+  "mechanism": "本土账号成色的证明材料：与公司注册文件一并交割，用于通过平台税务审核。",
+  "example": "带UTR加代码，全套资料",
+  "ambiguity": "银行与物流语境的 UTR（唯一交易参考号）为正常业务缩写。",
+  "related": [
+   "batiefr",
+   "quantiziliao"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "mishudizhi",
+  "term": "秘书地址",
+  "category": "身份与认证绕过",
+  "definition": "公司注册代理（公司秘书）提供的挂靠地址，用于批量注册公司主体。",
+  "mechanism": "空壳主体的基础设施之一：与独立地址并列作为账号交易卖点，支撑跨境店铺的批量注册。",
+  "example": "秘书地址、独立地址都有现号",
+  "ambiguity": "公司秘书服务的正常业务术语。",
+  "related": [
+   "batiefr",
+   "quantiziliao"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
+ },
+ {
+  "id": "guale",
+  "term": "挂了",
+  "aka": [
+   "店铺挂了"
+  ],
+  "category": "身份与认证绕过",
+  "definition": "账号或店铺被封禁、进入异常状态。",
+  "mechanism": "账号资产的风险状态用语：挂了之后衍生出「后台进不去」「撤销备案」等补救服务，也是质保条款的触发条件。",
+  "example": "店铺挂了后台进不去，可以撤销品牌备案",
+  "ambiguity": "泛用口语（设备坏了、服务宕机均可用），需与账号、店铺语境共现。",
+  "related": [
+   "frozen",
+   "lianzuo",
+   "xianhao"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.3"
  }
 ]

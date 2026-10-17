@@ -82,18 +82,18 @@
   "example": "绩效干净 / 公司正常 / 法人不联系",
   "ambiguity": "人事绩效语境中的“绩效”属正常用法，须结合“干净、纯白、主体”判定。",
   "related": [
-   "gonghu",
    "chengpinhao",
    "dailshiming",
-   "zoudanbao",
-   "garansi",
-   "readymade",
-   "jixiaofen",
-   "farenbulianxi",
-   "wuqinquan",
    "daiyunying",
+   "farenbulianxi",
+   "garansi",
+   "gonghu",
    "guokyc",
-   "shoukuanqianyi"
+   "jixiaofen",
+   "readymade",
+   "shoukuanqianyi",
+   "wuqinquan",
+   "zoudanbao"
   ],
   "confidence": "medium",
   "frequency": "较常见",
@@ -149,14 +149,14 @@
   "mechanism": "反映黑灰产运营者对处置的预期：在首次接触时即建立冗余联系路径（备用号、频道置顶、机器人），使封禁无法切断用户关系。对治理方而言，单点封禁的效果因此被削弱。",
   "example": "防止失联 / 联系群主 / 进群请关注置顶",
   "related": [
-   "jianjie",
    "d",
-   "hutui",
    "gongqun",
-   "pingtaidaicheng",
+   "hutui",
+   "jianjie",
    "lengmenhao",
-   "shuangxiang",
+   "pingtaidaicheng",
    "ruqunyanzheng",
+   "shuangxiang",
    "zuodanqun"
   ],
   "confidence": "high",
@@ -351,5 +351,24 @@
    "zhuzai"
   ],
   "frequency": "少见"
+ },
+ {
+  "id": "didi",
+  "term": "滴滴",
+  "aka": [
+   "滴滴我"
+  ],
+  "category": "招募与话术",
+  "definition": "私聊联系（我）的行动号召用语，广告末尾常见的转化指令。",
+  "mechanism": "引流转化的话术收口：与「扣1」「上车」等指令并列，把公域曝光转化为私域触达。",
+  "example": "有需要的老板可以滴滴",
+  "ambiguity": "同名出行平台及拟声词，误报率极高，须与私聊、上车类语境共现。",
+  "related": [
+   "gongqun",
+   "sijia"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.3"
  }
 ]
