@@ -306,13 +306,12 @@
   "id": "cvv",
   "term": "CVV",
   "aka": [
-   "CK",
    "fullz",
    "carding"
   ],
   "category": "数据与隐私侵害",
   "definition": "银行卡验证码，在黑产中代指可用于盗刷的完整支付卡数据。",
-  "mechanism": "“CVV/CK”指卡面与验证信息，“BIN”用于筛选发卡行与卡段，“fullz”指含持卡人身份的完整资料；下游用于无卡支付盗刷与“撸货”。",
+  "mechanism": "“CVV”指卡面与验证信息，“BIN”用于筛选发卡行与卡段，“fullz”指含持卡人身份的完整资料；下游用于无卡支付盗刷与“撸货”。",
   "example": "CVV 撸货教学；钓鱼教学",
   "ambiguity": "“CK”在正常文本中也可能是品牌缩写或 Cookie 的简写，须结合支付语境判定。",
   "related": [
@@ -3776,6 +3775,7 @@
   "example": "账号登录态大量供应，采集专用",
   "ambiguity": "数据采集、内容采集的正常技术术语，误报率极高。",
   "related": [
+   "ck",
    "fancha",
    "liaoshang"
   ],

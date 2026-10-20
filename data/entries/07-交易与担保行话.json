@@ -421,7 +421,8 @@
   "term": "fresh",
   "aka": [
    "new",
-   "first hand"
+   "first hand",
+   "fresh claimed"
   ],
   "category": "交易与担保行话",
   "lang": "en",
@@ -468,6 +469,7 @@
    "loudong",
    "mandacarrinhoedrop",
    "mianfa",
+   "plug",
    "podun",
    "pv",
    "refunding",
@@ -661,6 +663,7 @@
    "mianche",
    "noaccess_tl",
    "noelsa",
+   "notvm",
    "rffrozen_tl"
   ],
   "confidence": "to-verify",
@@ -676,14 +679,15 @@
   "category": "交易与担保行话",
   "lang": "tl",
   "region": "菲律宾转卖圈",
-  "definition": "整号出售的交割规格：买方拿到能直接在 App 或浏览器登录的账号，但拿不到账号绑定的邮箱或手机号，也不能换绑；「with access」则交付绑定邮箱或改绑到买方号码，售价更高。",
-  "mechanism": "access 指账号绑定的邮箱或手机号这条验证通道：no access 档仍由卖方掌握，买方只能在已登录的 App 或浏览器里使用、不能换绑，所以同档价格低一截；with access 档交付绑定邮箱或改绑到买方号码，买方才拿到账号的完整控制权。此前版本释作「卖方保留账号、代为下单，买方不获登录权」，与语境不符：标 no access 的账号同样写明可在 App 或浏览器直接登录，代人结账另有 open for CO 的说法。",
-  "example": "60% (428C) — no access — can't bind email",
+  "definition": "整号出售的交割规格：买方拿到能直接在 App 或浏览器登录的账号，但拿不到注册邮箱；不少卖家允许买家绑定自己的 WhatsApp 号码，有时另收费。「with access」则连注册邮箱一并交付，售价更高。",
+  "mechanism": "access 主要指账号的注册邮箱：no access 档的邮箱仍在卖方手里，买方只能在已登录的 App 或浏览器里使用，所以同档价格低一截；不少卖家允许买家另绑自己的 WhatsApp 号码，有的绑号要加价（如同帖 no access 卖 75、可绑号卖 85）；with access 档连邮箱一起交付，买方才拿到账号的完整控制权。此前版本释作「卖方保留账号、代为下单，买方不获登录权」，与语境不符：标 no access 的账号同样写明可在 App 或浏览器直接登录，代人结账另有 open for CO 的说法。",
+  "example": "60% (428C) — no access — can't bind email ｜ NO ACCESS CAN BIND WA",
   "ambiguity": "「no access」在技术与权限语境里大量出现，单独命中零判别力；需与折扣规格（428c、205c）、pts、FS 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "bulk_tl",
    "capped_tl",
    "huangniu",
+   "notvm",
    "pts_tl",
    "rffrozen_tl",
    "sureprocessing_tl"
@@ -1525,8 +1529,7 @@
   "term": "for rent",
   "aka": [
    "open for rent",
-   "renters",
-   "fresh claimed"
+   "renters"
   ],
   "lang": "en",
   "region": "菲律宾转卖圈",
@@ -1567,6 +1570,49 @@
   ],
   "confidence": "to-verify",
   "frequency": "较常见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "plug",
+  "term": "plug",
+  "aka": [
+   "🔌"
+  ],
+  "category": "交易与担保行话",
+  "lang": "en",
+  "region": "南非与肯尼亚电商退款圈",
+  "definition": "供货门路，卖家自称能提供电商代退款、折扣码或已领券账号的服务方。",
+  "mechanism": "沿用英语俚语里「门路、货源」的说法，并用插头表情 🔌 代字；退款服务帖常写「i'm your plug」「refund 🔌」，配合当天批准、先付后退等承诺。",
+  "example": "refund plug 🔌 same day approval",
+  "ambiguity": "plug 是英语常用词（插头、推广），俚语里也泛指货源，需与 refund、method、codes 等共现。",
+  "related": [
+   "method",
+   "refunding"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "notvm",
+  "term": "not VM made",
+  "aka": [
+   "non VM"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "折扣账号的规格标注：账号不是在虚拟机或分身环境里批量注册的，可以直接在官方 App 登录。",
+  "mechanism": "批量注册折扣账号常借虚拟机或多开环境完成，这类账号更容易被平台识别冻结；卖家以「not VM made」「non VM」作溢价卖点，与 direct log in、sure processing 一起出现。",
+  "example": "FS 60% 205C NOT VM MADE ｜ direct log in non vm",
+  "ambiguity": "VM 在技术语境泛指虚拟机，单独命中零判别力；需与折扣规格（428c、205c）、FS、direct log in 共现，属生态交易词。",
+  "related": [
+   "capped_tl",
+   "noaccess_tl",
+   "sureprocessing_tl"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
   "first_seen": "v0.4"
  }
 ]

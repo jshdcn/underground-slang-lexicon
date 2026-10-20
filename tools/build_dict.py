@@ -295,7 +295,7 @@ FAMILIES = [
       'lengmenhao', 'yanzhenghao', 'chenmohao', 'sanrenhao', 'smhao', 'naiyonghao',
       'jingyanghao', 'huiliulaohao', 'shoucihao', 'haiwaihao', 'beianhao', 'xinghao',
       'lengremenzhanghao', 'sihao', 'bufenghao', 'yuyinhao', 'haoduan',
-      'shanghao', 'dinghao', 'diaohao', 'qihao', 'shaihao']),
+      'shanghao', 'dinghao', 'diaohao', 'qihao', 'shaihao', 'heihao']),
     ('卡', '账户与卡资源，按等级、归属地与风控状态派生',
      ['yileika', 'shouka', 'zhanghutaojian', 'gangka', 'shiminka', 'jiesuanka', 'zhuanka',
       'kashang', 'dongka', 'shika', 'xuka', 'shikaxuka', 'ercika', 'cunzhenka', 'guitaika',

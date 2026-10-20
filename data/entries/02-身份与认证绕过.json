@@ -247,6 +247,7 @@
    "fantasma",
    "guokyc",
    "guorenlian",
+   "jusi",
    "kitbico",
    "kycvendor",
    "laras",
@@ -1057,6 +1058,7 @@
    "guou",
    "houtaizaishou",
    "jixiao",
+   "jusi",
    "kyc",
    "kycvendor",
    "wufukuanzhengce",
@@ -1101,15 +1103,14 @@
   "term": "白号",
   "aka": [
    "老白号",
-   "高权重号",
-   "黑号"
+   "高权重号"
   ],
   "category": "身份与认证绕过",
   "lang": "zh",
   "definition": "无违规记录、平台评分高的干净账号，与被标记过的\"黑号\"相对。",
   "mechanism": "平台按账号画像差异化发券、放行与分配流量，所以账号的\"白\"本身就是可交易的资源：白号能拿到更低的价格、更高的额度、更少的核验。广告按分值区间（如\"400-699分老白号\"）明码标价，等于把平台的信任分变成了商品。",
   "example": "400-699分老白号 / 白号出现9.9购券链接",
-  "ambiguity": "\"白号\"在游戏语境指无装备的新账号，含义相反。",
+  "ambiguity": "\"白号\"在游戏语境指无装备的新账号，含义相反。账号交易帖里「白号」也指没有粉丝、未实名的空白号（如与带粉、实名直播号并列出售的「TK白号」），和「无违规的高分号」不是一回事。",
   "related": [
    "0weigui",
    "beianhao",
@@ -1117,6 +1118,7 @@
    "dianpuruhui",
    "ganglao",
    "guangdian",
+   "heihao",
    "heihu",
    "jiancexinlao",
    "jingyang",
@@ -1233,7 +1235,6 @@
   "id": "xieyihao",
   "term": "协议号",
   "aka": [
-   "直登号",
    "小号",
    "电报小号"
   ],
@@ -3233,16 +3234,19 @@
  {
   "id": "zhideng",
   "term": "直登",
-  "aka": [],
+  "aka": [
+   "直登号"
+  ],
   "category": "身份与认证绕过",
   "definition": "可直接登录使用、无需额外验证过渡的账号类型",
-  "confidence": "to-verify",
-  "first_seen": "v0.2",
+  "mechanism": "账号可直接登录、不需额外验证过渡，省掉买方的核验环节。与「协议号」「API号」构成不同的接入形态，直登最省事也最贵。",
   "example": "〔某社交平台〕 直登/协议",
+  "ambiguity": "「直登」字面上就是直接登录，也用于正常的产品描述。本义是无需额外验证的账号类型，通常与「协议号」「API」「秒上」等交易属性共现。",
   "related": [
    "0weigui",
    "baihao",
    "chengpinhao",
+   "ck",
    "guangdian",
    "jiancexinlao",
    "jingyang",
@@ -3265,9 +3269,9 @@
    "zhidengxieyiapi",
    "ziti"
   ],
+  "confidence": "to-verify",
   "frequency": "常见",
-  "mechanism": "账号可直接登录、不需额外验证过渡，省掉买方的核验环节。与「协议号」「API号」构成不同的接入形态，直登最省事也最贵。",
-  "ambiguity": "「直登」字面上就是直接登录，也用于正常的产品描述。本义是无需额外验证的账号类型，通常与「协议号」「API」「秒上」等交易属性共现。"
+  "first_seen": "v0.2"
  },
  {
   "id": "0weigui",
@@ -5284,5 +5288,56 @@
   "confidence": "medium",
   "frequency": "少见",
   "first_seen": "v0.3"
+ },
+ {
+  "id": "heihao",
+  "term": "黑号",
+  "aka": [],
+  "category": "身份与认证绕过",
+  "definition": "被平台风控标记、降了权的账号，领不到券、拿不到专属价，下单容易被砍。",
+  "mechanism": "与「白号」相对：平台按账号画像差异化发券与放行，黑号拿不到白号的低价，所以报单会注明「普号/黑号可下」或提醒「别拿大黑号看价」；社群还相信黑号会「传染」同一人名下的其他账号。",
+  "example": "普号/黑号可下 ｜ 别拿你们的大黑号看",
+  "ambiguity": "「黑号」在部分语境指黑名单号码或骚扰电话号码，需与下单、价格、领券语境共现。",
+  "related": [
+   "baihao",
+   "puhaokexia"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "ck",
+  "term": "CK",
+  "aka": [],
+  "category": "身份与认证绕过",
+  "definition": "Cookie 的缩写，指平台账号的登录态；带登录态的 CK 被当作商品按平台出售或定制。",
+  "mechanism": "拿到 CK 就能免密登录对应账号，因此按平台分别标价，配套还有提取与导入 CK 的工具；它是账号盗用和数据采集的共同原料。",
+  "example": "提供〔某电商平台〕CK、〔某外卖平台〕CK ｜ CK 提取与置入",
+  "ambiguity": "CK 也是服装品牌缩写，黄牛帖里的「CK内裤」即指品牌；只有与账号、登录、提取、平台名同现时才指 Cookie。",
+  "related": [
+   "caiji",
+   "zhideng"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "jusi",
+  "term": "拒死",
+  "aka": [],
+  "category": "身份与认证绕过",
+  "definition": "卖家资质核验被平台拒绝、申诉入口随之关闭的状态。",
+  "mechanism": "跨境卖家服务的卖点：「消费法拒死开入口」即声称能重新打开被关闭的核验入口，与过消费法、换主体等代办同列报价。",
+  "example": "消费者法案拒死的入口也打开了",
+  "ambiguity": "字面「拒死」少见，但「拒死不认」等正常搭配也会出现，需与核验、入口、消费法、主体共现。",
+  "related": [
+   "guokyc",
+   "kyc"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
  }
 ]

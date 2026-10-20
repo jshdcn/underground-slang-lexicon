@@ -611,9 +611,7 @@
   "term": "一类卡",
   "aka": [
    "I类户",
-   "盾卡",
-   "二类卡",
-   "二类户"
+   "盾卡"
   ],
   "category": "资金通道与洗钱",
   "definition": "银行个人账户分类中功能最全、无额度限制的账户，被作为结算卡批量收购。",
@@ -825,8 +823,8 @@
   ],
   "category": "资金通道与洗钱",
   "lang": "en",
-  "definition": "把盗刷额度、被盗账户余额或赃物变现为可支配资金的动作。",
-  "mechanism": "是英文圈黑产链条的终点环节，对应中文的\"套现\"与\"回U\"；报价常以可提现金额或分成比例表示，具体路径依标的而异（转账、礼品卡、加密货币、线下取现）。",
+  "definition": "把信用额度（包括先用后付额度）、盗刷额度、被盗账户余额或赃物变现为可支配资金的动作。",
+  "mechanism": "是英文圈黑产链条的终点环节，对应中文的\"套现\"与\"回U\"；报价常以可提现金额或分成比例表示，具体路径依标的而异（转账、礼品卡、加密货币、线下取现）。马来西亚等地还有自称 cashout 的先用后付套现服务：替用户把未用的先用后付额度刷成现金并抽成。",
   "example": "70K CASHOUT",
   "ambiguity": "cash out 在英文里是日常用词（兑现、套现、离场），金融与游戏语境中大量出现，绝大多数提及属正常用法，单独命中零判别力；须结合 logs、drop、transfer 等共现词判定，属生态交易词而非语义偏移黑话。",
   "related": [
@@ -851,6 +849,7 @@
    "taoxian",
    "ushang",
    "viradadesaldo",
+   "xianyonghoufu",
    "zhuanka"
   ],
   "confidence": "to-verify",
@@ -1070,6 +1069,7 @@
   "definition": "把某个主体加入白名单，使其申请或交易免于正常的审核与限制。",
   "mechanism": "是内外勾连的典型产物：正常流程下无法通过的资料，经\"加白\"后直接放行。配套词\"强开\"指强行开通本不符合条件的权限、\"不掉单\"指交易不会被风控拦下。这类词出现即指向机构内部权限被滥用。",
   "example": "已加白，不掉单 / 加白强开",
+  "ambiguity": "别名「强开」在跨境卖家语境也指把冻结的店铺资金强行提出（见「强提」）。",
   "related": [
    "baobai",
    "chenglv",
@@ -1086,6 +1086,7 @@
    "neigui",
    "paofen",
    "poe",
+   "qiangti",
    "shuangbai",
    "sifang",
    "wangbai",
@@ -1239,6 +1240,7 @@
   "example": "关键词：先用后付套现",
   "ambiguity": "先用后付是主流电商与支付平台的正常功能，用户讨论与投诉占绝大多数。",
   "related": [
+   "cashout",
    "daihuan",
    "daikuanshuju",
    "fancuishou",
@@ -1662,6 +1664,7 @@
    "jiefeng",
    "mingxia",
    "paodan",
+   "qiangti",
    "sifajilu",
    "tangpingzai",
    "zhanqi"
@@ -2789,8 +2792,7 @@
   "id": "diubao",
   "term": "丢包",
   "aka": [
-   "丢包模式",
-   "面交"
+   "丢包模式"
   ],
   "category": "资金通道与洗钱",
   "lang": "zh",
@@ -5715,5 +5717,25 @@
   "confidence": "to-verify",
   "first_seen": "v0.2",
   "frequency": "少见"
+ },
+ {
+  "id": "qiangti",
+  "term": "强提",
+  "aka": [
+   "资金强提"
+  ],
+  "category": "资金通道与洗钱",
+  "definition": "把被平台冻结、扣押或因诉讼冻结的店铺资金强行提出来的服务，按提出金额抽成。",
+  "mechanism": "电商卖家资金被冻结后的变现出口：服务方声称可走申诉、诉讼或内部渠道把钱提出，「违约单强提」「TRO 强提」「资金强开」等报价按比例收费、成功后付款。",
+  "example": "近三个月违约单强提 ｜ 资金强开，手续费 10%",
+  "ambiguity": "「强提」在其他语境可指强制提醒、强力提升，需与资金、冻结、店铺、出款共现。",
+  "related": [
+   "insider",
+   "jiabai",
+   "jiedong"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
  }
 ]

@@ -286,7 +286,8 @@
    "root",
    "setbid",
    "shebeizhiwen",
-   "waigua"
+   "waigua",
+   "zhuceji"
   ],
   "confidence": "to-verify",
   "frequency": "少见",
@@ -642,5 +643,24 @@
   ],
   "region": "巴西外卖与网约车生态",
   "frequency": "少见"
+ },
+ {
+  "id": "zhuceji",
+  "term": "注册机",
+  "aka": [
+   "注 册 机"
+  ],
+  "category": "终端与设备破解",
+  "definition": "为破解软件生成序列号或授权码的工具，即 keygen。",
+  "mechanism": "破解软件的配套件：二手平台上的盗版专业软件常标「含注册机」「带授权工具」，按技术服务费出售、拍下秒发；为躲检测还会写成「注 册 机」。",
+  "example": "带注册机 / 永久专业版 ｜ 标价为注 册 机价格",
+  "ambiguity": "软件圈里是通行说法，技术讨论与反盗版内容也会提及，需与出售、秒发、永久版等交易语境共现。",
+  "related": [
+   "cijian",
+   "modapk"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
  }
 ]
