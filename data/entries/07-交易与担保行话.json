@@ -757,6 +757,7 @@
    "capped_tl",
    "co_tl",
    "cod",
+   "forrent",
    "huangniu",
    "noaccess_tl",
    "wts"
@@ -1393,6 +1394,7 @@
    "capped_tl",
    "co_tl",
    "cod",
+   "forrent",
    "frozen"
   ],
   "confidence": "high",
@@ -1435,6 +1437,7 @@
   "ambiguity": "英文常用词（冰冻、冻结），需与账号交易语境共现。",
   "related": [
    "booker",
+   "forrent",
    "guale",
    "yishou"
   ],
@@ -1501,5 +1504,30 @@
   "confidence": "medium",
   "frequency": "较常见",
   "first_seen": "v0.3"
+ },
+ {
+  "id": "forrent",
+  "term": "for rent",
+  "aka": [
+   "open for rent",
+   "renters",
+   "fresh claimed"
+  ],
+  "lang": "en",
+  "region": "菲律宾转卖圈",
+  "category": "交易与担保行话",
+  "definition": "折扣账号的按次出租模式：把已认领的折扣或冻结账号租给多人用于比价、代下，限租人数与租金明码标价。",
+  "mechanism": "账号资产从买断转向租赁的分层供给：出租方按次收费并限制租客数量（如仅限五人），以「刚认领」强调账号新鲜度；租客用其查专属价或结账，与代下、折扣上限、冻结包换条款构成同一生态——租赁让账号风控风险由多方分摊。",
+  "example": "open for rent · frozen account · 5 renters only · fresh claimed",
+  "ambiguity": "英文日常租赁用语（房屋、车辆 for rent）极为常见，需与账号、折扣、代下语境共现。",
+  "related": [
+   "booker",
+   "frozen",
+   "capped_tl",
+   "bulk_tl"
+  ],
+  "confidence": "medium",
+  "frequency": "少见",
+  "first_seen": "v0.4"
  }
 ]
