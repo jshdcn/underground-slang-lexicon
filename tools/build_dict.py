@@ -200,6 +200,8 @@ def validate(entries, warns=None):
         for f in ('id', 'term', 'category', 'definition', 'confidence'):
             if not e.get(f):
                 errs.append(f"{e.get('id') or e.get('term')}: 缺字段 {f}")
+        if e.get('id') and not re.fullmatch(r'[a-z0-9]+(?:[-_][a-z0-9]+)*', e['id']):
+            errs.append(f"{e['id']}: id 只能由小写字母、数字组成，以连字符或下划线连接")
         if e.get('category') not in CATS:
             errs.append(f"{e.get('id')}: 未知分类 {e.get('category')}")
         if e.get('lang') and e['lang'] not in LANGS:
@@ -274,6 +276,11 @@ def validate(entries, warns=None):
             warns.append(f"缺 mechanism|{e['id']} {e.get('term')}")
         if not (e.get('ambiguity') or '').strip():
             warns.append(f"缺 ambiguity|{e['id']} {e.get('term')}")
+        # 也是提示：缩写词按全称起头（「爱思」→「爱思助手（…）」）是正常写法，机器分不出它和循环定义
+        if e.get('term') and d.startswith(e['term']):
+            warns.append(f"释义以词条本身开头|{e['id']} {e.get('term')}")
+        if not (e.get('example') or '').strip() and not (e.get('example_note') or '').strip():
+            warns.append(f"没有 example 也没写 example_note|{e['id']} {e.get('term')}")
     return errs
 
 # 构词法词族：词根 + 构词逻辑 + 已收词条 id。render 与 tools/build_viz.py 共用，

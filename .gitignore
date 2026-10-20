@@ -1,11 +1,11 @@
-# 原始情报语料绝不入库（跨客户数据，含未脱敏原文）
+# 原始语料不入库（含未脱敏原文）
 *.jsonl
 *.jsonl.gz
 corpus/
 work/
 internal/
 
-# 内部版词条（含完整原文与客户维度）
+# 内部版词条不入库（含未脱敏原文）
 data/entries-internal/
 
 .DS_Store

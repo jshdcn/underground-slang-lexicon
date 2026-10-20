@@ -4,7 +4,7 @@
     "id": {
       "type": "string",
       "required": true,
-      "desc": "稳定标识，小写拉丁/拼音/连字符，发布后不改"
+      "desc": "稳定标识：小写拉丁字母、数字或拼音，以连字符或下划线连接，发布后不改"
     },
     "term": {
       "type": "string",

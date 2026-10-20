@@ -48,7 +48,7 @@ Defenders and attackers don't speak the same language. Risk rules say "bulk regi
 
 This lexicon pins that vocabulary down. Each entry gives a definition, its position in the supply chain, sanitized real-world usage, and **what the word means in ordinary contexts**. That last part usually takes more work than the other three, and it decides whether the lexicon can go straight into rules: most hits on 空包 (empty parcels shipped to fake transactions) are vacuum packaging, most hits on 养卡 (card nurturing) are car maintenance cards, and 放量 (releasing a large batch of payouts) nearly always turns out to be part of 播放量 (play count). Leave that out, and a rule goes live as a flood of false positives.
 
-Entries come from Threat Hunter's ongoing monitoring and analysis of the underground economy. The definitions and false-positive notes in `v0.1` were reviewed by hand, entry by entry; `v0.2` is still under review. The `first_seen` field tells the batches apart, and `v0.2` entries are marked `to-verify` while their fields are being filled in.
+Entries come from Threat Hunter's ongoing monitoring and analysis of the underground economy. The definitions and false-positive notes in `v0.1` were reviewed by hand, entry by entry; `v0.2` is still under review. The `first_seen` field tells the batches apart, and `v0.2` entries are marked `to-verify` while their fields are being filled in. Releases from `v0.3` on are incremental; each entry's `confidence` says how settled its meaning is.
 
 Threat Hunter is built on underground-economy intelligence and serves teams in finance, internet, e-commerce, consumer and global business. This lexicon is one face of that capability: **pinning down the jargon we keep running into, and making it public**.
 
@@ -159,31 +159,32 @@ The same jargon spans e-commerce, finance, local services and social platforms, 
   "aka": ["模糊找人", "整合模糊", "模糊机主"],
   "category": "数据与隐私侵害",
   "definition": "在只掌握部分信息（如地区、姓名、户籍地）的情况下，反查特定自然人完整身份与联系方式的服务。",
-  "mechanism": "面向'只知道一点线索也能找到人'的需求，是开盒与定向骚扰的关键能力；按线索完整度与返回字段计价。",
-  "example": "模糊查找（提供 地区、姓名、户籍地）",
-  "ambiguity": "'模糊查询'在数据库与检索技术中是标准概念（LIKE 查询），技术文档大量出现，是高误报词，须结合'机主、找人、户籍'等共现词判定。",
+  "mechanism": "面向“只知道一点线索也能找到人”的需求，是开盒与定向骚扰的关键能力；按线索完整度与返回字段计价，数据多源自违规汇聚的身份与通信信息。",
+  "example": "模糊查找（提供 地区、姓名、户籍地） / 整合模糊机主查询",
+  "ambiguity": "“模糊查询”在数据库与检索技术中是标准概念（LIKE 查询），技术文档大量出现，是高误报词，须结合“机主、找人、户籍”等共现词判定。",
   "related": ["shegongku", "kaihe", "haomazhuangtai", "liao", "siyaosu"],
   "confidence": "high",
-  "frequency": "常见"
+  "frequency": "常见",
+  "first_seen": "v0.1"
 }
 ```
 
-This entry describes a "fuzzy lookup" service: finding a specific person's full identity and contact details from partial information such as region, name or place of household registration. Its `ambiguity` field warns that "fuzzy query" is a standard database concept (`LIKE`), so it only counts as slang next to words like 机主 (account holder), 找人 (find someone) or 户籍 (household registration).
+This entry describes a "fuzzy lookup" service: finding a specific person's full identity and contact details from partial information such as region, name or place of household registration. Its `ambiguity` field warns that "fuzzy query" is a standard database concept (`LIKE`), so it only counts as slang next to words like 机主 (account holder), 找人 (find someone) or 户籍 (household registration). The `related` list is abridged here.
 
 ### Field reference
 
 | Field | Shown in the lexicon as | Meaning | Required | Format and checks |
 | --- | --- | --- | --- | --- |
-| `id` | Not shown | Stable identifier that `related` uses to point at entries | Yes | Lowercase Latin letters, pinyin or hyphens; never changes after release; duplicates are blocked |
+| `id` | Not shown | Stable identifier that `related` uses to point at entries | Yes | Lowercase Latin letters, digits or pinyin, joined by hyphens or underscores; never changes after release; other characters and duplicates are blocked |
 | `term` | Entry title | The headword — the most common spelling | Yes | Prefer the form actually in use. Only techniques without a common name get a descriptive title, and then `aka` must list the searchable forms that really occur; duplicates are blocked |
 | `aka` | 又作 (also written) | Synonyms, variants, homophone spellings, abbreviations | No | Searchable variants only; mappings such as `利闰=利润` go in `mechanism`. An alias may belong to only one entry and may not match another entry's title |
 | `category` | The category section it appears in | One of the nine categories | Yes | Must be one of the nine |
 | `lang` | Language tag under the title | Language of the entry | No | Defaults to Chinese; allowed values are under `languages` in `data/schema.json` |
 | `region` | Ecosystem tag under the title | Region or ecosystem where the word circulates | No | e.g. 巴西外卖与网约车生态 (Brazilian food-delivery and ride-hailing ecosystem) |
-| `definition` | 释义 (definition) | One sentence on what the word means | Yes | No evaluative wording; must not open with the term itself; under 15 characters triggers a notice |
+| `definition` | 释义 (definition) | One sentence on what the word means | Yes | No evaluative wording; opening with the term itself or running under 15 characters triggers a notice |
 | `mechanism` | 在链条中的作用 (role in the chain) | What it does in the underground supply chain, upstream and downstream | No | Mechanisms only — no operational steps, no restating the definition; a missing value triggers a notice |
 | `example` | 示例（脱敏） (sanitized example) | How it is used in a real setting | No, strongly recommended | Must be sanitized: platforms, brands, contact details, links and item numbers are replaced or removed; scanned entry by entry at build time |
-| `example_note` | 无示例说明 (why there is no example) | Why no publishable example could be found | No | Fill it in when there is no `example` instead of leaving the gap silent |
+| `example_note` | 无示例说明 (why there is no example) | Why no publishable example could be found | No | Fill it in when there is no `example` instead of leaving the gap silent; leaving both empty triggers a notice |
 | `ambiguity` | 歧义与误报 (ambiguity and false positives) | What the word means in ordinary contexts — where false positives come from | No, strongly recommended | State the everyday meaning and which co-occurring words make it slang; a missing value triggers a notice |
 | `related` | 关联 (related) | `id`s of related entries | No | Must be symmetric; no self-references, duplicates or dangling ids |
 | `confidence` | 研判置信度 (confidence) | How certain the judgment is | Yes | `high` / `medium` / `to-verify`; see [Quality standards](#quality-standards) |
@@ -210,6 +211,7 @@ The machine-readable schema is [`data/schema.json`](data/schema.json).
 ```bash
 python3 tools/build_dict.py    # validate entries, regenerate the lexicon and CSV
 python3 tools/check_links.py   # check internal links and anchors in the docs
+python3 tools/build_viz.py     # rebuild the relation graph in docs/
 ```
 
 No third-party dependencies.
@@ -223,10 +225,10 @@ No third-party dependencies.
 
   <!--n_tv-->434<!--/n_tv--> entries are currently marked to-verify.
 - **When unsure, we say so instead of giving a confident-looking wrong definition.** A word whose meaning the evidence can't settle is better left out than forced.
-- **Every example is sanitized**: <!--n_ex-->643<!--/n_ex--> entries carry real usage; the
-  <!--n_note-->117<!--/n_note--> without a publishable example explain why in `example_note` (nearly every hit on 空包, for instance, is 真空包装 — vacuum packaging — which is itself the false-positive source).
+- **Every example is sanitized**: <!--n_ex-->643<!--/n_ex--> entries carry real usage, and
+  <!--n_note-->117<!--/n_note--> entries without a publishable example explain why in `example_note` (nearly every hit on 空包, for instance, is 真空包装 — vacuum packaging — which is itself the false-positive source).
 - **Automatic checks at build time** — the lexicon won't build if any of them fails:
-  - Structure: unique ids and titles, no alias conflicts, symmetric relations, no dangling references
+  - Structure: well-formed, unique ids and unique titles, no alias conflicts, symmetric relations, no dangling references
   - **Sanitization**: every prose field (definition, mechanism, ambiguity, example and the rest) is scanned for real identifiers — phone numbers, ID numbers, wallet addresses, account handles, links, business names, named platforms and banks — and for any information about corpus size
   - Generated files in sync with the source data
 

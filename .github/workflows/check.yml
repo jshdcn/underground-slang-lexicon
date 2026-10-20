@@ -32,7 +32,7 @@ jobs:
       - name: 确认生成物已同步提交
         run: |
           if ! git diff --quiet; then
-            echo "::error::生成物与词条数据不一致。请在本地运行 python3 tools/build_dict.py，并把 dict/ 与 README.md、README.zh-CN.md 的变更一并提交。"
+            echo "::error::生成物与词条数据不一致。请在本地依次运行 python3 tools/build_dict.py 与 python3 tools/build_viz.py，并把 dict/、docs/ 与 README.md、README.zh-CN.md 的变更一并提交。"
             git --no-pager diff --stat
             exit 1
           fi
