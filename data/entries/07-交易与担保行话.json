@@ -1519,14 +1519,14 @@
   "definition": "折扣账号的按次出租模式：把已认领的折扣或冻结账号租给多人用于比价、代下，限租人数与租金明码标价。",
   "mechanism": "账号资产从买断转向租赁的分层供给：出租方按次收费并限制租客数量（如仅限五人），以「刚认领」强调账号新鲜度；租客用其查专属价或结账，与代下、折扣上限、冻结包换条款构成同一生态——租赁让账号风控风险由多方分摊。",
   "example": "open for rent · frozen account · 5 renters only · fresh claimed",
-  "ambiguity": "英文日常租赁用语（房屋、车辆 for rent）极为常见，需与账号、折扣、代下语境共现。",
+  "ambiguity": "英文日常租赁用语（房屋、车辆）极为常见，单词本身零判别力——黑产属性在宾语（折扣/冻结账号）不在词；仅「for rent + 账号 + 限租人数」组合模式构成信号，属生态交易词而非语义偏移黑话。",
   "related": [
    "booker",
    "frozen",
    "capped_tl",
    "bulk_tl"
   ],
-  "confidence": "medium",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.4"
  }

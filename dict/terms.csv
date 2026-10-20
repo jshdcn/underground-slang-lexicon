@@ -691,7 +691,7 @@ cod,COD,cod,en,东南亚电商,交易与担保行话,cash on delivery 货到付�
 d,d,滴|私|pm,zh,,交易与担保行话,“私聊我”的极简写法，用单个字母规避联系方式类关键词检测。,单字母在文本中出现极频繁，仅在“需要d”“有d”等固定句式中才具判别力。,chushou|cijian|fangxinling|gc_tl|gongxu|japri|jianjie|pingtaidaicheng|pv|shuangxiang|zerowidth,high,常见
 escrow,escrow,escrow+|middleman,en,,交易与担保行话,"第三方担保交易，英文圈等同于中文的""走担保""。",escrow 是房地产与跨境贸易的正规金融安排，本身中性。,anto|baohiem|fragment|gongxu|ibanacc|readymade|sanhei|shangya|sureshot|trunggian|trustee|wts|zoudanbao|zouyu,high,常见
 fache,发车,专线发车|开车,zh,,交易与担保行话,一批业务正式开始执行；在数据与通道语境中指开始发单。,"拼单、团购与出行语境中""发车""极常用。",chedui|daxiaoche|gongxu|haoche|huidan|kache|laoche|mache|makache|naxianche|shangche|shouliang|shouxusuiche|uche|xianjinche|yushouche|zhaoche,high,较常见
-forrent,for rent,open for rent|renters|fresh claimed,en,菲律宾转卖圈,交易与担保行话,折扣账号的按次出租模式：把已认领的折扣或冻结账号租给多人用于比价、代下，限租人数与租金明码标价。,英文日常租赁用语（房屋、车辆 for rent）极为常见，需与账号、折扣、代下语境共现。,booker|frozen|capped_tl|bulk_tl,medium,少见
+forrent,for rent,open for rent|renters|fresh claimed,en,菲律宾转卖圈,交易与担保行话,折扣账号的按次出租模式：把已认领的折扣或冻结账号租给多人用于比价、代下，限租人数与租金明码标价。,英文日常租赁用语（房屋、车辆）极为常见，单词本身零判别力——黑产属性在宾语（折扣/冻结账号）不在词；仅「for rent + 账号 + 限租人数」组合模式构成信号，属生态交易词而非语义偏移黑话。,booker|frozen|capped_tl|bulk_tl,to-verify,少见
 fresh,fresh,new|first hand,en,,交易与担保行话,指数据或账号首次流出、未被他人使用过。,英文日常词，食品、内容等语境大量使用。,cvv|liao|ssn|uncheck_vi|yishou,high,常见
 frozen,frozen,replace if frozen,en,菲律宾转卖圈,交易与担保行话,账号被平台冻结的状态；「replace if frozen」即冻结包换的售后承诺。,英文常用词（冰冻、冻结），需与账号交易语境共现。,booker|forrent|guale|yishou,medium,少见
 garansi,garansi,garansi login|garansi 1 bulan,id,,交易与担保行话,"印尼语""保修""，指卖家对所售账号或工具承诺的有效期保障。",,baox|japri|jixiao|mailei|mianche|penipuan|readymade|rffrozen_tl,high,少见
