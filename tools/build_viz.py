@@ -19,6 +19,7 @@ import json
 import math
 import os
 import random
+import re
 import sys
 from collections import Counter, defaultdict
 
@@ -60,10 +61,55 @@ def polar(cx, cy, r, ang):
     return cx + r * math.cos(ang), cy + r * math.sin(ang)
 
 
+def gh_slug(text):
+    """GitHub 标题锚点：小写、去掉标点与 emoji、空格换连字符（与 tools/check_links.py 同一口径）。"""
+    return re.sub(r'[^\w一-鿿\- ]', '', text.strip().lower()).replace(' ', '-')
+
+
+def dict_anchors(entries):
+    """词典正文里每个词条标题的实际锚点，供图谱「在词典中查看」直达。
+
+    不能直接拿词条名当锚点：GitHub 会转小写、去 emoji 与标点（「黑U」→ 黑u、「not VM made」→ not-vm-made），
+    重名标题还会按出现顺序加 -1、-2（drop 与 DROP 是 drop / drop-1），所以按词典的标题顺序逐个算。
+    """
+    seen, out = {}, {}
+    for level, text in re.findall(r'^(#{1,6})\s+(.+?)\s*$', build_dict.render(entries), re.M):
+        base = slug = gh_slug(text)
+        while slug in seen:
+            seen[base] += 1
+            slug = '%s-%d' % (base, seen[base])
+        seen[slug] = 0
+        if level == '###':
+            out[text] = slug
+    return out
+
+
+def label_poly(lx, ly, w, rot_deg, h=30):
+    """分类标签的实际占位：按切向旋转后的矩形四角（画布与 SVG 都按 rot 旋转绘制）。"""
+    a = math.radians(rot_deg)
+    ca, sa = math.cos(a), math.sin(a)
+    return [(lx + dx * ca - dy * sa, ly + dx * sa + dy * ca)
+            for dx, dy in ((-w / 2, -h / 2), (w / 2, -h / 2), (w / 2, h / 2), (-w / 2, h / 2))]
+
+
+def polys_overlap(p, q):
+    """凸多边形分离轴判定：只要某条边的法向上两者投影不相交，就不重叠。"""
+    for poly in (p, q):
+        for i in range(len(poly)):
+            (x1, y1), (x2, y2) = poly[i], poly[(i + 1) % len(poly)]
+            nx, ny = y2 - y1, x1 - x2
+            pa = [nx * x + ny * y for x, y in p]
+            pb = [nx * x + ny * y for x, y in q]
+            if max(pa) < min(pb) or max(pb) < min(pa):
+                return False
+    return True
+
+
 def build_graph(entries):
     cats = [c for c in build_dict.CATS if any(e['category'] == c for e in entries)]
     color = {c: PALETTE[i % len(PALETTE)] for i, c in enumerate(cats)}
     ci = {c: i for i, c in enumerate(cats)}
+    anchors = dict_anchors(entries)
 
     deg = Counter()
     edge_set = set()
@@ -124,7 +170,9 @@ def build_graph(entries):
                 'color': color[c], 'lang': e.get('lang', 'zh'),
                 'region': e.get('region', ''), 'conf': e['confidence'],
                 'freq': e.get('frequency', ''), 'first': e.get('first_seen', ''),
-                'deg': deg[e['id']], 'aka': (e.get('aka') or [])[:6],
+                # 别名全量下发：搜索要覆盖全部别名（此前截到前 6 个，谐音替字等词条的后续别名搜不到）；展示时再截断
+                'deg': deg[e['id']], 'aka': e.get('aka') or [],
+                'anchor': anchors.get(e['term'], gh_slug(e['term'])),
                 'def': (e.get('definition') or '')[:160],
                 'x': x, 'y': y,
             })
@@ -168,7 +216,7 @@ def build_graph(entries):
         if ca != cb:
             cross[tuple(sorted((ca, cb)))] += 1
     cat_meta = []
-    placed_labels = []
+    placed_polys = []
     for i, c in enumerate(cats):
         a0, a1, anchor = sectors[c]
         span = a1 - a0
@@ -177,6 +225,11 @@ def build_graph(entries):
         mid = (a0 + a1) / 2
         cjk = sum(1 for ch in c if ord(ch) > 0x2E7F)
         lab_w = (cjk + (len(c) - cjk) * 0.56) * 19 + 46
+        # 切向标签，方向固定为"从左向右读"：顶部/底部水平、两侧竖排
+        tdx, tdy = -math.sin(mid), math.cos(mid)
+        if tdx < 0 or (abs(tdx) < 1e-9 and tdy > 0):
+            tdx, tdy = -tdx, -tdy
+        rot = math.degrees(math.atan2(tdy, tdx))
         # 窄扇区直接外移轮外并配引线，避免与相邻标签在同环挤靠
         outer = span < 0.2
         leader = None
@@ -184,7 +237,8 @@ def build_graph(entries):
             sx, sy = polar(CX, CY, R_OUT + 8, mid)
             leader = [round(sx, 1), round(sy, 1)]
         lx = ly = 0
-        for attempt in range(6):
+        # 碰撞按旋转后的实际矩形判定：标签是切向斜置的，按水平包围盒判会漏掉斜标签之间的重叠
+        for attempt in range(10):
             r_try = (R_OUT + 168 if outer else R_OUT + (64 if i % 2 == 0 else 102)) + 34 * attempt
             # 切向错位：同角度簇的标签沿弧向左右让位（偶数档向右、奇数档向左，幅度递增）
             t_shift = 26 * ((attempt + 1) // 2) * (1 if i % 2 == 0 else -1)
@@ -193,18 +247,10 @@ def build_graph(entries):
             lx, ly = ax + tx * t_shift, ay + ty * t_shift
             lx = min(max(lx, 46), W - 46)
             ly = min(max(ly, 44), H - 30)
-            rx0, ry0 = lx - lab_w / 2 - 14, ly - 18
-            hit = any(not (rx0 + lab_w + 28 < px0 or px0 + pw < rx0 or
-                           ry0 + 36 < py0 or py0 + ph < ry0)
-                      for px0, py0, pw, ph in placed_labels)
-            if not hit:
+            poly = label_poly(lx, ly, lab_w + 12, rot)
+            if not any(polys_overlap(poly, q) for q in placed_polys):
                 break
-        placed_labels.append((lx - lab_w / 2 - 14, ly - 18, lab_w + 28, 36))
-        # 切向标签，方向固定为"从左向右读"：顶部/底部水平、两侧竖排
-        tdx, tdy = -math.sin(mid), math.cos(mid)
-        if tdx < 0 or (abs(tdx) < 1e-9 and tdy > 0):
-            tdx, tdy = -tdx, -tdy
-        rot = math.degrees(math.atan2(tdy, tdx))
+        placed_polys.append(poly)
         top = sorted(cat_nodes[c], key=lambda e: -deg[e['id']])[:TOP_LABELS]
         cat_meta.append({
             'name': c, 'color': color[c],
@@ -239,15 +285,22 @@ def build_graph(entries):
         cjk = sum(1 for ch in name if ord(ch) > 0x2E7F)
         return (cjk + (len(name) - cjk) * 0.56) * 19 + 46
 
+    def poly_of(m, x=None):
+        return label_poly(m['label'][0] if x is None else x, m['label'][1], lab_width(m['name']) + 12, m['label'][2])
+
     for zone_pred in (lambda y: y < 60, lambda y: y > H - 36):
         row = [c for c in cat_meta if zone_pred(c['label'][1])]
         row.sort(key=lambda c: c['label'][0])
+        others = [m for m in cat_meta if m not in row]
         prev_end = None
         for c in row:
             w = lab_width(c['name'])
             x = c['label'][0]
             if prev_end is not None:
                 x = max(x, prev_end + w / 2 + 24)
+            # 还要避开不在这一行、但斜置后伸进来的相邻标签（顶部窄扇区旁的斜标签曾因此互相压住）
+            while x < W - 46 - w / 2 and any(polys_overlap(poly_of(c, x), poly_of(o)) for o in others):
+                x += 8
             x = min(x, W - 46 - w / 2)
             c['label'][0] = round(x, 1)
             prev_end = x + w / 2
@@ -391,6 +444,7 @@ HTML = r'''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
 <title>黑灰产黑话图谱 · underground-slang-lexicon</title>
 <style>
 :root{--bg:#0d1017;--panel:#141924;--line:#263041;--text:#dce3ec;--dim:#8b96a5;--gold:#ffd166}
@@ -495,6 +549,8 @@ function fit(){
   draw();
 }
 window.addEventListener('resize', fit);
+// 侧栏开合会改舞台宽度但不触发 window resize：不重新适配，画布缓冲还是旧宽度，图被横向挤扁
+if (window.ResizeObserver) new ResizeObserver(() => fit()).observe(stage);
 
 function toScreen(x, y){ return [view.ox + x * view.k, view.oy + y * view.k]; }
 function toWorld(x, y){ return [(x - view.ox) / view.k, (y - view.oy) / view.k]; }
@@ -860,7 +916,7 @@ function showSide(id){
   side.innerHTML = `
     <button class="close">✕</button>
     <h2>${esc(n.term)}</h2>
-    ${n.aka.length ? `<div class="aka">又作：${n.aka.map(esc).join('、')}</div>` : ''}
+    ${n.aka.length ? `<div class="aka">又作：${n.aka.slice(0, 12).map(esc).join('、')}${n.aka.length > 12 ? '　等 ' + n.aka.length + ' 个' : ''}</div>` : ''}
     <div class="tagline">
       <span class="tag cat" style="background:${n.color}">${n.cat}</span>
       ${n.lang !== 'zh' ? `<span class="tag">${n.lang}</span>` : ''}
@@ -874,7 +930,7 @@ function showSide(id){
     <div class="rel">${rel.map(r => `<button data-id="${r}">${esc(byId[r].term)}</button>`).join('') ||
       '<p style="color:var(--dim)">无</p>'}</div>
     <h3>词典条目</h3>
-    <p><a href="__DICTMD__#${encodeURIComponent(n.term)}" target="_blank">在黑话词典.md 中查看 ↗</a></p>`;
+    <p><a href="__DICTMD__#${encodeURIComponent(n.anchor)}" target="_blank">在黑话词典.md 中查看 ↗</a></p>`;
   side.style.display = 'block';
   side.querySelectorAll('.rel button').forEach(b =>
     b.onclick = () => { showSide(b.dataset.id); locate(b.dataset.id); });

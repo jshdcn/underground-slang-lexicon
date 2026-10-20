@@ -22,7 +22,7 @@
 [![Relations](https://img.shields.io/badge/relations-5442-orange)](dict/黑话词典.md)
 [![License](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE)
 
-**👉 [Browse the lexicon](dict/黑话词典.md)** ｜ [CSV](dict/terms.csv) ｜ [Structured data](data/entries/) ｜ [Schema](data/schema.json) ｜ **[Relation graph](https://threathunterx.github.io/underground-slang-lexicon/)**
+**👉 [Browse the lexicon](dict/黑话词典.md)** ｜ [CSV](dict/terms.csv) ｜ [Structured data](data/entries/) ｜ [Schema](data/schema.json) ｜ **[Relation graph](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)**
 
 > **A note on language.** Headwords keep the language they are used in — mostly Chinese, plus Brazilian Portuguese, English, Indonesian, Tagalog and Vietnamese. Definitions, mechanisms and false-positive notes are written in Chinese, so the lexicon itself ([`dict/黑话词典.md`](dict/黑话词典.md)) reads in Chinese. Field names, values and the build tools are language-neutral.
 
@@ -34,9 +34,9 @@ Three views of the whole lexicon. The **supply-chain overview** gives each of th
 
 ![Relation graph](docs/graph.svg)
 
-**[Open the interactive version](https://threathunterx.github.io/underground-slang-lexicon/)** — search, drill down by category, click a node to see its definition and related entries, tune edge density, and drag nodes around. The data is inlined and works offline: after cloning, just open `docs/index.html`.
+**[Open the interactive version](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)** — search, drill down by category, click a node to see its definition and related entries, tune edge density, and drag nodes around. The data is inlined and works offline: after cloning, just open `docs/index.html`.
 
-> If the link above isn't live yet, use the [mirror link](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html) (a third-party raw-file proxy that follows every commit to this repository).
+> The interactive page is served through htmlpreview, a third-party proxy for raw files in this repository, so it follows every commit.
 
 The graph is rebuilt from entry data by [`tools/build_viz.py`](tools/build_viz.py). The layout seed is fixed, so builds are deterministic, and the word-root table comes from the same source as `build_dict.py`. When you submit entries, commit the regenerated `docs/` along with them.
 

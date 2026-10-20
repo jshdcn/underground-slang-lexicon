@@ -23,7 +23,7 @@
 [![关联边](https://img.shields.io/badge/关联边-5442-orange)](dict/黑话词典.md)
 [![许可](https://img.shields.io/badge/数据-CC%20BY%204.0-lightgrey)](LICENSE)
 
-**👉 [直接查看词典](dict/黑话词典.md)** ｜ [CSV 下载](dict/terms.csv) ｜ [结构化数据](data/entries/) ｜ [字段规范](data/schema.json) ｜ **[词条关系图谱](https://threathunterx.github.io/underground-slang-lexicon/)**
+**👉 [直接查看词典](dict/黑话词典.md)** ｜ [CSV 下载](dict/terms.csv) ｜ [结构化数据](data/entries/) ｜ [字段规范](data/schema.json) ｜ **[词条关系图谱](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)**
 
 ---
 
@@ -33,9 +33,9 @@
 
 ![词条关系图谱](docs/graph.svg)
 
-**[打开交互版](https://threathunterx.github.io/underground-slang-lexicon/)**——支持搜索定位、分类下钻、点击节点查看释义与关联词条、关联边密度调节、节点拖拽；数据内联、离线可用（克隆仓库后直接打开 `docs/index.html` 亦可）。
+**[打开交互版](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)**——支持搜索定位、分类下钻、点击节点查看释义与关联词条、关联边密度调节、节点拖拽；数据内联、离线可用（克隆仓库后直接打开 `docs/index.html` 亦可）。
 
-> 若上方链接暂未生效，可通过[镜像直链](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)访问（第三方 raw 代理，内容随仓库每次提交同步）。
+> 交互版经第三方 raw 代理 htmlpreview 访问，内容随仓库每次提交同步。
 
 图谱由 [`tools/build_viz.py`](tools/build_viz.py) 从词条数据自动重建：布局种子固定、构建结果确定，词根表与 `build_dict.py` 共用同一来源；提交词条时把重新生成的 `docs/` 一并提交即可。
 
