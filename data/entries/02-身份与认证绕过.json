@@ -585,7 +585,7 @@
   "definition": "主流身份核验服务商的名称，在账号交易广告中被当作规格标签，标明账号通过了哪家服务商的核验流程。",
   "mechanism": "交易所、博彩与支付平台外采第三方核验，因此\"过了哪家\"成为账号定价的关键参数，卖家会并列多家名称说明适配范围。对防守方的价值在于：这些名称出现在交易广告里，说明该核验流程正被针对性研究。",
   "example": "Casino kyc Sumsub + / SUMSUB/ONFIDO/PERSONA",
-  "ambiguity": "这些都是正规合规服务商，其名称出现在黑市广告中不代表其产品存在缺陷，也不构成对该服务商的任何评价。",
+  "ambiguity": "Sumsub、Onfido、Persona、Blockpass 都是身份核验服务商的名称，本身不是黑话，合规、产品与招聘语境中大量出现；按「纯平台/商品名不立条」的口径只作语境共现信号，单独命中零判别力，需与账号出售、KYC 代过、交易所或博彩平台账号报价等共现。这些都是正规合规服务商，其名称出现在黑市广告中不代表其产品存在缺陷，也不构成对该服务商的任何评价。",
   "related": [
    "chufashipin",
    "guokyc",
@@ -599,7 +599,7 @@
    "vcam",
    "xuni"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1"
  },
@@ -616,6 +616,7 @@
   "definition": "已完成核验、买家拿到即可使用的现成账号。",
   "mechanism": "对应中文的\"成品号\"：由注册、实名、过核验等环节加工完成，按平台与核验等级定价；与 KYC 服务商名称、escrow 担保一同出现在同一条广告中。",
   "example": "KYC OR READYMADE / ACCOUNT READYMADE",
+  "ambiguity": "ready-made 是英文日常词（现成的），accs、verified acc 也是字面缩写与说法，单独命中零判别力；需与 KYC、escrow、按平台与核验等级的报价共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "chengpinhao",
    "dailshiming",
@@ -632,7 +633,7 @@
    "wts",
    "yanzhenghao"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1"
  },
@@ -648,6 +649,7 @@
   "definition": "手持证件自拍核验；在黑市中指为通过该环节而准备的素材或代做服务。",
   "mechanism": "对应中文的\"大头照\"\"手持照\"：以真实证件加人像照片组合提交，是开户与解封的常见卡口；素材按国别出售，也有按次代做的服务。",
   "example": "ID Card + Selfie / SELFIE VERIFICATION",
+  "ambiguity": "selfie verification、ID + selfie 是正规 KYC 流程的标准叫法，平台帮助文档与开户指引里大量出现，单独命中零判别力；需与按国别出售素材、代做报价、KYC 服务商名等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "aprovador",
    "bo",
@@ -672,7 +674,7 @@
    "siyaosu",
    "subindoconta"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1"
  },
@@ -713,7 +715,7 @@
   "definition": "印尼语\"代操\"，指由他人代为操作账号接单、跑单或完成任务。",
   "mechanism": "网约车与外卖平台按账号考核骑手，\"akun joki\" 指账号所有人与实际操作者分离——可能是账号出租，也可能是团伙用改机工具同时操作多个账号；平台的实名与人车一致校验因此失效。",
   "example": "READY AKUN JOKI / SUPPORT: AKUN JOKI & AKUN PRIBADI",
-  "ambiguity": "\"joki\" 在印尼也广泛用于正常的代写、代做服务（joki makalah 代写论文、joki ketik 代打字），需结合是否涉及平台账号判定。",
+  "ambiguity": "\"joki\" 在印尼也广泛用于正常的代写、代做服务（joki makalah 代写论文、joki ketik 代打字），需结合是否涉及平台账号判定。「代人操作」本就是 joki 的日常义，用在网约车账号上没有语义偏移，单独命中零判别力；需与 akun、网约车或外卖平台账号、改版客户端等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "alattempur",
    "chengpinhao",
@@ -724,7 +726,7 @@
    "shebeizhiwen",
    "waigua"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -740,6 +742,7 @@
   "definition": "越南语圈对虚拟摄像头工具的简称，用于绕过生物识别与人脸核验。",
   "mechanism": "与中文的\"虚拟视频\"同义：把预先准备的人像视频作为摄像头输入送进核验流程；广告常直接写明\"过生物识别\"的适用平台范围。",
   "example": "Bán tool vượt sinh trắc học vcam",
+  "ambiguity": "vcam 是 virtual camera（虚拟摄像头）的缩写，属工具名而非黑话，直播与视频会议软件里是正常功能；按「纯平台/商品名不立条」的口径只作语境共现信号，单独命中零判别力，需与 vượt sinh trắc học（过生物识别）、eKYC、人脸核验等共现。",
   "related": [
    "aihuanlian",
    "chufashipin",
@@ -749,7 +752,7 @@
    "shualian",
    "xuni"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },

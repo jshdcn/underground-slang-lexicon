@@ -317,7 +317,7 @@
   "definition": "自助下单面板，按条按量出售社交互动数据、短信下发或验证码相关服务。",
   "mechanism": "把黑灰产服务产品化：买家在面板自助选量下单、自动交付，无需与卖家沟通。同一面板常同时售卖粉丝互动、短信轰炸与验证码服务，说明这些能力共享同一套底层账号与通道资源。",
   "example": "SMM panel / OTP PANEL",
-  "ambiguity": "\"panel\" 是英文通用词（控制面板、壁板），需结合 SMM、SMS、OTP 等限定词。",
+  "ambiguity": "\"panel\" 是英文通用词（控制面板、壁板），SMM panel 也是社媒营销行业的字面叫法，单独命中零判别力；需结合 SMM、SMS、OTP 等限定词与按量报价判定，属生态交易词而非语义偏移黑话。",
   "related": [
    "bomber",
    "followers",
@@ -330,7 +330,7 @@
    "xiazaifu",
    "yinliu"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -350,7 +350,7 @@
   "lang": "en",
   "definition": "作为商品出售的粉丝、点赞与评论量。",
   "mechanism": "对应中文的\"刷粉\"\"留评\"：由批量注册或盗用的账号提供互动，用于把账号包装成有影响力的号再变现（带货、广告、诈骗背书）；按平台与是否\"真人\"分级定价。",
-  "example": "FOLLOWERS TIKTOK / INSTAGRAM FOLLOWERS, LIKE, COMMENT",
+  "example": "FOLLOWERS 〔某短视频平台〕 / 〔某社交平台〕 FOLLOWERS, LIKE, COMMENT",
   "related": [
    "baojiang",
    "chengpinhao",
@@ -368,10 +368,10 @@
    "zhongcaobutie",
    "zire"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1",
-  "ambiguity": "「followers」是英文普通词，任何英文内容都可能命中。本义指作为商品出售的粉丝量，需与价格、平台名或「panel」等共现。"
+  "ambiguity": "「followers」是英文普通词，任何英文内容都可能命中，作「出售的粉丝量」讲也是字面义，单独命中零判别力；需与价格、平台名或「panel」等共现，属生态交易词而非语义偏移黑话。"
  },
  {
   "id": "bomber",

@@ -330,8 +330,8 @@
   "lang": "en",
   "definition": "第三方担保交易，英文圈等同于中文的\"走担保\"。",
   "mechanism": "是英文与俄语圈账号交易市场的默认成交方式，几乎每条挂单都会标注是否接受 escrow；担保费通常由买方承担，\"escrow+\" 表示卖方同意走担保。",
-  "example": "Escrow+ / ESCROW GROSS",
-  "ambiguity": "escrow 是房地产与跨境贸易的正规金融安排，本身中性。",
+  "example": "Escrow+ / Escrow deal",
+  "ambiguity": "escrow 是房地产与跨境贸易的正规金融安排，本身中性；账号交易里的用法就是字面的第三方担保，单独命中零判别力，需与账号挂单、escrow+、担保人代号或担保费等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "anto",
    "baohiem",
@@ -348,7 +348,7 @@
    "zoudanbao",
    "zouyu"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -363,8 +363,8 @@
   "lang": "en",
   "definition": "担保人角色，由在社群中有信誉的特定账号承担资金暂存与仲裁。",
   "mechanism": "担保服务已人格化、品牌化：广告以担保人代号加报价的形式标注（如 \"Trustee+: 110\"），不同担保人对应不同费率与额度上限。这使担保人本身成为生态里的关键节点，也是情报侧绘制团伙结构的切入点。",
-  "example": "Trustee+ (110) / Escrow+ gross or banker",
-  "ambiguity": "trustee 在法律与金融语境指受托人，是正规术语。",
+  "example": "Trustee+ (110) / Escrow+ or banker",
+  "ambiguity": "trustee 在法律与金融语境指受托人，是正规术语，guarantor 同样是字面说法；交易群里指替双方暂存资金、居间仲裁的担保人，仍是字面义的延伸，单独命中零判别力，需与账号挂单、Trustee+ 标注、担保费率等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "anto",
    "baohiem",
@@ -381,7 +381,7 @@
    "trunggian",
    "zoudanbao"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -428,7 +428,7 @@
   "definition": "指数据或账号首次流出、未被他人使用过。",
   "mechanism": "对应中文的\"一手\"：新鲜度直接决定成功率与价格，因为被多次转手的卡料与凭证大概率已失效或已被风控标记。",
   "example": "Fresh & New SSN / FRESH SELLER",
-  "ambiguity": "英文日常词，食品、内容等语境大量使用。",
+  "ambiguity": "英文日常词，食品、内容等语境大量使用；作「首次流出、未被使用」讲也是字面义（fresh account 即新号），别名 new、first hand 同理，单独命中零判别力，需与 SSN、卡料、账号出售等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "cvv",
    "liao",
@@ -436,7 +436,7 @@
    "uncheck_vi",
    "yishou"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -452,7 +452,7 @@
   "definition": "指一套当前仍然有效的具体手法，作为商品或教程出售。",
   "mechanism": "\"method\" 的价值完全取决于时效：平台一旦修补即失效，因此广告以 \"working\"\"tested\" 强调当前可用，并按平台分类命名。社群对 method 的讨论热度可作为对应平台风控缺口的预警信号。",
   "example": "UNBAN METHOD / Tested 100 percent working",
-  "ambiguity": "英文通用词，技术文档中指方法、函数。",
+  "ambiguity": "英文通用词，技术文档中指方法、函数；作「出售的手法或教程」讲也是字面义，单独命中零判别力，需与 working、tested、unban、refund 等限定词或报价共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "50on",
    "chenglv",
@@ -480,7 +480,7 @@
    "waigua",
    "zhaoxuetu"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -496,6 +496,7 @@
   "definition": "印尼语\"走私人渠道\"的缩写，即私聊联系，等同于中文的\"d\"。",
   "mechanism": "交易在公开群发布、成交转私聊；同时衍生出固定的防骗提示——\"管理员绝不会主动私聊\"，用于对抗冒充管理员的骗局。",
   "example": "MINAT JAPRI ADMIN / Admin TIDAK AKAN japri duluan",
+  "ambiguity": "japri（jalur pribadi）是印尼网络日常缩写，等同 PM / DM，网购、社群与客服都这样用，单独命中零判别力；需与交易群公告、管理员防骗提示、账号或工具出售共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "d",
    "garansi",
@@ -505,7 +506,7 @@
    "penipuan",
    "shuangxiang"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -521,6 +522,7 @@
   "definition": "印尼语\"保修\"，指卖家对所售账号或工具承诺的有效期保障。",
   "mechanism": "账号类商品存在被平台找回或封禁的风险，卖家以\"保修一个月\"\"保登录\"降低买方顾虑；保修期长短是定价因素，也反映卖家对该账号存活期的预期。",
   "example": "Akun kami garansi 1 bulan",
+  "ambiguity": "garansi 是印尼语日常词（商品保修），电商与零售中大量出现，单独命中零判别力；需与账号或工具出售、garansi login、按保修期定价等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "baox",
    "japri",
@@ -531,7 +533,7 @@
    "readymade",
    "rffrozen_tl"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -547,7 +549,7 @@
   "definition": "印尼语\"诈骗\"，在交易群中作为防骗警示反复出现。",
   "mechanism": "与中文的\"不走担保全是骗\"同构：群公告列出唯一可信的管理员账号，并声明\"除上述名单外均为诈骗\"。这类警示的普遍存在，说明生态内部的二次诈骗同样高发。",
   "example": "Selain nama di atas = PENIPUAN",
-  "ambiguity": "印尼语日常词，新闻与维权讨论中大量使用。",
+  "ambiguity": "印尼语日常词，新闻与维权讨论中大量使用，单独命中零判别力；作为信号要看群公告格式（列出唯一可信的管理员名单，再声明名单之外皆为 penipuan）以及与账号、工具交易的共现，属字面日常词而非语义偏移黑话。",
   "related": [
    "baohiem",
    "garansi",
@@ -559,7 +561,7 @@
    "trustee",
    "zoudanbao"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -574,6 +576,7 @@
   "definition": "越南语\"中间人\"，即担保交易的第三方。",
   "mechanism": "与 escrow、走担保同角色；越南语圈的特点是把中间人费用制度化为入群门槛——\"交了中间人费\"的成员才被允许在群内交易。",
   "example": "Nhóm không cho bán CC ngoài những người đóng trung gian",
+  "ambiguity": "trung gian 是越南语日常词（中间、中介），房产、商务中介都这样说，单独命中零判别力；需与 CC、账号交易群、đóng trung gian（交中间人费）等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "baohiem",
    "ccv_vi",
@@ -583,7 +586,7 @@
    "trustee",
    "zoudanbao"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -734,6 +737,7 @@
    "booker",
    "bulk_tl",
    "capped_tl",
+   "checkout_vi",
    "cod",
    "cof_tl",
    "gc_tl"

@@ -613,7 +613,7 @@
   "definition": "未启用 3-D Secure（Verified by Visa 等）持卡人验证的支付卡，是盗刷的优选标的。",
   "mechanism": "启用 3DS 的卡在支付时会向持卡人下发验证，盗刷者无法完成；因此卡料按是否 non-VBV 分级，non-VBV 溢价明显。该标签直接反映发卡行的验证策略被当作筛选维度。",
   "example": "NON VBV BIN + CC",
-  "ambiguity": "VBV 是支付行业标准术语，技术与合规文档中常见。",
+  "ambiguity": "VBV 是支付行业标准术语，技术与合规文档中常见；non-VBV 是字面的技术说法（未启用 VBV / 3DS 验证），单独命中无法区分正常的支付技术讨论与卡料交易，需与 CC、BIN、cvv 等卡料报价共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "1x1",
    "bin",
@@ -634,7 +634,7 @@
    "uncheck_vi",
    "viradadesaldo"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -684,6 +684,7 @@
   "definition": "美国社会安全号；与出生日期、驾照号、雇主识别号一同构成美国身份要素数据。",
   "mechanism": "对应中文语境的\"四要素\"：是开户、申贷、注册平台与通过核验的身份原料；\"fresh SSN\" 强调首次流出、未被使用。EIN 与 LLC 资料则用于以企业身份开户。",
   "example": "Fresh & New SSN / DL With SSN Available",
+  "ambiguity": "SSN、DOB、DL、EIN、Tax ID 都是美国身份与税务资料的标准缩写，政务、人事、金融表单中大量出现；作为被交易的数据类型名，本身不是黑话，按「纯平台/商品名不立条」的口径只作语境共现信号，单独命中零判别力，需与 fresh、出售报价、成套身份资料等共现。EIN、DL 这类短缩写还会误配到被断行拆开的其他单词，须核对上下文。",
   "related": [
    "bantuoguan",
    "cvv",
@@ -693,7 +694,7 @@
    "liao",
    "siyaosu"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -711,7 +712,7 @@
   "definition": "代理服务，用于把操作流量伪装成来自特定地区的住宅或移动网络。",
   "mechanism": "盗刷与账号接管的必备配套：平台会比对 IP 归属与持卡人地址，住宅代理与移动网络出口比机房 IP 更难被风控识别；按地区、时长与是否独享计价。",
   "example": "Residential Ip Proxy Socks 5 (1 Month) Static Ip",
-  "ambiguity": "SOCKS5 与住宅代理是正规网络产品，企业采集与跨境访问均合法使用。",
+  "ambiguity": "SOCKS5 与住宅代理是正规网络产品，企业采集与跨境访问均合法使用；作为协议与商品名本身不是黑话，按「纯平台/商品名不立条」的口径只作语境共现信号，单独命中零判别力，需与 bank logs、cvv、防关联、按持卡人地区选 IP 等共现。",
   "related": [
    "banklogs",
    "checkout_vi",
@@ -723,7 +724,7 @@
    "rouji",
    "shebeizhiwen"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -738,6 +739,7 @@
   "definition": "隐藏式远程桌面，在受害者机器上开启不可见的会话进行操作。",
   "mechanism": "因为操作发生在受害者本机，设备指纹、IP 与浏览器环境天然一致，可绕过基于环境比对的风控；常与 bank logs 打包出售。",
   "example": "WTS US Logs / US HVNC",
+  "ambiguity": "HVNC 是远控木马功能的技术名称，字面即隐藏式 VNC，安全研究与威胁情报文章中同样常见，单独命中无法区分技术讨论与出售；需与 logs 打包、WTS、报价等共现，属字面技术名而非语义偏移黑话。",
   "related": [
    "banklogs",
    "diaoyu",
@@ -746,7 +748,7 @@
    "rouji",
    "socks5"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -790,6 +792,7 @@
   "definition": "指尚未验活的卡料，买方自行承担其中失效卡的比例。",
   "mechanism": "卡料按是否验活分档：已验活（live）单价高、成功率高；未验活（uncheck）便宜但需自行筛选，因此配套出现查卡工具与查卡服务。",
   "example": "CCV NON UNCHECK",
+  "ambiguity": "uncheck 在界面与开发语境里是「取消勾选」，作「未验活」讲是 unchecked 的字面义，chưa check（还没查）同样是字面说法，单独命中零判别力；需与 CCV、CCN、live、查卡工具等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "ccv_vi",
    "checkout_vi",
@@ -797,7 +800,7 @@
    "fresh",
    "nonvbv"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },

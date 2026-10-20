@@ -923,7 +923,7 @@
   "definition": "以服务形式代客户向电商平台申请退款，同时保留商品。",
   "mechanism": "对应中文的\"仅退款\"滥用与\"恶意索赔\"，但在英文圈已高度服务化：按订单金额抽成，按平台分类提供不同\"method\"，并以\"全额退\"作为卖点。平台侧表现为售后成本与退款欺诈率上升。",
   "example": "Refund al 100% / method wa refund",
-  "ambiguity": "退款是正常的消费者权利，判定须看是否以服务形式批量代办并抽成。",
+  "ambiguity": "退款是正常的消费者权利，refunding、refund service 都是字面说法，单独命中零判别力；判定须看是否以服务形式批量代办并抽成，需与按订单金额抽成、按平台分类的 method 报价等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "1x1",
    "cashout",
@@ -941,7 +941,7 @@
    "viradadesaldo",
    "yipeishi"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -965,10 +965,10 @@
    "remap",
    "smmpanel"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1",
-  "ambiguity": "「unban」是英文普通词，游戏与社群的正常讨论里常见（如某游戏在某国解禁）。本义指账号解封服务，需与报价、账号交易语境共现。"
+  "ambiguity": "「unban」是英文普通词，游戏与社群的正常讨论里常见（如某游戏在某国解禁），作「账号解封服务」讲也是字面义，单独命中零判别力；需与 method、报价、账号交易语境共现，属生态交易词而非语义偏移黑话。"
  },
  {
   "id": "loot",
@@ -1008,9 +1008,10 @@
   "definition": "越南语圈对\"用盗刷卡料代为下单\"服务的称法。",
   "mechanism": "等同于中文的\"撸货\"与英文的 carding：服务方用卡料在跨境电商完成下单，买方只需提供收货地址并支付商品价的一定比例；\"不压单\"（không ngâm đơn）即承诺不拖延发货，是该服务的主要竞争点。",
   "example": "TÌM CHECKOUT AMZ/WM uy tín không ngâm đơn",
-  "ambiguity": "checkout 是电商结算的标准词，正常购物与开发讨论中极常见。",
+  "ambiguity": "checkout 是电商结算的标准词，正常购物与开发讨论中极常见，作「代人下单」讲也是字面延伸，单独命中零判别力；需与 CCV、AMZ/WM、không ngâm đơn（不压单）、按商品价比例收费等共现，属生态交易词而非语义偏移黑话。菲律宾折扣账号圈的 checkout / CO 指用新人折扣账号代人结账（见 CO 词条），与这里的盗刷代下单是两回事，不要混读。",
   "related": [
    "ccv_vi",
+   "co_tl",
    "daidiao",
    "ludhuo",
    "miaobo",
@@ -1021,7 +1022,7 @@
    "yuliao",
    "zhuanzhangmoniqi"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -1035,8 +1036,9 @@
   "lang": "id",
   "region": "印尼网约车与外卖生态",
   "definition": "印尼语\"虚假订单\"，由骑手或商户自行制造的不存在的订单。",
-  "mechanism": "等同于中文的\"刷单\"\"补单\"：骑手刷单量换取平台冲单奖励，商户刷单量换取排名与补贴；与改版客户端、虚拟定位配合可低成语料量生成。",
+  "mechanism": "等同于中文的\"刷单\"\"补单\"：骑手刷单量换取平台冲单奖励，商户刷单量换取排名与补贴；与改版客户端、虚拟定位配合可低成本批量生成。",
   "example": "Orderan Fiktif",
+  "ambiguity": "orderan fiktif 是印尼语的字面说法（虚假订单），新闻、平台公告与司机社群讨论刷单时都这样写，单独命中零判别力；需与改版客户端、虚拟定位、冲单奖励等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "budan",
    "dingwei",
@@ -1045,7 +1047,7 @@
    "shuadan",
    "zuodan"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },

@@ -241,6 +241,7 @@
   "definition": "印尼语\"网约车骑手的作战装备\"，指为平台骑手配套出售的作弊工具包。",
   "mechanism": "是结构最完整的区域性生态：工具包通常打包改版客户端、虚拟定位、订单筛选与反检测模块，按月订阅或按版本计价，并以\"价目表\"形式公开挂出。平台侧表现为派单公平性被破坏、优质订单被工具用户截走。",
   "example": "LIST HARGA MOD ALAT TEMPUR OJOL",
+  "ambiguity": "alat tempur 字面是「作战装备」，印尼语里常拿来比喻干某件事的全套装备（化妆、游戏、跑单都这么说），并不专指作弊工具，单独命中零判别力；需与 mod、fake GPS、sortir、价目表（list harga）等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "amannotif",
    "dingwei",
@@ -251,7 +252,7 @@
    "setbid",
    "waigua"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -268,8 +269,8 @@
   "region": "印尼网约车与外卖生态",
   "definition": "被二次修改的平台客户端，内置原版没有的自动化与绕过功能。",
   "mechanism": "骑手端改版客户端可自动筛单、改定位、屏蔽低价订单；版本号按平台更新迭代，\"terbaru\"（最新）是关键卖点，因为平台每次更新都会使旧版失效。",
-  "example": "MOD SHOPEEFOOD TERBARU / OPEN REGIST MOD",
-  "ambiguity": "\"mod\" 在游戏社区泛指模组，在论坛中也指版主，是高误报词。",
+  "example": "MOD 〔某生活服务平台〕 TERBARU / OPEN REGIST MOD",
+  "ambiguity": "\"mod\" 在游戏社区泛指模组，在论坛中也指版主，是高误报词；mod apk 即被修改的安装包，是字面说法，单独命中零判别力，需与网约车或外卖平台名、terbaru、sortir、fake GPS 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "alattempur",
    "amannotif",
@@ -287,7 +288,7 @@
    "shebeizhiwen",
    "waigua"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -305,6 +306,7 @@
   "definition": "改版骑手客户端中的订单筛选功能，可按距离、价格自动接单或屏蔽订单。",
   "mechanism": "平台派单假定骑手不能预先筛选，\"setbid\"\"sortir\" 打破这一假定：按设定的距离半径与收益阈值自动抢下优质单、拒掉差单，且不触发拒单惩罚（\"sortir tanpa suspen\"，筛单不被停号）。",
   "example": "SetBid Radius - Atur jarak orderan / SORTIR TANPA SUSPEN",
+  "ambiguity": "sortir 是印尼语日常词（筛选），单独命中零判别力；setbid、winbid 是改版客户端里的功能名，字面即设定接单、抢单（bid），属字面说法而非语义偏移黑话，需与 mod、radius（距离半径）、tanpa suspen（不被停号）等共现判定。",
   "related": [
    "alattempur",
    "amannotif",
@@ -314,7 +316,7 @@
    "orderanfiktif",
    "waigua"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -331,7 +333,7 @@
   "definition": "印尼语\"通知安全\"，指工具已处理平台的检测与告警，使用后不会收到风险提示或被停号。",
   "mechanism": "\"aman\"（安全）是该生态最核心的卖点词，衡量工具的反检测能力；广告常附带适配的客户端版本代号，说明反检测是随平台更新持续对抗的。",
   "example": "AMAN NOTIF FAKE GPS / SORTIR TANPA SUSPEN",
-  "ambiguity": "\"aman\" 在印尼语中是极常用的日常词（安全、放心）。",
+  "ambiguity": "\"aman\" 在印尼语中是极常用的日常词（安全、放心），aman notif、anti suspen 也都是字面说法（不弹警告、不被停号），单独命中零判别力；需与 fake GPS、mod、sortir 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "alattempur",
    "fangfengkong",
@@ -340,7 +342,7 @@
    "podun",
    "setbid"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },

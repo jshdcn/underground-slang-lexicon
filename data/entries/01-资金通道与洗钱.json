@@ -828,7 +828,7 @@
   "definition": "把盗刷额度、被盗账户余额或赃物变现为可支配资金的动作。",
   "mechanism": "是英文圈黑产链条的终点环节，对应中文的\"套现\"与\"回U\"；报价常以可提现金额或分成比例表示，具体路径依标的而异（转账、礼品卡、加密货币、线下取现）。",
   "example": "70K CASHOUT",
-  "ambiguity": "cash out 在英文里是日常用词（兑现、套现、离场），金融与游戏语境中大量出现；绝大多数提及属正常用法。须结合 logs、drop、transfer 等共现词判定。",
+  "ambiguity": "cash out 在英文里是日常用词（兑现、套现、离场），金融与游戏语境中大量出现，绝大多数提及属正常用法，单独命中零判别力；须结合 logs、drop、transfer 等共现词判定，属生态交易词而非语义偏移黑话。",
   "related": [
    "1x1",
    "atmquxian",
@@ -853,7 +853,7 @@
    "viradadesaldo",
    "zhuanka"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1"
  },
@@ -892,7 +892,8 @@
   "lang": "en",
   "definition": "已完成实名核验的欧洲银行与电子钱包账户，按所属国别与机构定价出售。",
   "mechanism": "跨境赃款需要能接收欧元电汇的落地账户，已过核验的新型银行账户因此形成稳定市场；广告以国别代码加 IBAN 标注规格，并配合担保中介成交。注意：被交易的是被冒用身份开立或被转让的个人账户，不代表相关金融机构本身存在问题。",
-  "example": "DE IBAN / wise iban",
+  "example": "DE IBAN / 〔某支付平台〕 iban",
+  "ambiguity": "IBAN 是国际银行账号的标准格式，跨境汇款、收薪与开户等正常金融语境大量出现，verified bank、EU bank account 也都是字面说法，单独命中零判别力；需与按国别报价出售、escrow 担保、KYC 代认证等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "cashout",
    "drop",
@@ -909,7 +910,7 @@
    "shoukuanqianyi",
    "ushang"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -924,7 +925,7 @@
   "definition": "预付礼品卡，因可匿名流转且易核销，是赃款变现的常用载体。",
   "mechanism": "盗刷额度先换成礼品卡，再折价转卖或在商户核销，切断资金与原交易的关联；对应中文语境的\"礼品卡承兑\"与\"核销\"。",
   "example": "【承兑类】：礼品卡",
-  "ambiguity": "在菲律宾等地的网络买卖社群中，GC 通常是 group chat（群聊）的缩写，与礼品卡无关，见 GC 词条。",
+  "ambiguity": "礼品卡是正常零售商品，购物 App 的钱包与优惠栏目里就有 Gift Card 入口，正常提及占绝大多数；按「纯平台/商品名不立条」的口径只作语境共现信号，单独命中零判别力，需与 cashout、承兑、核销、折价回收报价等共现。另外，在菲律宾等地的网络买卖社群中，GC 通常是 group chat（群聊）的缩写，与礼品卡无关，见 GC 词条。",
   "related": [
    "abbrev_en",
    "cashout",
@@ -934,7 +935,7 @@
    "huiu",
    "manchong"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.1"
  },
@@ -950,6 +951,7 @@
   "definition": "越南语\"出租银行账户\"，按月或按笔把本人账户出租给他人收款。",
   "mechanism": "与中文的\"车队\"\"一类卡\"同类：出租方提供实名账户收取租金，承租方用于过账；\"bank US\" 指出租的是美国银行账户，用于承接跨境资金。",
   "example": "Cho thuê bank US",
+  "ambiguity": "字面说法：cho thuê 是越南语日常的「出租」（如 cho thuê nhà 房屋出租），bank 即银行账户，黑产属性在出租的对象与用途上，不在词本身；cho thuê、bank 单独命中零判别力，需与按月或按笔的租金、bank US 这类国别规格、收款过账用途共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "chedui",
    "dongka",
@@ -960,7 +962,7 @@
    "yileika",
    "zhanghutaojian"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -976,6 +978,7 @@
   "definition": "印尼语\"代开银行账户服务\"，提供可用于收款的实名账户与电子钱包。",
   "mechanism": "为跑分、诈骗收款与刷单提供落地账户；广告常并列银行账户、电子钱包与商户收款码三类通道，并以\"aman\"（安全）标榜不易被冻结。",
   "example": "JASA PEMBUATAN REKENING / REKENING • E-WALLET • QRIS MERCHANT",
+  "ambiguity": "字面说法：jasa（服务）、pembuatan（办理）、rekening（银行账户）都是印尼语日常词，单词单独命中零判别力；需与 rekening aman（标榜不易被冻结）、电子钱包与商户收款码打包出售等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "amannotif",
    "drop",
@@ -983,7 +986,7 @@
    "juhema",
    "paofen"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
