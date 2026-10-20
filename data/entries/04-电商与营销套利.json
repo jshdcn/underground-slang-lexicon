@@ -1061,15 +1061,16 @@
   "lang": "tl",
   "region": "菲律宾转卖圈",
   "definition": "账号内附带的平台积分，作为折扣账号的附加规格影响定价。",
-  "mechanism": "积分可直接抵扣消费，因此\"with pts\"的账号溢价、\"no pts\"折价；与折扣封顶额、是否交付登录权一起构成该市场的标准报价三要素。",
+  "mechanism": "积分可直接抵扣消费，因此\"with pts\"的账号溢价、\"no pts\"折价；与折扣档及封顶额（如 60% 428c）、是否交付绑定邮箱或手机号（with / no access）一起构成该市场的标准报价三要素，整号出售和代结账的报价都按这套规格写。",
   "example": "FOR SALE ACCOUNT 428cap with pts / 120 no pts",
+  "ambiguity": "pts / points 是积分的通用缩写，会员、游戏、评分语境都大量出现，单独命中零判别力；需与折扣规格（428c、205c）、access 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "capped_tl",
    "huishou",
    "noaccess_tl",
    "rffrozen_tl"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -4105,7 +4106,7 @@
   "lang": "tl",
   "region": "菲律宾转卖圈",
   "definition": "新人折扣券账号的规格写法：百分比是券的减免比例，数字加 c（capped）是单笔最高减免额，如「60% 428c」即减六成、最多减 428 比索。",
-  "mechanism": "菲律宾折扣账号转卖圈的标准报价单位：同一平台的新人券按减免比例与封顶额分成多档（如 60% 428c、60% 205c、50% 295c），再叠加是否带积分（pts）、是否交付登录权（no access / with access）定价；账号或整号出售、或按次出租、或由 booker 代人结账并收取 COF。此前版本把它释作信用或先买后付额度的套现，与语境不符：同一封顶额对应多个折扣档、成交价远低于封顶额，且常与 voucher、VC 等词同现。",
+  "mechanism": "菲律宾折扣账号转卖圈的标准报价单位：同一平台的新人券按减免比例与封顶额分成多档（如 60% 428c、60% 205c、50% 295c），再叠加是否带积分（pts）、是否交付绑定邮箱或手机号（no access / with access）定价；账号或整号出售、或按次出租、或由 booker 代人结账并收取 COF。此前版本把它释作信用或先买后付额度的套现，与语境不符：同一封顶额对应多个折扣档、成交价远低于封顶额，且常与 voucher、VC 等词同现。",
   "example": "60% OFF • 428c ｜ FS 60% 205 capped, no access",
   "ambiguity": "「capped」在英文中泛指设上限，资费、利率与技术讨论都常见；「428c」「205c」这类数字加 c 的写法才是该圈子特有的规格标记，需与折扣比例、pts、access 等规格词共现。",
   "related": [

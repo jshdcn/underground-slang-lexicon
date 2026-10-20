@@ -400,7 +400,7 @@
   "definition": "交易意向缩写：WTS / FS 为出售，WTB / LF 为求购。",
   "mechanism": "对应中文的\"出\"\"收\"，是跨语种通用的挂单前缀，便于在高频刷屏的频道里快速分辨方向；在菲律宾等地的买卖社群中 FS / LF 使用频率高于 WTS / WTB。",
   "example": "WTS KYC / ACCS / FS 60% capped",
-  "ambiguity": "WTS／WTB／FS／LF 在游戏交易、收藏品与二手社群中是通用缩写，正常使用占绝大多数；须结合标的物判定，缩写本身没有判别力。",
+  "ambiguity": "WTS／WTB／FS／LF 在游戏交易、收藏品与二手社群中是通用缩写，正常使用占绝大多数；须结合标的物判定，缩写本身没有判别力，属生态交易词而非语义偏移黑话。",
   "related": [
    "abbrev_en",
    "bulk_tl",
@@ -412,7 +412,7 @@
    "readymade",
    "zongdai"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "常见",
   "first_seen": "v0.1"
  },
@@ -624,9 +624,11 @@
   "definition": "卖家承诺：若所售账号在使用中被平台冻结或要求二次核验，则退款。",
   "mechanism": "折扣账号交易的风险分担条款，与\"保修\"同类；条款里列出的触发条件（frozen / verified / confirming）正好反映了平台风控的三个拦截动作。",
   "example": "RF IF FROZEN/CONFIRMING/VERIFIED",
+  "ambiguity": "RF 作为缩写歧义很大（射频等），单独命中零判别力；「RF if frozen / verified / confirming」整句是字面的退款条款，需与折扣规格共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "abbrev_en",
    "capped_tl",
+   "frozen",
    "garansi",
    "mianche",
    "noaccess_tl",
@@ -634,7 +636,7 @@
    "pts_tl",
    "sureprocessing_tl"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -647,9 +649,10 @@
   "category": "交易与担保行话",
   "lang": "tl",
   "region": "菲律宾转卖圈",
-  "definition": "卖家对订单必定通过平台审核的承诺。",
-  "mechanism": "折扣账号代下单最大的不确定性是订单在支付或风控环节被拦下，\"sure processing\" 即针对这一点的保证；与\"no elsa\"（不会被冻结）配套使用。",
+  "definition": "卖家承诺用该账号下的订单能正常进入「处理中」（processing）状态，不会被平台拦下。",
+  "mechanism": "折扣账号交易最大的不确定性是订单在风控环节被拦下（如卡在 confirming），整号出售（accs are tested / sure processing）与代结账（open for CO）都拿它作卖点；有的卖家只接代结账（for co only），理由就是确保订单进入 processing、不卡在 confirming。常与 no elsa（不会被冻结）、RF if frozen 等条款并列。",
   "example": "100% sure processing, no elsa",
+  "ambiguity": "「sure processing」是字面说法（订单一定能进入处理中），processing 本身是订单状态的通用词，单独命中零判别力；需与折扣规格（428c、205c）、open for CO、FS 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "capped_tl",
    "mianche",
@@ -657,7 +660,7 @@
    "noelsa",
    "rffrozen_tl"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -670,9 +673,10 @@
   "category": "交易与担保行话",
   "lang": "tl",
   "region": "菲律宾转卖圈",
-  "definition": "交易规格，表示买方只获得用该账号折扣下单的结果，不获得账号本身的登录权限。",
-  "mechanism": "卖方保留账号控制权、代为下单，既避免账号被买方转卖，也便于复用同一账号多次代人下单；\"with access\" 则溢价出售登录权。该规格区分直接体现了账号作为可重复使用资产的属性。",
-  "example": "FS 60% 205 capped, no access",
+  "definition": "整号出售的交割规格：买方拿到能直接在 App 或浏览器登录的账号，但拿不到账号绑定的邮箱或手机号，也不能换绑；「with access」则交付绑定邮箱或改绑到买方号码，售价更高。",
+  "mechanism": "access 指账号绑定的邮箱或手机号这条验证通道：no access 档仍由卖方掌握，买方只能在已登录的 App 或浏览器里使用、不能换绑，所以同档价格低一截；with access 档交付绑定邮箱或改绑到买方号码，买方才拿到账号的完整控制权。此前版本释作「卖方保留账号、代为下单，买方不获登录权」，与语境不符：标 no access 的账号同样写明可在 App 或浏览器直接登录，代人结账另有 open for CO 的说法。",
+  "example": "60% (428C) — no access — can't bind email",
+  "ambiguity": "「no access」在技术与权限语境里大量出现，单独命中零判别力；需与折扣规格（428c、205c）、pts、FS 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "bulk_tl",
    "capped_tl",
@@ -681,7 +685,7 @@
    "rffrozen_tl",
    "sureprocessing_tl"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -695,9 +699,9 @@
   "lang": "tl",
   "region": "菲律宾转卖圈",
   "definition": "在菲律宾网络买卖社群中是 group chat（群聊）的缩写，指承接交易的私密群。",
-  "mechanism": "公开帖只发规格与报价，实际交易、凭证展示与拼单协调都在 GC 内完成，与中文语境的\"公群/私群\"分层一致。",
+  "mechanism": "公开帖只发规格与报价，「have gc」本身被当作可信度背书（群里有成交反馈与凭证），放出结账名额、接单沟通也在 GC 内完成，与中文语境的\"公群/私群\"分层一致。",
   "example": "WITH GC ｜ DM sa magpapa add sa gc",
-  "ambiguity": "**同一缩写在英文黑卡圈指 gift card（礼品卡）**，语义完全不同。判定必须结合语种与上下文，这是跨语种检索最典型的陷阱之一。",
+  "ambiguity": "**同一缩写在英文黑卡圈指 gift card（礼品卡）**，语义完全不同。判定必须结合语种与上下文，这是跨语种检索最典型的陷阱之一。作群聊讲时也是菲律宾网络日常的通用缩写，没有语义偏移，单独命中零判别力；折扣账号报价里数字直接带 gc 的写法（如「120gc」）是价格标注，不作群聊解。",
   "related": [
    "abbrev_en",
    "co_tl",
@@ -707,7 +711,7 @@
    "japri",
    "mache"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -730,6 +734,7 @@
    "booker",
    "bulk_tl",
    "capped_tl",
+   "cod",
    "cof_tl",
    "gc_tl"
   ],
@@ -1384,10 +1389,10 @@
    "BOOKER"
   ],
   "category": "交易与担保行话",
-  "definition": "持有大额折扣账号、代人下单结账的人，也指可结账的折扣账号本身。",
-  "mechanism": "折扣账号套利的执行角色：账号按折扣率、额度上限与积分分层定价出租或出售，booker 用其代客结账赚取差价。",
-  "example": "可结账账号，折扣六成，额度封顶四百二十八",
-  "ambiguity": "英文常用词（预订者、装订者），单独出现不构成信号。",
+  "definition": "手握新人折扣券账号、替买家结账下单并按单收取 COF 的人。",
+  "mechanism": "折扣账号代下的执行角色：账号按折扣档、减免封顶额与积分分级（如 60% 428c with pts），买家备好购物车交给 booker 结账（open for CO），另付 COF；同一圈子里账号也整号出售（FS）或按次出租（for rent）。此前版本称其也指可结账的折扣账号本身，未见这种用法。",
+  "example": "LF: Booker · 428c or 205c with pts · can co today and CO first",
+  "ambiguity": "英文常用词（预订者、演出经纪），「代人下单的人」是其字面延伸，没有语义偏移，单独出现不构成信号；需与折扣规格（428c、205c）、open for CO、COF 共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "bulk_tl",
    "capped_tl",
@@ -1397,7 +1402,7 @@
    "forrent",
    "frozen"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "较常见",
   "first_seen": "v0.3"
  },
@@ -1410,15 +1415,16 @@
    "cod"
   ],
   "category": "交易与担保行话",
-  "definition": "cash on delivery 货到付款；账号交易语境中指支持货到付款的账号属性。",
-  "mechanism": "降低买家垫资风险的卖点：「COD 且包邮」的账号更易出手，常与折扣账号、冻结包换条款打包出现。",
+  "definition": "cash on delivery，货到付款；折扣账号交易里指订单可以货到付款：代结账时 booker 下单选货到付款、买家收货再付货款，整号出售时指该账号能用货到付款结账。",
+  "mechanism": "降低买家先付款被骗风险的卖点：代结账帖里常与「CO first」（先结账后付款）、包邮（free sf）并列，整号出售帖里与 pts、RF if frozen 等规格一起列出。",
   "example": "cod & free sf",
-  "ambiguity": "零售与物流行业的标准术语，正常语境占多数。",
+  "ambiguity": "零售与物流行业的标准术语，正常语境占绝大多数，单独命中零判别力；需与折扣规格（428c、205c）、open for CO、COF 等共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "booker",
-   "bulk_tl"
+   "bulk_tl",
+   "co_tl"
   ],
-  "confidence": "medium",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.3"
  },
@@ -1432,16 +1438,18 @@
   ],
   "category": "交易与担保行话",
   "definition": "账号被平台冻结的状态；「replace if frozen」即冻结包换的售后承诺。",
-  "mechanism": "账号交易的质保条款核心：冻结风险由卖家承担以促成批量交易，与「一手」卖家的质保话术同源。",
+  "mechanism": "账号交易的质保条款核心：refund / replace if frozen 把冻结风险转给卖家，常与 verified、confirming 并列（见 RF if frozen）。冻结的折扣账号本身也有去处：按次出租给人查价（rent frozen account，圈内也写作 rent elsa），也有作为批量订单赠品的。",
   "example": "replace if frozen",
-  "ambiguity": "英文常用词（冰冻、冻结），需与账号交易语境共现。",
+  "ambiguity": "英文常用词（冰冻、冷冻食品、资金冻结），单独命中零判别力；需与账号交易语境（refund / replace if frozen、折扣规格）共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "booker",
    "forrent",
    "guale",
+   "noelsa",
+   "rffrozen_tl",
    "yishou"
   ],
-  "confidence": "medium",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.3"
  },
@@ -1525,9 +1533,10 @@
   "ambiguity": "英文日常租赁用语（房屋、车辆）极为常见，单词本身零判别力——黑产属性在宾语（折扣/冻结账号）不在词；仅「for rent + 账号 + 限租人数」组合模式构成信号，属生态交易词而非语义偏移黑话。",
   "related": [
    "booker",
-   "frozen",
+   "bulk_tl",
    "capped_tl",
-   "bulk_tl"
+   "frozen",
+   "noelsa"
   ],
   "confidence": "to-verify",
   "frequency": "少见",
