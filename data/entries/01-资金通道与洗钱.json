@@ -705,7 +705,6 @@
   "example": "有各种商家码，有需要套现的吗",
   "ambiguity": "用户讨论信用卡取现、权益转让时也会用到该词。",
   "related": [
-   "capped_tl",
    "cashout",
    "daifu",
    "daihuan",
@@ -723,7 +722,6 @@
    "lingshoufufang",
    "lufangzi",
    "manchong",
-   "pts_tl",
    "shenghuojiaofei",
    "shouxusuiche",
    "tie",
@@ -835,7 +833,6 @@
    "1x1",
    "atmquxian",
    "chk",
-   "co_tl",
    "consultaveis",
    "drop",
    "dumps",
@@ -962,44 +959,6 @@
    "shouka",
    "yileika",
    "zhanghutaojian"
-  ],
-  "confidence": "high",
-  "frequency": "少见",
-  "first_seen": "v0.1"
- },
- {
-  "id": "capped_tl",
-  "term": "capped",
-  "aka": [
-   "cap",
-   "428c",
-   "205 capped"
-  ],
-  "category": "资金通道与洗钱",
-  "lang": "tl",
-  "region": "菲律宾转卖圈",
-  "definition": "指账号可用的信用或先买后付额度上限，账号按该额度的百分比折价出售。",
-  "mechanism": "是菲律宾语境下的额度套现：卖方给出额度数值与折扣率（如 428 的额度按六折出售），买方用该额度下单消费，卖方套得现金。常附带是否含积分、是否交账号权限等规格。",
-  "example": "FS 60% 205 capped, no access / 428C 60% no points, no access",
-  "ambiguity": "\"capped\" 在英文中泛指设上限，技术与资费讨论常见。",
-  "related": [
-   "booker",
-   "bulk_tl",
-   "co_tl",
-   "daihuan",
-   "forrent",
-   "huangniu",
-   "jiesuanka",
-   "noaccess_tl",
-   "noelsa",
-   "pts_tl",
-   "rffrozen_tl",
-   "sureprocessing_tl",
-   "taoxian",
-   "tie",
-   "wts",
-   "xianyonghoufu",
-   "yanzhenghao"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -1277,7 +1236,6 @@
   "example": "关键词：先用后付套现",
   "ambiguity": "先用后付是主流电商与支付平台的正常功能，用户讨论与投诉占绝大多数。",
   "related": [
-   "capped_tl",
    "daihuan",
    "daikuanshuju",
    "fancuishou",
@@ -1403,7 +1361,6 @@
   "related": [
    "atmquxian",
    "bangka",
-   "capped_tl",
    "chedui",
    "cunzhenka",
    "daihuan",
@@ -2100,7 +2057,6 @@
   "example": "【某消费信贷产品】代还 ｜ 缺车 代还",
   "ambiguity": "亲友代为还款、银行的正规代扣都使用同一说法。",
   "related": [
-   "capped_tl",
    "daibaobei",
    "daikuanshuju",
    "daishou",
@@ -2252,7 +2208,6 @@
   "related": [
    "abdenge",
    "bukane",
-   "capped_tl",
    "dashuangwai",
    "gaoping",
    "gue",
@@ -5554,7 +5509,6 @@
   "example": "Drop Nas food plaform familia",
   "related": [
    "50on",
-   "co_tl",
    "comerdegraca",
    "cupim",
    "cvv",

@@ -107,11 +107,12 @@
   "term": "破盾",
   "aka": [
    "破控",
-   "不砍不盾"
+   "不砍不盾",
+   "不盾车"
   ],
   "category": "电商与营销套利",
   "definition": "指平台的风控拦截被绕开或暂时失效，此时可以下单成功。",
-  "mechanism": "“盾”指风控拦截，“砍”指订单被取消；社群中由先行者试单，一旦“破盾”即广播通知他人跟进，是风控强度的实时探测机制。",
+  "mechanism": "“盾”指风控拦截，“砍”指订单被取消；社群中由先行者试单，一旦“破盾”即广播通知他人跟进，是风控强度的实时探测机制。报单里的「不砍不盾」「不盾车」即标注这批链接下单不会被拦截或砍单。",
   "example": "破盾了，速度试试 / 0 点试试破盾",
   "ambiguity": "游戏语境中“破盾”指击破护盾，属常见正常用法。",
   "related": [
@@ -249,11 +250,13 @@
   "aka": [
    "今天行情",
    "参考行情",
-   "色号行情"
+   "色号行情",
+   "行清",
+   "航清"
   ],
   "category": "电商与营销套利",
   "definition": "指某商品在回收市场上的当前收购价，是判断套利空间的另一端价格。",
-  "mechanism": "回收方每日更新“行情”，套利者据此决定下单量；行情按型号、颜色、批次细分，形成准市场化的报价体系。",
+  "mechanism": "回收方每日更新“行情”，套利者据此决定下单量；行情按型号、颜色、批次细分，形成准市场化的报价体系。部分中转群转发报单时会把它改写成同音的「行清」「航清」，以避开对「行情」的关键词检测。",
   "example": "目前行情 / 参考行情",
   "ambiguity": "金融与商品市场语境中“行情”为标准用词，误报率高。",
   "related": [
@@ -276,6 +279,7 @@
    "quanmianzhi",
    "xiankuanhuishou",
    "xiaofeiquan",
+   "xiepin",
    "yuanxiang",
    "zhang",
    "zulinji"
@@ -619,6 +623,7 @@
    "chadan",
    "chaobu",
    "chudan",
+   "fanlu",
    "gufan",
    "hexiao",
    "huangniu",
@@ -695,6 +700,7 @@
   "ambiguity": "绝大多数提及属普通消费者的省钱分享，不宜一律判为黑灰产。",
   "related": [
    "50on",
+   "capped_tl",
    "chaobu",
    "comerdegraca",
    "cupim",
@@ -705,6 +711,7 @@
    "esquema",
    "esquemalindo",
    "fangshui",
+   "fanlu",
    "fuhuo",
    "gaibang",
    "golpe",
@@ -955,6 +962,7 @@
    "dailshiming",
    "jiefeng",
    "method",
+   "remap",
    "smmpanel"
   ],
   "confidence": "high",
@@ -1052,15 +1060,14 @@
   "category": "电商与营销套利",
   "lang": "tl",
   "region": "菲律宾转卖圈",
-  "definition": "账号内附带的平台积分，作为额度账号的附加规格影响定价。",
-  "mechanism": "积分可直接抵扣消费，因此\"with pts\"的账号溢价、\"no pts\"折价；与额度上限、是否交付登录权一起构成该市场的标准报价三要素。",
+  "definition": "账号内附带的平台积分，作为折扣账号的附加规格影响定价。",
+  "mechanism": "积分可直接抵扣消费，因此\"with pts\"的账号溢价、\"no pts\"折价；与折扣封顶额、是否交付登录权一起构成该市场的标准报价三要素。",
   "example": "FOR SALE ACCOUNT 428cap with pts / 120 no pts",
   "related": [
    "capped_tl",
    "huishou",
    "noaccess_tl",
-   "rffrozen_tl",
-   "taoxian"
+   "rffrozen_tl"
   ],
   "confidence": "high",
   "frequency": "少见",
@@ -2171,12 +2178,14 @@
  {
   "id": "fanxin",
   "term": "翻新",
-  "aka": [],
+  "aka": [
+   "内部翻新"
+  ],
   "category": "电商与营销套利",
-  "definition": "把老 ASIN 链接翻新成新品上架",
-  "confidence": "to-verify",
-  "first_seen": "v0.2",
-  "example_note": "尚未取到含该词的可发布用例。",
+  "definition": "把老 ASIN 链接翻新成新品上架。",
+  "mechanism": "常以「内部翻新」的名义与店铺体检、恢复、申诉等项目同列报价，并标注反馈时效，卖点是借平台内部渠道操作；英文圈的对应说法是 Remap。",
+  "example": "一手内部翻新，二十四小时反馈",
+  "ambiguity": "「翻新」的常见义是二手翻新商品与翻新机，消费维权内容里常见。本义指把老链接改头换面重新上架，需与「链接」「ASIN」「上架」等共现。",
   "related": [
    "abdan",
    "budan",
@@ -2193,6 +2202,7 @@
    "kongbao",
    "lianzuo",
    "liuping",
+   "remap",
    "shaitu",
    "shuadan",
    "suocang",
@@ -2204,8 +2214,9 @@
    "zishua",
    "zituizimai"
   ],
+  "confidence": "to-verify",
   "frequency": "较常见",
-  "ambiguity": "「翻新」的常见义是二手翻新商品与翻新机，消费维权内容里常见。本义指把老链接改头换面重新上架，需与「链接」「ASIN」「上架」等共现。"
+  "first_seen": "v0.2"
  },
  {
   "id": "zhiping",
@@ -3826,6 +3837,7 @@
    "fanxin",
    "gaipinpai",
    "neigui",
+   "remap",
    "tijian"
   ],
   "confidence": "to-verify",
@@ -4029,13 +4041,14 @@
   "term": "杭清",
   "aka": [],
   "category": "电商与营销套利",
-  "definition": "带地域前缀的回收行情口径（杭＝杭州），指该地区回收商的清货报价。",
-  "mechanism": "行情报价的地域分层：同一标的在不同地区的回收价不同，报单以「城市简称＋清」标注报价口径，与泛化的行情价并列对照，供参与者比价选出货地。",
+  "definition": "报单里写在到手价之后的回收报价，读音与「行情」相同，较可能是行情的谐音写法。",
+  "mechanism": "出现在「到手 X，杭清 Y」的固定格式里，Y 减到手价即每单利润（如到手 248、杭清 261，一号两单得 26）。同一位置还出现「行清」「航清」，其中「行清」已确认是中转群对「行情」的同音改写；监测语料中未见其他「城市简称＋清」的写法。",
   "example": "到手 143.6，杭清 160.8",
-  "ambiguity": "字面无常见正常含义，需与价格、回收语境共现。",
+  "ambiguity": "字面可读作「杭州清货价」，此前版本即按地域报价收录；但没有其他城市简称加「清」的平行写法，暂按行情的谐音写法理解，仍待更多用例确认。判定需与到手价、回收语境共现。",
   "related": [
    "xingqing",
-   "huishou"
+   "huishou",
+   "xiepin"
   ],
   "confidence": "to-verify",
   "frequency": "少见",
@@ -4054,6 +4067,7 @@
   "ambiguity": "贸易与物流语境「交单」为标准术语（单据交付），需与券码、回收语境共现。",
   "related": [
    "baodan",
+   "fanlu",
    "huishou"
   ],
   "confidence": "to-verify",
@@ -4074,6 +4088,81 @@
   "related": [
    "gouwujin",
    "xingqing"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "capped_tl",
+  "term": "capped",
+  "aka": [
+   "cap",
+   "428c",
+   "205 capped"
+  ],
+  "category": "电商与营销套利",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "新人折扣券账号的规格写法：百分比是券的减免比例，数字加 c（capped）是单笔最高减免额，如「60% 428c」即减六成、最多减 428 比索。",
+  "mechanism": "菲律宾折扣账号转卖圈的标准报价单位：同一平台的新人券按减免比例与封顶额分成多档（如 60% 428c、60% 205c、50% 295c），再叠加是否带积分（pts）、是否交付登录权（no access / with access）定价；账号或整号出售、或按次出租、或由 booker 代人结账并收取 COF。此前版本把它释作信用或先买后付额度的套现，与语境不符：同一封顶额对应多个折扣档、成交价远低于封顶额，且常与 voucher、VC 等词同现。",
+  "example": "60% OFF • 428c ｜ FS 60% 205 capped, no access",
+  "ambiguity": "「capped」在英文中泛指设上限，资费、利率与技术讨论都常见；「428c」「205c」这类数字加 c 的写法才是该圈子特有的规格标记，需与折扣比例、pts、access 等规格词共现。",
+  "related": [
+   "booker",
+   "bulk_tl",
+   "co_tl",
+   "cof_tl",
+   "forrent",
+   "haoyangmao",
+   "huangniu",
+   "noaccess_tl",
+   "noelsa",
+   "pts_tl",
+   "rffrozen_tl",
+   "sureprocessing_tl",
+   "wts",
+   "yanzhenghao"
+  ],
+  "confidence": "to-verify",
+  "frequency": "较常见",
+  "first_seen": "v0.1"
+ },
+ {
+  "id": "remap",
+  "term": "Remap",
+  "aka": [
+   "ASIN Remapping",
+   "Ремап"
+  ],
+  "category": "电商与营销套利",
+  "lang": "en",
+  "definition": "跨境电商卖家灰色服务里对商品 ASIN 的重新映射或重启，把旧链接作为新链接重新上架，对应中文的「翻新」。",
+  "mechanism": "与账号解封、内部截图、品牌开通等项目同列出售，有的报价把它列在内部渠道服务之下；目的与翻新一致，让旧链接以新品身份重新上架。",
+  "example": "ASIN Remapping (restart)",
+  "ambiguity": "remap 在技术语境指重新映射（键位、内存、数据字段），属常见用法；需与 ASIN、卖家服务报价共现。",
+  "related": [
+   "fanxin",
+   "insider",
+   "unban"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "fanlu",
+  "term": "反撸",
+  "aka": [],
+  "category": "电商与营销套利",
+  "definition": "薅到的优惠或收益被平台、回收方反向追回或倒扣的情形，是「撸」的反面。",
+  "mechanism": "出现在羊毛与券码回收社群的提醒里，例如提醒报单时核对面值、活动参与人数过少时容易被反撸；它从套利者视角描述平台风控与交易对手的反制。",
+  "example": "报单注意看面值，报错会反撸",
+  "ambiguity": "「撸」在日常口语另有粗俗义，「反撸」脱离羊毛语境可能指向无关内容；需与报单、免单、返现等语境共现。",
+  "related": [
+   "baodan",
+   "haoyangmao",
+   "jiaodan"
   ],
   "confidence": "to-verify",
   "frequency": "少见",

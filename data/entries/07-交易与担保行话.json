@@ -123,7 +123,6 @@
   "ambiguity": "拼单、团购与投资讨论中属极常见口语，单独出现几乎无判别力。",
   "related": [
    "chedui",
-   "co_tl",
    "daiche",
    "daxiaoche",
    "fache",
@@ -623,7 +622,7 @@
   "lang": "tl",
   "region": "菲律宾转卖圈",
   "definition": "卖家承诺：若所售账号在使用中被平台冻结或要求二次核验，则退款。",
-  "mechanism": "额度账号交易的风险分担条款，与\"保修\"同类；条款里列出的触发条件（frozen / verified / confirming）正好反映了平台风控的三个拦截动作。",
+  "mechanism": "折扣账号交易的风险分担条款，与\"保修\"同类；条款里列出的触发条件（frozen / verified / confirming）正好反映了平台风控的三个拦截动作。",
   "example": "RF IF FROZEN/CONFIRMING/VERIFIED",
   "related": [
    "abbrev_en",
@@ -649,7 +648,7 @@
   "lang": "tl",
   "region": "菲律宾转卖圈",
   "definition": "卖家对订单必定通过平台审核的承诺。",
-  "mechanism": "额度套现最大的不确定性是订单在支付或风控环节被拦下，\"sure processing\" 即针对这一点的保证；与\"no elsa\"（不会被冻结）配套使用。",
+  "mechanism": "折扣账号代下单最大的不确定性是订单在支付或风控环节被拦下，\"sure processing\" 即针对这一点的保证；与\"no elsa\"（不会被冻结）配套使用。",
   "example": "100% sure processing, no elsa",
   "related": [
    "capped_tl",
@@ -671,8 +670,8 @@
   "category": "交易与担保行话",
   "lang": "tl",
   "region": "菲律宾转卖圈",
-  "definition": "交易规格，表示买方只获得额度的使用结果，不获得账号本身的登录权限。",
-  "mechanism": "卖方保留账号控制权、代为下单，既避免账号被买方转卖，也便于复用同一账号多次套现；\"with access\" 则溢价出售登录权。该规格区分直接体现了账号作为可重复使用资产的属性。",
+  "definition": "交易规格，表示买方只获得用该账号折扣下单的结果，不获得账号本身的登录权限。",
+  "mechanism": "卖方保留账号控制权、代为下单，既避免账号被买方转卖，也便于复用同一账号多次代人下单；\"with access\" 则溢价出售登录权。该规格区分直接体现了账号作为可重复使用资产的属性。",
   "example": "FS 60% 205 capped, no access",
   "related": [
    "bulk_tl",
@@ -716,27 +715,26 @@
   "id": "co_tl",
   "term": "CO",
   "aka": [
-   "collective order",
+   "c.o",
+   "open for co",
    "mag CO"
   ],
   "category": "交易与担保行话",
   "lang": "tl",
   "region": "菲律宾转卖圈",
-  "definition": "collective order 的缩写，指多人拼成一笔订单以共享优惠或满足起订量。",
-  "mechanism": "对应中文的\"拼单\"与\"上车\"：组织者汇总需求后统一下单，常与额度账号、折扣券结合使用以放大单次优惠。",
-  "example": "LF mag CO! 10+ items",
-  "ambiguity": "CO 在英文语境可指 cash out（提现）或公司，缩写歧义大。",
+  "definition": "checkout 的缩写，即结账下单；「open for CO」指 booker 开放代人结账。",
+  "mechanism": "折扣账号代下的核心动作：买家备好购物车（ready cart / cart link）交给 booker，由其用带折扣券的账号结账并收取 COF；「CO first」指先结账、买家后付款，是卖方展示可信度的条款，「solo / bundle」区分单件与组合结账的价位。此前版本释作 collective order（拼单），与语境不符。",
+  "example": "OPEN FOR CO · 60% 428c · CO first",
+  "ambiguity": "CO 是菲律宾网购圈对 checkout 的通用简写，普通买家也这么写，单独出现零判别力；英文里还可指 cash out（提现）或公司。只有「open for CO」与折扣规格（428c、205c）、COF 等组合出现才构成信号。",
   "related": [
    "booker",
    "bulk_tl",
    "capped_tl",
-   "cashout",
-   "drop2",
-   "gc_tl",
-   "shangche"
+   "cof_tl",
+   "gc_tl"
   ],
-  "confidence": "medium",
-  "frequency": "少见",
+  "confidence": "to-verify",
+  "frequency": "较常见",
   "first_seen": "v0.1"
  },
  {
@@ -752,6 +750,7 @@
   "definition": "批量供货能力，常标注最小起订数量。",
   "mechanism": "\"can do bulk everyday\" 说明供给是持续、规模化的，而非偶发转卖；最小起订量（如 min 10 accs）与单价折扣一起构成批发报价体系。",
   "example": "110 BULK MIN 10 ACCS",
+  "ambiguity": "「bulk」是英文常用词（批量、散装），单独出现零判别力；需与账号规格、最小起订量和报价共现，属生态交易词而非语义偏移黑话。",
   "related": [
    "booker",
    "capped_tl",
@@ -762,7 +761,7 @@
    "noaccess_tl",
    "wts"
   ],
-  "confidence": "high",
+  "confidence": "to-verify",
   "frequency": "少见",
   "first_seen": "v0.1"
  },
@@ -1394,6 +1393,7 @@
    "capped_tl",
    "co_tl",
    "cod",
+   "cof_tl",
    "forrent",
    "frozen"
   ],
@@ -1490,6 +1490,9 @@
  {
   "id": "zouyu",
   "term": "走y",
+  "aka": [
+   "走鱼"
+  ],
   "category": "交易与担保行话",
   "definition": "经二手交易平台（闲鱼，「鱼」缩写为 y）完成交易的说法。",
   "mechanism": "回收渠道的担保选项：「支持走y」即承诺买家可经二手平台担保交易收货，降低先款风险。",
@@ -1528,6 +1531,29 @@
   ],
   "confidence": "to-verify",
   "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "cof_tl",
+  "term": "COF",
+  "aka": [
+   "checkout fee",
+   "check out fee"
+  ],
+  "category": "交易与担保行话",
+  "lang": "tl",
+  "region": "菲律宾转卖圈",
+  "definition": "checkout fee 的缩写，指 booker 代人用折扣账号结账时按单收取的服务费。",
+  "mechanism": "折扣账号代下的计价方式：买家按折后价付货款，另付 COF 给代结账的人；COF 随折扣档（如 60% 428c、205c）、是否叠加积分、单件或组合（solo / bundle）浮动，常与「OPEN FOR CO」和折扣规格一起报出。按单收费意味着同一账号可以被反复用来代人结账。",
+  "example": "OPEN FOR CO · 60% 428c · ₱150 COF",
+  "ambiguity": "COF 在金融语境常指资金成本（cost of funds），也是普通缩写；只在折扣账号代下语境成立，需与 open for CO、428c / 205c 等规格共现。",
+  "related": [
+   "booker",
+   "capped_tl",
+   "co_tl"
+  ],
+  "confidence": "to-verify",
+  "frequency": "较常见",
   "first_seen": "v0.4"
  }
 ]

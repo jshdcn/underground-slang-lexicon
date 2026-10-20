@@ -17,6 +17,7 @@
    "d",
    "emoji",
    "fangfengkong",
+   "huatizimu",
    "jianjie",
    "noelsa",
    "rouemoji",
@@ -85,7 +86,9 @@
    "裙",
    "纪念bi",
    "shen忦",
-   "饭粒"
+   "饭粒",
+   "E咔",
+   "直b间"
   ],
   "category": "混淆与规避手法",
   "definition": "用同音或形近字替换关键词中的某个字，使语义对人可读、对机器不可匹配。",
@@ -99,6 +102,8 @@
    "dingdan",
    "emoji",
    "gongjijin",
+   "hangqing",
+   "huatizimu",
    "jianjie",
    "juanyu",
    "laimalv2",
@@ -110,6 +115,7 @@
    "rouemoji",
    "shifu",
    "sm",
+   "xingqing",
    "yitizi",
    "zerowidth",
    "zituizimai"
@@ -265,6 +271,7 @@
    "emoji",
    "fangfengkong",
    "gongjijin",
+   "huatizimu",
    "laimalv2",
    "niunai",
    "rukouzhiyin",
@@ -327,6 +334,7 @@
    "goldcomsaldo",
    "gongjijin",
    "gongya",
+   "huatizimu",
    "laimalv2",
    "niunai",
    "pingtaidaicheng",
@@ -370,6 +378,7 @@
    "cunnei",
    "emoji",
    "gongjijin",
+   "huatizimu",
    "laimalv2",
    "niunai",
    "qiyuan",
@@ -506,5 +515,31 @@
    "shaihao"
   ],
   "frequency": "少见"
+ },
+ {
+  "id": "huatizimu",
+  "term": "花体与同形字母",
+  "aka": [
+   "数学字母符号",
+   "同形字母",
+   "𝗖𝗛𝗘𝗖𝗞.𝗢𝗨𝗧",
+   "𝒑𝒍𝒖𝒔",
+   "cαpped"
+  ],
+  "category": "混淆与规避手法",
+  "definition": "用 Unicode 里外形像拉丁字母和数字的加粗、斜体等数学字母符号，或希腊字母等同形字符，替换关键词里的字母与数字。",
+  "mechanism": "关键词检测按字符编码匹配，「𝗖𝗛𝗘𝗖𝗞.𝗢𝗨𝗧」「𝟗𝟗」在人眼里与普通字母数字无异，在文本层却是另一组码位；常与插点拆分品牌名、用希腊字母 α 冒充 a 等手法叠加，集中落在品牌名、交易动作与价格上。与异体字替换汉字的思路相同，只是对象换成了字母与数字。",
+  "example": "𝗢𝗣𝗘𝗡 𝗙𝗢𝗥 𝗖.𝗢. (𝟰𝟮𝟴𝗖) ｜ 428 cαpped with 80 pts",
+  "ambiguity": "花体字母在社交平台的个人简介和标题排版中大量用于装饰，单独出现不构成信号；需看它是否集中落在品牌名、交易动作与价格这些易被检测的位置，并与其他规避手法同时出现。",
+  "related": [
+   "abbrev_en",
+   "cijian",
+   "xiepin",
+   "yitizi",
+   "zerowidth"
+  ],
+  "confidence": "medium",
+  "frequency": "较常见",
+  "first_seen": "v0.4"
  }
 ]
