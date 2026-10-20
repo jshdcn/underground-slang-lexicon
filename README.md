@@ -1,66 +1,60 @@
-# 互联网黑灰产黑话词典
+# Underground Slang Lexicon
 
-> 黑灰产行话的结构化词典：释义、脱敏真实用例、**误报陷阱**与产业链关联。面向风险识别、内容审核与安全研究。
+**English** | [简体中文](README.zh-CN.md)
 
-> **Underground Slang Lexicon** — a structured reference for the jargon of the Chinese-language online fraud and gray-market economy: definitions, sanitized real-world usage, **false-positive warnings**, and supply-chain relations. Chinese-dominant, with Brazilian Portuguese, English, Indonesian, Tagalog and Vietnamese cross-references.
+> A structured lexicon of underground and gray-market slang: definitions, sanitized real-world usage, **false-positive traps**, and supply-chain relations. Built for risk detection, content moderation, and security research.
 
 <p align="center">
-  <a href="https://www.threathunter.cn">
-    <img src="https://avatars.githubusercontent.com/u/324354669?s=120" width="72" alt="威胁猎人 Threat Hunter">
+  <a href="https://www.threathunter.com">
+    <img src="https://avatars.githubusercontent.com/u/324354669?s=120" width="72" alt="Threat Hunter 威胁猎人">
   </a>
 </p>
 
 <p align="center">
-  由 <b><a href="https://www.threathunter.cn">威胁猎人 Threat Hunter</a></b> 黑灰产研究团队维护<br>
-  <i>先看见再行动 ｜ See risk earlier. Act with context.</i><br>
-  <sub><a href="https://www.threathunter.cn">中文站</a> ｜ <a href="https://www.threathunter.com">English</a></sub>
+  Maintained by the underground economy research team at <b><a href="https://www.threathunter.com">Threat Hunter (威胁猎人)</a></b><br>
+  <i>See risk earlier. Act with context.</i><br>
+  <sub><a href="https://www.threathunter.com">English</a> ｜ <a href="https://www.threathunter.cn">中文站</a></sub>
 </p>
 
-[![词条数](https://img.shields.io/badge/词条-760-blue)](dict/黑话词典.md)
-[![分类](https://img.shields.io/badge/分类-9-green)](dict/黑话词典.md)
-[![语种](https://img.shields.io/badge/语种-6-yellow)](dict/黑话词典.md#非中文词条索引)
-[![关联边](https://img.shields.io/badge/关联边-5411-orange)](dict/黑话词典.md)
-[![许可](https://img.shields.io/badge/数据-CC%20BY%204.0-lightgrey)](LICENSE)
+[![Entries](https://img.shields.io/badge/entries-760-blue)](dict/黑话词典.md)
+[![Categories](https://img.shields.io/badge/categories-9-green)](dict/黑话词典.md)
+[![Languages](https://img.shields.io/badge/languages-6-yellow)](dict/黑话词典.md#非中文词条索引)
+[![Relations](https://img.shields.io/badge/relations-5411-orange)](dict/黑话词典.md)
+[![License](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE)
 
-**👉 [直接查看词典](dict/黑话词典.md)** ｜ [CSV 下载](dict/terms.csv) ｜ [结构化数据](data/entries/) ｜ [字段规范](data/schema.json) ｜ **[词条关系图谱](https://threathunterx.github.io/underground-slang-lexicon/)**
+**👉 [Browse the lexicon](dict/黑话词典.md)** ｜ [CSV](dict/terms.csv) ｜ [Structured data](data/entries/) ｜ [Schema](data/schema.json) ｜ **[Relation graph](https://threathunterx.github.io/underground-slang-lexicon/)**
 
----
-
-## 词条关系图谱
-
-三个视图理解整部词典：**产业链总览**——九大分类各占一个扇区，弧线粗细表示跨类关联强度，中心是版本生长统计；**分类下钻**——点击扇区进入该类子图，外环半透明节点是跨类关联词条；**构词法词族**——词根太阳图，一图看清黑话的构词规律。描黄圈的词条来自最新收录批次。
-
-![词条关系图谱](docs/graph.svg)
-
-**[打开交互版](https://threathunterx.github.io/underground-slang-lexicon/)**——支持搜索定位、分类下钻、点击节点查看释义与关联词条、关联边密度调节、节点拖拽；数据内联、离线可用（克隆仓库后直接打开 `docs/index.html` 亦可）。
-
-> 若上方链接暂未生效，可通过[镜像直链](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)访问（第三方 raw 代理，内容随仓库每次提交同步）。
-
-图谱由 [`tools/build_viz.py`](tools/build_viz.py) 从词条数据自动重建：布局种子固定、构建结果确定，词根表与 `build_dict.py` 共用同一来源；提交词条时把重新生成的 `docs/` 一并提交即可。
+> **A note on language.** Headwords keep the language they are used in — mostly Chinese, plus Brazilian Portuguese, English, Indonesian, Tagalog and Vietnamese. Definitions, mechanisms and false-positive notes are written in Chinese, so the lexicon itself ([`dict/黑话词典.md`](dict/黑话词典.md)) reads in Chinese. Field names, values and the build tools are language-neutral.
 
 ---
 
-## 项目背景
+## Relation graph
 
-防守方和攻击方用的不是同一套词汇。风控规则里写的是「批量注册」「虚假交易」，
-而黑灰产自己说的是「一条龙」「AB 单」「包批」「实卡接码」。这层词汇差是对抗里的第一道门槛——
-看不懂在说什么，就谈不上识别、取证与处置。
+Three views of the whole lexicon. The **supply-chain overview** gives each of the nine categories a sector; arc width shows how strongly categories link to each other, and the center tracks growth by release. The **category drill-down** opens a category's subgraph when you click its sector, with semi-transparent outer nodes for cross-category links. The **morphological families** view is a sunburst of word roots that shows at a glance how the slang is built. Entries circled in yellow come from the latest release.
 
-这个词典做的就是把这层词汇固定下来：每个词给出释义、它在产业链里的位置、
-脱敏后的真实用例，以及**它在正常语境下是什么意思**。最后一项往往比前三项更费工夫，
-也更决定这份词典能不能直接拿去做规则——「空包」的多数命中是真空包装，
-「养卡」的多数命中是汽车小保养卡，「放量」几乎都是「播放量」的一部分。
-不说清这些，一条规则上线就是一片误报。
+![Relation graph](docs/graph.svg)
 
-词条来自威胁猎人持续的黑灰产监测与研判。`v0.1` 的释义与歧义说明已由人工逐条复核，`v0.2` 仍在复核中。
-两批按 `first_seen` 字段区分，`v0.2` 标 `to-verify`、仍在补字段。
+**[Open the interactive version](https://threathunterx.github.io/underground-slang-lexicon/)** — search, drill down by category, click a node to see its definition and related entries, tune edge density, and drag nodes around. The data is inlined and works offline: after cloning, just open `docs/index.html`.
 
-威胁猎人以黑灰产情报为底层核心能力，服务金融、互联网、电商、消费与全球化业务团队。
-这份词典是那套情报能力的一个侧面——**把对抗中反复遇到的行话固定下来，公开出来**。
+> If the link above isn't live yet, use the [mirror link](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html) (a third-party raw-file proxy that follows every commit to this repository).
 
-## 这个词典解决什么问题
+The graph is rebuilt from entry data by [`tools/build_viz.py`](tools/build_viz.py). The layout seed is fixed, so builds are deterministic, and the word-root table comes from the same source as `build_dict.py`. When you submit entries, commit the regenerated `docs/` along with them.
 
-做风控、审核和情报分析的人都遇到过同一件事：**看得懂每个字，读不懂这句话。**
+---
+
+## Background
+
+Defenders and attackers don't speak the same language. Risk rules say "bulk registration" and "fake transactions"; the underground itself says 一条龙 (end-to-end service), AB单 (two-step order brushing), 包批 (guaranteed loan approval) and 实卡接码 (verification codes received on real SIM cards). That vocabulary gap is the first barrier: if you can't tell what is being said, you can't detect it, collect evidence, or act on it.
+
+This lexicon pins that vocabulary down. Each entry gives a definition, its position in the supply chain, sanitized real-world usage, and **what the word means in ordinary contexts**. That last part usually takes more work than the other three, and it decides whether the lexicon can go straight into rules: most hits on 空包 (empty parcels shipped to fake transactions) are vacuum packaging, most hits on 养卡 (card nurturing) are car maintenance cards, and 放量 (releasing a large batch of payouts) nearly always turns out to be part of 播放量 (play count). Leave that out, and a rule goes live as a flood of false positives.
+
+Entries come from Threat Hunter's ongoing monitoring and analysis of the underground economy. The definitions and false-positive notes in `v0.1` were reviewed by hand, entry by entry; `v0.2` is still under review. The `first_seen` field tells the batches apart, and `v0.2` entries are marked `to-verify` while their fields are being filled in.
+
+Threat Hunter is built on underground-economy intelligence and serves teams in finance, internet, e-commerce, consumer and global business. This lexicon is one face of that capability: **pinning down the jargon we keep running into, and making it public**.
+
+## The problem it solves
+
+Anyone who works in risk control, moderation or intelligence analysis has hit the same wall: **you can read every word and still not understand the sentence.**
 
 > 供 ： 〔某品牌〕卡核销 需要d
 >
@@ -70,91 +64,93 @@
 >
 > 拍 1 发 2 包，实符 64 亓
 
-这些都不是乱码，是精确、高效、有明确所指的行业语言。不懂这套语言，情报就只是文本；懂了，才能看出一条广告在产业链的哪个位置、下一步会发生什么。
+Roughly: "Offering [brand] card redemption — DM if you need it." / "High-margin deal, max it out; item no. [redacted]." / "Big coupon plus voucher brings the cost to 286; the recycler pays 389 and it sells within minutes." / "Order 1, ships 2 packs; actual payment 64 yuan" — with 实符 and 亓 standing in for 实付 (amount paid) and 元 (yuan) to slip past keyword filters.
 
-## 和普通"风险词表"的区别
+None of this is gibberish. It is precise, efficient trade language with clear referents. Without it, intelligence is just text; with it, you can tell where an ad sits in the supply chain and what happens next.
 
-| | 风险词表 | 本词典 |
+## How it differs from a "risk keyword list"
+
+| | Risk keyword list | This lexicon |
 | --- | --- | --- |
-| 内容 | 词 + 风险等级 | 词 + 释义 + 机制 + 真实用例 + **歧义说明** + 关联词 |
-| 组织方式 | 平铺 | 按产业链位置分九类，另按语素分 18 个构词法词族 |
-| 歧义处理 | 无 | 标注正常语境下的含义与实测误报来源（已覆盖 <!--n_amb-->451<!--/n_amb--> 条） |
-| 混淆写法 | 一般不收 | **专门成类**，是判别力最高的一批特征 |
-| 用法 | 命中即告警 | 区分高精度规则与需组合判定的低判别力词 |
+| Content | Word + risk level | Word + definition + mechanism + real usage + **false-positive notes** + related terms |
+| Organization | Flat | Nine categories by supply-chain position, plus 18 morphological families by word root |
+| Ambiguity | Not handled | Ordinary-context meanings and observed false-positive sources (<!--n_amb-->451<!--/n_amb--> entries so far) |
+| Obfuscated spellings | Usually left out | **A category of their own** — the most discriminative features there are |
+| Usage | Alert on any hit | Separates high-precision rules from low-discrimination words that need combined signals |
 
-**最关键的差异是"歧义说明"。** <!--n_all-->760<!--/n_all--> 条词条中 <!--n_amb-->451<!--/n_amb--> 条标注了歧义（<!--p_amb-->59<!--/p_amb-->%），因为大量黑话的字面形式与正常用语完全重合：
+**The key difference is the false-positive notes.** <!--n_amb-->451<!--/n_amb--> of the <!--n_all-->760<!--/n_all--> entries carry one (<!--p_amb-->59<!--/p_amb-->%), because a great deal of slang is written exactly like everyday language:
 
-- "养卡"绝大多数是汽车**小保养卡**
-- "空包"的主要命中来源是**真空包装**
-- "四件套"大多是**床品四件套**
-- "开盒"大多是**开箱评测**
-- "模糊"大多是数据库的 **LIKE 模糊查询**
-- 提及"刷单"的人，很多是**受害者**而不是加害者
+- 养卡 is overwhelmingly a car **maintenance card**
+- 空包 hits come mainly from **vacuum packaging**
+- 四件套 is mostly a **four-piece bedding set**
+- 开盒 (doxxing) is mostly **unboxing videos**
+- 模糊 (fuzzy person lookup) is mostly the database **LIKE fuzzy query**
+- Many people who mention 刷单 (order brushing) are **victims**, not perpetrators
 
-> **v0.2 批次仍在补字段。** 本版新增的 <!--n_v2-->352<!--/n_v2--> 条来自另一批整理，其中 <!--n_tv_v2-->352<!--/n_tv_v2--> 条的 `confidence` 仍为 `to-verify`；
-> `mechanism` 已补 <!--n_mech_v2-->141<!--/n_mech_v2--> 条（<!--p_mech_v2-->40<!--/p_mech_v2-->%），歧义说明覆盖 <!--p_amb_v2-->27<!--/p_amb_v2-->%，
-> 都低于 v0.1 那 <!--n_v1-->348<!--/n_v1--> 条（`mechanism` <!--p_mech_v1-->100<!--/p_mech_v1-->%、歧义说明 <!--p_amb_v1-->85<!--/p_amb_v1-->%），
-> 所以全库歧义覆盖率暂时被摊薄到 <!--p_amb-->59<!--/p_amb-->%。按 `first_seen` 字段可以区分两批：
-> v0.1 是已复核的，v0.2 是待复核的。欢迎一起补齐，方式见 [更新与贡献](#更新与贡献)。
+> **The v0.2 batch is still being filled in.** Of the <!--n_v2-->352<!--/n_v2--> entries that release added from a separate collection, <!--n_tv_v2-->352<!--/n_tv_v2--> are still `confidence: to-verify`.
+> `mechanism` is filled in for <!--n_mech_v2-->141<!--/n_mech_v2--> of them (<!--p_mech_v2-->40<!--/p_mech_v2-->%) and false-positive notes cover <!--p_amb_v2-->27<!--/p_amb_v2-->%,
+> both below the <!--n_v1-->348<!--/n_v1--> v0.1 entries (`mechanism` <!--p_mech_v1-->100<!--/p_mech_v1-->%, false-positive notes <!--p_amb_v1-->85<!--/p_amb_v1-->%),
+> which is why coverage across the whole lexicon is diluted to <!--p_amb-->59<!--/p_amb-->% for now. Use the `first_seen` field to tell the batches apart:
+> v0.1 has been reviewed, v0.2 is pending review. Help filling the gaps is welcome — see [Updates and contributing](#updates-and-contributing).
 
-把这些词直接塞进风控规则，换来的是一堆误报和被冤枉的用户。词典把这部分讲清楚，比多收一百个词更有用。
+Dropping these words straight into risk rules buys you a pile of false positives and wrongly flagged users. Explaining that part well is worth more than collecting a hundred more words.
 
-## 黑灰产文本有一个"混淆层"
+## Underground text has an "obfuscation layer"
 
-行话普遍经过一层针对关键词检测的改写，而且手法已经标准化、可枚举：
+The jargon is routinely rewritten to defeat keyword detection, and the techniques are standardized and enumerable:
 
-| 手法 | 例子 |
+| Technique | Example |
 | --- | --- |
-| 零宽字符插入 | `一⁠天稳​赚`（分隔符不可见） |
-| 谐音形近替字 | `亓`→元、`实符`→实付、`订丹`→订单、`项木`→项目 |
-| 异体字／日文汉字 | `単`→单、`啇`→商、`寳`→宝 |
-| 联系路径外移 | 正文只留"看**简届**安排"，联系方式写在简介 |
-| emoji 代字与计量 | `💰折17.5🉐500ml`、`300🥩` |
-| 可见字符插空 | `手 机号` |
+| Zero-width characters | `一⁠天稳​赚` (invisible separators) |
+| Homophone and look-alike substitution | `亓`→元, `实符`→实付, `订丹`→订单, `项木`→项目 |
+| Variant and Japanese kanji forms | `単`→单, `啇`→商, `寳`→宝 |
+| Moving contact details off the post | The body only says "see the **简届** (bio) for details"; the contact lives in the profile |
+| Emoji as characters and units | `💰折17.5🉐500ml`, `300🥩` |
+| Visible spaces inside words | `手 机号` |
 
-这里有个反转，也是可以直接变现为检测能力的点：
+There is a twist here, and it translates directly into detection capability:
 
-> **`实符`、`简届`、`简阶`、`虹包`、`项木` 在规范中文里都不成词。一旦命中，几乎可以确定是规避检测的改写文本。**
+> **`实符`, `简届`, `简阶`, `虹包` and `项木` are not words in standard Chinese. A hit almost certainly means text rewritten to evade detection.**
 
-对手为躲开关键词检测而付出的改写成本，恰好留下了比原词更干净的特征。这类词应作为**高精度规则**单独部署。
+The effort adversaries spend rewriting text to dodge keyword filters leaves behind a feature that is cleaner than the original word. Deploy this class of terms separately, as **high-precision rules**.
 
-## 九个分类与产业链位置
+## Nine categories along the supply chain
 
 ```mermaid
 graph LR
-  A["数据与隐私侵害<br/>社工库·料·模糊查询"] --> B["身份与认证绕过<br/>接码·代实名·过人脸"]
-  C["终端与设备破解<br/>解BL·Root·改机"] --> B
-  B --> D["电商与营销套利<br/>豪车·大额券·梭哈"]
-  B --> E["流量与引流<br/>引流·截流·盘口"]
+  A["Data & privacy abuse<br/>社工库 · 料 · 模糊查询"] --> B["Identity & verification bypass<br/>接码 · 代实名 · 过人脸"]
+  C["Device & endpoint cracking<br/>解BL · Root · 改机"] --> B
+  B --> D["E-commerce & promotion arbitrage<br/>豪车 · 大额券 · 梭哈"]
+  B --> E["Traffic & lead diversion<br/>引流 · 截流 · 盘口"]
   A --> E
-  D --> F["资金通道与洗钱<br/>跑分·承兑·黑U"]
+  D --> F["Payment channels & money laundering<br/>跑分 · 承兑 · 黑U"]
   E --> F
-  G["交易与担保行话<br/>供需·走担保"] -.- D
-  H["混淆与规避手法<br/>零宽字符·谐音替字"] -.- D
-  I["招募与话术<br/>搬砖·上岸"] --> F
+  G["Trading & escrow jargon<br/>供需 · 走担保"] -.- D
+  H["Obfuscation & evasion<br/>零宽字符 · 谐音替字"] -.- D
+  I["Recruitment & scripts<br/>搬砖 · 上岸"] --> F
 ```
 
-| 分类 | 词条 | 链条位置 |
+| Category | Entries | Position in the chain |
 | --- | --- | --- |
-| [数据与隐私侵害](dict/黑话词典.md#数据与隐私侵害) | 118 | 上游：身份与通信数据原料 |
-| [身份与认证绕过](dict/黑话词典.md#身份与认证绕过) | 167 | 把数据加工成可用账号 |
-| [终端与设备破解](dict/黑话词典.md#终端与设备破解) | 22 | 为账号提供可信设备环境 |
-| [电商与营销套利](dict/黑话词典.md#电商与营销套利) | 158 | 变现：平台补贴与权益 |
-| [流量与引流](dict/黑话词典.md#流量与引流) | 39 | 变现：把流量导向赌诈色 |
-| [资金通道与洗钱](dict/黑话词典.md#资金通道与洗钱) | 177 | 下游：收益落地与洗白 |
-| [交易与担保行话](dict/黑话词典.md#交易与担保行话) | 49 | 支撑：资源交易的市场规则 |
-| [混淆与规避手法](dict/黑话词典.md#混淆与规避手法) | 18 | 支撑：对抗检测 |
-| [招募与话术](dict/黑话词典.md#招募与话术) | 12 | 支撑：人力供给 |
+| [Data & privacy abuse](dict/黑话词典.md#数据与隐私侵害) | <!--cat:数据与隐私侵害-->118<!--/cat:数据与隐私侵害--> | Upstream: raw identity and communications data |
+| [Identity & verification bypass](dict/黑话词典.md#身份与认证绕过) | <!--cat:身份与认证绕过-->167<!--/cat:身份与认证绕过--> | Turns data into usable accounts |
+| [Device & endpoint cracking](dict/黑话词典.md#终端与设备破解) | <!--cat:终端与设备破解-->22<!--/cat:终端与设备破解--> | Gives accounts a trusted device environment |
+| [E-commerce & promotion arbitrage](dict/黑话词典.md#电商与营销套利) | <!--cat:电商与营销套利-->158<!--/cat:电商与营销套利--> | Monetization: platform subsidies and perks |
+| [Traffic & lead diversion](dict/黑话词典.md#流量与引流) | <!--cat:流量与引流-->39<!--/cat:流量与引流--> | Monetization: steering traffic to gambling, fraud and porn |
+| [Payment channels & money laundering](dict/黑话词典.md#资金通道与洗钱) | <!--cat:资金通道与洗钱-->177<!--/cat:资金通道与洗钱--> | Downstream: cashing out and laundering proceeds |
+| [Trading & escrow jargon](dict/黑话词典.md#交易与担保行话) | <!--cat:交易与担保行话-->49<!--/cat:交易与担保行话--> | Support: market rules for trading resources |
+| [Obfuscation & evasion](dict/黑话词典.md#混淆与规避手法) | <!--cat:混淆与规避手法-->18<!--/cat:混淆与规避手法--> | Support: defeating detection |
+| [Recruitment & scripts](dict/黑话词典.md#招募与话术) | <!--cat:招募与话术-->12<!--/cat:招募与话术--> | Support: labor supply |
 
-另有按语素组织的 **[构词法词族索引](dict/黑话词典.md#构词法词族)**（18 个词根：`料`/`鱼`/`码`/`号`/`卡`/`车`/`粉`/`盘`/`户`/`单`/`商`/`群`/`水`/`口`/`代X`/`保X／包X`/`无视X`/`反X`）——按分类看的是产业链位置，按词根看的是语言的生成规则。后者对持续使用更有用：新词往往沿着同样的构词法出现，看它属于哪个词根，就能大致判断它在链条上的位置。
+There is also a **[morphological family index](dict/黑话词典.md#构词法词族)** organized by word root (18 roots: `料`/`鱼`/`码`/`号`/`卡`/`车`/`粉`/`盘`/`户`/`单`/`商`/`群`/`水`/`口`/`代X`/`保X／包X`/`无视X`/`反X`). Categories show where a word sits in the supply chain; roots show how the language generates words. The roots are more useful over time: new words tend to follow the same patterns, so knowing which root a word belongs to tells you roughly where it sits in the chain.
 
-**按语种**（[非中文词条索引](dict/黑话词典.md#非中文词条索引)）：中文 660 ｜ 英文 37 ｜ 葡萄牙语 36 ｜ 印尼语 10 ｜ 越南语 7 ｜ 他加禄语 10。非中文词条并入同一套分类，用 `lang` 与 `region` 字段标注语种与流通生态。
+**By language** ([non-Chinese index](dict/黑话词典.md#非中文词条索引)): <!--langs-->Chinese 660 · English 37 · Brazilian Portuguese 36 · Indonesian 10 · Vietnamese 7 · Tagalog 10<!--/langs-->. Non-Chinese entries share the same categories, with `lang` and `region` marking the language and the ecosystem where the word circulates.
 
-1,924 条关联边（全部双向）中有 644 条跨越分类，没有孤立词条。关联度最高的枢纽词是**跑分**、**引流**、**料**、**成品号**、**社工库**、**大额券**。
+Of the <!--n_edge-->5411<!--/n_edge--> relations (all bidirectional), <!--n_cross-->1828<!--/n_cross--> cross categories, and no entry is isolated. The most connected hubs are <!--hubs-->**跑分**, **成品号**, **料**, **公群**, **协议号**, **人头**<!--/hubs-->.
 
-同一套行话横跨电商、金融、本地生活、社交多个行业，也横跨语言——担保交易在中文叫"走担保"、英文叫 escrow、越南语叫 trung gian；落地账户在中文叫"公户/车队"、英文叫 drop、越南语叫 cho thuê bank、印尼语叫 jasa rekening。
+The same jargon spans e-commerce, finance, local services and social platforms, and it spans languages too. Escrow is 走担保 in Chinese, escrow in English and trung gian in Vietnamese. Accounts that receive the money are 公户 / 车队 in Chinese, drop in English, cho thuê bank in Vietnamese and jasa rekening in Indonesian.
 
-## 词条长什么样
+## What an entry looks like
 
 ```json
 {
@@ -172,110 +168,111 @@ graph LR
 }
 ```
 
-### 字段说明
+This entry describes a "fuzzy lookup" service: finding a specific person's full identity and contact details from partial information such as region, name or place of household registration. Its `ambiguity` field warns that "fuzzy query" is a standard database concept (`LIKE`), so it only counts as slang next to words like 机主 (account holder), 找人 (find someone) or 户籍 (household registration).
 
-| 字段 | 词典里显示为 | 含义 | 必填 | 写法与校验 |
+### Field reference
+
+| Field | Shown in the lexicon as | Meaning | Required | Format and checks |
 | --- | --- | --- | --- | --- |
-| `id` | 不显示 | 稳定标识，`related` 用它互相引用 | 是 | 小写拉丁字母、拼音或连字符，发布后不改；重复会被拦下 |
-| `term` | 词条标题 | 词条的主形式，即最常见的写法 | 是 | 优先用真实出现的说法；没有统一名称的手法才自拟描述性标题，这时 `aka` 必须列出实际可检索的写法；重复会被拦下 |
-| `aka` | 又作 | 同义词、变体、谐音写法、缩写 | 否 | 只放可检索的变体，对照关系（如 `利闰=利润`）写进 `mechanism`；一个别名只能挂在一个词条上，也不能和别的词条标题同形 |
-| `category` | 所在的分类章节 | 九个分类之一 | 是 | 只能取九个分类之一 |
-| `lang` | 标题下的语种标签 | 词条所属语种 | 否 | 缺省为中文；取值见 `data/schema.json` 的 `languages` |
-| `region` | 标题下的生态标签 | 该词流通的地域或生态圈 | 否 | 如「巴西外卖与网约车生态」 |
-| `definition` | 释义 | 一句话说清这个词是什么意思 | 是 | 不含评价性措辞，不以词条本身开头；不足 15 字构建时会提示 |
-| `mechanism` | 在链条中的作用 | 它在黑灰产链条里的作用与上下游 | 否 | 只描述手法机制，不写操作步骤，不复述释义；缺失时构建会提示 |
-| `example` | 示例（脱敏） | 真实场景里的用法 | 否，强烈建议 | 必须脱敏：平台、品牌、联系方式、链接、货号一律替换或删除；构建时逐条扫描 |
-| `example_note` | 无示例说明 | 取不到可发布用例的原因 | 否 | 没有 `example` 时填写，不要静默留空 |
-| `ambiguity` | 歧义与误报 | 这个词在正常语境下的意思，也就是误报从哪来 | 否，强烈建议 | 写清日常含义，以及要和哪些词一起出现才算黑话；缺失时构建会提示 |
-| `related` | 关联 | 相关词条的 `id` | 否 | 必须双向对称；不能指向自身、不能重复、不能指向不存在的词条 |
-| `confidence` | 研判置信度 | 对这条判断有多确定 | 是 | `high`（高）/ `medium`（中）/ `to-verify`（待核实），口径见[词条质量口径](#词条质量口径) |
-| `frequency` | 出现频次 | 该词在监测语料中的出现频次档 | 否 | 常见 / 较常见 / 少见；用于排规则优先级，不代表风险高低 |
-| `first_seen` | 收录版本 | 首次收录的版本 | 否 | 如 `v0.1` |
+| `id` | Not shown | Stable identifier that `related` uses to point at entries | Yes | Lowercase Latin letters, pinyin or hyphens; never changes after release; duplicates are blocked |
+| `term` | Entry title | The headword — the most common spelling | Yes | Prefer the form actually in use. Only techniques without a common name get a descriptive title, and then `aka` must list the searchable forms that really occur; duplicates are blocked |
+| `aka` | 又作 (also written) | Synonyms, variants, homophone spellings, abbreviations | No | Searchable variants only; mappings such as `利闰=利润` go in `mechanism`. An alias may belong to only one entry and may not match another entry's title |
+| `category` | The category section it appears in | One of the nine categories | Yes | Must be one of the nine |
+| `lang` | Language tag under the title | Language of the entry | No | Defaults to Chinese; allowed values are under `languages` in `data/schema.json` |
+| `region` | Ecosystem tag under the title | Region or ecosystem where the word circulates | No | e.g. 巴西外卖与网约车生态 (Brazilian food-delivery and ride-hailing ecosystem) |
+| `definition` | 释义 (definition) | One sentence on what the word means | Yes | No evaluative wording; must not open with the term itself; under 15 characters triggers a notice |
+| `mechanism` | 在链条中的作用 (role in the chain) | What it does in the underground supply chain, upstream and downstream | No | Mechanisms only — no operational steps, no restating the definition; a missing value triggers a notice |
+| `example` | 示例（脱敏） (sanitized example) | How it is used in a real setting | No, strongly recommended | Must be sanitized: platforms, brands, contact details, links and item numbers are replaced or removed; scanned entry by entry at build time |
+| `example_note` | 无示例说明 (why there is no example) | Why no publishable example could be found | No | Fill it in when there is no `example` instead of leaving the gap silent |
+| `ambiguity` | 歧义与误报 (ambiguity and false positives) | What the word means in ordinary contexts — where false positives come from | No, strongly recommended | State the everyday meaning and which co-occurring words make it slang; a missing value triggers a notice |
+| `related` | 关联 (related) | `id`s of related entries | No | Must be symmetric; no self-references, duplicates or dangling ids |
+| `confidence` | 研判置信度 (confidence) | How certain the judgment is | Yes | `high` / `medium` / `to-verify`; see [Quality standards](#quality-standards) |
+| `frequency` | 出现频次 (frequency) | Frequency band of the word in our monitoring corpus | No | 常见 (common) / 较常见 (fairly common) / 少见 (rare); for prioritizing rules, **not** a measure of risk |
+| `first_seen` | 收录版本 (release) | Release in which the entry first appeared | No | e.g. `v0.1` |
 
-写着「拦下」「必须」「只能」的规则，由 `tools/build_dict.py` 在构建时强制检查，不通过就生成不了词典；写着「提示」的只给出提醒、不拦提交。
-机器可读的字段规范见 [`data/schema.json`](data/schema.json)。
+Rules marked "blocked", "must" or "only" are enforced by `tools/build_dict.py` at build time: the lexicon won't build until they pass. A "notice" is only a reminder and doesn't block a submission.
+The machine-readable schema is [`data/schema.json`](data/schema.json).
 
-## 怎么用
+## How to use it
 
-**查词**：读 [`dict/黑话词典.md`](dict/黑话词典.md)，按分类或词根浏览，或全文搜索。
+**Look up words**: read [`dict/黑话词典.md`](dict/黑话词典.md) (in Chinese), browse by category or word root, or search the full text.
 
-**接入系统**：用 [`dict/terms.csv`](dict/terms.csv) 或直接读 [`data/entries/`](data/entries/) 下的 JSON。建议按 `confidence`、`ambiguity` 与 `frequency` 分层部署——
+**Integrate with your systems**: use [`dict/terms.csv`](dict/terms.csv), or read the JSON under [`data/entries/`](data/entries/) directly. Deploy in tiers by `confidence`, `ambiguity` and `frequency`:
 
-- 无歧义说明 + `confidence: high` 的变形词（`实符`、`简届`、`亓`）→ 可作高精度规则，命中即告警
-- 有歧义说明的词 → 必须组合判定，单独命中不足以定性
-- 单字与字母词（`料`、`d`、`出`/`收`）→ 只能用固定句式模式（`需要d`、`大量收X`），不可单词检索
-- **描述性标题的词条**（`入口指引`、`店铺规格语法`、`代X服务`、`保X承诺`、`防风控操作` 等 7 条）→ 这类手法在语料中没有统一名称，标题是本词典自拟的；建规则请用其 `aka` 里实际出现的形式，不要拿标题去匹配
-- `frequency` 表示该词在监测语料中的出现频次（常见 / 较常见 / 少见），用于排规则优先级，**不代表风险高低**
+- Obfuscated spellings with no false-positive notes and `confidence: high` (`实符`, `简届`, `亓`) → usable as high-precision rules that alert on a hit
+- Words with false-positive notes → need combined signals; a single hit is not enough
+- Single characters and Latin letters (`料`, `d`, `出`/`收`) → match fixed phrase patterns only (`需要d`, `大量收X`), never the bare word
+- **Entries with descriptive titles** (`入口指引`, `店铺规格语法`, `代X服务`, `保X承诺`, `防风控操作` and others) → these techniques have no common name in the wild, so the title is ours; build rules from the forms listed in `aka`, not from the title
+- `frequency` is the word's frequency band in our monitoring corpus (common / fairly common / rare), for prioritizing rules — **not a measure of risk**
 
-**自己构建**：改完 `data/entries/` 后跑一次校验与生成。
+**Build it yourself**: after editing `data/entries/`, run validation and generation.
 
 ```bash
-python3 tools/build_dict.py    # 校验词条并重新生成词典与 CSV
-python3 tools/check_links.py   # 检查文档内部链接与锚点
+python3 tools/build_dict.py    # validate entries, regenerate the lexicon and CSV
+python3 tools/check_links.py   # check internal links and anchors in the docs
 ```
 
-零第三方依赖。
+No third-party dependencies.
 
-## 词条质量口径
+## Quality standards
 
-- **置信度分三档**：
-  - `high`（高）：词义有真实用例佐证，并经人工复核确认
-  - `medium`（中）：词义基本确定，但用法较多或边界不清，使用时要结合语境
-  - `to-verify`（待核实）：证据不足或尚未逐条复核；v0.2 并入的词条统一在这一档，仍在逐条复核
+- **Three confidence levels**:
+  - `high`: the meaning is supported by real usage and confirmed by human review
+  - `medium`: the meaning is largely settled, but usage varies or the boundaries are unclear — interpret it in context
+  - `to-verify`: insufficient evidence, or not yet reviewed entry by entry; everything merged in v0.2 sits here while review continues
 
-  目前 <!--n_tv-->426<!--/n_tv--> 条标为待核实。
-- **拿不准就标出来，不给一个看起来确定的错误释义。** 证据不足以判断词义的词，宁可不收也不硬写。
-- **用例一律脱敏**：<!--n_ex-->631<!--/n_ex--> 条带真实用例；取不到可发布用例的
-  <!--n_note-->117<!--/n_note--> 条用 `example_note` 写明原因（如「空包」的命中几乎全是「真空包装」，即其误报来源本身）。
-- **构建时自动校验**，任何一项不过都无法生成词典：
-  - 结构：id 与词条名唯一、别名不冲突、关联双向对称、不留悬空引用
-  - **脱敏**：扫描释义、机制、歧义、用例等全部散文字段，拦截手机号、身份证号、钱包地址、
-    账号 handle、链接、商号与具名平台银行等真实标识，以及任何语料规模信息
-  - 生成物与源数据同步
+  <!--n_tv-->426<!--/n_tv--> entries are currently marked to-verify.
+- **When unsure, we say so instead of giving a confident-looking wrong definition.** A word whose meaning the evidence can't settle is better left out than forced.
+- **Every example is sanitized**: <!--n_ex-->631<!--/n_ex--> entries carry real usage; the
+  <!--n_note-->117<!--/n_note--> without a publishable example explain why in `example_note` (nearly every hit on 空包, for instance, is 真空包装 — vacuum packaging — which is itself the false-positive source).
+- **Automatic checks at build time** — the lexicon won't build if any of them fails:
+  - Structure: unique ids and titles, no alias conflicts, symmetric relations, no dangling references
+  - **Sanitization**: every prose field (definition, mechanism, ambiguity, example and the rest) is scanned for real identifiers — phone numbers, ID numbers, wallet addresses, account handles, links, business names, named platforms and banks — and for any information about corpus size
+  - Generated files in sync with the source data
 
-## 更新与贡献
+## Updates and contributing
 
-按版本增量更新。欢迎指出任何释义错误或补充新词——见 [`CONTRIBUTING.md`](CONTRIBUTING.md) 与 Issue 模板。
+The lexicon is updated continuously, with incremental releases. Corrections to any definition and new words are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md) (in Chinese) and the issue templates.
 
-提交新词条时请注意两点：**必须附脱敏后的真实用例**，以及**必须填写歧义说明**。缺这两项的词条很难被采用。
+When you submit a new entry, two things matter: **include a sanitized real-world example**, and **fill in the false-positive notes**. Entries missing either are unlikely to be accepted.
 
-## 免责声明
+## Disclaimer
 
-本词典用于安全研究、风险识别与公众教育。所有词条**仅描述语言现象与手法机制，不提供任何实施指导**。示例已脱敏处理。
+This lexicon is for security research, risk detection and public education. Every entry **describes language and mechanisms only, and provides no operational guidance**. Examples are sanitized.
 
-词条中出现的平台类目、行业名称**不代表相关主体存在违规行为**——被滥用的平台是风险的承受方。本词典不对任何具名企业、品牌或个人作出参与黑灰产的指控。
+Platform categories and industry names that appear in entries **do not imply wrongdoing by any party** — the platforms being abused are the ones bearing the risk. This lexicon makes no allegation that any named company, brand or individual takes part in the underground economy.
 
-任何人不得将本词典用于违法目的。
+No one may use this lexicon for unlawful purposes.
 
-## 维护与引用
+## Maintainers and citation
 
-本词典由 **威胁猎人（Threat Hunter）** 黑灰产研究团队维护并持续更新。
-官网 [threathunter.cn](https://www.threathunter.cn)（中文）｜ [threathunter.com](https://www.threathunter.com)（English）。
-运营主体为深圳永安在线科技有限公司。
+This lexicon is maintained and continuously updated by the underground economy research team at **Threat Hunter (威胁猎人)**.
+Website: [threathunter.com](https://www.threathunter.com) (English) ｜ [threathunter.cn](https://www.threathunter.cn) (Chinese).
+Operated by 深圳永安在线科技有限公司.
 
-威胁猎人的开源项目：
+Open-source projects from Threat Hunter:
 
-| 项目 | 说明 |
+| Project | Description |
 | --- | --- |
-| [星云 Nebula](https://github.com/threathunterX/nebula2) | 开源业务风控系统，Flink 实时计算与内置策略 |
-| [IP99 SDK](https://github.com/threathunterX/ip99-sdk) | IP 风险画像开发工具包 |
+| [Nebula 星云](https://github.com/threathunterX/nebula2) | Open-source business risk-control system with Flink real-time computation and built-in strategies |
+| [IP99 SDK](https://github.com/threathunterX/ip99-sdk) | SDK for IP risk profiling |
 
-**欢迎指出任何释义错误。** 这份词典的价值取决于判断准不准，纠错比新增更要紧。
+**Please point out any wrong definition.** This lexicon is only as valuable as its judgments are accurate; corrections matter more than additions.
 
-引用建议：
+Suggested citation:
 
 ```
-威胁猎人（Threat Hunter）黑灰产研究团队．互联网黑灰产黑话词典［DB/OL］．
+Threat Hunter Underground Economy Research Team. Underground Slang Lexicon [DB/OL].
 https://github.com/threathunterX/underground-slang-lexicon
 ```
 
-## 许可
+## License
 
-本仓库采用双许可：
+This repository is dual-licensed:
 
-| 内容 | 许可 | 文件 |
+| Content | License | File |
 | --- | --- | --- |
-| 词条数据（`data/`、`dict/`） | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) | [`LICENSE`](LICENSE) |
-| 脚本（`tools/`） | MIT | [`LICENSE-MIT`](LICENSE-MIT) |
+| Entry data (`data/`, `dict/`) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [`LICENSE`](LICENSE) |
+| Scripts (`tools/`) | MIT | [`LICENSE-MIT`](LICENSE-MIT) |
 
-词条数据可自由复制、改编与商业使用，**须注明来源**（引用格式见上）。
+Entry data may be freely copied, adapted and used commercially, **with attribution** (see the citation format above).

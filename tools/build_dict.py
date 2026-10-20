@@ -12,7 +12,7 @@ ENTRY_DIR = os.path.join(ROOT, 'data', 'entries')
 SCHEMA = json.load(open(os.path.join(ROOT, 'data', 'schema.json'), encoding='utf-8'))
 CATS = SCHEMA['categories']
 CONF_LABEL = {'high': '高', 'medium': '中', 'to-verify': '待核实'}
-# 置信度口径：README「词条质量口径」与 data/schema.json 用的是同一套说法，改一处要三处一起改
+# 置信度口径：README.zh-CN.md「词条质量口径」、README.md「Quality standards」与 data/schema.json 用的是同一套说法，改一处要四处一起改
 CONF_DESC = {'high': '词义有真实用例佐证，并经人工复核确认',
              'medium': '词义基本确定，但用法较多或边界不清，使用时要结合语境',
              'to-verify': '证据不足或尚未逐条复核'}
@@ -381,7 +381,7 @@ def render(entries):
             ('收录版本', '首次收录的版本')]:
         L.append(f'| {name} | {desc} |')
     L.append('')
-    L.append('各字段的完整定义见 [README · 字段说明](../README.md#字段说明)。')
+    L.append('各字段的完整定义见 [README · 字段说明](../README.zh-CN.md#字段说明)。')
     L.append('')
     L.append('## 目录')
     L.append('')
@@ -469,23 +469,28 @@ def render(entries):
             L.append('')
     return '\n'.join(L) + '\n'
 
-def sync_readme(entries):
-    """把 README 里易漂移的数字与实际数据同步，避免每轮更新手改出错。"""
-    path = os.path.join(ROOT, 'README.md')
-    if not os.path.exists(path):
-        return
-    with open(path, encoding='utf-8') as f:
-        s = f.read()
-    orig = s
+# 两份 README：英文 README.md 是仓库首页，中文 README.zh-CN.md 与词典正文同语言，两份共用同一套同步键。
+# 数字一律用 <!--key-->数字<!--/key--> 标记回填；成段内容（按语种分布、枢纽词）用同名块标记整段重写。
+# 早先按中文原文措辞写死的正则同步，措辞一改就静默失效，所以一律改用标记。
+READMES = (('README.md', 'en'), ('README.zh-CN.md', 'zh'))
+BADGE_LABELS = {'en': ('entries', 'categories', 'languages', 'relations'),
+                'zh': ('词条', '分类', '语种', '关联边')}
+LANG_EN = {'zh': 'Chinese', 'en': 'English', 'pt': 'Brazilian Portuguese', 'id': 'Indonesian',
+           'vi': 'Vietnamese', 'tl': 'Tagalog', 'ru': 'Russian', 'th': 'Thai', 'hi': 'Hindi'}
+HUBS = 6          # README 列出的枢纽词个数
 
+
+def sync_readme(entries):
+    """把两份 README 里易漂移的数字与实际数据同步，避免每轮更新手改出错。"""
+    by_id = {e['id']: e for e in entries}
     edges = set()
     for e in entries:
         for r in e.get('related') or []:
             edges.add(tuple(sorted((e['id'], r))))
-    n_entry = len(entries)
-    n_cat = len({e['category'] for e in entries})
-    n_lang = len({e.get('lang', 'zh') for e in entries})
-    n_edge = len(edges)
+    degree = Counter(x for edge in edges for x in edge)
+    # 同度数按 id 排，保证每次构建结果一致（集合的遍历顺序随哈希种子变）
+    hubs = [i for i, _ in sorted(degree.items(), key=lambda kv: (-kv[1], kv[0]))[:HUBS]]
+
     def has(e, k):
         return bool((e.get(k) or '').strip())
 
@@ -496,24 +501,15 @@ def sync_readme(entries):
     v1 = [e for e in entries if e.get('first_seen') == 'v0.1']
     v2 = [e for e in entries if e.get('first_seen') == 'v0.2']
     lang_count = Counter(e.get('lang', 'zh') for e in entries)
-
-    # 徽章
-    for label, val in (('词条', n_entry), ('分类', n_cat), ('语种', n_lang), ('关联边', n_edge)):
-        s = re.sub(r'(badge/' + label + r'-)\d+(-)', lambda m: m.group(1) + str(val) + m.group(2), s)
-
-    # 按语种一行
-    names = LANG_SHORT
+    cat_count = Counter(e['category'] for e in entries)
     seq = [lg for lg in LANG_ORDER if lang_count.get(lg)]
-    s = re.sub(r'(（\[非中文词条索引\]\(dict/黑话词典\.md#非中文词条索引\)）：)[^。]+。',
-               lambda m: m.group(1) + ' ｜ '.join('%s %d' % (names[lg], lang_count[lg]) for lg in seq) + '。', s)
 
-    # 用 <!--key-->数字<!--/key--> 标记的位置一律按实际数据回填，正文里的数字就不会再过期。
+    badges = (len(entries), len(cat_count), len(lang_count), len(edges))
     # 百分号写在标记外面（<!--p_amb-->53<!--/p_amb-->%），标记里只放数字。
-    # 早先「歧义覆盖」那句是按原文措辞写死的正则同步，措辞一改就静默失效，所以一律改用标记。
-    marks = {
-        'n_all': n_entry,
+    numbers = {
+        'n_all': len(entries),
         'n_amb': n_amb,
-        'p_amb': pct(n_amb, n_entry),
+        'p_amb': pct(n_amb, len(entries)),
         'n_tv': sum(1 for e in entries if e.get('confidence') == 'to-verify'),
         'n_ex': sum(1 for e in entries if e.get('example')),
         'n_note': sum(1 for e in entries if e.get('example_note') and not e.get('example')),
@@ -525,23 +521,45 @@ def sync_readme(entries):
         'p_mech_v1': pct(sum(has(e, 'mechanism') for e in v1), len(v1)),
         'n_mech_v2': sum(has(e, 'mechanism') for e in v2),
         'p_mech_v2': pct(sum(has(e, 'mechanism') for e in v2), len(v2)),
+        'n_edge': len(edges),
+        'n_cross': sum(1 for a, b in edges if by_id[a]['category'] != by_id[b]['category']),
     }
-    for k, v in marks.items():
-        if '<!--%s-->' % k not in s:
-            print('⚠ README 里找不到同步标记 <!--%s-->，这个数字不会自动更新' % k)
-        s = re.sub(r'(<!--%s-->)\d+(<!--/%s-->)' % (k, k),
-                   lambda m, v=v: m.group(1) + str(v) + m.group(2), s)
+    numbers.update({'cat:' + c: cat_count.get(c, 0) for c in CATS})
+    blocks = {
+        'en': {'langs': ' · '.join('%s %d' % (LANG_EN.get(lg, lg), lang_count[lg]) for lg in seq),
+               'hubs': ', '.join('**%s**' % by_id[i]['term'] for i in hubs)},
+        'zh': {'langs': ' ｜ '.join('%s %d' % (LANG_SHORT.get(lg, lg), lang_count[lg]) for lg in seq),
+               'hubs': '、'.join('**%s**' % by_id[i]['term'] for i in hubs)},
+    }
 
-    # 九分类表的词条数（此前漏同步，v0.2 并入后表里还是 v0.1 的旧值）
-    cat_count = Counter(e['category'] for e in entries)
-    for c in CATS:
-        s = re.sub(r'(\| \[' + re.escape(c) + r'\]\(dict/黑话词典\.md#[^)]*\) \| )\d+( \|)',
-                   lambda m, n=cat_count.get(c, 0): m.group(1) + str(n) + m.group(2), s)
-
-    if s != orig:
-        with open(path, 'w', encoding='utf-8') as f:
-            f.write(s)
-        print('已同步 README 中的统计数字')
+    synced = []
+    for fn, lg in READMES:
+        path = os.path.join(ROOT, fn)
+        if not os.path.exists(path):
+            print('⚠ 找不到 %s，跳过同步' % fn)
+            continue
+        with open(path, encoding='utf-8') as f:
+            s = f.read()
+        orig = s
+        for label, val in zip(BADGE_LABELS[lg], badges):
+            s = re.sub(r'(badge/' + re.escape(label) + r'-)\d+(-)',
+                       lambda m, v=val: m.group(1) + str(v) + m.group(2), s)
+        for k, v in numbers.items():
+            if '<!--%s-->' % k not in s:
+                print('⚠ %s 里找不到同步标记 <!--%s-->，这个数字不会自动更新' % (fn, k))
+            s = re.sub(r'(<!--%s-->)\d+(<!--/%s-->)' % (re.escape(k), re.escape(k)),
+                       lambda m, v=v: m.group(1) + str(v) + m.group(2), s)
+        for k, v in blocks[lg].items():
+            if '<!--%s-->' % k not in s:
+                print('⚠ %s 里找不到同步标记 <!--%s-->，这段内容不会自动更新' % (fn, k))
+            s = re.sub(r'(<!--%s-->).*?(<!--/%s-->)' % (k, k),
+                       lambda m, v=v: m.group(1) + v + m.group(2), s, flags=re.S)
+        if s != orig:
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write(s)
+            synced.append(fn)
+    if synced:
+        print('已同步 README 中的统计数字：' + '、'.join(synced))
 
 
 def main():
