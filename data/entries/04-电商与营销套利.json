@@ -273,6 +273,7 @@
    "kaikaili",
    "miaomai",
    "puwu",
+   "quanmianzhi",
    "xiankuanhuishou",
    "xiaofeiquan",
    "yuanxiang",
@@ -340,6 +341,7 @@
    "huishouqun",
    "huiu",
    "huixiang",
+   "jiaodan",
    "kaikaili",
    "lijianjin",
    "ludhuo",
@@ -620,6 +622,7 @@
    "gufan",
    "hexiao",
    "huangniu",
+   "jiaodan",
    "kongbao",
    "majiaodan",
    "shaitu",
@@ -1090,6 +1093,7 @@
    "lamang",
    "lijin",
    "miaomai",
+   "quanmianzhi",
    "taoxian",
    "xiaofeiquan",
    "xingqing"
@@ -4032,6 +4036,44 @@
   "related": [
    "xingqing",
    "huishou"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "jiaodan",
+  "term": "交单",
+  "aka": [
+   "券码交单"
+  ],
+  "category": "电商与营销套利",
+  "definition": "券码回收的结算动作：把券码或截图完整提交给回收方核验结算。",
+  "mechanism": "券回收链路的收口环节：核销后按回收方要求提交完整券码/截图，与「报单」同为交割话术——区别在报单多指任务登记，交单专指凭证提交。",
+  "example": "复制完整券码交单",
+  "ambiguity": "贸易与物流语境「交单」为标准术语（单据交付），需与券码、回收语境共现。",
+  "related": [
+   "baodan",
+   "huishou"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "quanmianzhi",
+  "term": "全面值",
+  "aka": [
+   "面值折"
+  ],
+  "category": "电商与营销套利",
+  "definition": "充值类权益的报价口径：按面值打折结算（如「986折」即面值的 98.6%）。",
+  "mechanism": "充值黑产的定价方式：以「全面值＋折扣数」报价，买家发关键词触发代充值；折扣差即卖方利润，常与话费、会员、平台余额类权益回收并见。",
+  "example": "全面值 986 折，群里发关键词秒充值",
+  "ambiguity": "「面值」为礼品卡与充值行业正常用语；「全面值」连写属行话压缩，需与充值报价语境共现。",
+  "related": [
+   "gouwujin",
+   "xingqing"
   ],
   "confidence": "to-verify",
   "frequency": "少见",
