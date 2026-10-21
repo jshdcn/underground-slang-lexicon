@@ -630,6 +630,7 @@
    "chadan",
    "chaobu",
    "chudan",
+   "dibao",
    "fanlu",
    "gufan",
    "hexiao",
@@ -4257,6 +4258,7 @@
   "example": "1268下单 行情1320 猪脚饭🥩",
   "ambiguity": "猪脚饭本是常见快餐名，餐饮内容占绝大多数，只有与下单价、行情、🥩 同现时才是利润说法。",
   "related": [
+   "dibao",
    "rouemoji",
    "run",
    "zhang"
@@ -4277,6 +4279,24 @@
   "related": [
    "rouemoji",
    "xingqing"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "dibao",
+  "term": "低保",
+  "aka": [],
+  "category": "电商与营销套利",
+  "definition": "借「最低生活保障」的说法，指利润薄但行情稳定、可以天天反复下的报单。",
+  "mechanism": "报单里用来标注利润档位与稳定性：「低保走量」「每天低保」「速度低保」即每单只赚几十元，但价差稳、可按量反复做。与「猪脚饭」同属薄利档的自嘲说法，区别在于低保强调稳定可重复，猪脚饭强调单次赚得少。",
+  "example": "下10个×40=400🥩 低保走量 ｜ 换新补贴 每天低保",
+  "ambiguity": "本义是最低生活保障，民生新闻与个人自述里绝大多数是本义；只有与下单价、行情、🥩、走量同现时才是利润档位说法。",
+  "related": [
+   "baodan",
+   "rouemoji",
+   "zhujiaofan"
   ],
   "confidence": "to-verify",
   "frequency": "少见",

@@ -1995,6 +1995,7 @@
    "neiceng",
    "paofen",
    "sanhei",
+   "shanhou",
    "shuifang",
    "ushang",
    "ushangnaxian",
@@ -2190,6 +2191,7 @@
    "kouling",
    "pankou",
    "shangfen",
+   "shanhou",
    "shazhupan",
    "shouchong",
    "sihua"
@@ -4881,6 +4883,7 @@
    "kuaidihuangjin",
    "paofen",
    "shangya",
+   "shanhou",
    "ushang",
    "ushangnaxian",
    "zhaomache"
@@ -5733,6 +5736,25 @@
    "insider",
    "jiabai",
    "jiedong"
+  ],
+  "confidence": "to-verify",
+  "frequency": "少见",
+  "first_seen": "v0.4"
+ },
+ {
+  "id": "shanhou",
+  "term": "善后",
+  "aka": [],
+  "category": "资金通道与洗钱",
+  "definition": "资金通道一笔款跑完后的收尾环节：参与方清理自己账户里的交易痕迹并回传凭证，核对通过才计数结算。",
+  "mechanism": "出现在券码转赠、扫码付款等入金流程的说明里，与通道金额、汇率、三黑禁接条款并列。清痕是为了降低账户被追溯、因客诉被冻结的概率；「不交凭证不加分」一类条款把清痕和结算挂钩，跑分方不做善后就拿不到这一笔的计数。",
+  "example": "等我领取完 善后 完成 ｜ 来善后加数",
+  "ambiguity": "日常、事故处理与新闻里的「善后」是本义（处理事后遗留问题）；只有与入金、通道、汇率、加分或加数同现时才指清痕结算环节。",
+  "related": [
+   "chujin",
+   "huilv",
+   "kesu",
+   "sanhei"
   ],
   "confidence": "to-verify",
   "frequency": "少见",

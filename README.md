@@ -16,10 +16,10 @@
   <sub><a href="https://www.threathunter.com">English</a> ｜ <a href="https://www.threathunter.cn">中文站</a></sub>
 </p>
 
-[![Entries](https://img.shields.io/badge/entries-772-blue)](dict/黑话词典.md)
+[![Entries](https://img.shields.io/badge/entries-774-blue)](dict/黑话词典.md)
 [![Categories](https://img.shields.io/badge/categories-9-green)](dict/黑话词典.md)
 [![Languages](https://img.shields.io/badge/languages-6-yellow)](dict/黑话词典.md#非中文词条索引)
-[![Relations](https://img.shields.io/badge/relations-5442-orange)](dict/黑话词典.md)
+[![Relations](https://img.shields.io/badge/relations-5449-orange)](dict/黑话词典.md)
 [![License](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE)
 
 **👉 [Browse the lexicon](dict/黑话词典.md)** ｜ [CSV](dict/terms.csv) ｜ [Structured data](data/entries/) ｜ [Schema](data/schema.json) ｜ **[Relation graph](https://htmlpreview.github.io/?https://raw.githubusercontent.com/threathunterX/underground-slang-lexicon/main/docs/index.html)**
@@ -74,11 +74,11 @@ None of this is gibberish. It is precise, efficient trade language with clear re
 | --- | --- | --- |
 | Content | Word + risk level | Word + definition + mechanism + real usage + **false-positive notes** + related terms |
 | Organization | Flat | Nine categories by supply-chain position, plus 18 morphological families by word root |
-| Ambiguity | Not handled | Ordinary-context meanings and observed false-positive sources (<!--n_amb-->466<!--/n_amb--> entries so far) |
+| Ambiguity | Not handled | Ordinary-context meanings and observed false-positive sources (<!--n_amb-->468<!--/n_amb--> entries so far) |
 | Obfuscated spellings | Usually left out | **A category of their own** — the most discriminative features there are |
 | Usage | Alert on any hit | Separates high-precision rules from low-discrimination words that need combined signals |
 
-**The key difference is the false-positive notes.** <!--n_amb-->466<!--/n_amb--> of the <!--n_all-->772<!--/n_all--> entries carry one (<!--p_amb-->60<!--/p_amb-->%), because a great deal of slang is written exactly like everyday language:
+**The key difference is the false-positive notes.** <!--n_amb-->468<!--/n_amb--> of the <!--n_all-->774<!--/n_all--> entries carry one (<!--p_amb-->60<!--/p_amb-->%), because a great deal of slang is written exactly like everyday language:
 
 - 养卡 is overwhelmingly a car **maintenance card**
 - 空包 hits come mainly from **vacuum packaging**
@@ -135,18 +135,18 @@ graph LR
 | [Data & privacy abuse](dict/黑话词典.md#数据与隐私侵害) | <!--cat:数据与隐私侵害-->118<!--/cat:数据与隐私侵害--> | Upstream: raw identity and communications data |
 | [Identity & verification bypass](dict/黑话词典.md#身份与认证绕过) | <!--cat:身份与认证绕过-->170<!--/cat:身份与认证绕过--> | Turns data into usable accounts |
 | [Device & endpoint cracking](dict/黑话词典.md#终端与设备破解) | <!--cat:终端与设备破解-->23<!--/cat:终端与设备破解--> | Gives accounts a trusted device environment |
-| [E-commerce & promotion arbitrage](dict/黑话词典.md#电商与营销套利) | <!--cat:电商与营销套利-->163<!--/cat:电商与营销套利--> | Monetization: platform subsidies and perks |
+| [E-commerce & promotion arbitrage](dict/黑话词典.md#电商与营销套利) | <!--cat:电商与营销套利-->164<!--/cat:电商与营销套利--> | Monetization: platform subsidies and perks |
 | [Traffic & lead diversion](dict/黑话词典.md#流量与引流) | <!--cat:流量与引流-->39<!--/cat:流量与引流--> | Monetization: steering traffic to gambling, fraud and porn |
-| [Payment channels & money laundering](dict/黑话词典.md#资金通道与洗钱) | <!--cat:资金通道与洗钱-->178<!--/cat:资金通道与洗钱--> | Downstream: cashing out and laundering proceeds |
+| [Payment channels & money laundering](dict/黑话词典.md#资金通道与洗钱) | <!--cat:资金通道与洗钱-->179<!--/cat:资金通道与洗钱--> | Downstream: cashing out and laundering proceeds |
 | [Trading & escrow jargon](dict/黑话词典.md#交易与担保行话) | <!--cat:交易与担保行话-->51<!--/cat:交易与担保行话--> | Support: market rules for trading resources |
 | [Obfuscation & evasion](dict/黑话词典.md#混淆与规避手法) | <!--cat:混淆与规避手法-->18<!--/cat:混淆与规避手法--> | Support: defeating detection |
 | [Recruitment & scripts](dict/黑话词典.md#招募与话术) | <!--cat:招募与话术-->12<!--/cat:招募与话术--> | Support: labor supply |
 
 There is also a **[morphological family index](dict/黑话词典.md#构词法词族)** organized by word root (18 roots: `料`/`鱼`/`码`/`号`/`卡`/`车`/`粉`/`盘`/`户`/`单`/`商`/`群`/`水`/`口`/`代X`/`保X／包X`/`无视X`/`反X`). Categories show where a word sits in the supply chain; roots show how the language generates words. The roots are more useful over time: new words tend to follow the same patterns, so knowing which root a word belongs to tells you roughly where it sits in the chain.
 
-**By language** ([non-Chinese index](dict/黑话词典.md#非中文词条索引)): <!--langs-->Chinese 670 · English 38 · Brazilian Portuguese 36 · Indonesian 10 · Vietnamese 7 · Tagalog 11<!--/langs-->. Non-Chinese entries share the same categories, with `lang` and `region` marking the language and the ecosystem where the word circulates.
+**By language** ([non-Chinese index](dict/黑话词典.md#非中文词条索引)): <!--langs-->Chinese 672 · English 38 · Brazilian Portuguese 36 · Indonesian 10 · Vietnamese 7 · Tagalog 11<!--/langs-->. Non-Chinese entries share the same categories, with `lang` and `region` marking the language and the ecosystem where the word circulates.
 
-Of the <!--n_edge-->5442<!--/n_edge--> relations (all bidirectional), <!--n_cross-->1837<!--/n_cross--> cross categories, and no entry is isolated. The most connected hubs are <!--hubs-->**跑分**, **成品号**, **料**, **公群**, **协议号**, **人头**<!--/hubs-->.
+Of the <!--n_edge-->5449<!--/n_edge--> relations (all bidirectional), <!--n_cross-->1839<!--/n_cross--> cross categories, and no entry is isolated. The most connected hubs are <!--hubs-->**跑分**, **成品号**, **料**, **公群**, **协议号**, **人头**<!--/hubs-->.
 
 The same jargon spans e-commerce, finance, local services and social platforms, and it spans languages too. Escrow is 走担保 in Chinese, escrow in English and trung gian in Vietnamese. Accounts that receive the money are 公户 / 车队 in Chinese, drop in English, cho thuê bank in Vietnamese and jasa rekening in Indonesian.
 
@@ -223,9 +223,9 @@ No third-party dependencies.
   - `medium`: the meaning is largely settled, but usage varies or the boundaries are unclear — interpret it in context
   - `to-verify`: insufficient evidence, or not yet reviewed entry by entry; everything merged in v0.2 sits here while review continues
 
-  <!--n_tv-->434<!--/n_tv--> entries are currently marked to-verify.
+  <!--n_tv-->436<!--/n_tv--> entries are currently marked to-verify.
 - **When unsure, we say so instead of giving a confident-looking wrong definition.** A word whose meaning the evidence can't settle is better left out than forced.
-- **Every example is sanitized**: <!--n_ex-->643<!--/n_ex--> entries carry real usage, and
+- **Every example is sanitized**: <!--n_ex-->645<!--/n_ex--> entries carry real usage, and
   <!--n_note-->117<!--/n_note--> entries without a publishable example explain why in `example_note` (nearly every hit on 空包, for instance, is 真空包装 — vacuum packaging — which is itself the false-positive source).
 - **Automatic checks at build time** — the lexicon won't build if any of them fails:
   - Structure: well-formed, unique ids and unique titles, no alias conflicts, symmetric relations, no dangling references
