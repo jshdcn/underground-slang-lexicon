@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-10-22T08:42:55+00:00",
+  "upstream": {
+    "repo": "threathunterX/underground-slang-lexicon",
+    "ref": "main",
+    "sha": "05ed3108193f75c4d5065e29eb36c2ffdf1aac70"
+  },
+  "policy": {
+    "rendered_fields": [
+      "term",
+      "aka",
+      "definition",
+      "ambiguity",
+      "confidence"
+    ],
+    "dropped_fields": [
+      "category",
+      "mechanism",
+      "example",
+      "example_note",
+      "frequency",
+      "lang",
+      "region",
+      "first_seen",
+      "related"
+    ],
+    "confidence_labels": {
+      "high": "高",
+      "medium": "中",
+      "to-verify": "待核实"
+    },
+    "same_term_rule": "上游同名词条已标注（高/中）→ 上游完全覆盖本地；上游同名词条未标注 → 两方义项并列；本地置信度一律视为待核实",
+    "language_split": "上游取 lang 字段；本地按词头字符判（汉字→中文，0-9/A-Z→英文）。不同语种分节，不混排",
+    "note": "产物面向咨询用途，体例以本地词典为准：### 词 → 又作 → 义项(1. 2.) → 研判置信度：X。上游字段只保留词/别名/释义/正常义/置信度，其余（分类、在链条中、用例、频次、语种地区、收录版本、关联词表）一律不渲染；分类与场景只在索引视图二汇总。上游含未标注档全部收录。引号统一为中文引号。"
+  },
+  "counts": {
+    "upstream_terms": 774,
+    "local_terms": 578,
+    "merged_local_senses": 12,
+    "overridden_local": 51,
+    "total": 1352,
+    "aliases": 1049,
+    "by_language": {
+      "zh": 1232,
+      "en": 56,
+      "pt": 36,
+      "id": 10,
+      "vi": 7,
+      "tl": 11
+    }
+  },
+  "files": {
+    "underground-slang-lexicon.md": {
+      "bytes": 376819,
+      "sha256": "3cff3d48400b7bb8aa1064e222e7ca2e623da830675dd08697265691d418e4a9"
+    },
+    "underground-slang-index.md": {
+      "bytes": 71518,
+      "sha256": "b7d53feb773e008b834990b7b027f119a6a72c0e7aaa1418c5688769af625aa2"
+    }
+  }
+}
