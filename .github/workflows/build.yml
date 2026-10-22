@@ -40,6 +40,27 @@ jobs:
           SLANG_CACHE_DIR: ${{ runner.temp }}/slang-cache
         run: python tools/merge_local.py build --out skill/
 
+      - name: Validate dictionary section structure
+        run: |
+          python - <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          lexicon = pathlib.Path("skill/underground-slang-lexicon.md").read_text(
+              encoding="utf-8"
+          )
+          sections = re.findall(r"(?m)^## (.+)$", lexicon)
+          if not sections:
+              sys.exit("Dictionary has no language or index sections")
+          if len(sections) > 60:
+              sys.exit(
+                  f"Dictionary has {len(sections)} sections; expected at most 60. "
+                  "Possible missing pypinyin dependency."
+              )
+          print(f"Dictionary section structure OK: {len(sections)} sections")
+          PY
+
       - name: Commit generated files
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
