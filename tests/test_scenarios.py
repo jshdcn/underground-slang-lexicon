@@ -7,7 +7,7 @@
   上游没有这个词条       → 本地独立成条（本地置信度一律视为「待核实」）
   正文是「→ 见 X」        → 纯别名跳转，只进索引
 
-16 个场景，每个都实际跑一次 build()，再看产物是否符合预期。
+21 个场景，每个都实际跑一次 build()，再看产物是否符合预期。
 
     python3 tests/test_scenarios.py
     python3 tests/test_scenarios.py -v     # 打印每个场景的关键产物
@@ -401,6 +401,16 @@ def s20():
 
 
 scenario("20 分类不渲染", "上游 category 只进索引视图二，不上词条正文", s20)
+
+
+def s21():
+    run_build([], [], "s21")
+    files = sorted(path.name for path in (TMP / "s21").iterdir())
+    expected = ["underground-slang-index.md", "underground-slang-lexicon.md"]
+    return files == expected, f"生成文件：{'、'.join(files)}"
+
+
+scenario("21 交付文件范围", "只生成词典与索引两个 Markdown 文件", s21)
 
 
 def main(argv=None) -> int:

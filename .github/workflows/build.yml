@@ -1,0 +1,64 @@
+name: Build slang lexicon
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  push:
+    branches: [main]
+    paths-ignore:
+      - skill/underground-slang-index.md
+      - skill/underground-slang-lexicon.md
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run merge scenarios
+        run: python tests/test_scenarios.py
+
+      - name: Build dictionary and index
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SLANG_CACHE_DIR: ${{ runner.temp }}/slang-cache
+        run: python tools/merge_local.py build --out skill/
+
+      - name: Commit generated files
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add skill/underground-slang-index.md skill/underground-slang-lexicon.md
+          if git diff --cached --quiet; then
+            echo "Generated files are already up to date"
+            exit 0
+          fi
+          git commit -m "chore(dict): rebuild generated lexicon"
+          git push
+
+      - name: Upload generated Markdown files
+        uses: actions/upload-artifact@v4
+        with:
+          name: underground-slang-lexicon
+          path: |
+            skill/underground-slang-index.md
+            skill/underground-slang-lexicon.md
+          if-no-files-found: error
+          retention-days: 14

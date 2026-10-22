@@ -12,17 +12,11 @@
 产出（供 anti-cheating-assistant 技能直接消费）：
   skill/underground-slang-lexicon.md   扁平不分章、拼音全局序
   skill/underground-slang-index.md     双视图索引
-  skill/manifest.json                  构建元信息（上游 sha / 计数 / 时间）
 
 子命令：
-  report          打印上游与本地差异
-  extract-local   从既有词典 md 中抽出本地词条 -> local-data/local-entries.json
   build           上游 + 本地 -> skill/ 下两个 md
-  check           上游是否有更新（有则退出码 2）
 
 用法：
-  python3 tools/merge_local.py report
-  python3 tools/merge_local.py extract-local --from <lexicon.md> --index <index.md>
   python3 tools/merge_local.py build --out skill/
 """
 
@@ -31,14 +25,12 @@ from __future__ import annotations
 import argparse
 import base64
 import datetime as dt
-import hashlib
 import json
 import os
 import re
 import sys
 import urllib.error
 import urllib.request
-from dataclasses import dataclass, field
 from pathlib import Path
 
 REPO = "threathunterX/underground-slang-lexicon"
@@ -128,13 +120,13 @@ def _pinyin(text: str) -> str:
     global _PINYIN_MISSING_WARNED
     try:
         from pypinyin import lazy_pinyin
-    except ImportError:  # CI 里会 pip install，本地缺失时退化为不排序
+    except ImportError:  # 本地缺失时退化为不排序
         if not _PINYIN_MISSING_WARNED:
             _PINYIN_MISSING_WARNED = True
             print(
                 "!! 未安装 pypinyin：汉字退回按 Unicode 码位排序，分节会退化成"
-                "「## 一 / ## 三 / ## 云」这种按首字的几百个小节，与 CI 产物不一致。\n"
-                "   请用装了 pypinyin 的解释器构建（CI 里是 pip install pypinyin）。",
+                "「## 一 / ## 三 / ## 云」这种按首字的几百个小节，无法按拼音排序。\n"
+                "   请按 requirements.txt 安装依赖后再构建。",
                 file=sys.stderr,
             )
         return text
@@ -164,8 +156,7 @@ def sort_key(term: str, lang: str = "zh") -> tuple:
 # ==========================================================================
 
 def _api(url: str) -> dict:
-    """GitHub API 请求。带 GITHUB_TOKEN 时走认证——CI 里匿名请求只有 60 次/小时，
-    容易在反复重建时踩限流。"""
+    """GitHub API 请求。可设置 GITHUB_TOKEN 或 GH_TOKEN 提高匿名请求限额。"""
     last: Exception | None = None
     headers = {
         "User-Agent": "anti-cheating-assistant-sync",
@@ -182,12 +173,6 @@ def _api(url: str) -> dict:
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
             last = exc
     raise RuntimeError(f"请求失败：{url}（{last}）")
-
-
-def upstream_tree_sha() -> str:
-    """上游 main 当前的 tree sha。`build` 写进 manifest 的就是这个值，
-    定时巡检直接复用同一函数，保证比对的两边是同一个东西。"""
-    return _api(f"https://api.github.com/repos/{REPO}/git/trees/{REF}?recursive=1")["sha"]
 
 
 def fetch_upstream(verbose: bool = True) -> tuple[list[dict], str]:
@@ -221,24 +206,6 @@ def fetch_upstream(verbose: bool = True) -> tuple[list[dict], str]:
     return entries, tree["sha"]
 
 
-# ==========================================================================
-# 本地词典解析（用于首次抽取）
-# ==========================================================================
-
-def parse_lexicon(path: Path) -> dict[str, str]:
-    """切出「### 词」块。
-
-    块尾必须也在 `## 小节标题` 处截断：原词典每节最后一个词条的正文后面紧跟着
-    下一节标题（`## A`、`## B`…），只按 `^### ` 切会把标题吞进上一条正文，
-    产物里就会出现「正文末尾莫名冒出个 A / B」。上一版正是踩了这个坑。
-    """
-    text = path.read_text(encoding="utf-8")
-    return {
-        m.group(1).strip(): clean_body(m.group(2))
-        for m in re.finditer(r"^### (.+?)\s*$(.*?)(?=^### |^## |\Z)", text, re.M | re.S)
-    }
-
-
 # 正文里不该出现的结构性残留：markdown 标题行（`## A`）、孤立的章节字母
 _STRAY_HEADING = re.compile(r"(?m)^[ \t]*#{1,6}[ \t]*[^\s#]{0,12}[ \t]*$\n?")
 
@@ -250,29 +217,6 @@ def clean_body(body: str) -> str:
     在读取侧再洗一遍，旧数据不清也不会漏到产物里。
     """
     return _STRAY_HEADING.sub("", body or "").strip()
-
-
-def parse_index_scenes(path: Path) -> dict[str, list[str]]:
-    text = path.read_text(encoding="utf-8")
-    if "## 视图二" not in text:
-        return {}
-    scenes: dict[str, list[str]] = {}
-    for m in re.finditer(r"^## (.+?)（(\d+)）\s*$(.*?)(?=^## |\Z)",
-                         text.split("## 视图二", 1)[1], re.M | re.S):
-        scene = m.group(1).strip()
-        for item in m.group(3).replace("\n", "、").split("、"):
-            item = item.strip()
-            if not item:
-                continue
-            # 去掉「（多义）」「（别名→X）」这类后缀，取主词名
-            name = item
-            while True:
-                stripped = re.sub(r"（(?:多义|别名→[^）]*)）$", "", name).strip()
-                if stripped == name:
-                    break
-                name = stripped
-            scenes.setdefault(name, []).append(scene)
-    return scenes
 
 
 def classify(term: str, body: str, conf_of: dict[str, str],
@@ -303,53 +247,6 @@ def classify(term: str, body: str, conf_of: dict[str, str],
         # 上游没这个词条、只把它挂在别的词下当别名：不算「相同词条」，本地独立保留
         return "local-only", None, f"上游把本词并入「{up_akas[term]}」"
     return "local-only", None, None
-
-
-# ==========================================================================
-# 提取本地扩展
-# ==========================================================================
-
-def extract_local(lexicon: Path, index: Path, out: Path) -> dict:
-    """把既有词典里上游没有的词条抽成 local-entries.json。
-
-    重合词条按置信度处理：上游已标注 → 本地让位（status=override）；
-    上游未标注 → 两方义项并列（status=both）。body 始终保留以便追溯。
-    """
-    upstream, sha = fetch_upstream()
-    conf_of = {e["term"]: (e.get("confidence") or "") for e in upstream}
-    up_akas = {a: e["term"] for e in upstream for a in (e.get("aka") or [])}
-
-    local = parse_lexicon(lexicon)
-    scenes = parse_index_scenes(index)
-
-    records = []
-    for term, body in local.items():
-        status, alias_of, note = classify(term, body, conf_of, up_akas)
-        rec = {"term": term, "status": status,
-               "scenes": scenes.get(term, []), "body": body}
-        if alias_of:
-            rec["alias_of"] = alias_of
-        if note:
-            rec["note"] = note
-        records.append(rec)
-    records.sort(key=lambda r: sort_key(r["term"]))
-
-    doc = {
-        "schema": "anti-cheating-assistant/local-extension@1",
-        "note": "本地独有词条。status 是抽取时的快照，build() 每次按最新上游重算。"
-                "上游同名词条已标注 → override（本地让位）；上游同名词条未标注 → "
-                "both（两方义项并列）；纯别名跳转块 → alias + alias_of。均不删除以便追溯。",
-        "extracted_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-        "source_doc": lexicon.name,
-        "entries": records,
-    }
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-
-    count = lambda s: sum(1 for r in records if r["status"] == s)
-    return {"total": len(records), "local_only": count("local-only"),
-            "override": count("override"), "both": count("both"),
-            "alias": count("alias"), "out": str(out)}
 
 
 # ==========================================================================
@@ -507,7 +404,7 @@ def render_local_block(rec: dict) -> str:
     return "\n".join(out) + "\n"
 
 
-def build(out_dir: Path) -> dict:
+def build(out_dir: Path) -> dict[str, int]:
     """合成产物。上游**全量收录**（含未标注档），本地按置信度归位。"""
     upstream, up_sha = fetch_upstream()
     conf_of = {e["term"]: (e.get("confidence") or "") for e in upstream}
@@ -793,147 +690,31 @@ def build(out_dir: Path) -> dict:
     lex_path.write_text("\n".join(lexicon_lines) + "\n", encoding="utf-8")
     idx_path.write_text("\n".join(idx_lines) + "\n", encoding="utf-8")
 
-    manifest = {
-        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-        "upstream": {"repo": REPO, "ref": REF, "sha": up_sha},
-        "policy": {
-            "rendered_fields": ["term", "aka", "definition", "ambiguity", "confidence"],
-            "dropped_fields": ["category", "mechanism", "example", "example_note",
-                               "frequency", "lang", "region", "first_seen", "related"],
-            "confidence_labels": CONF_CN,
-            "same_term_rule": "上游同名词条已标注（高/中）→ 上游完全覆盖本地；"
-                              "上游同名词条未标注 → 两方义项并列；本地置信度一律视为待核实",
-            "language_split": "上游取 lang 字段；本地按词头字符判（汉字→中文，0-9/A-Z→英文）。"
-                              "不同语种分节，不混排",
-            "note": "产物面向咨询用途，体例以本地词典为准：### 词 → 又作 → 义项(1. 2.) → "
-                    "研判置信度：X。上游字段只保留词/别名/释义/正常义/置信度，"
-                    "其余（分类、在链条中、用例、频次、语种地区、收录版本、关联词表）"
-                    "一律不渲染；分类与场景只在索引视图二汇总。上游含未标注档全部收录。"
-                    "引号统一为中文引号。",
-        },
-        "counts": {
-            "upstream_terms": len(upstream),
-            "local_terms": len(local_recs),
-            "merged_local_senses": len(paired),
-            "overridden_local": len(overridden),
-            "total": total,
-            "aliases": sum(len(v) for v in alias_bucket.values()),
-            "by_language": lang_count,
-        },
-        "files": {
-            p.name: {"bytes": p.stat().st_size,
-                     "sha256": hashlib.sha256(p.read_bytes()).hexdigest()}
-            for p in (lex_path, idx_path)
-        },
+    return {
+        "upstream_terms": len(upstream),
+        "local_terms": len(local_recs),
+        "merged_local_senses": len(paired),
+        "overridden_local": len(overridden),
+        "total": total,
     }
-    (out_dir / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return manifest
-
-
-# ==========================================================================
-# 报告
-# ==========================================================================
-
-def report() -> None:
-    upstream, sha = fetch_upstream()
-    conf_of = {e["term"]: (e.get("confidence") or "") for e in upstream}
-    up_akas = {a: e["term"] for e in upstream for a in (e.get("aka") or [])}
-
-    raw: list[dict] = []
-    if LOCAL_DATA.exists():
-        raw = json.loads(LOCAL_DATA.read_text(encoding="utf-8"))["entries"]
-
-    st: dict[str, int] = {}
-    for r in raw:
-        status, _, _ = classify(r["term"], clean_body(r["body"]), conf_of, up_akas)
-        st[status] = st.get(status, 0) + 1
-
-    cats: dict[str, int] = {}
-    for e in upstream:
-        c = e.get("category", "未分类")
-        cats[c] = cats.get(c, 0) + 1
-
-    print(f"\n上游 {REPO} @ {sha[:10]}")
-    print(f"  词条 {len(upstream)}　别名 {len(up_akas)}　分类 {len(cats)}")
-
-    langs: dict[str, int] = {}
-    for e in upstream:
-        lg = e.get("lang") or "zh"
-        langs[lg] = langs.get(lg, 0) + 1
-    print("  语种：" + "　".join(
-        f"{LANG_CN.get(lg, lg)} {n}"
-        for lg, n in sorted(langs.items(),
-                            key=lambda kv: (LANG_ORDER.index(kv[0]) if kv[0] in LANG_ORDER else 99))))
-
-    conf: dict[str, int] = {}
-    for e in upstream:
-        k = e.get("confidence") or ""
-        conf[k] = conf.get(k, 0) + 1
-    print("  研判置信度：" + "　".join(
-        f"{CONF_CN.get(k, k or '（未填）')} {n}" for k, n in
-        sorted(conf.items(), key=lambda kv: (kv[0] != "high", -kv[1]))))
-    print(f"  → 全部收录（含待核实 {sum(n for k, n in conf.items() if k not in LABELED_CONF)} 条）")
-
-    label = {"alias": "纯别名跳转（进索引，不占正文）",
-             "override": "上游同名已标注 → 本地整条丢弃",
-             "both": "上游同名未标注 → 两方义项并列",
-             "local-only": "上游没有 → 本地独立成条"}
-    print(f"\n本地扩展 {len(raw)} 条记录：")
-    for k in ("local-only", "both", "override", "alias"):
-        if st.get(k):
-            print(f"  {st[k]:>4}  {label[k]}")
-    print(f"\n合并后正文 {len(upstream) + st.get('local-only', 0)} 条\n")
-    for c, n in sorted(cats.items(), key=lambda kv: -kv[1]):
-        print(f"  {n:>4}  {c}")
-    print()
-
-
-def check() -> int:
-    _, sha = fetch_upstream(verbose=False)
-    state = CACHE / "last-tree-sha"
-    prev = state.read_text().strip() if state.exists() else ""
-    if prev == sha:
-        print("上游无变化")
-        return 0
-    print(f"上游有更新：{prev[:10] or '(首次)'} → {sha[:10]}")
-    return 2
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="黑灰产行话词典同步 / 合并")
+    ap = argparse.ArgumentParser(description="拉取上游词条并生成词典与索引")
     sub = ap.add_subparsers(dest="cmd", required=True)
-
-    sub.add_parser("report", help="打印上游分布")
-    p_ex = sub.add_parser("extract-local", help="从既有词典抽取本地独有词条")
-    p_ex.add_argument("--from", dest="src", required=True, type=Path)
-    p_ex.add_argument("--index", required=True, type=Path)
-    p_ex.add_argument("--out", default=LOCAL_DATA, type=Path)
 
     p_build = sub.add_parser("build", help="生成 skill/ 下两个 md")
     p_build.add_argument("--out", default=ROOT / "skill", type=Path)
 
-    sub.add_parser("check", help="上游是否有更新")
-
     args = ap.parse_args(argv)
-    if args.cmd == "report":
-        report()
-    elif args.cmd == "extract-local":
-        info = extract_local(args.src, args.index, args.out)
-        print(f"已抽取 {info['total']} 条 → {info['out']}")
-        print(f"  本地独有 {info['local_only']}　上游已标注覆盖 {info['override']}　"
-              f"上游未标注并列 {info['both']}　别名跳转 {info['alias']}")
-    elif args.cmd == "build":
-        m = build(args.out)
-        c = m["counts"]
-        print(f"已生成 → {args.out}")
-        print(f"  上游 {c['upstream_terms']} + 本地独立 {c['local_terms']} "
-              f"= {c['total']} 条（另有 {c['merged_local_senses']} 个同名未标注的词条义项并列，"
-              f"{c['overridden_local']} 条本地被上游覆盖）")
-        for name, meta in m["files"].items():
-            print(f"  {name}: {meta['bytes']//1024}KB  sha256 {meta['sha256'][:12]}")
-    else:
-        return check()
+    counts = build(args.out)
+    print(f"已生成两个文件 → {args.out}")
+    print(f"  上游 {counts['upstream_terms']} + 本地独立 {counts['local_terms']} "
+          f"= {counts['total']} 条（同名并列 {counts['merged_local_senses']}，"
+          f"本地被上游覆盖 {counts['overridden_local']}）")
+    for name in ("underground-slang-lexicon.md", "underground-slang-index.md"):
+        path = args.out / name
+        print(f"  {name}: {path.stat().st_size // 1024}KB")
     return 0
 
 
