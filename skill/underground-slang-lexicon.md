@@ -1,6 +1,6 @@
 # 黑话词典（合成版）
 
-本文件由 `tools/merge_local.py` 自动生成，**请勿手工编辑**（2026-10-22）。
+本文件由 `tools/merge_local.py` 自动生成，**请勿手工编辑**（2026-10-23）。
 
 - 上游数据：threathunterX/underground-slang-lexicon @ `5f2d4d402d`（CC BY 4.0，威胁猎人 Threat Hunter 黑灰产研究团队）。**本文件是衍生作品**：上游文件不在本仓寄存，每次构建实时取自上游 API；本仓只放本地扩展、合并脚本与产出物。
 - 本地扩展：`local-data/local-entries.json`（本仓库独有词条）
