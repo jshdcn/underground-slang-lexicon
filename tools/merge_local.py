@@ -11,10 +11,11 @@
 
 产出（供 anti-cheating-assistant 技能直接消费）：
   skill/underground-slang-lexicon.md   扁平不分章、拼音全局序
-  skill/underground-slang-index.md     双视图索引
+  skill/underground-slang-index.md     按语种词条索引
+  skill/underground-slang-categories.md 按分类 / 场景索引
 
 子命令：
-  build           上游 + 本地 -> skill/ 下两个 md
+  build           上游 + 本地 -> skill/ 下三个 md
 
 用法：
   python3 tools/merge_local.py build --out skill/
@@ -65,7 +66,7 @@ CONF_FIELD = "研判置信度"
 # **词条下方不放分类**：上游自己的 dict/黑话词典.md 里，category 是 `## 分类`
 # 分节标题，不是词条下方的一行；本地 `scenes` 是另一套轴（行业场景），原文也没有
 # 这个词条下方分类行。本产物是扁平检索（一词一块），词头下只放义项，分类信息
-# 只在索引的「视图二」里按上游分类 / 本地场景汇总。
+# 只在分类索引里按上游分类 / 本地场景汇总。
 DIGIT_BUCKET = "0"
 # 本地词典里「→ 见 “X”」这类纯跳转块，应表达为别名而非正文
 STUB_RE = re.compile(r"→?\s*见\s*[“\"「]?\s*(.+?)\s*[”\"」]?\s*$")
@@ -511,7 +512,7 @@ def build(out_dir: Path) -> dict[str, int]:
         f"→ 尾行 `研判置信度：高 / 中 / 待核实`。",
         f"- **词条下方不放分类**：上游自己的 `dict/黑话词典.md` 把分类用作 `## 分节标题`，"
         f"本地 `scenes` 是另一套轴，两种原文都没有“词条下方一行分类”这种写法。分类与场景的"
-        f"分组只在索引文件里汇总。",
+        f"分组只在独立分类索引里汇总。",
         f"- 只有上游才有的字段一律不渲染：`在链条中`、`用例`、`无示例原因`、`频次`、"
         f"`语种/地区`、`收录版本`、`关联词表`。",
         f"- **同名词条的处理只看置信度**：上游已标注（高/中）→ 上游完全覆盖，本地整条丢弃；"
@@ -654,7 +655,7 @@ def build(out_dir: Path) -> dict[str, int]:
             idx_lines.append(f"**{label}（{len(items)}）**：{'、'.join(items)}")
             idx_lines.append("")
 
-    # 视图二
+    # 分类 / 场景索引单独生成，避免默认加载词条索引时引入重复清单。
     up_groups: dict[str, list[str]] = {}
     for e in upstream:
         up_groups.setdefault(e.get("category", "未分类"), []).append(e["term"])
@@ -667,28 +668,37 @@ def build(out_dir: Path) -> dict[str, int]:
         for s in (info["scenes"] or ["未归类"]):
             loc_groups.setdefault(s, []).append(term)
 
-    idx_lines.append(f"## 视图二：归属分组（上游 {len(up_groups)} 分类 + 本地 {len(loc_groups)} 场景）")
-    idx_lines.append("")
-    idx_lines.append("上游分类按手法职能划分（取自上游 `category` 字段，上游自己的词典也按它分节），"
-                     "本地场景按行业划分（取自本地 `scenes` 字段），两套轴互不映射。"
-                     "词条正文下方不放这些信息，要按分类找词才来这里。")
-    idx_lines.append("")
+    category_lines = [
+        "# 黑灰产行话词典分类与场景索引",
+        "",
+        f"词典全文见 [underground-slang-lexicon.md](underground-slang-lexicon.md)。"
+        f"本文件由脚本生成，请勿手工编辑。",
+        "",
+        f"## 视图二：归属分组（上游 {len(up_groups)} 分类 + 本地 {len(loc_groups)} 场景）",
+        "",
+        "上游分类按手法职能划分（取自上游 `category` 字段，上游自己的词典也按它分节），"
+        "本地场景按行业划分（取自本地 `scenes` 字段），两套轴互不映射。"
+        "词条正文下方不放这些信息，要按分类找词才来这里。",
+        "",
+    ]
     for c, items in sorted(up_groups.items(), key=lambda kv: -len(kv[1])):
-        idx_lines.append(f"## 上游·{c}（{len(items)}）")
-        idx_lines.append("")
-        idx_lines.append("、".join(sorted(items, key=lambda s: sort_key(s, "zh"))))
-        idx_lines.append("")
+        category_lines.append(f"## 上游·{c}（{len(items)}）")
+        category_lines.append("")
+        category_lines.append("、".join(sorted(items, key=lambda s: sort_key(s, "zh"))))
+        category_lines.append("")
     for c, items in sorted(loc_groups.items(), key=lambda kv: -len(kv[1])):
-        idx_lines.append(f"## 本地·{c}（{len(items)}）")
-        idx_lines.append("")
-        idx_lines.append("、".join(sorted(items, key=lambda s: sort_key(s, "zh"))))
-        idx_lines.append("")
+        category_lines.append(f"## 本地·{c}（{len(items)}）")
+        category_lines.append("")
+        category_lines.append("、".join(sorted(items, key=lambda s: sort_key(s, "zh"))))
+        category_lines.append("")
 
     out_dir.mkdir(parents=True, exist_ok=True)
     lex_path = out_dir / "underground-slang-lexicon.md"
     idx_path = out_dir / "underground-slang-index.md"
+    category_path = out_dir / "underground-slang-categories.md"
     lex_path.write_text("\n".join(lexicon_lines) + "\n", encoding="utf-8")
     idx_path.write_text("\n".join(idx_lines) + "\n", encoding="utf-8")
+    category_path.write_text("\n".join(category_lines).rstrip("\n") + "\n", encoding="utf-8")
 
     return {
         "upstream_terms": len(upstream),
@@ -703,16 +713,17 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="拉取上游词条并生成词典与索引")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
-    p_build = sub.add_parser("build", help="生成 skill/ 下两个 md")
+    p_build = sub.add_parser("build", help="生成 skill/ 下三个 md")
     p_build.add_argument("--out", default=ROOT / "skill", type=Path)
 
     args = ap.parse_args(argv)
     counts = build(args.out)
-    print(f"已生成两个文件 → {args.out}")
+    print(f"已生成三个文件 → {args.out}")
     print(f"  上游 {counts['upstream_terms']} + 本地独立 {counts['local_terms']} "
           f"= {counts['total']} 条（同名并列 {counts['merged_local_senses']}，"
           f"本地被上游覆盖 {counts['overridden_local']}）")
-    for name in ("underground-slang-lexicon.md", "underground-slang-index.md"):
+    for name in ("underground-slang-lexicon.md", "underground-slang-index.md",
+                 "underground-slang-categories.md"):
         path = args.out / name
         print(f"  {name}: {path.stat().st_size // 1024}KB")
     return 0

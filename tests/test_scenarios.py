@@ -80,7 +80,7 @@ def run_build(upstream: list[dict], local: list[dict], tag: str) -> tuple[dict, 
     blocks = {m.group(1): m.group(2).strip()
               for m in re.finditer(r"^### (.+?)\s*$(.*?)(?=^### |\Z)", lex, re.M | re.S)}
     aliases = {}
-    for line in idx.split("## 视图二")[0].splitlines():
+    for line in idx.splitlines():
         m = re.match(r"^\*\*(.+?)（\d+）\*\*：(.+)$", line)
         if not m:
             continue
@@ -396,21 +396,30 @@ def s20():
     up = [ent("甲词", "上游口径。", id="jia", category="资金通道与洗钱")]
     b, _ = run_build(up, [], "s20")
     blk = b.get("甲词", "")
-    ok = "〔" not in blk and "资金通道与洗钱" not in blk
-    return ok, f"词条下方无分类行={'是' if ok else '否'}"
+    out = TMP / "s20"
+    idx = (out / "underground-slang-index.md").read_text(encoding="utf-8")
+    categories = (out / "underground-slang-categories.md").read_text(encoding="utf-8")
+    ok = ("〔" not in blk and "资金通道与洗钱" not in blk
+          and "资金通道与洗钱" not in idx
+          and "上游·资金通道与洗钱" in categories)
+    return ok, f"词条分类仅写入独立分类索引={'是' if ok else '否'}"
 
 
-scenario("20 分类不渲染", "上游 category 只进索引视图二，不上词条正文", s20)
+scenario("20 分类索引分离", "上游 category 只进独立分类索引，不上词条索引或正文", s20)
 
 
 def s21():
     run_build([], [], "s21")
     files = sorted(path.name for path in (TMP / "s21").iterdir())
-    expected = ["underground-slang-index.md", "underground-slang-lexicon.md"]
+    expected = [
+        "underground-slang-categories.md",
+        "underground-slang-index.md",
+        "underground-slang-lexicon.md",
+    ]
     return files == expected, f"生成文件：{'、'.join(files)}"
 
 
-scenario("21 交付文件范围", "只生成词典与索引两个 Markdown 文件", s21)
+scenario("21 交付文件范围", "生成词典、词条索引和独立分类索引", s21)
 
 
 def main(argv=None) -> int:
