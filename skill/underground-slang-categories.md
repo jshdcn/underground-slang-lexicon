@@ -34,9 +34,9 @@
 
 🥩 作金额单位、被墙、补萜卷、拆字与插符、玳伐、大麦、掉号、订丹、emoji 代字、防风控操作、返HB、虹包、花体与同形字母、忦、检测新老、简届、琻、卷、科学上网、翎、零宽字符混淆、no elsa、pew、亓、涩敲、筛号、哨曊巻、首字母缩写规避、S窝、桃凎芘、梯子、unalive、肖亮、谐音替字、续袋、异体字与日文汉字替代
 
-## 上游·终端与设备破解（32）
+## 上游·终端与设备破解（34）
 
-alat tempur ojol、aman notif、白帽子、变砖、Facial Queimada、fantasma、分发、FRP、改机、解BL、禁飞区解锁、雷达、Magisk、免杀、秒拨、mod、魔改、母鸡、拿站、企业签、Root、肉鸡、setbid、手机口、刷机、偷渡包、挖洞、外挂、虚拟定位、砸壳、转账模拟器、注册机
+alat tempur ojol、aman notif、白帽子、变砖、饿死、Facial Queimada、fantasma、分发、FRP、改机、解BL、禁飞区解锁、雷达、Magisk、免杀、秒拨、mod、魔改、母鸡、拿站、企业签、Root、肉鸡、setbid、手机口、刷机、softloop、偷渡包、挖洞、外挂、虚拟定位、砸壳、转账模拟器、注册机
 
 ## 上游·招募与话术（18）
 
