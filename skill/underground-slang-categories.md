@@ -26,17 +26,17 @@
 
 爆粉、爆奖、包网、崩老头、Blackhat Seo、博彩、bomber、打粉、代发评论、代X服务、代运营托管、点号、Facebook jail、防封、返水、followers、狗推、股粉、黑平台、轰炸机、话术、互取、互推、互移、jaseb、接粉、截流、kebsos、拉手、落地页、panel、盘口、平台代称、强拉、去水印、入群验证、色粉、色情引流、伤号、杀猪盘、首充、双、双向、双向机器人、刷赞、水军、水下、死粉、suntik sosmed、条评论、投顾、upsubs、万反、无痕、无人直播、小眼睛、下载付、引流、做单群
 
-## 上游·交易与担保行话（56）
+## 上游·交易与担保行话（57）
 
-1B、1P1U、донат、клад、按头、保X承诺、bảo hiểm、茶水、吃肉、出、d、代肝、发车、famhead、飞单、fullgar、garansi、鸽单、公群、供需、鬼担保、黑款、护航、japri、假公群、假押、机场、joy miner、抗投不抗炸、料商、埋雷、麦子、免测、内层、no access、nogar、not VM made、跑路、penipuan、plug、reps、三黑、上车、上押、双押、私家、台红、trung gian、无鸭可侧、下户、协议球、一手、招车、总代、走担保、走y
+1B、1P1U、донат、клад、按头、保X承诺、bảo hiểm、茶水、吃肉、出、d、代肝、发车、famhead、飞单、fullgar、garansi、鸽单、公群、供需、鬼担保、黑款、护航、japri、假公群、假押、机场、joy miner、抗投不抗炸、磕炮、料商、埋雷、麦子、免测、内层、no access、nogar、not VM made、跑路、penipuan、plug、reps、三黑、上车、上押、双押、私家、台红、trung gian、无鸭可侧、下户、协议球、一手、招车、总代、走担保、走y
 
 ## 上游·混淆与规避手法（37）
 
 🥩 作金额单位、被墙、补萜卷、拆字与插符、玳伐、大麦、掉号、订丹、emoji 代字、防风控操作、返HB、虹包、花体与同形字母、忦、检测新老、简届、琻、卷、科学上网、翎、零宽字符混淆、no elsa、pew、亓、涩敲、筛号、哨曊巻、首字母缩写规避、S窝、桃凎芘、梯子、unalive、肖亮、谐音替字、续袋、银手镯、异体字与日文汉字替代
 
-## 上游·终端与设备破解（34）
+## 上游·终端与设备破解（35）
 
-alat tempur ojol、aman notif、白帽子、变砖、饿死、Facial Queimada、fantasma、分发、FRP、改机、解BL、禁飞区解锁、雷达、Magisk、免杀、秒拨、mod、魔改、母鸡、拿站、企业签、Root、肉鸡、setbid、手机口、刷机、softloop、偷渡包、挖洞、外挂、虚拟定位、砸壳、转账模拟器、注册机
+alat tempur ojol、aman notif、白帽子、变砖、饿死、Facial Queimada、fantasma、分发、FRP、改机、解BL、禁飞区解锁、雷达、Magisk、免杀、秒拨、mod、魔改、母鸡、拿站、内透、企业签、Root、肉鸡、setbid、手机口、刷机、softloop、偷渡包、挖洞、外挂、虚拟定位、砸壳、转账模拟器、注册机
 
 ## 上游·招募与话术（21）
 
